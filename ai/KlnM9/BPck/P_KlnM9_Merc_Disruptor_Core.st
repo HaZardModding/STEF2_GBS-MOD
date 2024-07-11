@@ -10,9 +10,9 @@
 //
 // Defines
 //
-$define	RANGE_WORK 		256
-$define	RANGE_PATROL 	1024 //Chrissed -> Orginal was 256
-$define	STAGE_TURN 		8
+$define	RANGE_WORK 256
+$define	RANGE_PATROL 1024 //Chrissed -> Orginal was 256
+$define	STAGE_TURN 8
 $define	TIME_PLAYER_ATTACK .75
 
 //---------------------------------------------------------
@@ -75,12 +75,15 @@ state PATROL
 
 	states
 	{
+		PATROL_DONE : BEHAVIOR_SUCCESS //Added by Chriss 
 		PLAYER_ATTACKED		: ATTACKED_BY_PLAYER ACTORTYPE ( "teammate"	)
 		PLAYER_ATTACKED		: ATTACKED_BY_PLAYER ACTORTYPE ( "friend" )
 		CORE_PAIN			: SHOW_PAIN
+		//CORE_COWER			: OTHER_DIED
 
 		WORK				: SHOULD_DO_ACTION ( "work"	) VALID_WORK_NODE_IN_RANGE ( $RANGE_WORK$ )
 		CORE_MAIN			: BEHAVIOR_SUCCESS
+		PATROL_FAILED		: BEHAVIOR_FAILED
 	}
 }
 
