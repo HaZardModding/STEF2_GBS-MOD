@@ -1,0 +1,5 @@
+Version 1.32 GBS Mod English
+- Remastered Audio Dialogs
+- Removed redundant Icons (Fixes German Text on Icons)
+- Moved Audio files
+- Moved Dialog files
