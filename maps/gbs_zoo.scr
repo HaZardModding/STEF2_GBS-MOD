@@ -1,0 +1,103 @@
+// EF2 Level Script File
+// Level			gbs_zoo
+// Script by:			ltiefland
+// Geometry by:			Flix, ltiefland
+// Created on:			2004/08/07
+// Last Updated on: 		2005/02/27
+// Last Updated by: 		ltiefland
+
+#include "maps/global_scripts/global_common.scr"
+#include "maps/global_scripts/global_playerLoadout.scr"
+#include "maps/global_scripts/global_debugUtils.scr"
+#include "maps/global_scripts/global_array.scr"
+#include "maps/global_scripts/global_spawnWave.scr"
+#include "maps/global_scripts/global_flyin.scr"
+#include "maps/global_scripts/global_math.scr"
+#include "maps/global_scripts/global_acceleratedMovement.scr"
+#include "maps/global_scripts/global_tricorderBase.scr"
+#include "maps/global_scripts/global_tricorderRoute.scr"
+#include "maps/global_scripts/global_archetype.scr"
+#include "maps/global_scripts/global_cinematicFX.scr"
+#include "maps/m4/m4l2b_dialog.scr"
+
+void main();
+
+void main()
+{
+	//Take away weapons from player!
+	//Only tricorder remains in place!
+	waitForPlayer();
+	$player.take ( "models/weapons/worldmodel-compressionrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-fieldassaultrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-burstrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-attrex-rifle.tik" );
+	$player.take ( "models/weapons/worldmodel-compressionrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-phaser-STX.tik" );
+}
+
+void ff_puzzle()
+{
+	entity puzzle;
+	puzzle = getcurrententity();
+
+	globalTricorderRoute_Reset();
+	globalTricorderRoute_SetSource1Row( 9 );
+	globalTricorderRoute_SetDestination1( 3, 9 );
+
+	//--- begin row definitions
+ 	globalTricorderRoute_BeginDef();
+ 	globalTricorderRoute_SetNextRow( 32, 32, 32, 32, 32, 32, 32, 32, 32 );
+ 	globalTricorderRoute_SetNextRow( 32, 32, 32, 32, 32, 32, 11, 11, 11 );
+ 	globalTricorderRoute_SetNextRow( 32, 32, 32, 32, 32, 19,  7, 10,  7 );
+ 	globalTricorderRoute_SetNextRow( 32, 32,  4,  9, 16,  4,  2,  7,  1 );
+ 	globalTricorderRoute_SetNextRow( 11, 32,  9, 11, 32, 32, 32, 25, 11 );
+ 	globalTricorderRoute_SetNextRow(  9, 22,  4,  9,  3,  2, 22, 21, 32 );
+ 	globalTricorderRoute_SetNextRow( 17, 17, 17,  2, 10,  4, 11, 32, 32 );
+ 	globalTricorderRoute_SetNextRow(  2, 23,  3, 22,  0, 32, 32, 32, 32 );
+ 	globalTricorderRoute_SetNextRow(  8,  4,  2,  9,  8, 32, 32, 32, 32 );
+ 	globalTricorderRoute_SetNextRow( 32,  0,  8, 11, 32, 32, 32, 32, 32 );
+ 	globalTricorderRoute_SetNextRow( 32, 18,  6, 11, 32, 32, 32, 32, 32 );
+
+ 	//--- run the puzzle
+ 	globalTricorderRoute_Run( puzzle, 0 );
+}
+
+
+void stoneFall()
+//chrissstrahl - added to make the stone fall off and get the player attention
+{
+	if(doesEntityExist($stoneFall)){
+		$stoneFall.notsolid();
+		$stoneFall.moveWest(-10);
+		$stoneFall.time(0.5);
+		$stoneFall.playsound("sound/environment/rock/small3a.wav");
+		waitFor($stoneFall);
+	}
+	if(doesEntityExist($stoneFall)){
+		$stoneFall.moveDown(85);
+		$stoneFall.time(0.4);
+		waitFor($stoneFall);
+	}
+	if(doesEntityExist($stoneFall)){
+		$stoneFall.playsound("sound/environment/rock/rock_slabstop.wav");
+	}
+	wait(2);
+	if(doesEntityExist($stoneFall)){
+		$stoneFall.remove();
+	}
+}
+
+void Puzzle()
+{
+	if(doesEntityExist($stoneFall)){
+		$stoneFall.remove();
+	}
+	if(doesEntityExist($stoneWall)){
+		$stoneWall.playsound("sound/environment/computer/holo_changesml1.wav",0,1,256);
+		wait(0.1);
+		$stoneWall.hide();
+		$stoneWall.notsolid();
+		wait(2);
+		$stoneWall.remove();
+	}
+}
