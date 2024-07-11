@@ -1,0 +1,38 @@
+//  EF2 Level Script File
+//
+//  Level:		gbs_dojo.bsp
+//  Script By:		TickNSwisted
+//  Geometry By:	TickNSwisted
+//  Created on:		02/10/2004
+//  Last Edited on: 	02/10/2004
+//  Last Edited By: 	TickNSwisted
+
+//INCLUDES
+	#include "maps/global_scripts/global_common.scr"
+	#include "maps/global_scripts/global_playerLoadout.scr"
+	#include "maps/global_scripts/global_debugUtils.scr"
+	#include "maps/global_scripts/global_tricorderBase.scr"
+	#include "maps/global_scripts/global_tricorderKeypad.scr"
+
+//FUNCTIONS
+	void main();
+
+//VARIABLE DECLARATIONS
+	float HaHa_Me_So_funny = 0;
+
+
+////////////////////////
+/////////SCRIPT/////////
+////////////////////////
+
+void main()
+{
+	globalLoadout_GiveWeapon( WEAPON_TRICORDER_STX );
+	globalLoadout_GiveWeapon( WEAPON_ROMULAN_DISRUPTOR );
+	globalLoadout_GiveWeapon( WEAPON_PHASER_STX );
+	globalLoadout_GiveWeapon( WEAPON_ASSAULT_SHOTGUN );
+	globalLoadout_GiveWeapon( WEAPON_GRENADE_LAUNCHER );
+	$player.give( "models/weapons/worldmodel-rom-disruptor-rifle.tik" );
+	//$world.weather( "rain", 200 ); 
+	//$world.entity_fade_dist( 3000 ); 
+}
