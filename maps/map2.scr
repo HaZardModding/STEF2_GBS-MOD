@@ -1,0 +1,984 @@
+// EF2 Level Script File
+//
+// Level:			map2.bsp
+// Script By:		Nemo22, Argyle, LTiefland, DrBob, 7o'nine, Avenger 
+// Geometry By:		Argyle, Alpharaptor, 7o'nine, Cortex
+// Created on:		Unknown
+// Last Edited on: 		$Date: 2007-04-08 23:58:18 +0200 (So, 08 Apr 2007) $
+// Last Edited By: 	$Author: lars $
+
+#include "maps/global_scripts/global_common.scr"
+#include "maps/global_scripts/global_math.scr"
+#include "maps/global_scripts/global_acceleratedMovement.scr"
+#include "maps/global_scripts/global_playerLoadout.scr"
+#include "maps/global_scripts/global_debugUtils.scr"
+#include "maps/global_scripts/global_tricorderBase.scr"
+#include "maps/global_scripts/global_tricorderKeypad.scr"
+#include "maps/global_scripts/global_archetype.scr"
+
+// FUNCTIONS
+void initArchetypes();
+void puzzleUsed();
+void puzzleReset();
+void puzzleSolved();
+void closed_door_sound();
+void closed_door_sound_2();
+void startWalker();
+void trans_guy_onUse();
+void cargoSecretReveal();
+void stop_gas();
+void skip_lounge();
+void skip_recruit();
+void skip_cell();
+// VARIABLES
+
+
+void hovercar()
+{
+	$hovercar_crate1.bind($hovercar_origin);
+	$hovercar_crate2.bind($hovercar_origin);
+	$hovercar_crate3.bind($hovercar_origin);
+	$hovercar_crate4.bind($hovercar_origin);
+	$hovercar_crate5.bind($hovercar_origin);
+	$hovercar_crate6.bind($hovercar_origin);
+	$hovercar_sound.bind($hovercar_origin);
+	$hovercar.bind($hovercar_origin);
+
+	wait(0.5);
+
+	$hovercar_origin.time(5);
+	$hovercar_origin.moveto($hovercar_origin2);
+	triggerentity($hovercar_sound);
+	waitfor($hovercar_origin);
+	$hovercar_origin.time(3);
+	$hovercar_origin.rotateYdown(90);
+	wait(3.5);
+
+	$hovercar_origin.time(5);
+	$hovercar_origin.moveto($hovercar_origin3);
+	wait(3);
+	$remote_guy.anim("idle");
+	$remote_guy.walkto("$remote_guy_1");
+	waitfor($remote_guy);
+	triggerentity($hovercar_sound);
+	$remote_guy.anim( "ent-datapad-use" );
+	$remote_guyr.doUse($hovercar_sound);
+}
+
+void closed_door_sound()
+{
+   	$player.playsound( "sound/environment/computer/lcars_no.wav", 3, 1.0);
+}
+
+void closed_door_sound_2()
+{
+	$player.playsound( "sound/doors/door_locked.wav");
+}
+
+void initArchetypes()
+{
+
+	thread globalArchetype_Setup( $gas_console, "gas_console");
+//	thread globalArchetype_Setup( $environmental_controls, "enviroc");
+//	thread globalArchetype_Setup( $maincomputer_controls, "compc");
+//	thread globalArchetype_Setup( $computer_a, "compa");
+//	thread globalArchetype_Setup( $computer_b, "compb");
+//	thread globalArchetype_Setup( $tubedoor_controls_2, "tubed");
+
+//	$gas_console.archetype ( "gas_console" );
+}
+
+void remote_scene()
+{
+	thread hovercar();
+}
+
+void moya_cin()
+{
+
+	$moya.lookat( $player );
+	$player.angle( 345 );
+	$moya.playdialog("localization/sound/dialog/map01/moya/youspend.mp3",1,10000,0);
+	waitfordialog($moya);
+	$moya.playdialog("localization/sound/dialog/map01/moya/prettyviolent.mp3",1,10000,0);
+	waitfordialog($moya);
+	$lounge_illia.playdialog("localization/sound/dialog/map01/illia/afterserved.mp3",1,10000,0);
+	waitfordialog($lounge_illia);
+	$lounge_illia.playdialog("localization/sound/dialog/map01/illia/whatcanidoforyou.mp3",1,10000,0);
+	waitfordialog($lounge_illia);
+	$moya.playdialog("localization/sound/dialog/map01/moya/captain.mp3",1,10000,0);
+	waitfordialog($moya);
+	$moya.playdialog("localization/sound/dialog/map01/moya/brandy.mp3",1,10000,0);
+	waitfordialog($moya);
+	$lounge_illia.playdialog("localization/sound/dialog/map01/illia/iwillsee.mp3",1,10000,0);
+	waitfordialog($lounge_illia);
+	wait(1.5);
+	$lounge_illia.playdialog("localization/sound/dialog/map01/illia/anythingelse.mp3",1,10000,0);
+	waitfordialog($lounge_illia);
+	$moya.playdialog("localization/sound/dialog/map01/moya/no.mp3",1,10000,0);
+	waitfordialog($moya);
+	$player.immobilize( 0 );
+   
+	$moya.strictlyfollowpath(1);
+	$moya.walkto("$moya_nav1");
+	waitfor($moya);
+	$moya.walkto("$moya_nav2");
+	waitfor($moya);
+	$moya.walkto("$moya_nav3");
+	waitfor($moya);
+	$moya.walkto("$moya_nav_lift");
+	waitfor($moya);   
+
+	wait(4);
+	$moya.remove();
+}
+
+void hazard_cin()
+{
+	$munro.walkto("$nav_transroom1");
+	$kourban.walkto("$nav_transroom2");
+	wait(1);
+	$gonzales.walkto("$nav_transroom3");
+	wait(3);
+	waitfor($munro);
+	$mankell.lookat($munro);
+	$mankell.playdialog("localization/sound/dialog/map02/mankell/nicetohaveyou.mp3",1,10000,0);
+	waitfordialog($mankell);
+	$mankell.playdialog("localization/sound/dialog/map02/mankell/greet.mp3",1,10000,0);
+	waitfordialog($mankell);
+	$munro.playdialog("localization/sound/dialog/map02/munro/ayesir.mp3",1,10000,0);
+	waitfordialog($munro);
+	wait(2);
+	$munro.walkto("$nav_plat1");
+	$kourban.walkto("$nav_plat2");
+	$gonzales.walkto("$nav_plat3");
+	waitfor($kourban);
+	wait(2);
+	$kourban.displayEffect( "TransportOut", "Federation" );
+	$gonzales.displayEffect( "TransportOut", "Federation" );
+	$munro.displayEffect( "TransportOut", "Federation" );
+	wait(3);
+	$kourban.notsolid();
+	$gonzales.notsolid();
+	$munro.notsolid();
+
+	$mankell.walkto("$mankell_2");
+	waitfor($mankell);
+	$mankell.walkto("$mankell_4");
+	waitfor($mankell);
+	$mankell.walkto("$mankell_7");
+	waitfor($mankell);
+	$mankell.walkto("$mankell_8");
+	waitfor($mankell);
+	$mankell.walkto("$mankell_9");
+	waitfor($mankell);
+	$mankell.walkto("$mankell_10");
+	waitfor($mankell);
+
+	wait(4);
+	$mankell.remove();
+}
+
+
+
+void main()
+{
+	//Setup people's use threads
+	thread globalCommon_OnUse( $remote_guy , "remote_guy_onUse" );
+	thread globalCommon_OnUse( $repair_lady, "repair_lady_onUse" );
+	thread globalCommon_OnUse( $trans_guy, "trans_guy_onUse" );
+	
+	//Enterprise before Casino hiden + binden
+	$l_ent1.bind( $l_ent_origin );
+	$l_ent2.bind( $l_ent_origin );
+	$l_ent3.bind( $l_ent_origin );
+	$l_ent_origin.hide();
+	$l_ent1.notsolid();
+	$l_ent2.notsolid();
+	$l_ent3.notsolid();
+	
+	$warp_ent1.bind( $warp_ent_origin );
+	$warp_ent2.bind( $warp_ent_origin );
+	$warp_ent3.bind( $warp_ent_origin );
+
+	//AI_OFF
+	$munro.ai_off();
+	$munro.pushable( 0 );
+	$lounge_illia.ai_off();
+	$lounge_illia.pushable( 0 );
+	$lounge_stevens.ai_off();
+	$lounge_stevens.pushable( 0 );
+	$kourban.ai_off();
+	$kourban.pushable( 0 );
+	$gonzales.ai_off();
+	$gonzales.pushable( 0 );
+	$repair_lady.ai_off();
+	$repair_lady.pushable( 0 );
+	$remote_guy.ai_off();
+	$remote_guy.pushable( 0 );
+	$moya.ai_off();
+	$moya.pushable( 0 );
+	$mankell.ai_off();
+	$mankell.pushable( 0 );
+	$illia3.ai_off();
+	$illia3.pushable( 0 );
+	$illia_holo.ai_off();
+	$illia_holo.pushable( 0 );
+	$stevens.ai_off();
+	$stevens.pushable( 0 );
+	$illia_prisoner.ai_off();
+	$illia_prisoner.pushable( 0 );
+	$tebok.ai_off();
+	$tebok.pushable( 0 );
+	$warp_illia.ai_off();
+	$warp_illia.pushable( 0 );
+	$warp_illia.hide();
+	$trans_guy.ai_off();
+	$trans_guy.pushable( 0 );
+
+	//Hide NPCs
+	$lounge_illia.hide();
+	$lounge_illia.notsolid();
+	$lounge_stevens.hide();
+	$lounge_stevens.notsolid();
+	$illia3.hide();
+	$illia3.notsolid();
+	$illia_holo.hide();
+	$illia_holo.notsolid();
+	$illia_prisoner.hide();
+	$illia_prisoner.notsolid();
+	$tebok.hide();
+	$tebok.notsolid();
+	$stevens.hide();
+	$stevens.notsolid();
+
+	//Hide cargo bay golden ship
+	$cargoSecret.hide();
+	$cargoSecret.notsolid();
+
+	soundtrack( "m2l3-sfa.mus" );
+
+	waitForPlayer();
+	stuffCmd("set mp_bigGunMode 0\n");
+	$player.immobilize( 1 );
+	$player.take ( "models/weapons/worldmodel-compressionrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-fieldassaultrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-burstrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-attrex-rifle.tik" );
+	$player.take ( "models/weapons/worldmodel-compressionrifle.tik" );
+	$player.take ( "models/weapons/worldmodel-phaser-STX.tik" );
+	$player.take ( "models/weapons/worldmodel-tricorder-STX.tik" );
+	
+	//Anims
+	$repair_lady.anim("cin-m3_hunch");
+	$remote_guy.useactorweapon( "EnterpriseDatapad" );
+	$remote_guy.anim( "ent-datapad-use" );
+
+	//Remove weapons
+	$gonzales.removeactorweapon ( "CompressionRifle" );
+	$munro.removeactorweapon ( "CompressionRifle" );
+	$kourban.removeactorweapon ( "fieldassaultrifle" );
+	$illia3.removeactorweapon ( "CompressionRifle" );
+	$illia3.removeactorweapon ( "AssaultRifle" );
+	$illia3.removeactorweapon ( "CompressionRifleEnhanced" );
+	$lounge_illia.removeactorweapon ( "CompressionRifle" );
+	$lounge_illia.removeactorweapon ( "AssaultRifle" );
+	$lounge_illia.removeactorweapon ( "CompressionRifleEnhanced" );
+	$illia_prisoner.removeactorweapon ( "CompressionRifle" );
+	$illia_prisoner.removeactorweapon ( "AssaultRifle" );
+	$illia_prisoner.removeactorweapon ( "CompressionRifleEnhanced" );
+	$warp_illia.removeactorweapon ( "CompressionRifle" );
+	$warp_illia.removeactorweapon ( "AssaultRifle" );
+	$warp_illia.removeactorweapon ( "CompressionRifleEnhanced" );
+
+	globalCommon_SpawnActor( "char/starfleet_crew-male.tik", "walker", '80 -688 -10', 0 );
+	$walker.ai_off();
+	$walker.removeactorweapon ( "CompressionRifle" );
+	$walker.removeactorweapon ( "AssaultRifle" );
+	$walker.removeactorweapon ( "CompressionRifleEnhanced" );
+
+	wait(1);
+
+	$player.loadobjectives("GBS2");
+	$player.setobjectiveshow("gettobar", 1);
+	$player.setobjectiveshow("findbrandy", 1);
+	$player.missionobjective(1);
+
+	$cargo_door.lock();
+	$locked_door1.lock();
+	$locked_door2.lock();
+	$secretRoomDoors.lock();
+
+	//Dynamic light setup in maintenance room
+	$world.light_lightstyle( "maintenanceLight", "ddgggggggggjjjhkkkkkkkzzzzzttmmmmmkkaaaaaaabbbfffffffff", 0);
+
+	moya_cin();
+}
+
+void cell_cin()
+{
+	skipthread("skip_cell");
+//-------------------------------------------------------------------------------------------------------------------
+//	Illia in a cell.
+//-------------------------------------------------------------------------------------------------------------------
+
+	$illia_prisoner.show();
+	$illia_prisoner.solid();
+	$illia_prisoner.anim("cin-m8_situp");
+	$cam9.follow($cell_cam);
+	$cam9.cut();
+
+	wait(1);
+
+	cuecamera($cam9);
+
+	cam_fadein( 2, 0, 0, 0, 1, 0 );
+
+	$illia_prisoner.playdialog("localization/sound/dialog/map02/Illia/stevenswasgone.mp3",1,10000,0);
+	waitfordialog( $illia_prisoner );
+	$illia_prisoner.playdialog("localization/sound/dialog/map02/Illia/myplan.mp3",1,10000,0);
+	waitfordialog( $illia_prisoner );
+	$illia_prisoner.playdialog("localization/sound/dialog/map02/Illia/sabotage.mp3",1,10000,0);
+	waitfordialog( $illia_prisoner );
+
+	wait(1);
+	thread skip_cell();
+}
+
+//--------------------------------------------------
+//	Enterprise geht auf Warp
+//--------------------------------------------------
+void ent_warp()
+{
+	$warp_illia.show();
+	$warp_illia.displayEffect( "TransportIn", "FederationNoAnim" );
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+	$cam1.follow( $warp_shot1 );
+	$cam1.cut();
+	$cam1.fov( 62 );
+	wait( .1 );
+
+	$cam2.follow( $warp_shot2 );
+	$cam2.cut();
+	$cam2.fov( 62 );
+	
+	cuecamera( $cam1 );
+	$l_ent_origin.show();
+	$warp_illia.headWatchTarget( "l_ent_origin", 7 );
+	thread globalAccelMove( $l_ent_origin, '512 0 0', 5, "rampup", "" );
+	wait( 5 );
+	cuecamera( $cam2 );
+	wait( 11 );
+	$cam2.playsound( "sound/ships/enterprise/ent_enter_warp.wav", 0, 4, 20000 );
+
+	wait( 2.5 );
+	$spawnWarpFlash.scale( .6 );
+	$spawnWarpFlash.modelname( "models/fx/fx-warpflash-federation.tik" );
+	thread globalAccelMoveY( $warp_ent_origin, -3000, .8, "rampup", "");
+	wait( .8 );
+	$spawnWarpFlash.origin( $warp_ent_origin.getOrigin() );
+	triggerEntity( $spawnWarpFlash );
+	$warp_ent_origin.hide();
+	
+	wait( 4 );
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+	wait(1);
+	thread cell_cin();
+}
+
+void recruit_cin()
+{
+	skipthread("skip_recruit");
+//-------------------------------------------------------------------------------------------------------------------
+//	The sequence where you are on the Enterprise and talk to Stevens, who wants to recruit you once again for 31.
+//-------------------------------------------------------------------------------------------------------------------
+
+// Die Kameras einschalten
+//--Kamera wenn Illia uns Steven sich reinbeamen
+	$cam1.follow( $map2_ent_beamin );
+	$cam1.cut();
+//--Kamera hinter Illia
+	$cam2.follow( $map2_ent_behindillia );
+	$cam2.cut();
+//--Kamera hinter Stevens
+	$cam3.follow( $map2_ent_behindstevens );
+	$cam3.cut();
+//--Kamera direkt vor Stevens Gesicht
+	$cam5.follow( $map2_ent_fstevens );
+	$cam5.cut();
+
+	wait(0.5);
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+	cuecamera($cam1);
+
+	$illia3.show();
+	$illia3.displayEffect( "TransportIn", "FederationNoAnim" );
+	$stevens.show();
+	$stevens.displayEffect( "TransportIn", "FederationNoAnim" );
+
+	wait(2);
+
+	$illia3.show();
+	$illia3.solid();
+	$stevens.show();
+	$stevens.solid();
+
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/offertodrink.mp3",1,10000,0);
+	$stevens.anim( "conv-handsweep" );
+	waitforanimation( $stevens, "conv-handsweep" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+
+	wait(2);
+
+	$camb.follow($map3_win1);
+	$camb.cut();
+	wait(0.5);
+	cuecamera($cam1);
+
+	$illia3.walkto("$illia_window");
+	waitfor($illia3);
+	$illia3.lookat($atlantic);
+	$cama.follow($map2_at_to_quar);
+	$cama.cut();
+	wait(1);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/enterprise.mp3",1,10000,0);
+	waitfordialog($illia3);
+	$camc.follow( $map2_ent_to_at );
+	$camc.cut();
+	wait(.1);
+	cuecamera($camc);
+	wait( 11 );
+	
+	wait(.01);
+	cuecamera($cama);
+	wait( 9.2 );
+
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/captainpicard.mp3",1,10000,0);
+	$illia3.anim( "conv-scratchingchin-thinking" );
+	waitforanimation( $illia3, "conv-scratchingchin-thinking" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+	
+	$illia3.headWatchTarget( "stevens", 10 );
+	$stevens.headWatchTarget( "illia3", 10 );
+	
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/thirtyone.mp3",1,10000,0);
+	$illia3.anim( "conv-shakehead" );
+	waitforanimation( $illia3, "conv-shakehead" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+
+	wait(1);
+
+	cuecamera($cam3);
+
+	$illia3.walkto("$illia6");
+	waitfor($illia3);
+	$illia3.walkto("$illia1");
+	waitfor($illia3);
+	$illia3.lookat($stevens);
+	$stevens.lookat($illia3);
+	wait(2);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/picard.mp3",1,10000,0);
+	$stevens.anim( "conv-gesture" );
+	waitforanimation( $stevens, "conv-gesture" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	
+	cuecamera($cam2);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/situation.mp3",1,10000,0);
+	$stevens.anim( "conv-idle" );
+	waitforanimation( $stevens, "conv-idle" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	
+//--Kamera um Illia und Stevens
+	$cam4.follow( $map2_ent_isround );
+	$cam4.cut();
+	wait( .1 );
+	cuecamera( $cam4 );
+	
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/member.mp3",1,10000,0);
+	$stevens.anim( "conv-talk-handsonhips" );
+	waitforanimation( $stevens, "conv-talk-handsonhips" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+
+	wait(0.5);
+
+	cuecamera($cam2);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/experience.mp3",1,10000,0);
+	$illia3.anim( "conv-shrug" );
+	waitforanimation( $illia3, "conv-shrug" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/graveness.mp3",1,10000,0);
+	$stevens.anim( "conv-talk1" );
+	waitfordialog($stevens);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/important.mp3",1,10000,0);
+//	waitforanimation( $stevens, "conv-talk1" );
+	waitfordialog($stevens);
+	$stevens.anim( "idle" );
+	cuecamera($cam4);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/sigmacell.mp3",1,10000,0);
+	$stevens.anim( "conv-talk3" );
+	waitfordialog($stevens);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/agents.mp3",1,10000,0);
+//	waitforanimation( $stevens, "conv-talk3" );
+	waitfordialog($stevens);
+	$stevens.anim( "idle" );
+
+	cuecamera($cam3);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/includingme.mp3",1,10000,0);
+	$illia.anim( "conv-yes" );
+	waitforanimation( $illia3, "conv-yes" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+	
+	cuecamera($cam2);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/helpus.mp3",1,10000,0);
+	$stevens.anim( "conv-idle" );
+	waitforanimation( $stevens, "conv-idle" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/sleepwell.mp3",1,10000,0);
+	$stevens.anim( "conv-fingerup-warning" );
+	waitforanimation( $stevens, "conv-fingerup-warning" );
+	$stevens.anim( "conv-gesture" );
+	waitforanimation( $stevens, "conv-gesture" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+
+	cuecamera($cam4);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/send.mp3",1,10000,0);
+	$illia3.anim( "conv-fingerpoint-atyou" );
+	waitforanimation( $illia3, "conv-fingerpoint-atyou" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/notinshape.mp3",1,10000,0);
+	$illia3.anim( "conv-gesture1" );
+	waitforanimation( $illia3, "conv-gesture1" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+	
+	cuecamera($cam2);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/manytried.mp3",1,10000,0);
+	$stevens.anim( "conv-handsweep" );
+	waitforanimation( $stevens, "conv-handsweep" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/noonecameback.mp3",1,10000,0);
+	$stevens.anim( "conv-handflick-hellno" );
+	waitforanimation( $stevens, "conv-handflick-hellno" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/lasthope.mp3",1,10000,0);
+	$stevens.anim( "conv-talk-handsonhips" );
+	waitforanimation( $stevens, "conv-talk-handsonhips" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	cuecamera($cam2);
+	
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/theplan.mp3",1,10000,0);
+	$stevens.anim( "conv-talk1" );
+	waitforanimation( $stevens, "conv-talk1" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/neutralzone.mp3",1,10000,0);
+	$stevens.anim( "conv-talk3" );
+	waitforanimation( $stevens, "conv-talk3" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	
+	cuecamera($cam4);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/theatlantic.mp3",1,10000,0);
+	$illia3.anim( "conv-talk2" );
+	waitforanimation( $illia3, "conv-talk2" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+
+	cuecamera($cam3);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/sabotage.mp3",1,10000,0);
+	$stevens.anim( "conv-shrug" );
+	waitforanimation( $stevens, "conv-shrug" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/please.mp3",1,10000,0);
+	$stevens.anim( "conv-shakehead" );
+	waitforanimation( $stevens, "conv-shakehead" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+
+	cuecamera($cam2);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/neutralzone.mp3",1,10000,0);
+	$illia3.anim( "conv-scratchingchin-thinking" );
+	waitforanimation( $illia3, "conv-scratchingchin-thinking" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/romulanspace.mp3",1,10000,0);
+	$illia3.anim( "conv-handsweep" );
+	waitforanimation( $illia3, "conv-handsweep" );
+	$illia3.anim( "idle" );
+	waitfordialog($illia3);
+	
+//bis hier anims 
+//ab hier nur face morphs
+	cuecamera($cam5);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/antioch.mp3",1,10000,0);
+	$stevens.morph( "exp_Disgust" );
+	waitfordialog($stevens);
+	$stevens.unmorph( "exp_Disgust" );
+	
+//--Kamera direkt vor Illias Gesicht
+	$cam6.follow( $map2_ent_fillia );
+	$cam6.cut();
+	wait( .1 );
+	cuecamera( $cam6 );
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/vessel.mp3",1,10000,0);
+	waitfordialog($stevens);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/oberth.mp3",1,10000,0);
+	waitfordialog($stevens);
+	cuecamera( $cam5 );
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/save.mp3",1,10000,0);
+	waitfordialog($stevens);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/success.mp3",1,10000,0);
+	$stevens.morph( "exp_brows_down" );
+	waitfordialog($stevens);
+	$stevens.unmorph( "exp_brows_down" );
+	cuecamera($cam6);
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/understand.mp3",1,10000,0);
+	waitfordialog($stevens);
+//ab hier wieder anims
+	$illia3.playdialog("localization/sound/dialog/map02/Illia/onlytowell.mp3",1,10000,0);
+	$illia3.anim( "conv-affirmative" );
+	$illia3.morph( "exp_Skeptical" );
+	waitforanimation( $illia3, "conv-affirmative" );
+	$illia3.anim ( "idle" );
+	waitfordialog($illia3);
+	$illia3.unmorph( "exp_Skeptical" );
+	cuecamera( $cam1 );
+	$stevens.playdialog("localization/sound/dialog/map02/Stevens/goodluck.mp3",1,10000,0);
+	$stevens.anim( "conv-scratchingchin-thinking" );
+	waitforanimation( $stevens, "conv-scratchingchin-thinking" );
+	$stevens.anim( "idle" );
+	waitfordialog($stevens);
+
+	wait(1);
+
+	$illia3.displayEffect( "TransportOut", "FederationNoAnim" );
+
+	wait(2);
+	thread skip_recruit();
+}
+void skip_recruit()
+{
+	killthread("recruit_cin");
+	
+	cam_fadeout( 2, 0, 0, 0, 1, 0 );
+
+	wait(3);
+	
+	thread ent_warp();
+}
+
+void lounge_cin()
+{
+	spawn("camera","targetname","cam1");
+	spawn("camera","targetname","cam2");
+	spawn("camera","targetname","cam3");
+	spawn("camera","targetname","cam4");
+	spawn("camera","targetname","cam5");
+	spawn("camera","targetname","cam6");
+	spawn("camera","targetname","cam7");
+	spawn("camera","targetname","cam8");
+	spawn("camera","targetname","cam9");
+	spawn("camera","targetname","cama");
+	spawn("camera","targetname","camb");
+	spawn("camera","targetname","camc");
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+	wait(1);
+
+	letterbox( .1 );
+	freezeplayer();
+	$player.hide();
+	cinematic();
+//-------------------------------------------------------------------------------------------------------------------
+//	Illia and Stevens meet on the atlantic.
+//-------------------------------------------------------------------------------------------------------------------
+	skipthread("skip_lounge");
+	$cam1.follow( $map2_lounge_cam1 );
+	$cam1.cut();
+	wait(.1);
+	cam_fadein( 2, 0, 0, 0, 1, 0 );	
+	cuecamera($cam1);
+	
+	$lounge_illia.show();
+	$lounge_illia.solid();
+	
+	$lounge_illia.walkto( "$lounge_illia_node_a", "walk" );
+	waitfor( $lounge_illia );
+	$lounge_illia.walkto( "$lounge_illia_node1", "walk" );
+	waitfor( $lounge_illia );
+	$lounge_illia.walkto( "$lounge_illia_node2", "walk" );
+	waitfor( $lounge_illia );
+	$lounge_illia.turntoangle( 90 );
+	waitfor( $lounge_illia );
+	
+	wait( 1 );
+	$cam2.follow( $bottle_cam );
+	$cam2.cut();
+	wait(.1);
+		
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/ahyes.mp3", 1, 10000, 0);
+	waitfordialog( $lounge_illia );
+	wait( .4 );
+	cuecamera($cam2);
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/twobottles.mp3", 1, 10000, 0);
+	waitfordialog( $lounge_illia );
+
+	wait( 1.5 );
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/shouldbeenough.mp3", 1, 10000, 0);
+	waitfordialog( $lounge_illia );
+	
+	$lounge_stevens.walkto( "$lounge_stevens_node1", "walk" );
+	$lounge_stevens.show();
+	wait( 2 );
+	
+	$cam1.follow( $map2_illia_stevens_cam1 );
+	$cam1.cut();
+	$cam3.fov( 60 );
+	
+	$cam3.follow( $behindillia_cam );
+	$cam3.cut();
+	wait(.1);
+	cuecamera( $cam3 );
+	
+	waitfor( $lounge_stevens );
+	$lounge_illia.anim( "idle" );
+	$lounge_stevens.turntoangle( 170 );
+	$lounge_illia.turntoangle( 350 );
+	$lounge_stevens.playdialog("localization/sound/dialog/map02/stevens/msericsson.mp3",1,10000,0);
+	$lounge_stevens.anim( "conv-scratchingchin-thinking" );
+	waitforanimation( $lounge_stevens, "conv-scratchingchin-thinking" );
+	$lounge_stevens.anim( "idle" );
+	wait( 1.5 );
+	
+	$lounge_illia.anim( "conv-talk-handsonhips" );
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/doinghere.mp3", 1, 10000, 0);
+	waitfordialog( $lounge_illia );
+	wait( .2 );
+	cuecamera( $cam1 );
+	$lounge_illia.anim( "idle" );
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/notinformed.mp3", 1, 10000, 0);
+	$lounge_illia.anim( "conv-gesture1" );
+	waitforanimation( $lounge_illia, "conv-gesture1" );
+	$lounge_illia.anim( "idle" );
+	
+	waitfordialog( $lounge_illia );
+	
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/donotbelong.mp3", 1, 10000, 0);
+	$illia_lounge.anim( "conv-handsweep" );
+	waitforanimation( $lounge_illia, "handsweep" );
+	waitfordialog( $lounge_illia );
+
+	cuecamera( $cam3 );
+	
+	$lounge_stevens.playdialog("localization/sound/dialog/map02/stevens/membership.mp3",1,10000,0);
+	waitfordialog($lounge_stevens);
+	$lounge_stevens.playdialog("localization/sound/dialog/map02/stevens/terminate.mp3",1,10000,0);
+	$lounge_stevens.anim( "conv-talk3" );
+	waitforanimation( $lounge_stevens, "conv-talk3" );
+	waitfordialog($lounge_stevens);
+	$lounge_stevens.anim( "idle" );
+	
+	cuecamera( $cam3 );
+	
+	$lounge_stevens.playdialog("localization/sound/dialog/map02/stevens/hetlek.mp3",1,10000,0);	$lounge_stevens.anim( "conv-talk2" );
+	waitforanimation( $lounge_stevens, "conv-talk2" );
+	$lounge_stevens.anim( "idle" );
+	wait( 2 );
+	cuecamera( $cam1 );
+	
+	$lounge_illia.anim( "conv-crossarms" );
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/unrealistic.mp3", 1, 10000, 0);
+	waitforanimation( $lounge_illia, "conv_crossarms" );
+	$lounge_illia.anim( "idle" );
+	waitfordialog( $lounge_illia );
+	
+	$lounge_stevens.playdialog("localization/sound/dialog/map02/stevens/thirtyone.mp3",1,10000,0);
+	$lounge_stevens.anim( "conv-idle-look" );
+	waitforanimation( $lounge_stevens, "conv-idle-look" );
+	$lounge_stevens.anim( "idle" );
+	waitfordialog($lounge_stevens);
+	wait( 4 );
+	$lounge_stevens.playdialog("localization/sound/dialog/map02/stevens/job.mp3",1,10000,0);
+	$lounge_stevens.anim( "conv-gestureL" );
+	waitforanimation( $lounge_stevens, "conv-gestureL" );
+	$lounge_stevens.anim( "idle" );
+	waitfordialog($lounge_stevens);
+	
+	cuecamera( $cam1 );
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/paranoia.mp3", 1, 10000, 0);
+	$lounge_illia.anim( "conv-wtf" );
+	waitforanimation( $lounge_illia, "conv-wtf" );
+	waitfordialog( $lounge_illia );
+	
+	$lounge_illia.playdialog("localization/sound/dialog/map02/illia/nomissions.mp3", 1, 10000, 0);
+	wait( .2 );
+	cuecamera( $cam3 );
+//	$lounge_illia.anim( "conv-gestureL" );
+//	waitforanimation( $lounge_illia, "conv-gestureL" );
+	$lounge_illia.anim( "conv-handflick-hellno" );
+	waitforanimation( $lounge_illia, "conv-handflick-hellno" );
+	$lounge_illia.anim( "idle" );
+	wait( .5 );
+	cuecamera( $cam1 );
+	$lounge_stevens.playdialog("localization/sound/dialog/map02/stevens/nochoice.mp3",1,10000,0);
+	$lounge_stevens.anim( "conv-poundfist" );
+	waitforanimation( $lounge_stevens, "conv-poundfist" );
+	waitfordialog($lounge_stevens);
+	
+	$lounge_stevens.anim( "communicator" );
+	waitforanimation( $lounge_stevens, "communicator" );
+	$lounge_stevens.anim( "idle" );
+	wait( .2 );
+	$lounge_illia.displayEffect( "TransportOut", "FederationNoAnim" );
+	wait( 1 );
+	cuecamera( $cam3 );
+	$lounge_stevens.displayEffect( "TransportOut", "FederationNoAnim" );
+
+	wait( 1 );
+	thread skip_lounge();
+}
+
+void skip_lounge()
+{
+	killthread("lounge_cin");
+	cam_fadeout( 2, 0, 0, 0, 1, 0 );
+	wait( 2 );
+	thread recruit_cin();
+}
+
+void surprise()
+{
+	thread lounge_cin();
+}
+void skip_cell()
+{
+	killthread("cell_cin");
+
+	cam_fadein( 2, 0, 0, 0, 1, 0 );
+	$player.setobjectivecomplete("gettobar", 1);
+	$player.setobjectivecomplete("findbrandy", 1);
+	$player.setobjectiveshow("gettoengineering", 1);
+	$player.missionobjective(1);
+
+	noncinematic();
+	clearletterbox(.1);
+	releaseplayer();
+	cueplayer();
+	
+	stuffcmd("map map3 \n");
+}
+
+void cargoSecretReveal()
+{
+	$cargoSecret.displayeffect( "TransportIn", "Federation" );
+	$cargoSecret.show();
+	$cargoSecret.solid();
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//	NPC INTERACTIONS
+//-------------------------------------------------------------------------------------------------------------------
+void startWalker()
+{
+	$walker.alias( "walkerTalker", "localization/sound/dialog/m2l1/teacherm2_busy.mp3", 1, 128, 0); // Counsellor/holodeck
+	$walker.dialog( "walkerTalker" );
+	$walker.pushable( 0 );
+	$trigger_tubes.nottriggerable();
+
+	
+	float i = 1;
+	while (i < 19)
+	{
+		$walker.walkto( "$walker"+i , "walk" );
+		waitfor( $walker );
+		i++;
+	}
+	
+	wait(2);
+	$walker.lookat( $repair_lady );
+	$walker.giveactorweapon( "Tricorder" );
+	$walker.useactorweapon( "Tricorder" );
+	$walker.anim( "tricorder_fire" );
+
+}
+
+void remote_guy_onUse()
+{
+	//You are trying to talk to the remote guy, so make him give you a rude retort ;)
+	$remote_guy.playdialog("localization/sound/dialog/m2l1/teacherm2_busy.mp3", 1, 256, 0);
+	waitfordialog( $remote_guy );
+}
+
+void trans_guy_onUse()
+{
+	//You are trying to talk to the transporter control guy, so make him give you a rude retort ;)
+	$trans_guy.playdialog("localization/sound/dialog/m2l1/teacherm2_busy.mp3", 1, 256, 0);
+	waitfordialog( $trans_guy );
+}
+
+void repair_lady_onUse()
+{
+	//You are trying to talk to the repair lady, so make her give you a rude retort ;)
+	$repair_lady.playdialog("localization/sound/dialog/m2l1/teacherf2_time.mp3", 1, 256, 0);
+	waitfordialog( $repair_lady );
+}
+
+
+//-------------------------------------------------------------------------------------------------------------------
+//	PUZZLE STUFF
+//-------------------------------------------------------------------------------------------------------------------
+void puzzleUsed()
+{
+	globalTricorderKeypad_SetType( "Starfleet" );
+	globalTricorderKeypad_SetScannedCodeFlag( 0 );
+	globalTricorderKeypad_SetSecretCode( 4, 1, 5, 7, 2, 6, 3, 0, 0 ); //7 digit code
+	globalTricorderKeypad_Run( $secretRoomPuzzle, 100, 3);
+}
+
+void puzzleReset()
+{
+	$secretRoomPuzzle.puzzleobject_reset();
+}
+
+void puzzleSolved()
+{
+	$secretRoomPuzzle.playsound( "sound/ships/romulan/rom_beep_yes.wav", 0, 1 );
+	$secretRoomDoors.unlock();
+	trigger( "$secretRoomDoors" );
+	$secretRoomPuzzle.remove(); //so that player doesn't have to keep re-entering the puzzle code
+}
+
+//--------------------------------------------------------------------------------------------------------------------
+//	POISONOUS GAS
+//--------------------------------------------------------------------------------------------------------------------
+void stop_gas()
+{
+	$stop_gasTrigger.playsound( "sound/ships/enterprise/ent_beep_confirm.wav", 3, 1 );
+	$stop_gasTrigger.nottriggerable();
+	wait(1);
+	$gas_sound.remove();
+	$gas_cloud0.remove();
+	$gas_cloud1.remove();
+	wait(1);
+	$poisonous_gas.remove();
+
+}

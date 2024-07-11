@@ -1,0 +1,78 @@
+TIKI
+$include models/char/hazardteam_base-female.tik
+
+setup
+{
+	scale 0.95
+	fade_dist_mod 1
+	lod 200 1.0 2500 .2 6144
+	headoffset 23 0 -84
+	radius 25
+
+	texturepath models/char/hazardteam/jurot
+	surface material1 shader jurot-head.tga
+
+	texturepath models/char/face
+	surface material3 shader jurot-face.tga flags nocustomshader
+
+	texturepath models/char/hazardteam/base-female
+	surface material2 shader female-body-blue.tga
+	surface material4 shader female-gear-blue.tga
+	surface material5 shader female-gear-blue.tga
+	surface material6 shader female-gear-blue.tga
+	surface material7 shader female-gear-blue.tga
+	surface material8 shader female-gear-blue.tga
+	surface material9 shader female-gear-blue.tga
+	surface material10 shader female-gear-blue.tga
+	surface material11 shader female-body-blue.tga
+	surface material12 shader female-body-blue.tga
+	surface material14 shader female-display-blue.tga
+	surface material15 shader female-body-blue.tga
+	surface material16 shader female-body-blue.tga
+
+	surface material13 shader jurothairalpha
+
+	surface material35 shader female-body-blue.tga
+	surface material36 shader female-body-blue.tga
+	surface material37 shader female-body-blue.tga
+	surface material38 shader female-body-blue.tga
+	surface material39 shader female-body-blue.tga
+
+	texturepath models/char/misc
+	surface material28 shader comm_badge flags nodraw
+	surface material29 shader ensign flags nodraw
+
+	replacesurface material1 material1 models/char/hazardteam/jurot/jurot-base.skb models/char/hazardteam/jurot/jurot-morph.skm
+	replacesurface material3 material3 models/char/hazardteam/jurot/jurot-base.skb models/char/hazardteam/jurot/jurot-morph.skm
+	replacesurface material13 material13 models/char/hazardteam/jurot/jurot-base.skb models/char/hazardteam/jurot/jurot-morph.skm
+
+
+}
+
+//AI Data
+$include models/aidata/teammate/teammate_aidata.tik
+
+init
+{
+	server
+	{
+		classname Actor
+		name "HazardTeamJurot"
+		archetype "HazardTeamJurot"
+
+		surface material7 +nodraw
+		surface material16 +nodraw
+		surface material35 +nodraw
+		surface material36 +nodraw
+		surface material37 +nodraw
+		surface material38 +nodraw
+		surface material39 +nodraw
+	}
+	client
+	{
+	}
+}
+
+/*QUAKED char_hazardteam_jurot_standard-jurot (0.5 0.25 0.25) (0 0 0) (0 0 0)
+Hazard Team Memember Jurot in a stanadard hazard team uniform
+*/

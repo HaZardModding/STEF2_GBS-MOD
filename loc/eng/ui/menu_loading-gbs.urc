@@ -1,0 +1,49 @@
+menu "loading-gbs" 640 480 NONE 0
+bgcolor 1 1 1 1
+borderstyle NONE
+fullscreen 1
+nomouse
+depth 1.0
+
+resource
+Widget
+{
+name "background"
+rect 0 0 640 480
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+ordernumber 1
+shader sysimg/2d/stars.tga
+}
+
+
+resource
+Widget
+{
+ordernumber 2
+name "banner"
+rect 205 220 230 40
+fgcolor                0.925        0.596        0.173        1.000
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+shader menu/load/gbs_ban
+horizontaljustify center
+verticaljustify center
+}
+
+resource
+Widget
+{
+ordernumber 3
+name "progress"
+rect 205 280 230 10
+fgcolor                0.925        0.596        0.173        1.000
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+shader menu/load/gbs_progress
+horizontaljustify center
+verticaljustify center
+}
+
+end.

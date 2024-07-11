@@ -1,0 +1,54 @@
+8
+
+dir
+901
+http://repos.gate-birds-sky.org/svn/gbs/trunk/models/char/hazardteam/base-female
+http://repos.gate-birds-sky.org/svn/gbs
+
+
+
+2007-04-08T22:06:19.411373Z
+881
+lars
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+807acfe7-33d4-0310-8c81-9ccd6f8f13d5
+
+female-body-blue.dds
+file
+
+
+
+
+2007-06-20T20:31:05.609375Z
+bbe4086d84a7ad7f54d60ea06daae0f2
+2007-04-08T22:06:19.411373Z
+881
+lars
+has-props
+
+female-gear-blue.dds
+file
+
+
+
+
+2007-06-20T20:31:05.625000Z
+d226f4c3163dfaaed12ecc5cafd37528
+2007-04-08T22:06:19.411373Z
+881
+lars
+has-props
+

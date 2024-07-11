@@ -1,0 +1,62 @@
+TIKI
+$include models/char/starfleet_base-male.tik
+
+setup
+{
+	scale 1
+	fade_dist_mod 1
+	lod 200 1.0 2500 .2 6144
+	radius 25
+		
+	surface material2 shader NPCMale-body.tga
+	surface material4 shader hand04.tga
+	surface material10 shader lieutenant_commander
+	surface material35 shader NPCMale-body.tga
+	surface material36 shader NPCMale-body.tga
+	surface material37 shader NPCMale-body.tga
+	surface material38 shader NPCMale-body.tga
+	surface material39 shader NPCMale-body.tga
+	
+	texturepath models/char/starfleet/crew-male2/
+		surface material1 shader head.tga
+		
+	texturepath models/char/face
+		surface material3 shader face-black.tga
+
+	replacesurface material1 material1 models/char/starfleet/crew-male2/starfleet-crew-male2.skb models/char/starfleet/crew-male2/starfleet-crew-male2.skm
+	replacesurface material3 material3 models/char/starfleet/crew-male2/starfleet-crew-male2.skb models/char/starfleet/crew-male2/starfleet-crew-male2.skm
+}
+
+//Weapons anims
+$include models/sharedanim/humanoid-comprifle-m.tik
+$include models/sharedanim/humanoid-comprifle-enhanced-m.tik
+$include models/sharedanim/humanoid-weapontwitch-m.tik
+
+//Shared AI Data
+//$include models/aidata/starfleet/starfleet_aidata.tik
+//$include models/sharedanim/humanoid-comprifle-m.tik
+$include models/aidata/teammate/teammate-m6-redshirt-comprifle.tik
+
+init
+{
+	server
+	{
+		classname Actor
+		archetype "StarfleetMale2"
+		surface material35 +nodraw
+		surface material36 +nodraw
+		surface material37 +nodraw
+		surface material38 +nodraw
+		surface material39 +nodraw		
+	    processgameplaydata
+	}
+	client
+	{
+	}
+}
+
+/*QUAKED char_starfleet_crew_crew-male2-dorchev (0.5 0.25 0.25) (0 0 0) (0 0 0)
+Starfleet_crew-male2
+*/
+
+

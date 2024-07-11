@@ -1,0 +1,68 @@
+// Caching Common Weapons -- The world model version of the weapon caches
+// the viewmodel version internally.
+
+// GENERALL
+cache models/char/playerdata.tik
+cache models/weapons/weapondata.tik
+cache models/char/player_base-male.tik
+cache models/char/player_base-female.tik
+
+// WEAPONS CACHE ALL WEAPON MODELS OR THE SERVER WILL MESS UP THE PLAYER HIS VIEW
+cache models/weapons/worldmodel-IMod.tik
+cache models/weapons/worldmodel-phaser.tik
+cache models/weapons/worldmodel-photon.tik
+cache models/weapons/worldmodel-batleth.tik
+cache models/weapons/worldmodel-tetryon.tik
+cache models/weapons/worldmodel-tricorder.tik
+cache models/weapons/worldmodel-phaser-STX.tik
+cache models/weapons/worldmodel-burstrifle.tik
+cache models/weapons/worldmodel-enterprise.tik
+cache models/weapons/worldmodel-sniperrifle.tik
+cache models/weapons/worldmodel-drull-staff.tik
+cache models/weapons/worldmodel-rom-datapad.tik
+cache models/weapons/worldmodel-attrex-rifle.tik
+cache models/weapons/worldmodel-tricorder-STX.tik
+cache models/weapons/worldmodel-rom-disruptor.tik
+cache models/weapons/worldmodel-grenadelauncher.tik
+cache models/weapons/worldmodel-compressionrifle.tik
+cache models/weapons/worldmodel-fieldassaultrifle.tik
+
+// ITEMS
+cache models/item/ammo_small.tik
+cache models/item/ammo_large.tik
+cache models/item/ammo_fed_small.tik
+cache models/item/ammo_fed_large.tik
+cache models/item/holdable_medkit.tik
+cache models/item/ammo_idryll_large.tik
+cache models/item/ammo_idryll_small.tik
+cache models/item/armor_small_shield.tik
+cache models/item/armor_large_shield.tik
+cache models/item/armor_medium_shield.tik
+cache models/item/health_small-hypospray.tik
+cache models/item/health_large-hypospray.tik
+
+// Caching characters
+cache models/char/illia.tik
+cache global/illia_legs.st
+cache global/illia_torso.st
+cache models/char/hazardteam_jurot.tik
+
+// Global sounds
+cache sound/weapons/noammo.wav
+cache sound/misc/menu/change.wav
+cache sound/misc/menu/select.wav
+cache sound/misc/menu/reject.wav
+cache sound/doors/door_locked.wav
+cache sound/player/player_invdrop.wav
+cache sound/player/player_heartbeat.wav
+cache sound/ships/enterprise/ent_beep_confirm.wav
+cache sound/environment/earthquake/earthquake01.wav
+cache sound/ships/enterprise/ent_enter_warp.wav
+cache sound/ships/enterprise/ent_beep_confirm.wav
+cache sound/ships/romulan/rom_beep_yes.wav
+cache sound/environment/computer/lcars_no.wav
+cache sound/environment/computer/lcars_yes.wav
+cache sound/environment/computer/lcars_error.wav
+cache sound/environment/computer/access_denied.wav
+cache sound/doors/door_locked.wav
+

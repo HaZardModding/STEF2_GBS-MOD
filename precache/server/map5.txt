@@ -1,0 +1,25 @@
+cache sound/ships/enterprise/ent_exterior_01.wav
+cache sound/doors/enterprise_door1.wav
+cache sound/ships/borg/borg_forcefield_on.wav
+cache sound/ships/enterprise/ent_forcefield.wav
+cache sound/doors/airlock_open01.wav
+cache sound/doors/airlock_close01.wav
+cache sound/vehicles/shuttlecraft/shuttle_takeoff.wav
+cache sound/impact/explosion/explo_shuttleint.wav
+cache sound/ships/enterprise/ent_enter_warp.wav
+cache sound/explo_large_01.wav
+
+cache models/vehicle/e-shuttle-ext.tik
+cache models/vehicle/e-shuttle-door.tik
+cache models/actorweapons/fed-compressionrifle.tik
+cache models/fx/fx-warpflash-federation.tik
+
+cache localization/sound/dialog/map05/illia/damn.mp3
+cache localization/sound/dialog/map05/illia/ihadto.mp3
+cache localization/sound/dialog/map05/illia/maincontrol.mp3
+cache localization/sound/dialog/map05/illia/goodbye.mp3
+cache localization/sound/dialog/map05/lee/donotmove.mp3
+cache localization/sound/dialog/map05/lee/gameover.mp3
+cache localization/sound/dialog/map05/moya/bridge.mp3
+cache localization/sound/dialog/map05/moya/warpcore.mp3
+cache localization/sound/dialog/map05/moya/deadinspace.mp3

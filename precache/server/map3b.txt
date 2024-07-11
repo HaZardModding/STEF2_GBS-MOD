@@ -1,0 +1,10 @@
+cache sound/environment/metal/panel_close1.wav
+cache sound/doors/drull_smldoor_01.wav
+cache sound/doors/drull_smldoor_stop_01.wav
+cache sound/ships/borg/borg_forcefield_on.wav
+cache sound/ships/enterprise/ent_forcefield.wav
+cache sound/ships/forever/for_gravpanel.wav
+cache sound/ships/forever/for_gravpanelstop.wav
+cache sound/misc/player/communicatorbeep.wav
+
+cache models/actorweapons/fed-compressionrifle.tik

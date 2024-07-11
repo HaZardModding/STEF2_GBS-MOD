@@ -1,0 +1,432 @@
+// Timers for GBS
+
+TimeUntilAssimilation        "Time until Collision"
+
+// Original Starfleet Academy Content - edited for GBS
+
+//Starfleet Male
+StarfleetMaleDesc1                              "Harry Bowman"
+StarfleetMaleDesc2                              "Name: Harry Bowman\nHeight: 176.72 cm\nWeight: 73.53 kg"
+StarfleetMaleDesc3                              "Description: Male Lifeform;\nStarfleet Ship Test Co-ordinator\nand Porter's assistant."
+StarfleetMaleRadar                              "Harry Bowman"
+
+//Starfleet Characters
+StarfleetCadetMaleDesc1                         "Jared Hefty"
+StarfleetCadetMaleDesc2                         "Name: Jared Hefty\nHeight: 166.74 cm\nWeight: 78.24 kg"
+StarfleetCadetMaleDesc3                         "Description: Starfleet Cadet"
+StarfleetCadetMaleRadar                         "Jared Hefty"
+
+StarfleetCadetMale2Desc1                        "Josh Martel"
+StarfleetCadetMale2Desc2                        "Name: Josh Martel\nHeight: 176.72 cm\nWeight: 76.51 kg"
+StarfleetCadetMale2Desc3                        "Description: Starfleet Cadet"
+StarfleetCadetMale2Radar                        "Josh Martel"
+
+StarfleetCadetMale3Desc1                        "Shawn Ketcherside"
+StarfleetCadetMale3Desc2                        "Name: Shawn Ketcherside\nHeight: 174.40 cm\nWeight: 77.52 kg"
+StarfleetCadetMale3Desc3                        "Description: Starfleet Cadet"
+StarfleetCadetMale3Radar                        "Shawn Ketcherside"
+
+StarfleetCadetFemaleDesc1                       "Jen Templin"
+StarfleetCadetFemaleDesc2                       "Name: Jen Templin\nHeight: 170.68 cm\nWeight: 59.00 kg"
+StarfleetCadetFemaleDesc3                       "Description: Starfleet Cadet"
+StarfleetCadetFemaleRadar                       "Jen Templin"
+
+StarfleetCadetFemale2Desc1                      "Amy Law"
+StarfleetCadetFemale2Desc2                      "Name: Amy Law\nHeight: 159.77 cm\nWeight: 51.21 kg"
+StarfleetCadetFemale2Desc3                      "Description: Starfleet Cadet"
+StarfleetCadetFemale2Radar                      "Amy Law"
+
+StarfleetCadetFemale3Desc1                      "Merry Pendleton"
+StarfleetCadetFemale3Desc2                      "Name: Merry Pendleton\nHeight: 169.71 cm\nWeight: 55.51 kg"
+StarfleetCadetFemale3Desc3                      "Description: Starfleet Cadet"
+StarfleetCadetFemale3Radar                      "Merry Pendleton"
+
+StarfleetCadetFemale4Desc1                      "Jackie Kendall"
+StarfleetCadetFemale4Desc2                      "Name: Jackie Kendrick\nHeight: 169.71 cm\nWeight: 53.24 kg"
+StarfleetCadetFemale4Desc3                      "Description: Starfleet Cadet"
+StarfleetCadetFemale4Radar                      "Jackie Kendall"
+
+StarfleetCadetFemale5Desc1                      "Lori Ponfurti"
+StarfleetCadetFemale5Desc2                      "Name: Lori Ponfurti\nHeight: 169.71 cm\nWeight: 50.52 kg"
+StarfleetCadetFemale5Desc3                      "Description: Starfleet Cadet"
+StarfleetCadetFemale5Radar                      "Lori Ponfurti"
+
+StarfleetCadetMaleBDesc1                        "Patrick Jones"
+StarfleetCadetMaleBDesc2                        "Name: Patrick Jones\nHeight: 175.90 cm\nWeight: 78.99 kg"
+StarfleetCadetMaleBDesc3                        "Description: Starfleet Cadet"
+StarfleetCadetMaleBRadar                        "Patrick Jones"
+
+StarfleetCadetMaleCDesc1                        "Tom Mustaine"
+StarfleetCadetMaleCDesc2                        "Name: Tom Mustaine\nHeight: 176.45 cm\nWeight: 78.65 kg"
+StarfleetCadetMaleCDesc3                        "Description: Starfleet Cadet"
+StarfleetCadetMaleCRadar                        "Tom Mustaine"
+
+StarfleetCadetMale2BDesc1                       "Rob Atkins"
+StarfleetCadetMale2BDesc2                       "Name: Rob Atkins\nHeight: 178.90 cm\nWeight: 80.45 kg"
+StarfleetCadetMale2BDesc3                       "Description: Starfleet Cadet"
+StarfleetCadetMale2BRadar                       "Rob Atkins"
+
+StarfleetCadetMale4Desc1                        "Josh Galloway"
+StarfleetCadetMale4Desc2                        "Name: Josh Galloway\nHeight: 176.54 cm\nWeight: 81.22 kg"
+StarfleetCadetMale4Desc3                        "Description: Starfleet Cadet"
+StarfleetCadetMale4Radar                        "Josh Galloway"
+
+StarfleetCadetMale5Desc1                        "Justin McGuire"
+StarfleetCadetMale5Desc2                        "Name: Justin McGuire\nHeight: 176.52 cm\nWeight: 79.09 kg"
+StarfleetCadetMale5Desc3                        "Description: Starfleet Cadet"
+StarfleetCadetMale5Radar                        "Justin McGuire"
+
+StarfleetCadetMale3BDesc1                       "Gary Buchanan"
+StarfleetCadetMale3BDesc2                       "Name: Gary Buchanan\nHeight: 173.22 cm\nWeight: 77.77 kg"
+StarfleetCadetMale3BDesc3                       "Description: Starfleet Cadet"
+StarfleetCadetMale3BRadar                       "Gary Buchanan"
+
+StarfleetCadetFemale2BDesc1                     "Jamie Lynn"
+StarfleetCadetFemale2BDesc2                     "Name: Jamie Lynn\nHeight: 165.09 cm\nWeight: 55.67 kg"
+StarfleetCadetFemale2BDesc3                     "Description: Starfleet Cadet"
+StarfleetCadetFemale2BRadar                     "Jamie Lynn"
+
+StarfleetCadetFemale2CDesc1                     "Kristen Teresa"
+StarfleetCadetFemale2CDesc2                     "Name: Kristen Teresa\nHeight: 164.98 cm\nWeight: 54.22 kg"
+StarfleetCadetFemale2CDesc3                     "Description: Starfleet Cadet"
+StarfleetCadetFemale2CRadar                     "Kristen Teresa"
+
+StarfleetCadetFemale3BDesc1                     "Marthe Galloway"
+StarfleetCadetFemale3BDesc2                     "Name: Marthe Galloway\nHeight: 159.08 cm\nWeight: 56.00 kg"
+StarfleetCadetFemale3BDesc3                     "Description: Starfleet Cadet"
+StarfleetCadetFemale3BRadar                     "Marthe Galloway"
+
+StarfleetCadetFemaleBDesc1                      "Michaela Winterton"
+StarfleetCadetFemaleBDesc2                      "Name: Michaela Winterton\nHeight: 159.87 cm\nWeight: 56.99 kg"
+StarfleetCadetFemaleBDesc3                      "Description: Starfleet Cadet"
+StarfleetCadetFemaleBRadar                      "Michaela Winterton"
+
+StarfleetOfficialFemaleDesc1                    "Jennifer Hue"
+StarfleetOfficialFemaleDesc2                    "Name: Jennifer Hue\nHeight: 176.74 cm\nWeight: 48.52 kg"
+StarfleetOfficialFemaleDesc3                    "Description: Starfleet Ship Designs"
+StarfleetOfficialFemaleRadar                    "Jennifer Hue"
+
+StarfleetOfficialFemale2Desc1                   "Katie Verdoga"
+StarfleetOfficialFemale2Desc2                   "Name: Katie Verdoga\nHeight: 171.40 cm\nWeight: 49.51 kg"
+StarfleetOfficialFemale2Desc3                   "Description: Starfleet Historian"
+StarfleetOfficialFemale2Radar                   "Katie Verdoga"
+
+StarfleetOfficialFemale3Desc1                   "Jacquelyn Freidrick"
+StarfleetOfficialFemale3Desc2                   "Name: Jacquelyn Freidrick\nHeight: 176.74 cm\nWeight: 47.52 kg"
+StarfleetOfficialFemale3Desc3                   "Description: Uniform Regulations Official"
+StarfleetOfficialFemale3Radar                   "Jacquelyn Freidrick"
+
+StarfleetOfficialMaleDesc1                      "Steven Peeler"
+StarfleetOfficialMaleDesc2                      "Name: Steven Peeler\nHeight: 176.74 cm\nWeight: 79.52 kg"
+StarfleetOfficialMaleDesc3                      "Description: Academy Architect"
+StarfleetOfficialMaleRadar                      "Steven Peeler"
+
+StarfleetOfficialMale2Desc1                     "Ben Dover"
+StarfleetOfficialMale2Desc2                     "Name: Ben Dover\nHeight: 130.23 cm\nWeight: 47.52 kg"
+StarfleetOfficialMale2Desc3                     "Description: Academy Security Master"
+StarfleetOfficialMale2Radar                     "Ben Dover"
+
+// Original Romulan Installation Content - edited for GBS
+
+//Romulan Consoles (map9 30.12.2006 by chrissstrahl)
+RomulanGenericUsableConsoleDesc1					"Romulan Console"
+RomulanGenericUsableConsoleDesc2					"Name: Console"
+RomulanGenericUsableConsoleDesc3					"Description: This Console can be used..."
+RomulanSecurityUsableConsoleDesc1					"Romulan Security Console"
+RomulanSecurityUsableConsoleDesc2					"Name: Security Console"
+RomulanSecurityUsableConsoleDesc3					"Description: This Console can be used..."
+
+
+//Romulan Soldiers
+RomulanSoldierM10RifleDesc1                         "Romulan Soldier"
+RomulanSoldierM10RifleDesc2                         "Name: Romulan Soldier\nHeight: 180.5 cm\nWeight: 134.2 kg"
+RomulanSoldierM10RifleDesc3                         "Description: Romulans are from the\nplanet Romulus in the Beta Quadrant.\nFirst contact with them occurred early\nin the 22nd century, since then\nthey have been a thorn in the Federation's side."
+RomulanSoldierRadar                                 "Romulan Soldier"
+
+RomulanSoldierM10PistolDesc1                        "Romulan Soldier"
+RomulanSoldierM10PistolDesc2                        "Name: Romulan Soldier\nHeight: 180.5 cm\nWeight: 104.2 kg"
+RomulanSoldierM10PistolDesc3                        "Description: Romulans are from the\nplanet Romulus in the Beta Quadrant.\nFirst contact with them occurred early\nin the 22nd century, since then\nthey have been a thorn in the Federation's side."
+RomulanSoldierRadar                                 "Romulan Soldier"
+
+RomulanSnowGuardM10RifleDesc1                       "Romulan Soldier"
+RomulanSnowGuardM10RifleDesc2                       "Name: Romulan Soldier\nHeight: 180.5 cm\nWeight: 104.2 kg"
+RomulanSnowGuardM10RifleDesc3                       "Description: Romulans are from the\nplanet Romulus in the Beta Quadrant.\nFirst contact with them occurred early\nin the 22nd century, since then\nthey have been a thorn in the Federation's side."
+RomulanSoldierRadar                                 "Romulan Soldier"
+
+RomulanInstGuardM10PistolDesc1                      "Romulan Soldier"
+RomulanInstGuardM10PistolDesc2                      "Name: Romulan Soldier\nHeight: 180.5 cm\nWeight: 104.2 kg"
+RomulanInstGuardM10PistolDesc3                      "Description: Romulans are from the\nplanet Romulus in the Beta Quadrant.\nFirst contact with them occurred early\nin the 22nd century, since then\nthey have been a thorn in the Federation's side."
+RomulanSoldierRadar                                 "Romulan Soldier"
+
+RomulanCommanderM10PistolDesc1                      "Romulan Commander"
+RomulanCommanderM10PistolDesc2                      "Name: Romulan Commander\nHeight: 183.43 cm\nWeight: 124.2 kg"
+RomulanCommanderM10PistolDesc3                      "Description: Romulans are from the\nplanet Romulus in the Beta Quadrant.\nFirst contact with them occurred early\nin the 22nd century, since then\nthey have been a thorn in the Federation's side."
+RomulanCommanderRadar                               "Romulan Commander"
+
+//Romulan Informant
+RomulanInformantDesc1                               "Informant"
+RomulanInformantDesc2                               "Name: Operative 93\nHeight: 165.40 cm\nWeight: 76.03 kg"
+RomulanInformantDesc3                               "Description: Tal'Shiar operative working as a spy for the Federation"
+RomulanInformantRadar                               "Informant"
+
+RomulanInformantBossDesc2                           "Name: Operative 93\nHeight: 165.40 cm\nWeight: 76.03 kg"
+RomulanInformantBossDesc3                           "Description: Tal'Shiar operative."
+
+
+
+//RomulanDoorPanel
+RomulanDoorPanelDesc1                               "Door Panel"
+RomulanDoorPanelDesc2                               "Height: 15.90 cm\nWeight: 10.00 kg"
+RomulanDoorPanelDesc3                               "Description: Use to open doors"
+RomulanDoorPanelRadar                               "Door Panel"
+
+//Romulan Energy Terminal
+RomulanEnergyTerminalDesc1                          "Energy Terminal"
+RomulanEnergyTerminalDesc2                          "Height: 150.36 cm\nWeight: 113.39 kg"
+RomulanEnergyTerminalDesc3                          "Description: Use to recharge\nweapon energy"
+
+//Romulan Health Terminal
+RomulanHealthTerminalDesc1                          "Health Terminal"
+RomulanHealthTerminalDesc2                          "Height: 150.36 cm\nWeight: 113.39 kg"
+RomulanHealthTerminalDesc3                          "Description: Use to heal"
+HealthTerminalRadar                                 "Health Terminal"
+
+
+// Original Enterprise Content - edited for GBS
+
+ //CREWMEMBERS
+
+//Starfleet Male
+StarfleetMaleDesc1                                      "Lt. Lee Woo-Jin"
+StarfleetMaleDesc2                                      "Name: Lt. Lee Woo-Jin\nHeight: 165.40 cm\nWeight: 90.23 kg"
+StarfleetMaleDesc3                                      "Description: Security Officer"
+StarfleetMaleRadar                                      "Lee"
+
+//Starfleet Male 2
+StarfleetMale2Desc1                                     "Rocky Mobieuto"
+StarfleetMale2Desc2                                     "Name: Rocky Mobieuto\nHeight: 180.4 cm\nWeight: 91.54 kg"
+StarfleetMale2Desc3                                     "Description: Transporter Technician"
+StarfleetMale2Radar                                     "Rocky"
+
+//Starfleet Male 3
+StarfleetMale3Desc1                                     "Kelav Stratton"
+StarfleetMale3Desc2                                     "Name: Kelav Stratton\nHeight: 180.4 cm\nWeight: 85.34 kg"
+StarfleetMale3Desc3                                     "Description: Security Officer"
+StarfleetMale3Radar                                     "Kelav"
+
+StarfleetMale4Desc1                                     "Pat Jones"
+StarfleetMale4Desc2                                     "Name: Pat Jones\nHeight: 180.4 cm\nWeight: 87.87 kg"
+StarfleetMale4Desc3                                     "Description: Pilot"
+StarfleetMale4Radar                                     "Pat"
+
+StarfleetMale5Desc1                                     "Derek Russel"
+StarfleetMale5Desc2                                     "Name: Derek Russel\nSize: 180,4 cm\nWeight: 85,87 kg"
+StarfleetMale5Desc3                                     "Description: Assistant Counselor"
+StarfleetMale5Radar                                     "Derek"
+
+StarfleetMale6Desc1                                     "Ensign Moya"
+StarfleetMale6Desc2                                     "Name: Ensign Moya\nHeight: 180.4 cm\nWeight: 85.87 kg"
+StarfleetMale6Desc3                                     "Description: Engineer"
+StarfleetMale6Radar                                     "Ensign Moya"
+
+
+//Starfleet Female
+StarfleetFemaleDesc1                                    "Miranda Manaan"
+StarfleetFemaleDesc2                                    "Name: Miranda Manaan\nHeight: 167.4 cm\nWeight: 53.65 kg"
+StarfleetFemaleDesc3                                    "Description: Counselor"
+StarfleetFemaleRadar                                    "Miranda"
+
+//Starfleet Female 2
+StarfleetFemale2Desc1                                   "Enri Miyamoto"
+StarfleetFemale2Desc2                                   "Name: Enri Miyamoto\nHeight: 168.5 cm\nWeight: 52.08 kg"
+StarfleetFemale2Desc3                                   "Description: Library Technician"
+StarfleetFemale2Radar                                   "Enri"
+
+//Starfleet Female 3
+StarfleetFemale3Desc1                                   "Dr. Stevenson"
+StarfleetFemale3Desc2                                   "Name: Dr. Stevenson\nHeight: 169.3 cm\nWeight: 51.45 kg"
+StarfleetFemale3Desc3                                   "Description: Ship Doctor"
+StarfleetFemale3Radar                                   "Doctor"
+
+//Starfleet Female 4
+StarfleetFemale4Desc1                                   "Kretar"
+StarfleetFemale4Desc2                                   "Name: Kretar\nHeight: 169.1 cm\nWeight: 49.20 kg"
+StarfleetFemale4Desc3                                   "Description: Nurse"
+StarfleetFemale4Radar                                   "Kretar"
+
+//Starfleet Female 5
+StarfleetFemale5Desc1                                   "Alison Pearson"
+StarfleetFemale5Desc2                                   "Name: Alison Pearson\nHeight: 170.1 cm\nWeight: 54.34 kg"
+StarfleetFemale5Desc3                                   "Description: Botanist"
+StarfleetFemale5Radar                                   "Alison"
+
+//Starfleet Female 6
+StarfleetFemale6Desc1                                   "N'Tol"
+StarfleetFemale6Desc2                                   "Name: N'Tol\nHeight: 170.2 cm\nWeight: 56.45 kg"
+StarfleetFemale6Desc3                                   "Description: Counselor"
+StarfleetFemale6Radar                                   "N'Tol"
+
+//Redshirt
+RedshirtDesc1                                           "Elizabeth Laird"
+RedshirtDesc2                                           "Name: Elizabeth Laird\nHeight: 170.4 cm\nWeight: 55.20 kg"
+RedshirtDesc3                                           "Description: Hazard Team member"
+RedshirtRadar                                           "Elizabeth Laird"
+
+Redshirt2Desc1                                          "Kenioth Tompsen"
+Redshirt2Desc2                                          "Name: Kenioth Thompson\nHeight: 180.4 cm\nWeight: 79.09 kg"
+Redshirt2Desc3                                          "Description: Hazard Team member"
+Redshirt2Radar                                          "Kenioth Thompson"
+
+Redshirt3Desc1                                          "Namkcots Sirhc"
+Redshirt3Desc2                                          "Name: Namkcots Sirhc\nHeight: 179.1 cm\nWeight: 77.80 kg"
+Redshirt3Desc3                                          "Description: Hazard Team member"
+Redshirt3Radar                                          "Namkcots Sirhc"Redshirt4Desc1                                          "Jonathan Struhlem"
+Redshirt4Desc2                                          "Name: Jonathan Struhlem\nHeight: 181.2 cm\nWeight: 80.10 kg"
+Redshirt4Desc3                                          "Description: Hazard Team member"
+Redshirt4Radar                                          "Jonathan Struhlem"
+
+Redshirt5Desc1                                          "Brian Bobowski"
+Redshirt5Desc2                                          "Name: Brian Bobowski\nHeight: 182.1 cm\nWeight: 82.18 kg"
+Redshirt5Desc3                                          "Description: Hazard Team member"
+Redshirt5Radar                                          "Brian Bobowski"
+
+Redshirt6Desc1                                          "Toni Devaldenebro"
+Redshirt6Desc2                                          "Name: Toni Devaldenebro\nHeight: 183.7 cm\nWeight: 54.10 kg"
+Redshirt6Desc3                                          "Description: Hazard Team member"
+Redshirt6Radar                                          "Toni Devaldenebro"
+
+//Health Terminal
+EnterpriseHealthTerminalDesc1				            "Health Terminal"
+EnterpriseHealthTerminalDesc2				            "Sizee: 120.36 cm\nWeight: 104.27 kg"
+EnterpriseHealthTerminalDesc3				            "Description: Use to heal"
+HealthTerminalRadar                                     	    "Health Terminal"
+
+//Energy Terminal
+EnterpriseEnergyTerminalDesc1				            "Energy Terminal"
+EnterpriseEnergyTerminalDesc2				            "Size: 150.36 cm\nWeight: 113.39 kg"
+EnterpriseEnergyTerminalDesc3				            "Description: Use to recharge\nweapon energy"
+EnergyTerminalRadar                                     	    "Energy Terminal"
+
+//Energy Terminal
+KlingonEnergyTerminalDesc1						"Energy Terminal"
+KlingonEnergyTerminalDesc2						"Size: 150.36 cm\nWeight: 113.39 kg"
+KlingonEnergyTerminalDesc3 						"Description: Use to recharge\nweapon energy"
+KlingonEnergyTerminalRadar						"Energy Terminal"
+
+//Health Terminal
+KlingonHealthTerminalDesc1						"Health Terminal"
+KlingonHealthTerminalDesc2						"Size: 150.36 cm\nWeight: 113.39 kg"
+KlingonHealthTerminalDesc3						"Description: Use to heal"
+KlingonHealthTerminalRadar						"Health Terminal"
+
+// Various strilngs for GBS
+
+enviro1                                                "Main Computer Access"
+enviro2                                                "Enviromental Controls"
+enviro3                                                "Engineering Vent Controls\nWARNING Vent Shaft\nCleaning In Progress\nDo Not Use"
+enviroR                                                "Main Computer Access"
+
+comp1                                                "Main Computer Access"
+comp2                                                "Propulsion Controls"
+comp3                                                "Main Computer\nPropulsion Controls\nWarp Drive Systems"
+compR                                                "Main Computer Access"
+
+td1                                                "Power Relays"
+td2                                                "Cargo Bay 4 EPS Access Panel"
+td3                                                "Jefferies Tube Access\nPower Re-routed for \nMaintenance on Enviromental Systems"
+tdR                                                "Power Relays"
+
+compa1                                                "Main Computer Access"
+compa2                                                "Diagnostic Cycle in Progress"
+compa3                                                "Main Computer\nGravity Controls"
+compaR                                                "Main Computer Access"
+
+compb1                                                "Main Computer Access"
+compb2                                                "Diagnostic Cycle in Progress"
+compb3                                                "Main Computer\nWeapon Controls"
+compbR                                                "Main Computer Access"
+
+tub1							"Emergency Jefferies Tube Access"
+tub2							"Control Matrix Activated"
+tub3							"Emergency Systems Online"
+tubR							"Emergency Access"
+
+exp1							"Console"
+exp2							"Security lockout active"
+exp3 							"Use to create access"
+expR							"Console"
+
+beam1							"Transporterconsole"
+beam2							"Security lockout active"
+beam3							"Use to activate energy for transporter aganin"
+beamR							"Transporterconsole"
+
+mdoor1						"Console"
+mdoor2						"opens maindoor of shuttlebay"
+mdoor3						"Security lockout active"
+mdoorR						"Console"
+
+sdoor1                                          "Remote Shuttle Door Controls"
+sdoor2                                          "Shuttle 124\nRemote Door Control"
+sdoor3                                          "Shuttle 124: Cerberus\nU.S.S. Atlantic N.C.C. 2004\nShuttle Craft 15"
+sdoorR                                          "Remote Access"
+
+sc1                                                                "Cerberus"
+sc2                                                                "U.S.S Atlantic - N.C.C. 2004"
+sc3                                                              "Shuttlecraft 15\nCerberus"
+scR                                                                "Cerberus"
+
+hint_lever1					"Forcefield switch"
+hint_lever2					"Forcefiled switch"
+hint_lever3					"Use to deactivate forcefield"
+hint_leverR					"Forcefield switch"
+
+gas_console1				"Konsole"
+gas_console2				"Konsole"
+gas_console3 				"turns of the gas"
+gas_consoleR				"Konsole"
+
+//Enginering Staff Descriptions
+bailsDesc1							"Sam Bailey"
+bailsDesc2							"Name: Sam Bailey\nHeight: Unknown\nWeight: Heavy"
+bailsDesc3							"Rank: Lt. Commander\nDescription: Human Male Lifeform (Just)\nPrevious Occupation: Perry Farmer Giles"
+bailsRadar							"Sam Bailey"
+
+JonesDesc1							"Sam Jones"
+JonesDesc2							"Name: Samuael Jones\nHeight: Small\nWeight: Light"
+JonesDesc3							"Rank: Ensign\nDescription: Human Male Lifeform\nPrevious Occupation: Grand Master DJ\nNote: Loves Obscure 20th Century\nRap Group Known as ICP"
+JonesRadar							"Sam Jones"
+
+ShaunDesc1							"Shaun Mantle"
+ShaunDesc2							"Name: Shaun Mantle\nHeight: Tall\nWeight: Middle Weight"
+ShaunDesc3							"Rank: Crewman\nDescription: Human Male Lifeform\nPrevious Occupation: General Weirdo\nNote: Wants to become a chemist.....\n.....so he can blow stuff up"
+ShaunRadar							"Shaun Mantle"
+
+JenksDesc1							"Chris Jenkins"
+JenksDesc2							"Name: Chris Jenkins\nHeight: Tall\nWeight: Middle To Light Weight"
+JenksDesc3							"Rank: Lt.\nDescription: Human Male Lifeform\nPrevious Occupation: Waster \nNote: Wants to do something......\n.....but can't remember what"
+JenksRadar							"Chris Jenkins"
+
+CatrinDesc1							"Catrin Cox"
+CatrinDesc2							"Name: Catrin Cox\nHeight: Unknown\nWeight: Middle Weight"
+CatrinDesc3							"Rank: Commander\nDescription: Human Female Lifeform\nPrevious Occupation: Posh Bird\nNote: Very Posh and clever but sadly\n was born without any common sense"
+CatrinRadar							"Catrin Cox"
+
+//Stammheim
+StammheimDesc1                                  "Alexander Stammheim"
+StammheimDesc2						"Name: Alexander Stammheim\nHeight: 182.88 cm\nWeight: 79.37 kg"
+StammheimDesc3						"Rank: Sigma Cell Operative\nDescription: Human Male Lifeform"
+StammheimRadar						"Stammheim"
+
+// Mission Objective Strings for GBS
+
+getToBar						 "Go to the bar."
+findBrandy						 "Find Saurian Brandy for the captain."
+getToEngineering					 "Go to Engineering." 	
+SABOTAGEEngines                                          "Get to main computer control and plant a virus."
+getToCargoBay						 "Reach a shuttle craft."
+goToBridge                                               "Go to the bridge of the warbird"
+WARBIRD1BeamOut                                          "Reroute power to the transporter and beam off the ship."
+findEntrance						 "Find an entrance to the remains of the outpost."
+GBS10FindStammheim					 "Find Alexander Stammheim. He will be in a holding cell."
+GBS10Escape						 "Get to Stammheim's shuttle and escape with Stammheim."

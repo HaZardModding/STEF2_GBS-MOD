@@ -1,0 +1,428 @@
+// Timers for GBS
+TimeUntilAssimilation        "Zeit bis Kollision"
+
+// Original Starfleet Academy Content - edited for GBS
+//Starfleet Male
+StarfleetMaleDesc1                                      "Harry Bowman"
+StarfleetMaleDesc2                                      "Name: Harry Bowman\nGröße: 176,72 cm\nGewicht: 76,51 kg"
+StarfleetMaleDesc3                                      "Beschreibung: Sternenflotten-\nSchiffstestkoordinator\nund Porters Assistent"
+StarfleetMaleRadar                                      "Harry"
+
+//Starfleet Characters
+StarfleetCadetMaleDesc1                         "Jared Hefty"
+StarfleetCadetMaleDesc2                         "Name: Jared Hefty\nGröße: 166,74 cm\nGewicht: 75,24 kg"
+StarfleetCadetMaleDesc3                         "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMaleRadar                         "Jared Hefty"
+
+StarfleetCadetMale2Desc1                        "Josh Martel"
+StarfleetCadetMale2Desc2                        "Name: Josh Martel\nGröße: 176,72 cm\nGewicht: 76,51 kg"
+StarfleetCadetMale2Desc3                        "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMale2Radar                        "Josh Martel"
+
+StarfleetCadetMale3Desc1                        "Shawn Ketcherside"
+StarfleetCadetMale3Desc2                        "Name: Shawn Ketcherside\nGröße: 174,40 cm\nGewicht: 77,52 kg"
+StarfleetCadetMale3Desc3                        "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMale3Radar                        "Shawn Ketcherside"
+
+StarfleetCadetFemaleDesc1                       "Jen Templin"
+StarfleetCadetFemaleDesc2                       "Name: Jen Templin\nGröße: 170,68 cm\nGewicht: 59,00 kg"
+StarfleetCadetFemaleDesc3                       "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemaleRadar                       "Jen Templin"
+
+StarfleetCadetFemale2Desc1                      "Amy Law"
+StarfleetCadetFemale2Desc2                      "Name: Amy Law\nGröße: 159,77 cm\nGewicht: 51,21 kg"
+StarfleetCadetFemale2Desc3                      "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemale2Radar                      "Amy Law"
+
+StarfleetCadetFemale3Desc1                      "Merry Pendleton"
+StarfleetCadetFemale3Desc2                      "Name: Merry Pendleton\nGröße: 169,71 cm\nGewicht: 50,52 kg"
+StarfleetCadetFemale3Desc3                      "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemale3Radar                      "Merry Pendleton"
+
+StarfleetCadetFemale4Desc1                      "Jackie Kendrick"
+StarfleetCadetFemale4Desc2                      "Name: Jackie Kendrick\nGröße: 169,71 cm\nGewicht: 50,52 kg"
+StarfleetCadetFemale4Desc3                      "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemale4Radar                      "Jackie Kendrick"
+
+StarfleetCadetFemale5Desc1                      "Lori Ponfurti"
+StarfleetCadetFemale5Desc2                      "Name: Lori Ponfurti\nGröße: 169,71 cm\nGewicht: 50,52 kg"
+StarfleetCadetFemale5Desc3                      "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemale5Radar                      "Lori Ponfurti"
+
+StarfleetCadetMaleBDesc1                        "Patrick Jones"
+StarfleetCadetMaleBDesc2                        "Name: Patrick Jones\nGröße: 175,90 cm\nGewicht: 78,99 kg"
+StarfleetCadetMaleBDesc3                        "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMaleBRadar                        "Patrick Jones"
+
+StarfleetCadetMaleCDesc1                        "Tom Mustaine"
+StarfleetCadetMaleCDesc2                        "Name: Tom Mustaine\nGröße: 176,45 cm\nGewicht: 78,65 kg"
+StarfleetCadetMaleCDesc3                        "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMaleCRadar                        "Tom Mustaine"
+
+StarfleetCadetMale2BDesc1                       "Rob Atkins"
+StarfleetCadetMale2BDesc2                       "Name: Rob Atkins\nGröße: 178,90 cm\nGewicht: 80,45 kg"
+StarfleetCadetMale2BDesc3                       "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMale2BRadar                       "Rob Atkins"
+
+StarfleetCadetMale4Desc1                        "Josh Galloway"
+StarfleetCadetMale4Desc2                        "Name: Josh Galloway\nGröße: 176,54 cm\nGewicht: 81,22 kg"
+StarfleetCadetMale4Desc3                        "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMale4Radar                        "Josh Galloway"
+
+StarfleetCadetMale5Desc1                        "Justin McGuire"
+StarfleetCadetMale5Desc2                        "Name: Justin McGuire\nGröße: 176,52 cm\nGewicht: 79,09 kg"
+StarfleetCadetMale5Desc3                        "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMale5Radar                        "Justin McGuire"
+
+StarfleetCadetMale3BDesc1                       "Gary Buchanan"
+StarfleetCadetMale3BDesc2                       "Name: Gary Buchanan\nGröße: 173,22 cm\nGewicht: 77,77 kg"
+StarfleetCadetMale3BDesc3                       "Beschreibung: Sternenflottenkadett"
+StarfleetCadetMale3BRadar                       "Gary Buchanan"
+
+StarfleetCadetFemale2BDesc1                     "Jamie Lynn"
+StarfleetCadetFemale2BDesc2                     "Name: Jamie Lynn\nGröße: 165,09 cm\nGewicht: 55,67 kg"
+StarfleetCadetFemale2BDesc3                     "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemale2BRadar                     "Jamie Lynn"
+
+StarfleetCadetFemale2CDesc1                     "Kristen Teresa"
+StarfleetCadetFemale2CDesc2                     "Name: Kristen Teresa\nGröße: 164,98 cm\nGewicht: 54,22 kg"
+StarfleetCadetFemale2CDesc3                     "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemale2CRadar                     "Kristen Teresa"
+
+StarfleetCadetFemale3BDesc1                     "Marthe Galloway"
+StarfleetCadetFemale3BDesc2                     "Name: Marthe Galloway\nGröße: 159,08 cm\nGewicht: 56,00 kg"
+StarfleetCadetFemale3BDesc3                     "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemale3BRadar                     "Marthe Galloway"
+
+StarfleetCadetFemaleBDesc1                      "Michaela Winterton"
+StarfleetCadetFemaleBDesc2                      "Name: Michaela Winterton\nGröße: 159,87 cm\nGewicht: 56,99 kg"
+StarfleetCadetFemaleBDesc3                      "Beschreibung: Sternenflottenkadett"
+StarfleetCadetFemaleBRadar                      "Michaela Winterton"
+
+StarfleetOfficialFemaleDesc1                    "Jennifer Hue"
+StarfleetOfficialFemaleDesc2                    "Name: Jennifer Hue\nGröße: 176,74 cm\nGewicht: 48,52 kg"
+StarfleetOfficialFemaleDesc3                    "Beschreibung: Sternenflotten-Schiffdesignerin"
+StarfleetOfficialFemaleRadar                    "Jennifer Hue"
+
+StarfleetOfficialFemale2Desc1                   "Katie Verdoga"
+StarfleetOfficialFemale2Desc2                   "Name: Katie Verdoga\nGröße: 171,40 cm\nGewicht: 49,51 kg"
+StarfleetOfficialFemale2Desc3                   "Beschreibung: Sternenflotten-Historikerin"
+StarfleetOfficialFemale2Radar                   "Katie Verdoga"
+
+StarfleetOfficialFemale3Desc1                   "Jacquelyn Freidrick"
+StarfleetOfficialFemale3Desc2                   "Name: Jacquelyn Freidrick\nGröße: 176,74 cm\nGewicht: 47,52 kg"
+StarfleetOfficialFemale3Desc3                   "Beschreibung: Uniformierungsoffizielle"
+StarfleetOfficialFemale3Radar                   "Jacquelyn Freidrick"
+
+StarfleetOfficialMaleDesc1                      "Steven Peeler"
+StarfleetOfficialMaleDesc2                      "Name: Steven Peeler\nGröße: 176,74 cm\nGewicht: 79,52 kg"
+StarfleetOfficialMaleDesc3                      "Beschreibung: Akademie-Architekt"
+StarfleetOfficialMaleRadar                      "Steven Peeler"
+
+StarfleetOfficialMale2Desc1                     "Kenny Thompson"
+StarfleetOfficialMale2Desc2                     "Name: Kenny Thompson\nGröße: 176,74 cm\nGewicht: 67,52 kg"
+StarfleetOfficialMale2Desc3                     "Beschreibung: Akademie-Sicherheitschef"
+StarfleetOfficialMale2Radar                     "Kenny Thompson"
+
+// Original Romulan Installation Content - edited for GBS
+//Romulan Consoles (map9 30.12.2006 by chrissstrahl)
+RomulanGenericUsableConsoleDesc1 "Romulanische Konsole"
+RomulanGenericUsableConsoleDesc2 "Name: Konsole"
+RomulanGenericUsableConsoleDesc3 "Beschreibung: Diese Konsole kann benutzt werden..."
+RomulanSecurityUsableConsoleDesc1 "Romulanische Sicherheitskonsole"
+RomulanSecurityUsableConsoleDesc2 "Name: Sicherheitskonsole"
+RomulanSecurityUsableConsoleDesc3 "Beschreibung: Diese Konsole kann benutzt werden..."
+
+//Romulan Soldiers
+RomulanSoldierM10RifleDesc1                         "Romulanischer Soldat"
+RomulanSoldierM10RifleDesc2                         "Name: Romulanischer Soldat\nGröße: 180,5 cm\nGewicht: 134,2 kg"
+RomulanSoldierM10RifleDesc3                         "Beschreibung: Die Romulaner stammen\nvom Planeten Romulus im\nBeta-Quadranten. Der\nErstkontakt mit ihnen ereignete\nsich im frühen 22. Jahrhundert,\nund seitdem sind sie der\nFöderation ein Dorn im Auge."
+RomulanSoldierRadar                                 "Romulan. Soldat"
+
+RomulanSoldierM10PistolDesc1                        "Romulanischer Soldat"
+RomulanSoldierM10PistolDesc2                        "Name: Romulanischer Soldat\nGröße: 180,5 cm\nGewicht: 104,2 kg"
+RomulanSoldierM10PistolDesc3                        "Beschreibung: Die Romulaner stammen\nvom Planeten Romulus im\nBeta-Quadranten. Der\nErstkontakt mit ihnen ereignete\nsich im frühen 22. Jahrhundert,\nund seitdem sind sie der\nFöderation ein Dorn im Auge."
+RomulanSoldierRadar                                 "Romulan. Soldat"
+
+RomulanSnowGuardM10RifleDesc1                       "Romulanischer Soldat"
+RomulanSnowGuardM10RifleDesc2                       "Name: Romulanischer Soldat\nGröße: 180,5 cm\nGewicht: 104,2 kg"
+RomulanSnowGuardM10RifleDesc3                       "Beschreibung: Die Romulaner stammen\nvom Planeten Romulus im\nBeta-Quadranten. Der\nErstkontakt mit ihnen ereignete\nsich im frühen 22. Jahrhundert,\nund seitdem sind sie der\nFöderation ein Dorn im Auge."
+RomulanSoldierRadar                                 "Romulan. Soldat"
+
+RomulanInstGuardM10PistolDesc1                      "Romulanischer Soldat"
+RomulanInstGuardM10PistolDesc2                      "Name: Romulanischer Soldat\nGröße: 180,5 cm\nGewicht: 104,2 kg"
+RomulanInstGuardM10PistolDesc3                      "Beschreibung: Die Romulaner stammen\nvom Planeten Romulus im\nBeta-Quadranten. Der\nErstkontakt mit ihnen ereignete\nsich im frühen 22. Jahrhundert,\nund seitdem sind sie der\nFöderation ein Dorn im Auge."
+RomulanSoldierRadar                                 "Romulan. Soldat"
+
+RomulanCommanderM10PistolDesc1                      "Romulanischer Commander"
+RomulanCommanderM10PistolDesc2                      "Name: Romulanischer Commander\nGröße: 180,5 cm\nGewicht: 104,2 kg"
+RomulanCommanderM10PistolDesc3                      "Beschreibung: Die Romulaner stammen\nvom Planeten Romulus im\nBeta-Quadranten. Der\nErstkontakt mit ihnen ereignete\nsich im frühen 22. Jahrhundert,\nund seitdem sind sie der\nFöderation ein Dorn im Auge."
+RomulanCommanderRadar                               "Romulan. Commander"
+
+//Romulan Informant
+RomulanInformantDesc1                               "Informantin"
+RomulanInformantDesc2                               "Name: Agentin 93\nGröße: 165,40 cm\nGewicht: 76,03 kg"
+RomulanInformantDesc3                               "Beschreibung: Tal'Shiar-Mitglied,\ndas als Spion für die\nFöderation arbeitet"
+RomulanInformantRadar                               "Informantin"
+
+RomulanInformantBossDesc2                           "Name: Agentin 93\nGröße: 165,40 cm\nGewicht: 76,03 kg"
+RomulanInformantBossDesc3                           "Beschreibung: Tal'Shiar-Mitglied"
+
+
+//RomulanDoorPanel
+RomulanDoorPanelDesc1                               "Türkonsole"
+RomulanDoorPanelDesc2                               "Größe: 15,90 cm\nGewicht: 10,00 kg"
+RomulanDoorPanelDesc3                               "Beschreibung: Zum Öffnen und\nSchließen von Türen"
+RomulanDoorPanelRadar                               "Türkonsole"
+
+//Romulan Energy Terminal
+RomulanEnergyTerminalDesc1                          "Waffen-Terminal"
+RomulanEnergyTerminalDesc2                          "Größe: 150,36 cm\nGewicht: 113,39 kg"
+RomulanEnergyTerminalDesc3                          "Beschreibung: Zur Wiedergewinnung\nvon Waffenenergie"
+
+//Romulan Health Terminal
+RomulanHealthTerminalDesc1                          "Lebensenergie-Terminal"
+RomulanHealthTerminalDesc2                          "Größe: 150,36 cm\nGewicht: 113,39 kg"
+RomulanHealthTerminalDesc3                          "Beschreibung: Zur Heilung\nvon Verletzungen"
+HealthTerminalRadar                                 "Lebensenergie-Terminal"
+
+// Original Enterprise Content - edited for GBS
+
+ //CREWMEMBERS
+
+//Starfleet Male
+StarfleetMaleDesc1                                      "Lt. Lee Woo-Jin"
+StarfleetMaleDesc2                                      "Name: Lt. Lee Woo-Jin\nGröße: 165,40 cm\nGewicht: 90,23 kg"
+StarfleetMaleDesc3                                      "Beschreibung: Sicherheitsoffizier"
+StarfleetMaleRadar                                      "Lee"
+
+//Starfleet Male 2
+StarfleetMale2Desc1                                     "Rocky Mobieuto"
+StarfleetMale2Desc2                                     "Name: Rocky Mobieuto\nGröße: 180,4 cm\nGewicht: 91,54 kg"
+StarfleetMale2Desc3                                     "Beschreibung: Transportertechniker"
+StarfleetMale2Radar                                     "Rocky"
+
+//Starfleet Male 3
+StarfleetMale3Desc1                                     "Kelav Stratton"
+StarfleetMale3Desc2                                     "Name: Kelav Stratton\nGröße: 180,4 cm\nGewicht: 85,34 kg"
+StarfleetMale3Desc3                                     "Beschreibung: Sicherheitsoffizier"
+StarfleetMale3Radar                                     "Kelav"
+
+StarfleetMale4Desc1                                     "Pat Jones"
+StarfleetMale4Desc2                                     "Name: Pat Jones\nGröße: 180,4 cm\nGewicht: 87,87 kg"
+StarfleetMale4Desc3                                     "Beschreibung: Pilot"
+StarfleetMale4Radar                                     "Pat"
+
+StarfleetMale5Desc1                                     "Derek Russel"
+StarfleetMale5Desc2                                     "Name: Derek Russel\nGröße: 180,4 cm\nGewicht: 85,87 kg"
+StarfleetMale5Desc3                                     "Beschreibung: Stellvertretender Counselor"
+StarfleetMale5Radar                                     "Derek"
+
+StarfleetMale6Desc1                                     "Ensign Moya"
+StarfleetMale6Desc2                                     "Name: Ensign Moya\nGröße: 180,4 cm\nGewicht: 83,87 kg"
+StarfleetMale6Desc3                                     "Beschreibung: Chefingenieur"
+StarfleetMale6Radar                                     "Ensign Moya"
+
+//Starfleet Female
+StarfleetFemaleDesc1                                    "Miranda Manaan"
+StarfleetFemaleDesc2                                    "Name: Miranda Manaan\nGröße: 167,4 cm\nGewicht: 53,65 kg"
+StarfleetFemaleDesc3                                    "Beschreibung: Counselor"
+StarfleetFemaleRadar                                    "Miranda"
+
+//Starfleet Female 2
+StarfleetFemale2Desc1                                   "Enri Miyamoto"
+StarfleetFemale2Desc2                                   "Name: Enri Miyamoto\nGröße: 168,5 cm\nGewicht: 52,08 kg"
+StarfleetFemale2Desc3                                   "Beschreibung: Bibliothekstechnikerin"
+StarfleetFemale2Radar                                   "Enri"
+
+//Starfleet Female 3
+StarfleetFemale3Desc1                                   "Dr. Stevenson"
+StarfleetFemale3Desc2                                   "Name: Dr. Stevenson\nGröße: 169,3 cm\nGewicht: 51,45 kg"
+StarfleetFemale3Desc3                                   "Beschreibung: Schiffsarzt"
+StarfleetFemale3Radar                                   "Doctor"
+
+//Starfleet Female 4
+StarfleetFemale4Desc1                                   "Kretar"
+StarfleetFemale4Desc2                                   "Name: Kretar\nGröße: 169,1 cm\nGewicht: 49,20 kg"
+StarfleetFemale4Desc3                                   "Beschreibung: Medizinerin"
+StarfleetFemale4Radar                                   "Kretar"
+
+//Starfleet Female 5
+StarfleetFemale5Desc1                                   "Alison Pearson"
+StarfleetFemale5Desc2                                   "Name: Alison Pearson\nGröße: 170,1 cm\nGewicht: 54,34 kg"
+StarfleetFemale5Desc3                                   "Beschreibung: Botanikerin"
+StarfleetFemale5Radar                                   "Alison"
+
+//Starfleet Female 6
+StarfleetFemale6Desc1                                   "N'Tol"
+StarfleetFemale6Desc2                                   "Name: N'Tol\nGröße: 170,2 cm\nGewicht: 56,45 kg"
+StarfleetFemale6Desc3                                   "Beschreibung: Counselor"
+StarfleetFemale6Radar                                   "N'Tol"
+
+//Redshirt
+RedshirtDesc1                                           "Elizabeth Laird"
+RedshirtDesc2                                           "Name: Elizabeth Laird\nGröße: 170,4 cm\nGewicht: 55,20 kg"
+RedshirtDesc3                                           "Beschreibung: Mitglied des\nHazard-Teams"
+RedshirtRadar                                           "Elizabeth Laird"
+
+Redshirt2Desc1                                          "Kenioth Thompson"
+Redshirt2Desc2                                          "Name: Kenioth Thompson\nGröße: 180,4 cm\nGewicht: 79,09 kg"
+Redshirt2Desc3                                          "Beschreibung: Mitglied des\nHazard-Teams"
+Redshirt2Radar                                          "Kenioth Thompson"
+
+Redshirt3Desc1                                          "Namkcots Sirhc"
+Redshirt3Desc2                                          "Name: Namkcots Sirhc\nGröße: 179,1 cm\nGewicht: 77,80 kg"
+Redshirt3Desc3                                          "Beschreibung: Mitglied des\nHazard-Teams"
+Redshirt3Radar                                          "Namkcots Sirhc"
+
+Redshirt4Desc1                                          "Jonathan Struhlem"
+Redshirt4Desc2                                          "Name: Jonathan Struhlem\nGröße: 181,2 cm\nGewicht: 80,10 kg"
+Redshirt4Desc3                                          "Beschreibung: Mitglied des\nHazard-Teams"
+Redshirt4Radar                                          "Jonathan Struhlem"
+
+Redshirt5Desc1                                          "Brian Bobowski"
+Redshirt5Desc2                                          "Name: Brian Bobowski\nGröße: 182,1 cm\nGewicht: 82,18 kg"
+Redshirt5Desc3                                          "Beschreibung: Mitglied des\nHazard-Teams"
+Redshirt5Radar                                          "Brian Bobowski"
+
+Redshirt6Desc1                                          "Toni Devaldenebro"
+Redshirt6Desc2                                          "Name: Toni Devaldenebro\nGröße: 183,7 cm\nGewicht: 54,10 kg"
+Redshirt6Desc3                                          "Beschreibung: Mitglied des\nHazard-Teams"
+Redshirt6Radar                                          "Toni Devaldenebro"
+
+//Health Terminal
+EnterpriseHealthTerminalDesc1				            "Lebensenergie-Terminal"
+EnterpriseHealthTerminalDesc2				            "Größe: 120,36 cm\nGewicht: 104,27 kg"
+EnterpriseHealthTerminalDesc3				            "Beschreibung: Zur Heilung\nvon Verletzungen"
+HealthTerminalRadar                                     	    "Lebensenergie-Terminal"
+
+//Energy Terminal
+EnterpriseEnergyTerminalDesc1				            "Waffen-Terminal"
+EnterpriseEnergyTerminalDesc2				            "Größe: 150,36 cm\nGewicht: 113,39 kg"
+EnterpriseEnergyTerminalDesc3				            "Beschreibung: Zur Wiedergewinnung\nvon Plasmawaffenenergie"
+EnergyTerminalRadar                                     	    "Waffen-Terminal"
+
+//Energy Terminal
+KlingonEnergyTerminalDesc1						"Waffen-Terminal"
+KlingonEnergyTerminalDesc2						"Größe: 150,36 cm\nGewicht: 113,39 kg"
+KlingonEnergyTerminalDesc3 						"Beschreibung: Zur Wiedergewinnung\nvon Plasmawaffenenergie"
+KlingonEnergyTerminalRadar						"Waffen-Terminal"
+
+//Health Terminal
+KlingonHealthTerminalDesc1						"Lebensenergie-Terminal"
+KlingonHealthTerminalDesc2						"Größe: 150,36 cm\nGewicht: 113,39 kg"
+KlingonHealthTerminalDesc3						"Beschreibung: Zur Heilung\nvon Verletzungen"
+KlingonHealthTerminalRadar						"Lebensenergie-Terminal"
+
+// Various strings for GBS
+
+enviro1                                                "Hauptcomputerzugang"
+enviro2                                                "Umweltkontrollen"
+enviro3                                                "Umweltkontrollen\nWARNUNG Lüftungsschacht\nReinigung wird durchgeführt\nNicht benutzen"
+enviroR                                                "Hauptcomputerzugang"
+
+comp1                                                "Hauptcomputerzugang"
+comp2                                                "Antriebskontrollen"
+comp3                                                "Hauptcomputer\nAntriebskontrolle\nWarp Antrieb"
+compR                                                "Hauptcomputerzugang"
+
+td1                                                "Energierelays"
+td2                                                "Frachtrampe 4 EPS Zugangspanel"
+td3                                                "Jefferies Röhrenzugang\nEnergie umgeleitet für \nWartung an den Umweltsystemen"
+tdR                                                "Energierelays"
+
+compa1                                                "Hauptcomputerzugang"
+compa2                                                "Diagnose Zyklus läuft"
+compa3                                                "Hauptcomputer\nGravitätskontrollen\n"
+compaR                                                "Hauptcomputerzugang"
+
+compb1                                                "Hauptcomputerzugang"
+compb2                                                "Diagnose Zyklus läuft"
+compb3                                                "Hauptcomputer\nWaffenkontrollen\nWarp Antrieb"
+compbR                                                "Hauptcomputerzugang"
+
+tub1                                                          "Notzugang zur Jeffriesröhre"
+tub2                                                        "Kontrollmatrix aktiviert"
+tub3                                                          "Notfallsysteme Online"
+tubR                                                        "Notfallzugang"
+
+exp1							"Konsole"
+exp2							"Sicherheitssperre aktiviert"
+exp3							"Benutzen, um Notdurchgang zu erzeugen"
+expR							"Konsole"
+
+beam1							"Transporterkonsole"
+beam2							"Sicherheitssperre aktiviert"
+beam3							"Benutzen, um Energie für Transporter wieder zu aktivieren"
+beamR							"Transporterkonsole"
+
+mdoor1						"Konsole"
+mdoor2						"öffnet Haupttor der Shuttlerampe"
+mdoor3						"Sicherheitssperre aktiv"
+mdoorR						"Konsole"
+
+sc1                                                                "Cerberus"
+sc2                                                                "U.S.S Atlantic - NCC 2004"
+sc3                                                              "Shuttle 15\nCerberus"
+scR                                                                "Cerberus"
+
+sdoor1                                                                "Shuttle Tür Fernsteuerng"
+sdoor2                                                                "Shuttle 124\nFernsteuerung"
+sdoor3                                                              "Shuttle 124: Cerberus\nU.S.S. Atlantic NCC 2004\nShuttle 15"
+sdoorR                                                                "Entfernter Zugang"
+
+hint_lever1					"Kraftfeldschalter"
+hint_lever2					"Kraftfeldschalter"
+hint_lever3					"schaltet Kraftfeld ab"
+hint_leverR					"Kraftfeldschalter"
+
+gas_console1				"Konsole"
+gas_console2				"Konsole"
+gas_console3 				"schaltet das Gas ab"
+gas_consoleR				"Konsole"
+
+//Enginering Staff Descriptions
+
+bailsDesc1							"Sam Bailey"
+bailsDesc2							"Name: Sam Bailey\nGröße: Unbekannt\nGewicht: Schwer"
+bailsDesc3							"Rang: Lt. Commander\nBeschreibung: Männlicher Mensch\nVorheriger Beruf: Perry Farmer Giles"
+bailsRadar							"Sam Bailey"
+
+JonesDesc1							"Sam Jones"
+JonesDesc2							"Name: Samuael Jones\nGröße: Small\nGewicht: Leicht"
+JonesDesc3							"Rang: Fähnrich\nBeschreibung: Männlicher Mensch\nVorheriger Beruf: Großmeister DJ\nHinweis: Liebt Obscure Rockgruppe\ndes 20ten Jahrhunderts bekannt als ICP"
+JonesRadar							"Sam Jones"
+
+ShaunDesc1							"Shaun Mantle"
+ShaunDesc2							"Name: Shaun Mantle\nHeight: Tall\nWeight: Middle Weight"
+ShaunDesc3							"Rank: Crewman\nDescription: Human Male Lifeform\nPrevious Occupation: General Weirdo\nNote: Wants to become a chemist.....\n.....so he can blow stuff up"
+ShaunRadar							"Shaun Mantle"
+
+JenksDesc1							"Chris Jenkins"
+JenksDesc2							"Name: Chris Jenkins\nHeight: Tall\nWeight: Middle To Light Weight"
+JenksDesc3							"Rank: Lt.\nDescription: Human Male Lifeform\nPrevious Occupation: Waster \nNote: Wants to do something......\n.....but can't remember what"
+JenksRadar							"Chris Jenkins"
+
+CatrinDesc1							"Catrin Cox"
+CatrinDesc2							"Name: Catrin Cox\nHeight: Unknown\nWeight: Middle Weight"
+CatrinDesc3							"Rank: Commander\nDescription: Human Female Lifeform\nPrevious Occupation: Posh Bird\nNote: Very Posh and clever but sadly\n was born without any common sense"
+CatrinRadar							"Catrin Cox"
+
+//Stammheim
+StammheimDesc1                                          "Alexander Stammheim"
+StammheimDesc2						"Name: Alexander Stammheim\nGröße: 182.88 cm\nGewicht: 79.37 kg"
+StammheimDesc3						"Rangieren: Sigma Cell Operative\nDescription: Human Male Lifeform"
+StammheimRadar						"Stammheim"
+
+// Mission Objective Strings for GBS
+
+getToBar						 "Gehe in die Bar"
+findBrandy						 "Finde saurianischen Brandy für den Captain"
+getToEngineering				 	 "Dringe in den Maschinenraum ein"
+SABOTAGEEngines                                          "Gehe zur Hauptcomputerkontrolle und schleuse einen Virus ein."
+getToCargoBay						 "Fliehe mit einem Shuttle"
+goToBridge                                               "Gehe auf die Brücke des Warbirds"
+WARBIRD1BeamOut                                          "Leite Energie zum Transporter um und beame Dich vom Schiff."
+findEntrance						 "Finde einen Eingang zu den Überresten des Außenpostens."
+GBS10FindStammheim					 "Finde Alexander Stammheim. Er wird in einer Zelle sein."
+GBS10Escape						 "Gehe zu Stammheims shuttle und fliehe mit Stammheim."

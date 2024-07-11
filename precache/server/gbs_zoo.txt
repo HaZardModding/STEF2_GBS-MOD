@@ -1,0 +1,3 @@
+cache sound/ships/borg/borg_forcefield_on.wav
+cache sound/ships/enterprise/ent_forcefield.wav
+cache sound/ships/enterprise/ent_forcefield_down.wav

@@ -1,0 +1,12 @@
+cache sound/ships/romulan/rom_beep_yes.wav
+cache sound/ships/romulan/rom_beep3.wav
+cache sound/ships/borg/borg_forcefield1_down.wav
+cache sound/environment/switches/switch_01.wav
+cache sound/doors/drull_bigdoor_01.wav
+cache sound/doors/drull_bigdoor_stop_01.wav
+cache sound/ships/enterprise/ent_forcefield_down.wav
+
+cache localization/sound/dialog/map08/illia/inshorttime.mp3
+cache localization/sound/dialog/map08/Illia/iwasaware.mp3
+cache localization/sound/dialog/map08/Illia/stillalive.mp3
+cache localization/sound/dialog/map08/illia/nochoice.mp3

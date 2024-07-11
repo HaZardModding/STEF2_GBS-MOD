@@ -1,0 +1,6 @@
+cache localization/sound/dialog/beta_ending/v001.mp3
+cache localization/sound/dialog/beta_ending/v002.mp3
+cache localization/sound/dialog/beta_ending/v003.mp3
+cache localization/sound/dialog/beta_ending/v004.mp3
+cache localization/sound/dialog/beta_ending/v005.mp3
+cache localization/sound/dialog/beta_ending/v006.mp3

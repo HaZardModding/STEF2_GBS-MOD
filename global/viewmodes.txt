@@ -1,0 +1,6 @@
+begin nightvision
+useFullBright 1
+sendWhenNotInMode 1
+sendWhenInMode 1
+hud nightvisionhud
+end

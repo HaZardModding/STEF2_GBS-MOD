@@ -1,0 +1,58 @@
+TIKI
+$include models/char/starfleet_base-male.tik
+
+setup
+{
+	scale 1.0
+	fade_dist_mod 1
+	lod 200 1.0 2500 .2 6144
+	radius 25
+	
+	surface material2 shader NPCMale-body.tga
+	surface material10 shader ensign	
+	surface material35 shader NPCMale-body.tga
+	surface material36 shader NPCMale-body.tga
+	surface material37 shader NPCMale-body.tga
+	surface material38 shader NPCMale-body.tga
+	surface material39 shader NPCMale-body.tga
+	
+	texturepath models/char/starfleet/crew-male5
+		surface material1 shader head.tga
+	texturepath models/char/face
+		surface material3 shader face-blue.tga
+
+	texturepath models/char/starfleet/base-male/
+		surface material4 shader hand02.tga
+
+	replacesurface material1 material1 models/char/starfleet/crew-male5/crew-male5.skb models/char/starfleet/crew-male5/crew-male5.skm
+	replacesurface material3 material3 models/char/starfleet/crew-male5/crew-male5.skb models/char/starfleet/crew-male5/crew-male5.skm
+	
+
+}
+
+//Shared AI Data
+$include models/aidata/starfleet/starfleet_aidata.tik
+
+init
+{
+	server
+	{
+		classname Actor
+		archetype "StarfleetMale6"
+		surface material35 +nodraw
+		surface material36 +nodraw
+		surface material37 +nodraw
+		surface material38 +nodraw
+		surface material39 +nodraw		
+	    processgameplaydata
+	}
+	client
+	{
+	}
+}
+
+/*QUAKED char_starfleet_crew_crew-male5-gray (0.5 0.25 0.25) (0 0 0) (0 0 0)
+Starfleet_crew-male5
+*/
+
+

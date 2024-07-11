@@ -1,0 +1,200 @@
+menu "main" 640 480 NONE 0
+bgcolor 0 0 0 .75
+borderstyle NONE
+fullscreen 1
+showcommand "ui_showmouse\n"
+showcommand "set g_gametype 0; set bot_enable 0;set sv_maxclients 1;set sv_maxspeed 300\n"
+showcommand "unpause\n"
+
+
+
+
+resource 
+RenderModel
+{
+    name "ModelView"
+    rect 0 -60 296 580
+    fgcolor 1.00 1.00 1.00 1.00
+    bgcolor 0.00 0.00 0.00 1.0
+    borderstyle "NONE"
+    bordercolor 1.0 1.0 1.0 1.0
+    
+    //linkcvar "g_playermodel"
+    rendermodel "models/char/illia.tik"
+    rendermodelangles "0 175 0"
+    rendermodeloffset "176 0 -85"
+    rendermodelrotateoffset "0 0 35"
+    
+    //rendermodelscale 0.75
+    rendermodelfov 20 40
+    rendermodelanimation "menu_idle"
+    ordernumber 1
+    
+    //borderstyle	"OUTLINE_BORDER"
+    //bordercolor	0.125 0.157 0.251 1.000
+}
+
+resource
+Widget
+{
+ordernumber 3
+name "b1"
+rect 245 130 272 39
+fgcolor                0.925        0.596        0.173        1.000
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+shader menu/load/gbs_button
+horizontaljustify center
+verticaljustify center
+}
+
+
+
+resource
+Widget
+{
+ordernumber 3
+name "b2"
+rect 245 170 272 39
+fgcolor                0.925        0.596        0.173        1.000
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+shader menu/load/gbs_button
+horizontaljustify center
+verticaljustify center
+}
+
+resource
+Widget
+{
+ordernumber 3
+name "b3"
+rect 245 210 272 39
+fgcolor                0.925        0.596        0.173        1.000
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+shader menu/load/gbs_button
+horizontaljustify center
+verticaljustify center
+}
+
+resource
+Widget
+{
+ordernumber 3
+name "b4"
+rect 245 250 272 39
+fgcolor                0.925        0.596        0.173        1.000
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+shader menu/load/gbs_button
+horizontaljustify center
+verticaljustify center
+}
+
+resource
+Button
+{
+title "$$Exit$$"
+name "Default"
+rect 295 252 138 32
+fgcolor 0.12 0.15 0.25 1.00
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+stuffcommand "showmenu quit"
+font serpentinemedium-12
+horizontaljustify center
+verticaljustify center
+hovershader menu/generic/button-hover
+pressedshader menu/generic/button-press
+//hovercommand "globalwidgetcommand tooltip_main title \"$$ExitTheGame$$\""
+hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
+ordernumber 12
+clicksound sound/misc/menu/back1.wav
+//hovercommand 		"globalwidgetcommand ModelView rendermodelanimation \"+attackleft\""
+}
+
+
+resource
+Button
+{
+title "$$NewGame$$"
+name "Default"
+rect 295 132 138 32
+fgcolor 0.12 0.15 0.25 1.00
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+font serpentinemedium-12
+horizontaljustify center
+verticaljustify center
+hovershader menu/generic/button-hover
+pressedshader menu/generic/button-press
+hovercommand "globalwidgetcommand tooltip_main title \"$$StartANewGame$$\""
+hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
+stuffcommand "map map1"
+ordernumber 12
+
+
+hoversound sound/misc/menu/hover.wav
+clicksound sound/misc/menu/click.wav
+
+}
+
+resource
+Button
+{
+title "$$LoadGame$$"
+name "Default"
+rect 295 172 138 32
+fgcolor 0.12 0.15 0.25 1.00
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+
+font serpentinemedium-12
+horizontaljustify center
+verticaljustify center
+
+hovershader menu/generic/button-hover
+pressedshader menu/generic/button-press
+hovercommand "globalwidgetcommand tooltip_main title \"$$LoadASaveGame$$\""
+hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
+stuffcommand "pushmenu loadgame"
+
+ordernumber 12
+
+hoversound sound/misc/menu/hover.wav
+clicksound sound/misc/menu/click.wav
+
+}
+
+resource
+Button
+{
+title "$$Configure$$"
+name "Default"
+rect 295 212 138 32
+fgcolor 0.12 0.15 0.25 1.00
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+
+font serpentinemedium-12
+horizontaljustify center
+verticaljustify center
+
+hovershader menu/generic/button-hover
+pressedshader menu/generic/button-press
+hovercommand "globalwidgetcommand tooltip_main title \"$$SetGameOptions$$\""
+hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
+stuffcommand "pushmenu controls"
+
+ordernumber 12
+
+hoversound sound/misc/menu/hover.wav
+clicksound sound/misc/menu/click.wav
+
+}
+
+
+
+
+end.

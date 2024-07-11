@@ -1,0 +1,1210 @@
+// EF2 Level Script File
+//
+// Level:		map3.bsp
+// Script By:	Cortex, Argyle, ltiefland
+// Geometry By:	Argyle, Cortex, Alpharaptor
+// Created on:	17/11/03
+// Last Edited on:  $Date: 2007-06-14 22:59:20 +0200 (Thu, 14 Jun 2007) $
+// Last Edited by:	Chrissstrahl
+
+void main();
+void warning();
+void attack_p();
+void initArchetypes();
+void turbo();
+void eng_beccy();
+void eng_harm();
+void eng_mac();
+void closed_door_sound();
+void closed_door_sound_2();
+void cpanel();
+void panel();
+void secretopen();
+void secretprint();
+void secret();
+void comp_found();
+void gas1();
+void redalert();
+void enviromentalcontrols();
+void maincomputercontrols();
+void compcontrolsa();
+void compcontrolsb();
+void eng_cin();
+void skip_eng_cin();
+void com_cin();
+void com_cin_end();
+//void switch_alert_on();
+
+float alert_on;
+float eng_door=0;
+float lift_state=0;
+
+#include "maps/global_scripts/global_archetype.scr"
+#include "maps/global_scripts/global_common.scr"
+#include "maps/global_scripts/global_array.scr"
+#include "maps/global_scripts/global_math.scr"
+#include "maps/global_scripts/global_acceleratedMovement.scr"
+#include "maps/attackplayer.scr"
+
+void main()
+{	
+//--------------------------------------------------
+//	General Level Setup
+//--------------------------------------------------
+
+	$world.light_lightstyle( "redalert3", "a", 1 ); //switch off red alert lights
+	$warn.nottriggerable();
+	$attack.nottriggerable();
+	$alert_green.show();
+	$alert_red.hide();
+	$roof_hatch.show();
+	$roof_hatch.solid();
+	$roof_hatch_floor.hide();
+	$roof_hatch_floor.notsolid();
+	$roof_hatch_cover.hide();
+	$roof_hatch_cover.notsolid();
+	$turbo_door.lock();
+
+	soundtrack( "music/m6l1.mus" );
+	waitForPlayer();//Wait until the player is ready
+	stuffCmd("set mp_bigGunMode 0\n");
+	//$player.model("models/char/hazardteam_jurot.tik");
+	$player.give( "models/weapons/worldmodel-tricorder-stx.tik" );
+
+	//Add the objectives list
+	$player.loadobjectives( "GBS3" );
+	//Make a new objective appear: get to main computer control and Sabotge the engines
+	//Make the blip appear on your radar
+	$player.missionobjective( 1 );
+	//Make the mission objective appear
+	$player.setobjectiveshow( "gettoengineering", 1 );
+
+	$illia_prisoner.ai_off();
+	$illia_prisoner.pushable(0);
+	$illia_prisoner.hide();
+	$illia_prisoner.notsolid();
+	$illia_prisoner.removeactorweapon ( "CompressionRifle" );
+	$illia_prisoner.removeactorweapon ( "AssaultRifle" );
+	$illia_prisoner.removeactorweapon ( "CompressionRifleEnhanced" );
+//	$attack.nottriggerable();
+	$player.take("models/weapons/worldmodel-tricorder.tik");
+	$player.take("models/weapons/worldmodel-phaser.tik");
+	$player.take("models/weapons/worldmodel-fieldassaultrifle.tik");
+	$player.take("models/weapons/worldmodel-burstrifle.tik");
+	$player.take("models/weapons/worldmodel-compressionrifle.tik");
+	$player.take("models/weapons/worldmodel-IMod.tik");
+	$player.take("models/weapons/worldmodel-grenadelauncher.tik");
+	$player.take("models/weapons/worldmodel-photon.tik");
+	$player.take("models/weapons/worldmodel-tetryon.tik");
+	$player.take("models/weapons/worldmodel-sniperrifle.tik");
+	$player.take("models/weapons/worldmodel-rom-disruptor.tik");
+	$player.take("models/weapons/worldmodel-batleth.tik");
+	$player.take("models/weapons/worldmodel-rom-radgun.tik");
+	$player.take("models/weapons/worldmodel-attrex-rifle.tik");
+	$player.take("models/weapons/worldmodel-enterprise.tik");
+	$player.take("models/weapons/worldmodel-drull-staff.tik");
+	$player.take("models/weapons/worldmodel-rom-datapad.tik");
+	$player.take("models/weapons/worldmodel-phaser-STX.tik");
+
+	//--------------------------------------------------
+	//	Red Alert Setup
+	//--------------------------------------------------
+
+	$panel_alert_on.hide();
+	$panel_alert_off.show();
+
+
+	//--------------------------------------------------
+	//	Camera Setup
+	//--------------------------------------------------
+
+	spawn ( "Camera" , "targetname" , "cam1" );
+	spawn ( "Camera" , "targetname" , "cam2" );
+	spawn ( "Camera" , "targetname" , "cam3" );
+	spawn ( "Camera" , "targetname" , "cam4" );
+
+	//--------------------------------------------------
+	//	Cargobay 4 Setup
+	//--------------------------------------------------
+	$cargopanelg.hide();
+	$cargopanelr.show();
+	$cargodoors.unlock();
+
+	//--------------------------------------------------
+	//	Jefferies Tube Setup
+	//--------------------------------------------------
+	//	SECRET SETUP
+	$secretdoor.lock();
+	$secret_red.show();
+	$secret_green.hide();
+	//	GENERAL SETUP
+	$exitdoor.lock();
+	$jdoor1.unlock();
+	$jdoor2.lock();
+	$jdoor2g.hide();
+	$jdoor2r.show();
+	$jdoor1_locked.nottriggerable();
+
+	//--------------------------------------------------
+	//	Main Compter Control Room Setup
+	//--------------------------------------------------
+	$comroomdoor.lock();
+	//$engcong.show(); //NULL E
+	//$engconr.hide(); //NULL E
+	$gas3.hide();
+	$gas4.hide();
+	$gas5.hide();
+	$gas6.hide();
+	$hurt1.nottriggerable();
+
+	//--------------------------------------------------
+	//	Main Engineering Setup
+	//--------------------------------------------------
+	$bails.ai_off();
+	$bails.removeactorweapon ( "CompressionRifle" );
+	$bails.useactorweapon( "Tricorder" );
+	$bails.anim( "tricorder_use_loop" );
+	$bails.pushable( 0 );
+
+	$jones.ai_off();
+	$jones.anim("ent-curvedconsole-gesture");
+	$jones.removeactorweapon ( "CompressionRifle" );
+	$jones.useactorweapon( "none" );
+	$jones.pushable( 0 );
+	
+	/*shaun was removed in order to save frames //Chrisstrahl
+	$shaun.ai_off();
+	$shaun.anim("ent-compstation-idle");
+	$shaun.removeactorweapon ( "CompressionRifle" );
+	$shaun.useactorweapon( "none" );
+	$shaun.pushable( 0 );*/
+
+	$jenks.ai_off();
+	$jenks.anim("ent-compstation-gesture1");
+	$jenks.removeactorweapon ( "CompressionRifle" );
+	$jenks.useactorweapon( "none" );
+	$jenks.pushable( 0 );
+
+	/*  //NULL E
+	$eddie.ai_off();
+	$eddie.anim("ent-compstation-gesture1");
+	$eddie.removeactorweapon ( "CompressionRifle" );
+	$eddie.useactorweapon( "none" );
+	$eddie.pushable( 0 );*/
+
+	/*  //NULL E
+	$catrin.ai_off();
+	$catrin.removeactorweapon ( "CompressionRifle" );
+	$catrin.useactorweapon( "none" );
+	$catrin.pushable( 0 );*/
+
+	$engdoor1.time(0.1);
+	$engdoor1.moveDown(176);
+	$engdoor1.notsolid();
+	$engdoor1.hide();
+
+	$beccy.ai_off();
+	$beccy.removeactorweapon ( "CompressionRifle" );
+	$beccy.useactorweapon( "none" );
+	$beccy.pushable( 0 );
+
+	$harm.ai_off();
+	$harm.removeactorweapon ( "CompressionRifle" );
+	$harm.useactorweapon( "none" );
+	$harm.pushable( 0 );
+
+	$mac.ai_off();
+	$mac.removeactorweapon ( "CompressionRifle" );
+	$mac.useactorweapon( "none" );
+	$mac.pushable( 0 );
+
+	$bud.ai_off();
+	$bud.removeactorweapon ( "CompressionRifle" );
+	$bud.useactorweapon( "none" );
+	$bud.pushable( 0 );
+	$bud.anim("kneel_working_idle");
+	
+	/* Jane was removed in order to save frames //Chrissstrahl
+	$jane.ai_off();
+	$jane.removeactorweapon ( "CompressionRifle" );
+	$jane.useactorweapon( "none" );
+	$jane.pushable( 0 );
+	$jane.anim("ent-library-stand-scan");*/
+
+	//This ship was removed for performance issues
+	//$holo_excelsior.bind($holo_excelsior_origin);
+	//$holo_excelsior.followpath( $holo_excelsior_nav1 );
+
+	//--------------------------------------------------
+	//	Main Engineering Cinematic Setup
+	//--------------------------------------------------
+
+	$illia.ai_off();
+	$illia.pushable( 0 );
+	$illia.notsolid();
+	$illia.hide();
+
+	wait(0.1);
+
+	$moya.ai_off();
+	$moya.nodamage();//Patch Update 07.sep.2007 @ Chrissstrahl
+	$moya.pushable( 0 );
+	$moya.useactorweapon( "EnterpriseDatapad" );
+	$moya.anim( "ent-datapad-use" );
+
+	thread initArchetypes();
+
+
+	//--------------------------------------------------
+	//	Computer Control Room Cinematic Setup
+	//--------------------------------------------------
+
+	$illia2.ai_off();
+	$illia2.pushable( 0 );
+	$illia2.notsolid();
+	$illia2.hide();
+
+	wait(0.1);
+
+	$moya2.ai_off();
+	$moya2.pushable( 0 );
+	$moya2.notsolid();
+	$moya2.hide();
+
+	$eng_field.notsolid();
+	$eng_field.hide();
+	$eng_field.notsolid();
+
+	//--------------------------------------------------
+	//	Security Team Setup
+	//--------------------------------------------------
+
+	$security1.setgroupid ( 666 );
+	$security1.giveactorweapon( "actorweapons/fed-compressionrifle.tik", 1.0 );
+	$security1.useactorweapon( "CompressionRifle" );
+	$security1.pushable( 0 );
+
+	$security2.setgroupid ( 666 );
+	$security2.giveactorweapon( "actorweapons/fed-compressionrifle.tik", 1.0 );
+	$security2.useactorweapon( "CompressionRifle" );
+	$security2.pushable( 0 );
+
+	//Hide team till red alert
+	$security1.hide();
+	$security1.notsolid();
+	$security2.hide();
+	$security2.notsolid();
+
+	$exitdoor.lock();
+	$cargodoors_sound.nottriggerable();
+
+
+	thread turbo();
+	thread eng_beccy();
+	thread eng_harm();
+	thread eng_mac();
+}
+
+void climbing_up()
+{
+	AIShowGroup    ( 667, "Federation" );
+	//$security1.ai_on();
+	//$security2.ai_on();
+	CommandToGroup ( 667 , "groupactortype" , "enemy" , "");
+	CommandToGroup ( 667 , "visiondistance" , "4000" , "" );
+	CommandToGroup ( 667 , "fov" , "360" , "" );
+	CommandToGroup ( 667 , "attack" , "$player" , "" );
+}
+
+
+
+//--------------------------------------------------
+// Archetype Setup
+//--------------------------------------------------
+
+// These let you see the information the tricorder displays about an object
+
+void initArchetypes()
+{
+
+	thread globalArchetype_Setup( $tubedoor_controls, "tubedoorc");
+	thread globalArchetype_Setup( $environmental_controls, "enviroc");
+	thread globalArchetype_Setup( $maincomputer_controls, "compc");
+	thread globalArchetype_Setup( $computer_a, "compa");
+	thread globalArchetype_Setup( $computer_b, "compb");
+	thread globalArchetype_Setup( $tubedoor_controls_2, "tubed");
+
+	$bails.archetype ( "bails" );
+	$jones.archetype ( "jones" );
+	$jenks.archetype ( "jenks" );
+	/*$shaun.archetype ( "shaun" );*/ //shaun was removed in order to save frames
+	//$eddie.archetype ( "eddie" ); //NULL E
+	//$catrin.archetype ( "catrin" ); //NULL E
+}
+
+void turbo()
+{
+	$player.loopsound( "sound/ships/enterprise/ent_turbolift_runloop.wav");
+	wait(4);
+	$player.stoploopsound();
+	$player.playsound( "sound/ships/enterprise/ent_turbolift_stop.wav");
+	wait(2.5);
+	$turbo_door.unlock();
+}
+
+void eng_beccy()
+{
+	$beccy.useactorweapon( "Tricorder" );
+	$beccy.anim( "tricorder_use_loop" );
+	wait(3);	
+	$beccy.anim("idle");
+	$beccy.useactorweapon( "none" );
+	wait(0.2);
+	$beccy.turntoangle( 315 );
+	$beccy.walkto("$beccy_eng_nav1", "walk" );
+	waitfor( $beccy );
+	$beccy.useactorweapon( "Tricorder" );
+	$beccy.anim( "tricorder_use_loop" );
+	wait(4);
+	$beccy.useactorweapon( "none" );
+	$beccy.anim( "idle" );
+	$beccy.walkto("$beccy_eng_nav2", "walk" );
+	waitfor( $beccy );
+	$beccy.walkto("$beccy_eng_nav2", "walk" );
+	waitfor( $beccy );
+	$beccy.walkto("$beccy_eng_nav3", "walk" );
+	waitfor( $beccy );
+	$beccy.walkto("$beccy_eng_nav4", "walk" );
+	waitfor( $beccy );
+	$beccy.useactorweapon( "EnterpriseDatapad" );
+	$beccy.anim( "ent-datapad-use" );
+	wait(5);
+	$beccy.walkto("$beccy_eng_nav5", "walk" );
+	waitfor( $beccy );
+	$beccy.walkto("$beccy_eng_nav6", "walk" );
+	waitfor( $beccy );
+	$beccy.walkto("$beccy_eng_nav7", "walk" );
+	waitfor( $beccy );
+	$beccy.useactorweapon( "none" );
+	$beccy.anim( "idle" );
+	wait(0.1);
+	$beccy.useactorweapon( "Tricorder" );
+	$beccy.anim( "tricorder_use_loop" );
+	wait(3);
+	$beccy.walkto("$beccy_eng_nav8", "walk" );
+	waitfor( $beccy );
+	$beccy.walkto("$beccy_eng_nav9", "walk" );
+	waitfor( $beccy );
+	
+	thread eng_beccy();
+}
+
+void eng_harm()
+{
+	$harm.useactorweapon( "EnterpriseDatapad" );
+	$harm.anim( "ent-datapad-use" );
+	$harm.walkto("$harm_eng_nav1", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav2", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav3", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav4", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav5", "walk" );
+	waitfor( $harm );
+	$harm.useactorweapon( "none" );
+	$harm.anim( "idle" );
+	wait(1);
+	$harm.useactorweapon( "Tricorder" );
+	$harm.anim( "tricorder_use_loop" );
+	wait(3);
+	$harm.useactorweapon( "none" );
+	$harm.anim( "idle" );
+	$harm.walkto("$harm_eng_nav6", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav7", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav8", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav9", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav10", "walk" );
+	waitfor( $harm );
+	$harm.useactorweapon( "Tricorder" );
+	$harm.anim( "tricorder_use_loop" );
+	wait(4);
+	$harm.useactorweapon( "none" );
+	$harm.anim( "idle" );
+	$harm.walkto("$harm_eng_nav11", "walk" );
+	waitfor( $harm );
+	wait(0.2);
+	$harm.useactorweapon( "EnterpriseDatapad" );
+	$harm.anim( "ent-datapad-use" );
+	wait(2);
+	$harm.walkto("$harm_eng_nav12", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav13", "walk" );
+	waitfor( $harm );
+	$harm.walkto("$harm_eng_nav14", "walk" );
+	waitfor( $harm );
+	$harm.useactorweapon( "none" );
+	$harm.anim( "idle" );
+	wait(0.1);
+	$harm.useactorweapon( "Tricorder" );
+	$harm.anim( "tricorder_use_loop" );
+	wait(5);
+	$harm.useactorweapon( "none" );
+	$harm.anim( "idle" );
+	$harm.turntoangle( 135 );
+
+	thread eng_harm();
+	
+}
+
+void eng_mac()
+{
+	$mac.walkto("$mac_eng_nav1", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav2", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav3", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav4", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav5", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav6", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav7", "walk" );
+	waitfor( $mac );
+	$mac.useactorweapon( "Tricorder" );
+	$mac.anim( "tricorder_use_loop" );
+	wait(4);
+	$mac.useactorweapon( "none" );
+	$mac.anim( "idle" );
+	$mac.walkto("$mac_eng_nav8", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav9", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav10", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav11", "walk" );
+	waitfor( $mac );
+	$mac.useactorweapon( "Tricorder" );
+	$mac.anim( "tricorder_use_loop" );
+	wait(3);
+	$mac.useactorweapon( "none" );
+	$mac.anim( "idle" );
+	$mac.walkto("$mac_eng_nav12", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav13", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav14", "walk" );
+	waitfor( $mac );
+	$mac.walkto("$mac_eng_nav15", "walk" );
+	waitfor( $mac );
+	$mac.useactorweapon( "Tricorder" );
+	$mac.anim( "tricorder_use_loop" );
+	wait(3);
+	$mac.useactorweapon( "none" );
+	$mac.anim( "idle" );
+
+	thread eng_mac();
+}
+
+void closed_door_sound()
+{
+	$player.playsound( "sound/doors/door_locked.wav");
+}
+
+void closed_door_sound_2()
+{
+	$player.playsound( "sound/environment/computer/lcars_no.wav");
+}
+//===================================================================
+//	Cargo Bay 4
+//===================================================================
+
+void cpanel()
+{
+//-------------------------------------------------------------------
+//	This moves the panels covering the power re-routing controls
+//-------------------------------------------------------------------
+	$cpanel1.moveeast(2);
+	$cpanel2.moveeast(2);
+	$cpanel3.moveeast(2);
+
+
+	wait(1);
+
+	$cpanel1.movenorth(73);
+	$cpanel1.time(1.5);
+	$cpanel2.movesouth(75);
+	$cpanel2.time(1.5);
+	$cpanel3.movenorth(73);
+	$cpanel3.time(1.5);
+
+	$player.loopsound( "sound/doors/lrg_01_start.wav" );
+	wait(2);
+	$player.stoploopsound();
+	$player.playsound( "sound/doors/lrg_01_stop.wav" );
+}
+
+void panel()
+{
+
+//-------------------------------------------------------------------
+//	This changes the colour of the power re-routing panel and plays
+//	the power-up and power-down sounds
+//-------------------------------------------------------------------
+
+	$cargopanelr.hide();
+	$cargopanelg.show();
+	$player.playsound("sound/ships/forever/for_poweron.wav");
+
+	wait(3);
+
+	$cargopanelg.hide();
+	$cargopanelr.show();
+	$player.playsound("sound/environment/computer/lcars_error.wav");
+
+	wait(1);
+
+	$cargopanelr.hide();
+	$cargopanelg.show();
+	$player.playsound("sound/ships/forever/for_poweron.wav");
+
+	wait(3);
+
+	$cargopanelg.hide();
+	$cargopanelr.show();
+	$player.playsound("sound/environment/computer/lcars_error.wav");
+
+	wait(1);
+
+	$cargopanelr.hide();
+	$cargopanelg.show();
+	$player.playsound("sound/environment/computer/lcars_yes.wav");
+
+	wait(1);
+
+	music( "success" );
+
+	wait(1);
+
+	$jdoorpanel1.movenorth(2);
+
+	wait(2);
+
+	$jdoorpanel1.moveup(70);
+
+	$cargotubedoor.unlock();
+	$jdoorpanel1.playsound("sound/ships/forever/for_floorhatch.wav");
+}
+
+//==========================================================================
+//	The Secret
+//==========================================================================
+
+void secretopen()
+{
+	$secret_locked.nottriggerable();
+	$secretdoor.unlock();
+	$secret_red.hide();
+	$secret_green.show();
+}
+
+void secretprint()
+{
+      centerprint("Secret Area!");
+}
+
+void secret()
+{
+	$bob.ai_off();
+	$phil.ai_off();
+	$bob.playdialog("localization/sound/dialog/map03/bob/secret.mp3",1,10000,0);
+	waitfordialog($bob);
+	$phil.playdialog("localization/sound/dialog/map03/phil/secret.mp3",1,10000,0);
+    waitfordialog($phil);
+	wait(15);
+	$bob.walkto("$nav2");
+	wait(0.7);
+	$phil.walkto("$nav2");
+}
+
+//===========================================================================
+//	Main Computer Control Room
+//===========================================================================
+
+//---------------------------------------------------------------------------
+//	Tells the player you've found what your looking for
+//---------------------------------------------------------------------------
+
+void comp_found()
+{
+	$illia.playdialog("localization/sound/dialog/map03/Illia/maincomputer.mp3",1,10000,0);//Main Computer Control.
+	waitfordialog( $illia );
+	wait(1);
+	$illia.playdialog("localization/sound/dialog/map03/Illia/perfect.mp3",1,10000,0);//Perfect.
+	waitfordialog( $illia );
+	wait(1);
+}
+
+//---------------------------------------------------------------------------
+//	Activates the trap
+//---------------------------------------------------------------------------
+
+void gas1()
+{
+	$gas3.show();
+	$gas4.show();
+	$gas5.show();
+	$gas6.show();
+	$jcomdoor.close();
+	$jcomdoor.lock();
+	$engconr.playsound( "sound/environment/computer/access_denied.wav");
+	$player.loopsound( "sound/redalert.mp3", .4, 512 );
+	$hurt1.triggerable();
+	$comroomdoor.close();
+	$comroomdoor.lock();
+	$test6.remove(); //So that the player cannot initiate com_cin
+}
+
+//---------------------------------------------------------------------------
+//	Red Alert Setup
+//---------------------------------------------------------------------------
+
+void redalert()
+{
+	while( 1 ) {
+		$world.light_fade( "redalert3", .85, .4 );
+		wait( .7 );
+		$player.playsound("sound/redalert.mp3", 1, 1, 11111);
+		$world.light_fade( "redalert3", .2, .6 );
+		wait( 1.8 );
+	}
+
+}
+
+//-------------------------------------------------------------------------
+// Move the control panels in the computer room
+//-------------------------------------------------------------------------
+
+void enviromentalcontrols()
+{
+	$environmental.moveeast(17);
+}
+
+void maincomputercontrols()
+{
+	$maincomputercontrols.movewest(17);
+}
+
+void compcontrolsa()
+{
+	$computera.moveeast(17);
+}
+
+void compcontrolsb()
+{
+	$computerb.movewest(17);
+}
+
+//===========================================================================
+//	Cinematics
+//===========================================================================
+
+void eng_cin()
+{
+	
+	//---------------------------------------------------------------------------
+	//	The sequence stopping you from entering engineering
+	//---------------------------------------------------------------------------
+	freezeplayer();
+	cinematic();
+
+	wait(1);
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+
+	wait(2);
+
+	letterbox ( .1 );
+
+	wait( .05 );
+
+	$player.warp( '277 2667 -254' );
+
+	$mainengdoor.close();
+	$cam1.follow( $map3_cam1 );
+	$cam1.cut();
+	wait( .5);
+	cuecamera($cam1);
+	wait(0.5);
+
+	skipthread("skip_eng_cin");
+
+	cam_fadein( 3, 0, 0, 0, 1, 0 );
+
+	$illia.solid();
+	$illia.show();
+	$illia.anim( "idle" );
+	$illia.useactorweapon( "none" );
+
+	wait(24);
+
+	$illia.walkto("$illia_eng_nav1");
+	waitfor( $illia );
+	$illia.walkto("$illia_eng_nav2");
+	waitfor( $illia );
+	$moya.headwatchtarget( "illia" , 7 );
+	$illia.walkto("$illia_eng_nav3");
+	waitfor( $illia );
+	$illia.walkto("$illia_eng_nav4");
+	$illia.walkto("$illia_eng_nav5");
+
+	wait(0.1);
+
+	$moya.anim( "idle" );
+	$moya.useactorweapon( "none" );	
+
+	$moya.walkto("$moya_eng_nav1");
+	waitfor( $moya );
+	$moya.walkto("$moya_eng_nav2");
+	waitfor( $moya );
+	$moya.walkto("$moya_eng_nav3");
+	waitfor( $moya );
+
+	wait(0.5);
+
+	$moya.playdialog("localization/sound/dialog/map03/moya/sorry.mp3", 1, 10000, 0);// I'm Sorry Ms Ericsson.
+	waitfordialog( $moya );
+	$moya.playdialog("localization/sound/dialog/map03/moya/authorized.mp3", 1, 10000, 0);// Only Authorised Personnel May Enter Engineering.
+	waitfordialog( $moya );
+
+	wait(1);
+
+	$illia.walkto("illia_eng_nav_return");
+
+	wait(1);
+
+	$mainengdoor.close();
+
+	wait(1);
+
+	thread skip_eng_cin();
+}
+
+void skip_eng_cin()
+{
+	killthread("eng_cin");
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+	wait(1);
+
+	$moya.walkto("$moya_eng_nav3");
+	waitfor( $moya );
+
+	$illia.notsolid();
+	$illia.hide();
+	$player.warp( '-27 1655 -254');
+	$moya.useactorweapon( "EnterpriseDatapad" );
+	$moya.anim( "ent-datapad-use" );
+	$moya.headwatchtarget( "none" , 7 );
+
+	wait(1);
+
+	noncinematic();
+	clearletterbox( .1 );
+	releaseplayer();	
+	cueplayer();
+
+
+	wait(0.5);
+
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+
+	$player.missionobjective( 1 );
+	//Make the mission objective appear
+	$player.setobjectivefailed( "gettoengineering", 1 );
+	$player.setobjectiveshow( "sabotageengines", 1 );
+}
+
+void com_cin()
+{
+
+	//---------------------------------------------------------------------------
+	//	The sequence where you get caught messing with the engines.......Doh!
+	//---------------------------------------------------------------------------
+	
+	freezeplayer();
+	cinematic();
+
+	wait(1);
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+
+	wait(2);
+
+	letterbox ( .1 );
+
+	wait( .05 );
+
+	$cam3.follow($map3_cam3);
+	$cam3.cut();
+	wait( .5);
+	cuecamera($cam3);
+
+	skipthread("com_cin_end");
+
+	$bud.notsolid();
+	$bud.hide();
+	$buds_case.hide();
+	$buds_case.notsolid();
+	$mac.notsolid();
+	$mac.hide();
+	$illia_prisoner.show();
+	$illia_prisoner.solid();
+	$illia_prisoner.anim("cin-m8_situp");
+	$comroomdoor.unlock();
+
+	wait(1);
+
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+
+	wait(1);
+
+	$illia_prisoner.playdialog("localization/sound/dialog/map03/Illia/thesabotage.mp3",1,10000,0);// Sabotaging The Atlantic Was No Big Deal.
+	waitfordialog( $illia_prisoner );
+
+	wait(0.1);
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+	$player.notsolid();
+	$player.hide();
+	$illia2.show();
+	$illia2.solid();
+	$moya2.show();
+	$moya2.solid();
+	$jcomdoor.close();
+	$jcomdoor.lock();
+
+	$moya2.useactorweapon( "EnterpriseDatapad" );
+	$moya2.anim( "ent-datapad-use" );
+
+	$illia2.useactorweapon( "Tricorder" );
+	$illia2.anim( "tricorder_use_loop" );
+
+	$cam2.follow( $map3_cam2 );
+	$cam2.cut();
+	wait(0.5);
+	cuecamera ( $cam2 );
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+
+	wait(7);
+
+	$illia2.useactorweapon( "none" );
+	$illia2.anim( "idle" );
+
+	$illia2.turntoangle( 125 );
+	$illia2.walkto("$illia2_com_nav1", "walk" );
+	waitfor( $illia2 );
+	$illia2.walkto("$illia2_com_nav2", "walk" );
+	waitfor( $illia2 );
+	$illia2.walkto("$illia2_com_nav3", "walk" );
+	waitfor( $illia2 );
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+
+	wait(2);
+	$cam3.follow($map3_cam3);
+	$cam3.cut();
+	wait(0.5);
+	cuecamera($cam3);
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+
+	$illia_prisoner.playdialog("localization/sound/dialog/map03/Illia/virus.mp3",1,10000,0);//I Inserted a Virus Into The Main Compute That Was To Stop Every Attempt At Entering Warp For The Next Few Days.   
+	waitfordialog( $illia_prisoner );
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+
+	wait(2);
+	$illia2.warp( '-921 1440 -56' );
+	$cam4.follow( $map3_cam4 );
+	$cam4.cut();
+	wait(1.5);
+	cuecamera ( $cam4 );
+
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+
+	wait(2);
+
+	$illia2.turntoangle( 90 );
+	$illia2.walkto("$illia2_eng_nav1", "walk" );
+	waitfor( $illia2 );
+	$illia2.walkto("$illia2_eng_nav2", "walk" );
+	waitfor( $illia2 );
+	$illia2.walkto("$illia2_eng_nav3", "walk" );
+	waitfor( $illia2 );
+	$illia2.useactorweapon( "Tricorder" );
+	$illia2.anim( "tricorder_use_loop" );
+	
+	wait(3);	
+
+	$illia2.useactorweapon( "none" );
+	$illia2.anim( "idle" );
+
+	$illia2.walkto("$illia2_eng_nav4", "walk" );
+	waitfor( $illia2 );
+	$illia2.walkto("$illia2_eng_nav5", "walk" );
+	waitfor( $illia2 );
+
+	$illia2.useactorweapon( "Tricorder" );
+	$illia2.anim( "tricorder_use_loop" );
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+
+	wait(2);
+
+	$cam3.follow($map3_cam3);
+	$cam3.cut();
+	wait(0.5);
+	cuecamera($cam3);
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+
+	$illia2.playdialog("localization/sound/dialog/map03/Illia/complete.mp3",1,10000,0);//When I Was Finished With My Small Manipulation Things Began To Take A Turn For The Worse.
+	waitfordialog($illia2);
+	wait(2);
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+
+	wait(2);
+
+	$cam3.follow($map3_cam5);
+	$cam3.cut();
+	wait(0.5);
+	cuecamera($cam3);
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+
+	$eng_lift.time(3);
+	$eng_lift.moveup(201);
+	$camnode_map3_cam4_6.playsound("sound/ships/enterprise/ent_lift01.wav",1,10000,0);
+	$eng_lift.playsound("sound/ships/enterprise/ent_lift01.wav",1,10000,0);
+	$console1.playsound("sound/ships/enterprise/ent_lift01.wav",1,10000,0);
+	$cam4.playsound("sound/ships/enterprise/ent_lift01.wav",1,10000,0);
+	waitfor( $eng_lift );
+	$camnode_map3_cam4_6.playsound("sound/ships/enterprise/ent_lift01_stop.wav",1,10000,0);
+	$console1.playsound("sound/ships/enterprise/ent_lift01_stop.wav",1,10000,0);
+	$eng_lift.playsound("sound/ships/enterprise/ent_lift01_stop.wav",1,10000,0);
+	$cam4.playsound("sound/ships/enterprise/ent_lift01_stop.wav",1,10000,0);
+	lift_state=1;
+
+
+
+	$illia2.useactorweapon( "none" );
+	$illia2.anim( "idle" );
+
+	$moya2.useactorweapon( "none" );
+	$moya2.anim( "idle" );
+
+	$moya2.headwatchtarget( "core" , 7 );
+
+	$moya2.walkto("$moya2_eng_nav1");
+	waitfor( $moya2 );
+
+	$moya2.headwatchtarget( "player" , 7 );
+
+	wait(1);
+
+	$moya2.playdialog("localization/sound/dialog/map03/Moya/msericsson.mp3",1,10000,0);// Ms Ericsson?
+	waitfordialog( $moya2 );
+	wait(1);
+	$moya2.playdialog("localization/sound/dialog/map03/Moya/doing.mp3",1,10000,0);// What Are You Doing?
+	waitfordialog( $moya2 );
+	wait(1);
+	//--- Ensign Moya taps his comm badge and calls security
+	$moya2.anim( "tap_comm" );
+	waitforanimation( $moya2, "tap_comm" );
+	$moya2.anim ("idle");
+	$moya2.playdialog("localization/sound/dialog/map03/Moya/security.mp3",1,10000,0);// I Need A Security Team In Engineering.
+	waitfordialog( $moya2 );
+
+	wait(0.5);
+	
+	$console1.loopsound( "sound/redalert.mp3" );
+	$console2.loopsound( "sound/redalert.mp3" );
+	$camnode_map3_cam4_9.loopsound( "sound/redalert.mp3" );
+	$camnode_map3_cam4_8.loopsound( "sound/redalert.mp3" );
+
+	$alert_green.hide();
+	$alert_red.show();
+	$engcong.hide();
+	$engconr.show();
+
+	
+	thread redalert();
+	$panel_alert_on.show();
+	$panel_alert_off.hide();
+
+	$illia2.useactorweapon( "Tricorder" );
+	$illia2.anim( "tricorder_use_loop" );
+
+	$jcomdoor.unlock();
+
+	wait(2);
+
+	$eng_field.solid();
+	$eng_field.show();
+	$eng_field.solid();
+	$eng_field.playsound( "sound/ships/borg/borg_forcefield_on.wav", 1, 1, 11111 );
+	$engdoor1.solid();
+	$engdoor1.show();
+	$engdoor1.time( 8 );
+	$engdoor1.moveUp( 176 );
+	eng_door=1;
+
+	$player.playsound("localization/sound/dialog/map03/Computer/shutdown_init.mp3", 1, 1, 11111); //System lockdown initialized.
+	$eng_field.loopsound( "sound/ships/enterprise/ent_forcefield.wav", .7, 30 );
+	wait(2);
+	
+	com_cin_end();
+}
+
+void com_cin_end()
+{
+	killthread("com_cin");
+	$eng_field.solid();
+	$eng_field.show();
+	$eng_field.solid();
+
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+	wait(3);
+	$moya2.show();
+	$moya2.solid();
+	$moya2.useactorweapon( "none" );
+	$moya2.warp( '-1211.00 2080.00 -55.00' );
+	$moya2.turntoangle( 90 );
+	$moya2.anim ("idle");
+	$moya2.headwatchtarget( "player" , 7 );
+
+	if(lift_state==0)
+	{
+		$eng_lift.time(.1);
+		$eng_lift.moveup(201);
+	}
+	
+
+	if(eng_door==0)
+	{
+		$engdoor1.solid();
+		$engdoor1.show();
+		$engdoor1.time( .1 );
+		$engdoor1.moveUp( 176 );
+	}
+
+	$player.warp( '-1148 1740 -56' );
+	$illia2.notsolid();
+	$illia2.hide();
+	$player.solid();
+	$player.show();
+	$eng_door3.lock();
+	$jack.solid();
+	$jack.show();
+	$jill.solid();
+	$jill.show();
+
+
+	wait(2);
+
+	noncinematic();
+	clearletterbox( .1 );
+	releaseplayer();
+	cueplayer();	
+	$player.turntoangle( 90 );
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
+	//Make the objective complete
+	$player.setobjectivecomplete( "sabotageengines", 1 );
+	$player.setobjectiveshow("gettocargobay", 1);
+	$player.missionobjective(1);
+	$near_end.triggerable();
+	forcemusic( "action" );
+	//-------------------------------------------------------------------------
+	// Activates Red Alert and locks and unlocks several doors
+	//-------------------------------------------------------------------------
+
+	$jdoor2.unlock();
+	$secretdoor.lock();
+	$secret_red.show();
+	$secret_green.hide();
+	$jdoor1.lock();
+	$jdoor1_red.show();
+	$jdoor1_green.hide();
+	$jdoor2g.show();
+	$jdoor2r.hide();
+	$jdoor1_locked.triggerable();
+	$jdoor2_locked.nottriggerable();
+	$secret_locked.triggerable();
+	$secrettrigger.nottriggerable();
+	$cargotubedoor.lock();
+	$jdoorpanel1.movesouth(3);
+	$exitdoor.unlock();
+	$exitdoor_sound.nottriggerable();
+
+
+	//-------------------------------------------------------------------------
+	// Close Off Access To Engineering
+	//-------------------------------------------------------------------------
+
+	$mainengdoor.lock();
+	$mainengdoor2.lock();
+	$cargodoors.lock();
+	$cargodoors_sound.triggerable();
+	$exitdoor.unlock();
+
+	$roof_hatch.hide();
+	$roof_hatch.notsolid();
+	$roof_hatch_floor.show();
+	$roof_hatch_floor.solid();
+	$roof_hatch_cover.show();
+	$roof_hatch_cover.solid();
+
+	wait(2);
+
+	$jdoorpanel1.movedown(70);
+	$cargobaydoor.lock();
+
+	// Make security team attack player
+	AIShowGroup    ( 666, "Federation" );
+	$warn.triggerable();
+	
+	//Patch Update 07.sep.2007 @ Chrissstrahl
+	$jcomdoor.unlock();
+}
+
+void warning()
+{
+	$security2.playdialog("localization/sound/dialog/map03/lee/shoot.mp3",  1, 10000, 0);
+	waitfordialog($security2);
+	$attack.triggerable();
+	globalCommon_Autosave();
+}
+
+void attack_p()
+{
+	CommandToGroup ( 666 , "groupactortype" , "enemy" , "");
+	CommandToGroup ( 666 , "visiondistance" , "20000" , "" );
+	CommandToGroup ( 666 , "fov" , "360" , "" );
+	CommandToGroup ( 666 , "attack" , "$player" , "" );
+	$security1.show();
+	$security1.solid();
+	$security2.show();
+	$security2.solid();
+	$security1.ai_on();
+	$security2.ai_on();
+	//Make security team visible
+	$security1.attack($player);
+	$security2.attack($player);
+}
+

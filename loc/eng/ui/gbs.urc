@@ -1,0 +1,83 @@
+menu "gbs" 640 480 NONE 0.75
+nomouse
+bgcolor 0 0 0 0
+borderstyle NONE
+noEscape 1
+align top center
+//direction from_left 0.75
+fadein 1
+depth 0.3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+resource
+Label
+{
+title "A Gate,"
+name "Default"
+rect 162 140 335 53
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.00 0.00 0.00 0.00
+borderstyle "NONE"
+textshadowcolor 0 0 0 1
+hoverfgcolor 1.00 1.00 1.00 1.00
+hoverbgcolor 0.00 0.00 0.00 0.00
+hovertextshadowcolor 0 0 0 1
+font serpentinemedium-24
+horizontaljustify center
+verticaljustify center
+//fadedelay 10
+
+}
+resource
+Label
+{
+title "Two Birds,"
+name "Default"
+rect 162 193 335 48
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.00 0.00 0.00 0.00
+borderstyle "NONE"
+textshadowcolor 0 0 0 1
+hoverfgcolor 1.00 1.00 1.00 1.00
+hoverbgcolor 0.00 0.00 0.00 0.00
+hovertextshadowcolor 0 0 0 1
+font serpentinemedium-24
+horizontaljustify center
+verticaljustify center
+//fadedelay 10
+
+}
+resource
+Label
+{
+title "and the Beautiful Sky"
+name "Default"
+rect 140 241 392 52
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.00 0.00 0.00 0.00
+borderstyle "NONE"
+textshadowcolor 0 0 0 1
+hoverfgcolor 1.00 1.00 1.00 1.00
+hoverbgcolor 0.00 0.00 0.00 0.00
+hovertextshadowcolor 0 0 0 1
+font serpentinemedium-24
+horizontaljustify center
+verticaljustify center
+//fadedelay 10
+
+}
+end.

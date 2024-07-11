@@ -1,0 +1,18 @@
+env gbs loading-gbs models/sky/sky_UI-stardome02.tik
+	level GBS
+		sublevel map1		"Map1"
+		sublevel map2		"Map2"
+		sublevel map3		"Map3"
+		sublevel map3b		"Map3b"
+		sublevel map4		"Map4"
+		sublevel map5		"Map5"
+		sublevel map6		"Map6"
+		sublevel map7		"Map7"
+		sublevel map8		"Map8"
+		sublevel map9		"Map9"
+		sublevel map10		"Map10"
+		
+env gbs loading-gbs-secret models/sky/sky_UI-stardome02.tik
+	level GBS
+		sublevel gbs_dojo		"gbs_dojo"
+		sublevel gbs_zoo		"gbs_zoo"

@@ -1,0 +1,21 @@
+cache models/char/klingon-m9-merc-disruptor-m1.tik
+cache models/char/klingon-m9-merc-disruptor-m2.tik
+cache models/char/klingon-m9-merc-disruptor-m1.tik
+cache models/char/klingon-m9-merc-disruptor-f1.tik
+cache models/char/klingon-m9-merc-disruptor-f2.tik
+cache models/char/klingon-m9-merc-disruptor-f3.tik
+cache models/char/klingon-m9-merc-batleth-m2.tik
+cache models/char/klingon-m9-merc-knife-m2.tik
+cache models/char/klingon-m9-merc-knife-m1.tik
+cache models/char/klingon-m9-merc-knife-f3.tik
+cache models/char/klingon-m9-merc-batleth-m1.tik
+cache models/char/starfleet_moya.tik
+
+cache sound/environment/nature/thunder2.wav
+cache sound/ships/enterprise/holo_door_open.wav
+
+cache localization/sound/dialog/map01/Illia/everythingbegan.mp3
+cache localization/sound/dialog/map01/Illia/itwasabout.mp3
+cache localization/sound/dialog/map01/Klingon/death.mp3
+cache localization/sound/dialog/map01/Illia/youwillnotice.mp3
+cache localization/sound/dialog/map01/illia/endprogram.mp3

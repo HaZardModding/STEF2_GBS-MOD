@@ -1,0 +1,2567 @@
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -344 832 -224 ) ( -608 832 -224 ) ( -608 496 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -640 496 -192 ) ( -640 832 -192 ) ( -376 832 -192 ) gbs_japan/wall-brick-grey-3 0 0 0 0.5 0.5 0 0 0 
+( -640 256 -192 ) ( -376 256 -192 ) ( -376 256 -576 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 496 -192 ) ( -192 832 -192 ) ( -192 832 -576 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -376 832 -192 ) ( -640 832 -192 ) ( -640 832 -576 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -640 832 -192 ) ( -640 496 -192 ) ( -640 496 -576 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 1
+{
+( -640 832 -192 ) ( -672 832 -192 ) ( -672 600 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -672 600 192 ) ( -672 832 192 ) ( -640 832 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -672 256 192 ) ( -640 256 192 ) ( -640 256 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -640 600 192 ) ( -640 832 192 ) ( -640 832 -192 ) gbs_japan/wall-brick-grey-3 0 0 0 0.5 0.5 0 0 0 
+( -640 832 192 ) ( -672 832 192 ) ( -672 832 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -672 832 192 ) ( -672 600 192 ) ( -672 600 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 2
+{
+( -216 256 -192 ) ( -552 256 -192 ) ( -552 216 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -528 216 192 ) ( -528 256 192 ) ( -192 256 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -528 224 192 ) ( -192 224 192 ) ( -192 224 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 216 192 ) ( -192 256 192 ) ( -192 256 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 256 192 ) ( -528 256 192 ) ( -528 256 96 ) gbs_japan/wall-brick-grey-3 0 0 0 0.5 0.5 0 0 0 
+( -640 248 192 ) ( -640 208 192 ) ( -640 208 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 3
+{
+( 176 864 -192 ) ( -48 864 -192 ) ( -48 832 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -32 832 192 ) ( -32 864 192 ) ( 192 864 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -288 832 192 ) ( -64 832 192 ) ( -64 832 96 ) gbs_japan/wall-brick-grey-3 0 0 0 0.5 0.5 0 0 0 
+( -192 808 192 ) ( -192 840 192 ) ( -192 840 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 864 192 ) ( -32 864 192 ) ( -32 864 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -640 888 232 ) ( -640 856 232 ) ( -640 856 136 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 4
+{
+( 128 736 96 ) ( 192 736 96 ) ( 192 800 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 800 352 ) ( 128 800 352 ) ( 128 800 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 800 352 ) ( 128 736 352 ) ( 128 736 96 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 736 352 ) ( 192 736 352 ) ( 192 736 96 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 736 352 ) ( 192 800 352 ) ( 192 800 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 144 800 192 ) ( 120 736 192 ) ( 96 800 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 5
+{
+( -448 800 96 ) ( -448 832 96 ) ( -192 832 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -448 800 96 ) ( -192 800 96 ) ( -192 800 0 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -192 800 96 ) ( -192 832 96 ) ( -192 832 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -192 832 96 ) ( -448 832 96 ) ( -448 832 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -320 832 48 ) ( -448 800 96 ) ( -192 800 0 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 6
+{
+( -448 256 96 ) ( -448 288 96 ) ( -192 288 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -448 256 96 ) ( -192 256 96 ) ( -192 256 0 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -192 256 96 ) ( -192 288 96 ) ( -192 288 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -192 288 96 ) ( -448 288 96 ) ( -448 288 0 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -320 288 48 ) ( -448 256 96 ) ( -192 256 0 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 7
+{
+( -448 832 96 ) ( -512 832 96 ) ( -512 600 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -512 600 192 ) ( -512 832 192 ) ( -448 832 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -520 256 192 ) ( -456 256 192 ) ( -456 256 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -448 600 192 ) ( -448 832 192 ) ( -448 832 96 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -448 832 192 ) ( -512 832 192 ) ( -512 832 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -512 832 192 ) ( -512 600 192 ) ( -512 600 96 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 8
+{
+( -160 640 -224 ) ( -192 640 -224 ) ( -192 448 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 448 -192 ) ( -192 640 -192 ) ( -160 640 -192 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( -192 448 -192 ) ( -160 448 -192 ) ( -160 448 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 448 -192 ) ( -160 640 -192 ) ( -160 640 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 640 -192 ) ( -192 640 -192 ) ( -192 640 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 640 -192 ) ( -192 448 -192 ) ( -192 448 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 9
+{
+( 224 768 -192 ) ( 192 768 -192 ) ( 192 736 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 736 80 ) ( 224 736 80 ) ( 224 736 0 ) gbs_japan/wood_trim_dark 0 -18 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 768 80 ) ( 192 768 80 ) ( 192 768 0 ) gbs_japan/wood_trim_dark 0 18 -90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 768 80 ) ( 192 736 80 ) ( 192 736 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 200 736 -144 ) ( 200 768 -148 ) ( 200 736 -152 ) gbs_japan/wood_trim_dark 0 0 -90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 200 768 54 ) ( 208 736 52 ) ( 192 736 56 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 10
+{
+( 168 528 -192 ) ( 176 528 -192 ) ( 176 592 -192 ) gbs_japan/wood_trim 32 31.9976 90 -0.5 -0.125 0 0 0 
+( 168 592 -64 ) ( 168 528 -64 ) ( 160 528 -64 ) gbs_japan/wood_trim 32 31.9976 90 -0.5 -0.125 0 0 0 
+( 176 592 64 ) ( 168 592 64 ) ( 168 592 -192 ) gbs_japan/wood_trim 64 31.9973 90 -1 -0.125 0 0 0 
+( 172 592 64 ) ( 172 528 64 ) ( 172 528 -192 ) gbs_japan/door_light -64 256 0 0.25 0.25 0 0 0 
+( 168 528 64 ) ( 176 528 64 ) ( 176 528 -192 ) gbs_japan/wood_trim 64 31.9973 90 -1 -0.125 0 0 0 
+( 180 528 64 ) ( 180 592 64 ) ( 180 592 -192 ) gbs_japan/door_light -64 256 0 0.25 0.25 0 0 0 
+}
+// brush 11
+{
+( -160 448 -192 ) ( -160 480 -192 ) ( -640 480 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -648 480 96 ) ( -168 480 96 ) ( -168 448 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( -160 448 128 ) ( -160 480 128 ) ( -160 480 80 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( -152 768 -176 ) ( -632 768 -176 ) ( -632 768 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 408 -192 ) ( -192 440 -192 ) ( -192 424 64 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( -160 640 -192 ) ( -192 640 -192 ) ( -176 640 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+}
+// brush 12
+{
+( -160 448 0 ) ( -160 480 0 ) ( -640 480 0 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( -648 480 96 ) ( -168 480 96 ) ( -168 448 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( -160 448 128 ) ( -160 480 128 ) ( -160 480 80 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( -192 408 -192 ) ( -192 440 -192 ) ( -192 424 64 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( -192 640 -192 ) ( -160 640 -192 ) ( -176 640 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 448 -192 ) ( -192 448 -192 ) ( -176 448 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 13
+{
+( -160 448 -192 ) ( -160 480 -192 ) ( -640 480 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -648 480 96 ) ( -168 480 96 ) ( -168 448 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( -624 256 96 ) ( -144 256 96 ) ( -144 256 48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 448 128 ) ( -160 480 128 ) ( -160 480 80 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( -192 408 -192 ) ( -192 440 -192 ) ( -192 424 64 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( -192 448 -192 ) ( -160 448 -192 ) ( -176 448 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+}
+// brush 14
+{
+( -8 736 -192 ) ( 8 736 -192 ) ( 8 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 8 768 -184 ) ( -8 768 -184 ) ( -8 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -4 768 -128 ) ( -4 736 -128 ) ( -4 736 -136 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -8 736 -184 ) ( 8 736 -184 ) ( 8 736 -192 ) gbs_japan/wood_trim 0 31 90 -0.25 -0.125 0 0 0 +surfaceparm detail 
+( 4 736 -184 ) ( 4 768 -184 ) ( 4 768 -192 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 8 768 -128 ) ( 8 736 -160 ) ( -8 752 -144 ) gbs_japan/wood_trim 0 32 90 -0.25 -0.125 0 0 0 +surfaceparm detail 
+}
+// brush 15
+{
+( -128 704 -168 ) ( 128 704 -168 ) ( 128 768 -168 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 120 760 -160 ) ( 120 696 -160 ) ( -136 696 -160 ) gbs_japan/wood_panel 0 0 0 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 128 768 96 ) ( -128 768 96 ) ( -128 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -136 736 96 ) ( 120 736 96 ) ( 120 736 -192 ) gbs_japan/wood_trim 64 0 0 -2 0.125 0 0 0 +surfaceparm detail 
+( 128 704 96 ) ( 128 768 96 ) ( 128 768 -192 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 4 736 -168 ) ( 4 752 -168 ) ( 4 744 -160 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 16
+{
+( -128 704 -168 ) ( 128 704 -168 ) ( 128 768 -168 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 120 760 -160 ) ( 120 696 -160 ) ( -136 696 -160 ) gbs_japan/wood_panel 0 0 0 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 128 768 96 ) ( -128 768 96 ) ( -128 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 768 96 ) ( -128 704 96 ) ( -128 704 -192 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -136 736 96 ) ( 120 736 96 ) ( 120 736 -192 ) gbs_japan/wood_trim 64 0 0 -2 0.125 0 0 0 +surfaceparm detail 
+( -4 752 -168 ) ( -4 736 -168 ) ( -4 744 -160 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 17
+{
+( 128 384 -168 ) ( -128 384 -168 ) ( -128 320 -168 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -120 328 -160 ) ( -120 392 -160 ) ( 136 392 -160 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 320 96 ) ( 128 320 96 ) ( 128 320 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 320 96 ) ( 128 384 96 ) ( 128 384 -192 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 136 352 96 ) ( -120 352 96 ) ( -120 352 -192 ) gbs_japan/wood_trim 64 0 0 -2 0.125 0 0 0 +surfaceparm detail 
+( 4 336 -168 ) ( 4 352 -168 ) ( 4 344 -160 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 18
+{
+( 128 384 -168 ) ( -128 384 -168 ) ( -128 320 -168 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -120 328 -160 ) ( -120 392 -160 ) ( 136 392 -160 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 320 96 ) ( 128 320 96 ) ( 128 320 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 136 352 96 ) ( -120 352 96 ) ( -120 352 -192 ) gbs_japan/wood_trim 64 0 0 -2 0.125 0 0 0 +surfaceparm detail 
+( -128 384 96 ) ( -128 320 96 ) ( -128 320 -192 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -4 352 -168 ) ( -4 336 -168 ) ( -4 344 -160 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 19
+{
+( 8 352 -192 ) ( -8 352 -192 ) ( -8 320 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -8 320 -184 ) ( 8 320 -184 ) ( 8 320 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 4 320 -128 ) ( 4 352 -128 ) ( 4 352 -136 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 8 352 -184 ) ( -8 352 -184 ) ( -8 352 -192 ) gbs_japan/wood_trim 0 31.9999 90 -0.25 -0.125 0 0 0 +surfaceparm detail 
+( -4 352 -184 ) ( -4 320 -184 ) ( -4 320 -192 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -8 320 -128 ) ( -8 352 -160 ) ( 8 336 -144 ) gbs_japan/wood_trim 0 32.0001 90 -0.25 -0.125 0 0 0 +surfaceparm detail 
+}
+// brush 20
+{
+( 192 832 96 ) ( -32 832 96 ) ( -32 800 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -32 800 192 ) ( -32 832 192 ) ( 192 832 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -288 800 192 ) ( -64 800 192 ) ( -64 800 96 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 
+( 192 800 192 ) ( 192 832 192 ) ( 192 832 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 832 192 ) ( -32 832 192 ) ( -32 832 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -448 856 192 ) ( -448 824 192 ) ( -448 824 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 21
+{
+( -224 512 104 ) ( -224 512 80 ) ( -480 512 144 ) gbs_japan/wood_trim_1_dark 0 48 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -192 544 104 ) ( -192 544 80 ) ( -192 512 80 ) common/caulk 0 48 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -448 544 136 ) ( -448 576 136 ) ( -448 576 160 ) common/caulk 0 48 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -472 576 168 ) ( -472 576 144 ) ( -216 576 80 ) gbs_japan/wood_trim_1_dark 0 48 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -320 576 144 ) ( -192 512 96 ) ( -448 512 192 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 
+( -320 576 112 ) ( -448 512 160 ) ( -192 512 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 
+}
+// brush 22
+{
+( -224 384 104 ) ( -224 384 80 ) ( -480 384 144 ) gbs_japan/wood_trim_1_dark 0 48 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -192 416 104 ) ( -192 416 80 ) ( -192 384 80 ) common/caulk 0 48 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -448 416 136 ) ( -448 448 136 ) ( -448 448 160 ) common/caulk 0 48 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -472 448 168 ) ( -472 448 144 ) ( -216 448 80 ) gbs_japan/wood_trim_1_dark 0 48 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -320 448 144 ) ( -192 384 96 ) ( -448 384 192 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 
+( -320 448 112 ) ( -448 384 160 ) ( -192 384 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 
+}
+// brush 23
+{
+( -224 640 104 ) ( -224 640 80 ) ( -480 640 144 ) gbs_japan/wood_trim_1_dark 0 48 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -192 672 104 ) ( -192 672 80 ) ( -192 640 80 ) common/caulk 0 48 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -448 672 136 ) ( -448 704 136 ) ( -448 704 160 ) common/caulk 0 48 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -472 704 168 ) ( -472 704 144 ) ( -216 704 80 ) gbs_japan/wood_trim_1_dark 0 48 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -320 704 144 ) ( -192 640 96 ) ( -448 640 192 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 
+( -320 704 112 ) ( -448 640 160 ) ( -192 640 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 
+}
+// brush 24
+{
+( 192 400 96 ) ( -144 400 96 ) ( -144 256 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 256 256 ) ( 176 256 256 ) ( 176 256 208 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 
+( 304 288 256 ) ( -32 288 256 ) ( -32 288 208 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 
+( -448 416 256 ) ( -448 272 256 ) ( -448 272 208 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 288 -32 ) ( 192 272 -32 ) ( 192 280 224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 176 256 192 ) ( 200 288 192 ) ( 224 256 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 25
+{
+( 192 352 96 ) ( 128 352 96 ) ( 128 288 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 288 352 ) ( 192 288 352 ) ( 192 288 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 288 352 ) ( 192 352 352 ) ( 192 352 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 352 352 ) ( 128 352 352 ) ( 128 352 96 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 352 352 ) ( 128 288 352 ) ( 128 288 96 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 176 288 192 ) ( 200 352 192 ) ( 224 288 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 26
+{
+( 240 768 96 ) ( 208 768 96 ) ( 208 288 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 224 288 384 ) ( 224 768 384 ) ( 224 768 336 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 768 -16 ) ( 192 288 -16 ) ( 192 288 -64 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 
+( 240 800 -32 ) ( 272 800 -32 ) ( 256 800 224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 184 288 -32 ) ( 176 288 -32 ) ( 180 288 224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 176 352 192 ) ( 200 800 192 ) ( 224 352 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 27
+{
+( -160 768 -192 ) ( -160 736 -192 ) ( -128 736 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 736 96 ) ( -160 736 96 ) ( -160 768 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 736 96 ) ( -128 768 96 ) ( -128 768 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 768 96 ) ( -160 768 96 ) ( -160 768 -192 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 768 96 ) ( -160 736 96 ) ( -160 736 -192 ) common/caulk -32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 736 96 ) ( -128 736 96 ) ( -128 736 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 28
+{
+( -160 320 -192 ) ( -128 320 -192 ) ( -128 352 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 352 96 ) ( -128 320 96 ) ( -160 320 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 352 96 ) ( -160 352 96 ) ( -160 352 -192 ) gbs_japan/wood_trim_dark 3.52687e-014 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -160 352 96 ) ( -160 320 96 ) ( -160 320 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 320 96 ) ( -128 320 96 ) ( -128 320 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 320 96 ) ( -128 352 96 ) ( -128 352 -192 ) gbs_japan/wood_trim_dark 5.09436e-014 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 29
+{
+( 256 768 64 ) ( -160 768 64 ) ( -160 736 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -160 736 96 ) ( -160 768 96 ) ( 256 768 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 720 104 ) ( 128 752 104 ) ( 128 752 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -120 704 64 ) ( -88 704 64 ) ( -104 704 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -64 640 64 ) ( -104 640 64 ) ( -84 640 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 632 64 ) ( -128 672 64 ) ( -128 652 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 30
+{
+( 256 768 64 ) ( -160 768 64 ) ( -160 736 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -160 736 96 ) ( -160 768 96 ) ( 256 768 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 720 104 ) ( 128 752 104 ) ( 128 752 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -120 576 64 ) ( -72 576 64 ) ( -96 576 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -104 512 64 ) ( -136 512 64 ) ( -120 512 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 632 64 ) ( -128 672 64 ) ( -128 652 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 31
+{
+( 256 768 64 ) ( -160 768 64 ) ( -160 736 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -160 736 96 ) ( -160 768 96 ) ( 256 768 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 720 104 ) ( 128 752 104 ) ( 128 752 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -152 448 64 ) ( -120 448 64 ) ( -136 448 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -64 384 64 ) ( -96 384 64 ) ( -80 384 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 632 64 ) ( -128 672 64 ) ( -128 652 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 32
+{
+( 128 752 64 ) ( 128 720 64 ) ( 128 720 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 736 96 ) ( -128 736 64 ) ( -128 768 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -224 736 96 ) ( -224 768 96 ) ( 64 768 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -224 768 96 ) ( -224 768 64 ) ( 64 768 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -224 768 64 ) ( -224 736 64 ) ( 64 736 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -224 736 64 ) ( -224 736 96 ) ( 64 736 96 ) gbs_japan/wood_trim_dark -64 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 33
+{
+( -152 736 64 ) ( -120 736 64 ) ( -120 736 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 352 96 ) ( -128 352 64 ) ( -160 352 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 256 96 ) ( -160 256 96 ) ( -160 544 96 ) gbs_japan/wood_trim_dark 0 -9.79685e-016 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -160 256 96 ) ( -160 256 64 ) ( -160 544 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 256 64 ) ( -128 256 64 ) ( -128 544 64 ) gbs_japan/wood_trim_dark 0 -9.79685e-016 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 256 64 ) ( -128 256 96 ) ( -128 544 96 ) gbs_japan/wood_trim_dark -64 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 34
+{
+( -128 320 64 ) ( -128 352 64 ) ( -128 352 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 352 96 ) ( 128 352 64 ) ( 128 320 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 352 96 ) ( 224 320 96 ) ( -64 320 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 320 96 ) ( 224 320 64 ) ( -64 320 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 320 64 ) ( 224 352 64 ) ( -64 352 64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 352 64 ) ( 224 352 96 ) ( -64 352 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 35
+{
+( 160 352 64 ) ( 128 352 64 ) ( 128 352 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 736 96 ) ( 128 736 64 ) ( 160 736 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 736 96 ) ( 160 736 96 ) ( 160 448 96 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 160 736 96 ) ( 160 736 64 ) ( 160 448 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 160 736 64 ) ( 128 736 64 ) ( 128 448 64 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 736 64 ) ( 128 736 96 ) ( 128 448 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 36
+{
+( 160 768 -192 ) ( 128 768 -192 ) ( 128 736 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 736 96 ) ( 128 768 96 ) ( 160 768 96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 736 96 ) ( 160 736 96 ) ( 160 736 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 160 736 96 ) ( 160 768 96 ) ( 160 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 160 768 96 ) ( 128 768 96 ) ( 128 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 768 96 ) ( 128 736 96 ) ( 128 736 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 37
+{
+( 320 832 192 ) ( -96 832 192 ) ( -96 800 192 ) gbs_japan/wall_simple_light 0 0 0 0.25 0.25 0 0 0 
+( -160 800 224 ) ( -160 832 224 ) ( 256 832 224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 784 232 ) ( 192 816 232 ) ( 192 816 192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -640 856 224 ) ( -640 824 224 ) ( -640 824 184 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -112 832 192 ) ( -80 832 192 ) ( -96 832 224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -56 256 192 ) ( -96 256 192 ) ( -76 256 224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 38
+{
+( 352 808 -192 ) ( 352 816 -192 ) ( 288 816 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 288 816 64 ) ( 288 808 64 ) ( 288 808 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 288 808 64 ) ( 352 808 64 ) ( 352 808 -192 ) gbs_japan/door_light_darker 128 256 0 -0.25 0.25 0 0 0 
+( 352 808 64 ) ( 352 816 64 ) ( 352 816 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 352 824 64 ) ( 288 824 64 ) ( 288 824 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 288 808 32 ) ( 320 824 24 ) ( 352 808 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 39
+{
+( 184 800 64 ) ( 288 800 64 ) ( 288 800 -192 ) gbs_japan/wood_trim_dark 0 -10 -14 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 192 800 56 ) ( 320 832 24 ) ( 448 800 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 832 -8 ) ( 192 800 24 ) ( 448 800 -40 ) gbs_japan/wood_trim_dark 0 0 0 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 208 832 36 ) ( 192 800 56 ) ( 224 800 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 272 832 20 ) ( 256 800 8 ) ( 288 800 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 808 48 ) ( 192 808 16 ) ( 288.002 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 40
+{
+( 184 800 64 ) ( 288 800 64 ) ( 288 800 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 192 832 64 ) ( 192 800 64 ) ( 192 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 832 -192 ) ( 224 816 -192 ) ( 224 824 64 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 800 -160 ) ( 208 832 -176 ) ( 192 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 208 832 36 ) ( 224 800 16 ) ( 192 800 56 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 808 48 ) ( 192 808 16 ) ( 224 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 41
+{
+( 184 800 64 ) ( 288 800 64 ) ( 288 800 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 288 800 184 ) ( 288 832 184 ) ( 288 832 -72 ) gbs_japan/wood_trim_dark 0 0 -90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 256 808 -192 ) ( 256 824 -192 ) ( 256 816 64 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 272 832 -176 ) ( 256 800 -160 ) ( 288 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 256 800 8 ) ( 272 832 20 ) ( 288 800 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 256 808 48 ) ( 256 808 16 ) ( 288 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 42
+{
+( 480 832 -192 ) ( 192 832 -192 ) ( 192 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 800 -160 ) ( 192 832 -160 ) ( 480 832 -160 ) gbs_japan/wood_trim_dark 0 0 0 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 192 800 -160 ) ( 480 800 -160 ) ( 480 800 -192 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 256 800 -160 ) ( 272 832 -176 ) ( 288 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 208 832 -176 ) ( 224 800 -160 ) ( 192 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 808 48 ) ( 192 808 16 ) ( 288 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 43
+{
+( 344 800 64 ) ( 448 800 64 ) ( 448 800 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 352 832 64 ) ( 352 800 64 ) ( 352 800 -192 ) gbs_japan/wood_trim_dark 0 0 -90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 384 832 -192 ) ( 384 816 -192 ) ( 384 824 64 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 384 800 -160 ) ( 368 832 -176 ) ( 352 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 368 832 -4 ) ( 384 800 -24 ) ( 352 800 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 352 808 48 ) ( 352 808 16 ) ( 384 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 44
+{
+( 184 800 64 ) ( 288 800 64 ) ( 288 800 -192 ) gbs_japan/wood_trim_dark 0 -10 -14 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 192 800 56 ) ( 320 832 24 ) ( 448 800 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 832 -8 ) ( 192 800 24 ) ( 448 800 -40 ) gbs_japan/wood_trim_dark 0 0 0 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 432 832 -20 ) ( 416 800 -32 ) ( 448 800 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 368 832 -4 ) ( 352 800 16 ) ( 384 800 -24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 351.993 808 48 ) ( 351.993 808 16 ) ( 448 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 45
+{
+( 344 800 64 ) ( 448 800 64 ) ( 448 800 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 800 64 ) ( 448 832 64 ) ( 448 832 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 808 -192 ) ( 416 824 -192 ) ( 416 816 64 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 800 -192 ) ( 432 832 -176 ) ( 416 800 -160 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 432 832 -20 ) ( 448 800 -8 ) ( 416 800 -32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 808 48 ) ( 416 808 16 ) ( 448 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 46
+{
+( 640 832 -192 ) ( 352 832 -192 ) ( 352 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 352 800 -160 ) ( 352 832 -160 ) ( 640 832 -160 ) gbs_japan/wood_trim_dark 0 0 0 0.5 -0.5 0 0 0 +surfaceparm detail 
+( 352 800 -160 ) ( 640 800 -160 ) ( 640 800 -192 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 416 800 -160 ) ( 432 832 -176 ) ( 448 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 368 832 -176 ) ( 384 800 -160 ) ( 352 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 352 808 48 ) ( 352 808 16 ) ( 448 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 47
+{
+( 256 800 40 ) ( 320 832 24 ) ( 384 800 8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 280 800 64 ) ( 384 800 64 ) ( 384 800 -192 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 384 832 -64 ) ( 280 832 -64 ) ( 280 800 -64 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 288 800 -88 ) ( 288 832 -68 ) ( 288 800 -48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 352 800 -32 ) ( 352 832 -48 ) ( 352 800 -64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 288 808 48 ) ( 288 808 16 ) ( 352 808 32 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 48
+{
+( 448 736 16 ) ( 448 736 -8 ) ( 192 736 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 
+( 448 736 -8 ) ( 448 768 -8 ) ( 192 768 56 ) gbs_japan/wood_trim_1_dark_plank 384 0 0 -0.5 0.5 0 0 0 
+( 448 832 16 ) ( 448 832 -8 ) ( 448 800 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 736 56 ) ( 192 768 56 ) ( 192 768 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 832 80 ) ( 192 832 56 ) ( 448 832 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 200 736 96 ) ( 220 768 96 ) ( 240 736 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 49
+{
+( 306 -322 -192 ) ( 302 -322 -192 ) ( 302 -330 -192 ) common/caulk -24 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 306 -330 -128 ) ( 306 -322 -128 ) ( 306 -322 -192 ) gbs_japan/wood_panel -89 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( 302 -322 -128 ) ( 302 -330 -128 ) ( 302 -330 -192 ) gbs_japan/wood_panel -9 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( 310 -334 -164 ) ( 316 -314 -164 ) ( 322 -334 -164 ) gbs_japan/wood_panel -64 -9 0 -0.03125 0.21875 0 0 0 +surfaceparm detail 
+( 306 -334 -192 ) ( 302 -338 -192 ) ( 304 -336 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 302 -310 -192 ) ( 306 -314 -192 ) ( 304 -312 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 50
+{
+( 306 -306 -192 ) ( 302 -306 -192 ) ( 302 -314 -192 ) common/caulk -24 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 302 -314 -132 ) ( 306 -314 -132 ) ( 306 -314 -196 ) gbs_japan/wood_panel 38 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( 310 -310 -128 ) ( 306 -310 -128 ) ( 306 -310 -192 ) gbs_japan/wood_panel 100 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( 310 -314 -164 ) ( 316 -310 -164 ) ( 322 -314 -164 ) gbs_japan/wood_panel 100 -64 0 -0.218769 0.03125 0 0 0 +surfaceparm detail 
+( 330 -310 -192 ) ( 326 -314 -192 ) ( 328 -312 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 306 -314 -192 ) ( 302 -310 -192 ) ( 304 -312 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 51
+{
+( 310 -334 -164 ) ( 316 -314 -164 ) ( 322 -334 -164 ) gbs_japan/wood_panel -64 -9 0 -0.03125 0.218727 0 0 0 +surfaceparm detail 
+( 326 -322 -128 ) ( 326 -330 -128 ) ( 326 -330 -192 ) gbs_japan/wood_panel -89 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( 330 -330 -128 ) ( 330 -322 -128 ) ( 330 -322 -192 ) gbs_japan/wood_panel -9 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( 330 -322 -192 ) ( 326 -322 -192 ) ( 326 -330 -192 ) common/caulk -24 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 330 -338 -192 ) ( 326 -334 -192 ) ( 328 -336 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 326 -314 -192 ) ( 330 -310 -192 ) ( 328 -312 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 52
+{
+( 306 -330 -192 ) ( 302 -330 -192 ) ( 302 -338 -192 ) common/caulk -24 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 302 -338 -128 ) ( 306 -338 -128 ) ( 306 -338 -192 ) gbs_japan/wood_panel 100 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( 310 -334 -132 ) ( 306 -334 -132 ) ( 306 -334 -196 ) gbs_japan/wood_panel 38 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( 310 -338 -164 ) ( 316 -334 -164 ) ( 322 -338 -164 ) gbs_japan/wood_panel 100 -64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( 326 -334 -192 ) ( 330 -338 -192 ) ( 328 -336 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 302 -338 -192 ) ( 306 -334 -192 ) ( 304 -336 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 53
+{
+( 334 -326 -192 ) ( 330 -326 -192 ) ( 330 -334 -192 ) common/caulk -24 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 322 -334 -128 ) ( 326 -334 -128 ) ( 326 -334 -192 ) common/caulk -24 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 326 -330 -128 ) ( 326 -322 -128 ) ( 326 -322 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 334 -314 -128 ) ( 330 -314 -128 ) ( 330 -314 -192 ) common/caulk -24 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 306 -318 -132 ) ( 306 -326 -132 ) ( 306 -326 -196 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 310 -338 -172 ) ( 316 -318 -172 ) ( 322 -338 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 54
+{
+( 18 -322 -192 ) ( 14 -322 -192 ) ( 14 -330 -192 ) common/caulk 32 8 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 6 -330 -128 ) ( 10 -330 -128 ) ( 10 -330 -192 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 10 -326 -128 ) ( 10 -318 -128 ) ( 10 -318 -192 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 18 -310 -128 ) ( 14 -310 -128 ) ( 14 -310 -192 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -10 -314 -132 ) ( -10 -322 -132 ) ( -10 -322 -196 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -6 -334 -172 ) ( 0 -314 -172 ) ( 6 -334 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 55
+{
+( -10 -326 -192 ) ( -14 -326 -192 ) ( -14 -334 -192 ) common/caulk 32 8 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -14 -334 -128 ) ( -10 -334 -128 ) ( -10 -334 -192 ) gbs_japan/wood_panel -64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -6 -330 -132 ) ( -10 -330 -132 ) ( -10 -330 -196 ) gbs_japan/wood_panel -64 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -6 -334 -164 ) ( 0 -330 -164 ) ( 6 -334 -164 ) gbs_japan/wood_panel -64 64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( 10 -330 -192 ) ( 14 -334 -192 ) ( 12 -332 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -14 -334 -192 ) ( -10 -330 -192 ) ( -12 -332 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 56
+{
+( -6 -330 -164 ) ( 0 -310 -164 ) ( 6 -330 -164 ) gbs_japan/wood_panel 64 8 0 -0.03125 0.218749 0 0 0 +surfaceparm detail 
+( 10 -318 -128 ) ( 10 -326 -128 ) ( 10 -326 -192 ) gbs_japan/wood_panel 63 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( 14 -326 -128 ) ( 14 -318 -128 ) ( 14 -318 -192 ) gbs_japan/wood_panel 8 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( 14 -318 -192 ) ( 10 -318 -192 ) ( 10 -326 -192 ) common/caulk 32 8 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 14 -334 -192 ) ( 10 -330 -192 ) ( 12 -332 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 10 -310 -192 ) ( 14 -306 -192 ) ( 12 -308 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 57
+{
+( -10 -302 -192 ) ( -14 -302 -192 ) ( -14 -310 -192 ) common/caulk 32 8 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -14 -310 -132 ) ( -10 -310 -132 ) ( -10 -310 -196 ) gbs_japan/wood_panel -64 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -6 -306 -128 ) ( -10 -306 -128 ) ( -10 -306 -192 ) gbs_japan/wood_panel -64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -6 -310 -164 ) ( 0 -306 -164 ) ( 6 -310 -164 ) gbs_japan/wood_panel -64 64 0 -0.218769 0.03125 0 0 0 +surfaceparm detail 
+( 14 -306 -192 ) ( 10 -310 -192 ) ( 12 -308 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -10 -310 -192 ) ( -14 -306 -192 ) ( -12 -308 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 58
+{
+( -10 -318 -192 ) ( -14 -318 -192 ) ( -14 -326 -192 ) common/caulk 32 8 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -10 -326 -128 ) ( -10 -318 -128 ) ( -10 -318 -192 ) gbs_japan/wood_panel 63 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -14 -318 -128 ) ( -14 -326 -128 ) ( -14 -326 -192 ) gbs_japan/wood_panel 8 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( -6 -330 -164 ) ( 0 -310 -164 ) ( 6 -330 -164 ) gbs_japan/wood_panel 64 8 0 -0.03125 0.218689 0 0 0 +surfaceparm detail 
+( -10 -330 -192 ) ( -14 -334 -192 ) ( -12 -332 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -14 -306 -192 ) ( -10 -310 -192 ) ( -12 -308 -164 ) common/caulk -8 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 59
+{
+( 178 -386 -192 ) ( 174 -386 -192 ) ( 174 -394 -192 ) common/caulk 0 -32 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 166 -394 -128 ) ( 170 -394 -128 ) ( 170 -394 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 170 -390 -128 ) ( 170 -382 -128 ) ( 170 -382 -192 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 178 -374 -128 ) ( 174 -374 -128 ) ( 174 -374 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 150 -378 -132 ) ( 150 -386 -132 ) ( 150 -386 -196 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 154 -398 -172 ) ( 160 -378 -172 ) ( 166 -398 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 60
+{
+( 150 -390 -192 ) ( 146 -390 -192 ) ( 146 -398 -192 ) common/caulk 0 -32 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 146 -398 -128 ) ( 150 -398 -128 ) ( 150 -398 -192 ) gbs_japan/wood_panel 27 0 0 -0.21875 0.1875 0 0 0 +surfaceparm detail 
+( 154 -394 -136 ) ( 150 -394 -136 ) ( 150 -394 -200 ) gbs_japan/wood_panel 63 0 0 -0.156269 0.1875 0 0 0 +surfaceparm detail 
+( 154 -398 -168 ) ( 160 -394 -168 ) ( 166 -398 -168 ) gbs_japan/wood_panel 27 -64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( 170 -394 -192 ) ( 174 -398 -192 ) ( 172 -396 -164 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 146 -398 -196 ) ( 150 -394 -196 ) ( 148 -396 -168 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 61
+{
+( 154 -394 -168 ) ( 160 -374 -168 ) ( 166 -394 -168 ) gbs_japan/wood_panel 64 -28 0 -0.03125 0.218731 0 0 0 +surfaceparm detail 
+( 170 -382 -128 ) ( 170 -390 -128 ) ( 170 -390 -192 ) gbs_japan/wood_panel -89 0 0 -0.156319 0.1875 0 0 0 +surfaceparm detail 
+( 174 -390 -128 ) ( 174 -382 -128 ) ( 174 -382 -192 ) gbs_japan/wood_panel -27 0 0 -0.218811 0.1875 0 0 0 +surfaceparm detail 
+( 174 -382 -192 ) ( 170 -382 -192 ) ( 170 -390 -192 ) common/caulk 0 -32 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 174 -398 -192 ) ( 170 -394 -192 ) ( 172 -396 -164 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 170 -374 -196 ) ( 174 -370 -196 ) ( 172 -372 -168 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 62
+{
+( 150 -366 -192 ) ( 146 -366 -192 ) ( 146 -374 -192 ) common/caulk 0 -32 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 146 -374 -136 ) ( 150 -374 -136 ) ( 150 -374 -200 ) gbs_japan/wood_panel 63 0 0 -0.156269 0.1875 0 0 0 +surfaceparm detail 
+( 154 -370 -128 ) ( 150 -370 -128 ) ( 150 -370 -192 ) gbs_japan/wood_panel 27 0 0 -0.21875 0.1875 0 0 0 +surfaceparm detail 
+( 154 -374 -168 ) ( 160 -370 -168 ) ( 166 -374 -168 ) gbs_japan/wood_panel 27 -64 0 -0.218735 0.03125 0 0 0 +surfaceparm detail 
+( 174 -370 -196 ) ( 170 -374 -196 ) ( 172 -372 -168 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 150 -374 -192 ) ( 146 -370 -192 ) ( 148 -372 -164 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 63
+{
+( 150 -382 -192 ) ( 146 -382 -192 ) ( 146 -390 -192 ) common/caulk 0 -32 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 150 -390 -128 ) ( 150 -382 -128 ) ( 150 -382 -192 ) gbs_japan/wood_panel -89 0 0 -0.156319 0.1875 0 0 0 +surfaceparm detail 
+( 146 -382 -128 ) ( 146 -390 -128 ) ( 146 -390 -192 ) gbs_japan/wood_panel -27 0 0 -0.218811 0.1875 0 0 0 +surfaceparm detail 
+( 154 -394 -168 ) ( 160 -374 -168 ) ( 166 -394 -168 ) gbs_japan/wood_panel 64 -27 0 -0.03125 0.218811 0 0 0 +surfaceparm detail 
+( 150 -394 -196 ) ( 146 -398 -196 ) ( 148 -396 -168 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 146 -370 -192 ) ( 150 -374 -192 ) ( 148 -372 -164 ) common/caulk 32 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 64
+{
+( -200 -224 96 ) ( -200 -192 96 ) ( -168 -192 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -256 16 ) ( -160 -224 16 ) ( -160 -224 -72 ) gbs_japan/wall_simple_light 256 0 0 -0.25 0.21875 0 0 0 
+( -160 256 32 ) ( -192 256 32 ) ( -192 256 -56 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 -192 16 ) ( -192 -224 16 ) ( -192 -224 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -224 -192 ) ( -184 288 -192 ) ( -208 -224 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -152 -192 -192 ) ( -176 -192 -192 ) ( -164 -192 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 65
+{
+( -192 -224 96 ) ( -192 -192 96 ) ( -160 -192 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -184 -448 48 ) ( -152 -448 48 ) ( -152 -448 -40 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -224 16 ) ( -160 -192 16 ) ( -160 -192 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 -192 16 ) ( -192 -224 16 ) ( -192 -224 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -224 -192 ) ( -184 288 -192 ) ( -208 -224 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -176 -224 -192 ) ( -152 -224 -192 ) ( -164 -224 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 66
+{
+( 472 256 -192 ) ( 504 256 -192 ) ( 504 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 512 288 96 ) ( 512 256 96 ) ( 480 256 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 536 736 16 ) ( 504 736 16 ) ( 504 736 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 288 16 ) ( 480 256 16 ) ( 480 256 -72 ) gbs_japan/pannel_wood_red 384 0 0 -0.25 0.25 0 0 0 
+( 512 192 -48 ) ( 512 224 -48 ) ( 512 224 -136 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 560 -192 -192 ) ( 536 -192 -192 ) ( 548 -192 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 67
+{
+( 472 256 -192 ) ( 504 256 -192 ) ( 504 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 512 288 96 ) ( 512 256 96 ) ( 480 256 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 288 16 ) ( 480 256 16 ) ( 480 256 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 472 -448 48 ) ( 504 -448 48 ) ( 504 -448 -40 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 512 224 48 ) ( 512 256 48 ) ( 512 256 -40 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 -224 -192 ) ( 504 -224 -192 ) ( 492 -224 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 68
+{
+( 320 64 48 ) ( 448 448 16 ) ( 192 448 80 ) gbs_japan/wall_simple_light 768 1570.13 0 -0.25 0.46875 0 0 0 
+( 352 -224 16 ) ( 272 -224 16 ) ( 312 -224 96 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 312 736 16 ) ( 352 736 16 ) ( 332 736 96 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 192 -128 32 ) ( 192 -104 32 ) ( 192 -116 112 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 448 -64 8 ) ( 448 -88 8 ) ( 448 -76 80 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 224 -224 96 ) ( 240 288 96 ) ( 256 -224 96 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+}
+// brush 69
+{
+( 0 0 48 ) ( -128 -384 16 ) ( 128 -384 80 ) gbs_japan/wall_simple_light 512 1152 0 -0.25 0.25 0 0 0 
+( -32 288 15.999 ) ( 48 288 15.999 ) ( 8 288 96 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 32 -224 15.998 ) ( -8 -224 15.998 ) ( 12 -224 96 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 128 192 31.9997 ) ( 128 168 31.9997 ) ( 128 180 112 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( -128 128 7.99805 ) ( -128 152 7.99805 ) ( -128 140 80 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( -128 -224 96 ) ( -112 288 96 ) ( -96 -224 96 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+}
+// brush 70
+{
+( 312 -408 96 ) ( 312 -440 96 ) ( 344 -440 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 360 -480 128 ) ( 328 -480 128 ) ( 328 -448 128 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 -496 64 ) ( 480 -464 64 ) ( 480 -464 -24 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 352 -224 -72 ) ( 320 -224 -72 ) ( 320 -224 -160 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( -160 -440 64 ) ( -160 -472 64 ) ( -160 -472 -24 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+( 320 -448 64 ) ( 352 -448 64 ) ( 352 -448 -24 ) common/caulk 0 32 0 0.5 0.5 0 1184 0 
+}
+// brush 71
+{
+( -24 -440 -160 ) ( -24 -424 -160 ) ( -32 -424 -160 ) common/caulk -16 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -32 -432 -96 ) ( -24 -432 -96 ) ( -24 -448 -96 ) common/caulk -16 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -32 -448 -192 ) ( -32 -448 -160 ) ( -24 -448 -160 ) common/caulk -16 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 -432 -192 ) ( -56 -432 -160 ) ( -56 -448 -160 ) gbs_japan/wood_trim_dark 64 0 90 -0.5 -0.25 0 0 0 +surfaceparm detail 
+( 8 -448 -192 ) ( 8 -448 -160 ) ( 8 -432 -160 ) gbs_japan/wood_trim_dark 64 0 90 -0.5 -0.25 0 0 0 +surfaceparm detail 
+( -24 -404 -96 ) ( -56 -392 -160 ) ( 8 -416 -160 ) gbs_japan/wood_trim_dark -9 -16 90 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 72
+{
+( 352 -424 -160 ) ( 344 -424 -160 ) ( 344 -440 -160 ) common/caulk 16 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 344 -448 -96 ) ( 344 -432 -96 ) ( 352 -432 -96 ) common/caulk 16 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 344 -448 -160 ) ( 352 -448 -160 ) ( 352 -448 -192 ) common/caulk 16 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 376 -448 -160 ) ( 376 -432 -160 ) ( 376 -432 -192 ) gbs_japan/wood_trim_dark 64 0 90 -0.5 -0.25 0 0 0 +surfaceparm detail 
+( 312 -432 -160 ) ( 312 -448 -160 ) ( 312 -448 -192 ) gbs_japan/wood_trim_dark 64 0 90 -0.5 -0.25 0 0 0 +surfaceparm detail 
+( 312 -416 -160 ) ( 376 -392 -160 ) ( 344 -404 -96 ) gbs_japan/wood_trim_dark 9 16 90 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 73
+{
+( 168 -424 -160 ) ( 160 -424 -160 ) ( 160 -440 -160 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 160 -448 -96 ) ( 160 -432 -96 ) ( 168 -432 -96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 160 -448 -160 ) ( 168 -448 -160 ) ( 168 -448 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 -448 -160 ) ( 192 -432 -160 ) ( 192 -432 -192 ) gbs_japan/wood_trim_dark 64 0 90 -0.5 -0.25 0 0 0 +surfaceparm detail 
+( 168 -438 -128 ) ( 160 -438 -128 ) ( 160 -438 -160 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 -432 -160 ) ( 128 -448 -160 ) ( 128 -448 -192 ) gbs_japan/wood_trim_dark 64 0 90 -0.5 -0.25 0 0 0 +surfaceparm detail 
+}
+// brush 74
+ {
+  patchDef2
+  {
+   gbs_japan/wood_panel
+   ( 3 3 0 536870912 0  )
+(
+( ( -160 -224 -96 0 0 ) ( -160 -224 -128 0 0.500000 ) ( -160 -224 -160 0 1 ) )
+( ( -144 -432 -96 4 0 ) ( -144 -432 -128 4 0.500000 ) ( -144 -432 -160 4 1 ) )
+( ( 128 -448 -96 8 0 ) ( 128 -448 -128 8 0.500000 ) ( 128 -448 -160 8 1 ) )
+)
+  }
+ }
+// brush 75
+ {
+  patchDef2
+  {
+   gbs_japan/wood_panel
+   ( 3 3 0 536870912 0  )
+(
+( ( 480 -224 -160 0 1 ) ( 480 -224 -128 0 0.500000 ) ( 480 -224 -96 0 0 ) )
+( ( 464 -432 -160 4 1 ) ( 464 -432 -128 4 0.500000 ) ( 464 -432 -96 4 0 ) )
+( ( 192 -448 -160 8 1 ) ( 192 -448 -128 8 0.500000 ) ( 192 -448 -96 8 0 ) )
+)
+  }
+ }
+// brush 76
+{
+( 276 -212 -24 ) ( 276 -196 -24 ) ( 316 -196 -24 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+( 256 -216 40 ) ( 296 -216 40 ) ( 296 -216 -48 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+( 384 -212 40 ) ( 384 -196 40 ) ( 384 -196 -48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 296 -200 40 ) ( 256 -200 40 ) ( 256 -200 -48 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+( 296 -196 40 ) ( 296 -212 40 ) ( 296 -212 -48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 -192 -40 ) ( 224 -208 -40 ) ( 312 -200 -40 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+}
+// brush 77
+{
+( 132 -212 8 ) ( 132 -196 8 ) ( 172 -196 8 ) gbs_japan/wood_trim_dark 60 32 0 -1.3125 0.25 0 0 0 +surfaceparm detail 
+( 112 -216 72 ) ( 152 -216 72 ) ( 152 -216 -16 ) gbs_japan/wood_trim_dark 121 32 0 -0.65625 0.25 0 0 0 +surfaceparm detail 
+( 248 -212 72 ) ( 248 -196 72 ) ( 248 -196 -16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 152 -200 72 ) ( 112 -200 72 ) ( 112 -200 -16 ) gbs_japan/wood_trim_dark 121 32 0 -0.65625 0.25 0 0 0 +surfaceparm detail 
+( 80 -196 72 ) ( 80 -212 72 ) ( 80 -212 -16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 80 -192 -8 ) ( 80 -208 -8 ) ( 168 -200 -8 ) gbs_japan/wood_trim_dark 121 32 0 -0.65625 0.25 0 0 0 +surfaceparm detail 
+}
+// brush 78
+{
+( -4 -212 -24 ) ( -4 -196 -24 ) ( 36 -196 -24 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+( -24 -216 40 ) ( 16 -216 40 ) ( 16 -216 -48 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+( 32 -212 40 ) ( 32 -196 40 ) ( 32 -196 -48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 16 -200 40 ) ( -24 -200 40 ) ( -24 -200 -48 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+( -56 -196 40 ) ( -56 -212 40 ) ( -56 -212 -48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 -192 -40 ) ( -56 -208 -40 ) ( 32 -200 -40 ) gbs_japan/wood_trim_dark 93 32 0 -0.34375 0.25 0 0 0 +surfaceparm detail 
+}
+// brush 79
+{
+( -4 -212 -64 ) ( -4 -196 -64 ) ( 36 -196 -64 ) gbs_japan/wood_trim_dark -82 32 0 -0.6875 0.125 0 0 0 +surfaceparm detail 
+( -24 -212 0 ) ( 16 -212 0 ) ( 16 -212 -88 ) gbs_japan/door_light_darker -8 -326 90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( 32 -212 0 ) ( 32 -196 0 ) ( 32 -196 -88 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 16 -204 0 ) ( -24 -204 0 ) ( -24 -204 -88 ) gbs_japan/door_light_darker -8 -326 90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( -56 -196 0 ) ( -56 -212 0 ) ( -56 -212 -88 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 -192 -96 ) ( -56 -208 -96 ) ( 32 -200 -96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 80
+{
+( -4 -212 -128 ) ( -4 -196 -128 ) ( 36 -196 -128 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -24 -212 -64 ) ( 16 -212 -64 ) ( 16 -212 -152 ) gbs_japan/door_light_darker 128 325 -90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( 32 -212 -64 ) ( 32 -196 -64 ) ( 32 -196 -152 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 16 -204 -64 ) ( -24 -204 -64 ) ( -24 -204 -152 ) gbs_japan/door_light_darker 128 323 -90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( -56 -196 -64 ) ( -56 -212 -64 ) ( -56 -212 -152 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 -192 -160 ) ( -56 -208 -160 ) ( 32 -200 -160 ) gbs_japan/wood_trim_dark -82 32 0 -0.6875 0.125 0 0 0 +surfaceparm detail 
+}
+// brush 81
+{
+( -4 -212 -96 ) ( -4 -196 -96 ) ( 36 -196 -96 ) gbs_japan/wood_trim_dark 64 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -24 -216 -32 ) ( 16 -216 -32 ) ( 16 -216 -120 ) gbs_japan/wood_trim_dark -82 0 0 -0.6875 0.25 0 0 0 +surfaceparm detail 
+( 32 -212 -32 ) ( 32 -196 -32 ) ( 32 -196 -120 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 16 -200 -32 ) ( -24 -200 -32 ) ( -24 -200 -120 ) gbs_japan/wood_trim_dark -82 0 0 -0.6875 0.25 0 0 0 +surfaceparm detail 
+( -56 -196 -32 ) ( -56 -212 -32 ) ( -56 -212 -120 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 -192 -128 ) ( -56 -208 -128 ) ( 32 -200 -128 ) gbs_japan/wood_trim_dark 64 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 82
+{
+( 348 -212 -96 ) ( 348 -196 -96 ) ( 388 -196 -96 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 328 -216 -32 ) ( 368 -216 -32 ) ( 368 -216 -120 ) gbs_japan/wood_trim_dark 46 0 0 -0.6875 0.25 0 0 0 +surfaceparm detail 
+( 384 -212 -32 ) ( 384 -196 -32 ) ( 384 -196 -120 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 368 -200 -32 ) ( 328 -200 -32 ) ( 328 -200 -120 ) gbs_japan/wood_trim_dark 46 0 0 -0.6875 0.25 0 0 0 +surfaceparm detail 
+( 296 -196 -32 ) ( 296 -212 -32 ) ( 296 -212 -120 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 296 -192 -128 ) ( 296 -208 -128 ) ( 384 -200 -128 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 83
+{
+( 348 -212 -128 ) ( 348 -196 -128 ) ( 388 -196 -128 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 328 -212 -64 ) ( 368 -212 -64 ) ( 368 -212 -152 ) gbs_japan/door_light_darker 128 325 -90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( 384 -212 -64 ) ( 384 -196 -64 ) ( 384 -196 -152 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 368 -204 -64 ) ( 328 -204 -64 ) ( 328 -204 -152 ) gbs_japan/door_light_darker 128 323 -90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( 296 -196 -64 ) ( 296 -212 -64 ) ( 296 -212 -152 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 296 -192 -160 ) ( 296 -208 -160 ) ( 384 -200 -160 ) gbs_japan/wood_trim_dark 46 32 0 -0.6875 0.125 0 0 0 +surfaceparm detail 
+}
+// brush 84
+{
+( 348 -212 -64 ) ( 348 -196 -64 ) ( 388 -196 -64 ) gbs_japan/wood_trim_dark 46 32 0 -0.6875 0.125 0 0 0 +surfaceparm detail 
+( 328 -212 0 ) ( 368 -212 0 ) ( 368 -212 -88 ) gbs_japan/door_light_darker 256 186 90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( 384 -212 0 ) ( 384 -196 0 ) ( 384 -196 -88 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 368 -204 0 ) ( 328 -204 0 ) ( 328 -204 -88 ) gbs_japan/door_light_darker 256 186 90 -0.25 -0.171875 0 0 0 +surfaceparm detail 
+( 296 -196 0 ) ( 296 -212 0 ) ( 296 -212 -88 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 296 -192 -96 ) ( 296 -208 -96 ) ( 384 -200 -96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 85
+{
+( -136 -216 -192 ) ( -96 -216 -192 ) ( -96 -200 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -88 -200 0 ) ( -128 -200 0 ) ( -128 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 0 32 90 -0.375 -0.25 0 0 0 +surfaceparm detail 
+( -104 -200 0 ) ( -104 -216 0 ) ( -104 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 501 32 90 -0.367191 -0.25 0 0 0 +surfaceparm detail 
+( -128 -216 0 ) ( -88 -216 0 ) ( -88 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 511 32 90 -0.374999 -0.25 0 0 0 +surfaceparm detail 
+( -88 -216 40 ) ( -88 -200 40 ) ( -88 -200 -48 ) gbs_japan/wood_trim_1_dark_plank 3 32 90 -0.375 -0.25 0 0 0 +surfaceparm detail 
+( 136 -200 56 ) ( 8 -216 24 ) ( -120 -200 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 86
+{
+( -104 -216 -192 ) ( -64 -216 -192 ) ( -64 -200 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 -200 0 ) ( -96 -200 0 ) ( -96 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 20 32 90 -0.390625 -0.25 0 0 0 +surfaceparm detail 
+( -72 -200 0 ) ( -72 -216 0 ) ( -72 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 10 32 90 -0.382812 -0.25 0 0 0 +surfaceparm detail 
+( -96 -216 0 ) ( -56 -216 0 ) ( -56 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 20 32 90 -0.390632 -0.25 0 0 0 +surfaceparm detail 
+( -56 -216 0 ) ( -56 -200 0 ) ( -56 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 20 32 90 -0.390632 -0.25 0 0 0 +surfaceparm detail 
+( 136 -200 56 ) ( 8 -216 24 ) ( -120 -200 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 87
+{
+( 32 -216 -192 ) ( 72 -216 -192 ) ( 72 -200 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 80 -200 0 ) ( 40 -200 0 ) ( 40 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 91 63 90 -0.457031 -0.25 0 0 0 +surfaceparm detail 
+( 64 -200 48 ) ( 64 -216 48 ) ( 64 -216 -40 ) gbs_japan/wood_trim_1_dark_plank 84 32 90 -0.44922 -0.25 0 0 0 +surfaceparm detail 
+( 40 -216 0 ) ( 80 -216 0 ) ( 80 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 91 63 90 -0.457028 -0.25 0 0 0 +surfaceparm detail 
+( 80 -216 0 ) ( 80 -200 0 ) ( 80 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 91 32 90 -0.457031 -0.25 0 0 0 +surfaceparm detail 
+( 168 -200 64 ) ( 40 -216 32 ) ( -88 -200 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 88
+{
+( 0 -216 -192 ) ( 40 -216 -192 ) ( 40 -200 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 48 -200 0 ) ( 8 -200 0 ) ( 8 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 77 63 90 -0.441406 -0.25 0 0 0 +surfaceparm detail 
+( 32 -200 40 ) ( 32 -216 40 ) ( 32 -216 -48 ) gbs_japan/wood_trim_1_dark_plank 69 32 90 -0.433594 -0.25 0 0 0 +surfaceparm detail 
+( 8 -216 0 ) ( 48 -216 0 ) ( 48 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 77 63 90 -0.441411 -0.25 0 0 0 +surfaceparm detail 
+( 48 -216 0 ) ( 48 -200 0 ) ( 48 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 77 32 90 -0.441411 -0.25 0 0 0 +surfaceparm detail 
+( 168 -200 64 ) ( 40 -216 32 ) ( -88 -200 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 89
+{
+( 328 -200 -192 ) ( 288 -200 -192 ) ( 288 -216 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 280 -216 0 ) ( 320 -216 0 ) ( 320 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 77 32 90 -0.441406 -0.25 0 0 0 +surfaceparm detail 
+( 296 -216 40 ) ( 296 -200 40 ) ( 296 -200 -48 ) gbs_japan/wood_trim_1_dark_plank 69 32 90 -0.433594 -0.25 0 0 0 +surfaceparm detail 
+( 320 -200 0 ) ( 280 -200 0 ) ( 280 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 77 32 90 -0.441411 -0.25 0 0 0 +surfaceparm detail 
+( 280 -200 0 ) ( 280 -216 0 ) ( 280 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 77 32 90 -0.441411 -0.25 0 0 0 +surfaceparm detail 
+( 160 -216 64 ) ( 288 -200 32 ) ( 416 -216 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 90
+{
+( 296 -200 -192 ) ( 256 -200 -192 ) ( 256 -216 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 248 -216 0 ) ( 288 -216 0 ) ( 288 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 91 31 90 -0.457031 -0.25 0 0 0 +surfaceparm detail 
+( 264 -216 48 ) ( 264 -200 48 ) ( 264 -200 -40 ) gbs_japan/wood_trim_1_dark_plank 84 32 90 -0.44922 -0.25 0 0 0 +surfaceparm detail 
+( 288 -200 0 ) ( 248 -200 0 ) ( 248 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 91 31 90 -0.457028 -0.25 0 0 0 +surfaceparm detail 
+( 248 -200 0 ) ( 248 -216 0 ) ( 248 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 91 32 90 -0.457031 -0.25 0 0 0 +surfaceparm detail 
+( 160 -216 64 ) ( 288 -200 32 ) ( 416 -216 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 91
+{
+( 432 -200 -192 ) ( 392 -200 -192 ) ( 392 -216 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 384 -216 0 ) ( 424 -216 0 ) ( 424 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 20 0 90 -0.390625 -0.25 0 0 0 +surfaceparm detail 
+( 400 -216 0 ) ( 400 -200 0 ) ( 400 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 10 32 90 -0.382812 -0.25 0 0 0 +surfaceparm detail 
+( 424 -200 0 ) ( 384 -200 0 ) ( 384 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 20 0 90 -0.390632 -0.25 0 0 0 +surfaceparm detail 
+( 384 -200 0 ) ( 384 -216 0 ) ( 384 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 20 32 90 -0.390632 -0.25 0 0 0 +surfaceparm detail 
+( 192 -216 56 ) ( 320 -200 24 ) ( 448 -216 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 92
+{
+( 464 -200 -192 ) ( 424 -200 -192 ) ( 424 -216 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 -216 0 ) ( 456 -216 0 ) ( 456 -216 -88 ) gbs_japan/wood_trim_1_dark_plank 512 0 90 -0.375 -0.25 0 0 0 +surfaceparm detail 
+( 432 -216 0 ) ( 432 -200 0 ) ( 432 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 501 32 90 -0.367191 -0.25 0 0 0 +surfaceparm detail 
+( 456 -200 0 ) ( 416 -200 0 ) ( 416 -200 -88 ) gbs_japan/wood_trim_1_dark_plank 511 0 90 -0.374999 -0.25 0 0 0 +surfaceparm detail 
+( 416 -200 40 ) ( 416 -216 40 ) ( 416 -216 -48 ) gbs_japan/wood_trim_1_dark_plank 3 32 90 -0.375 -0.25 0 0 0 +surfaceparm detail 
+( 192 -216 56 ) ( 320 -200 24 ) ( 448 -216 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 93
+{
+( 448 576 16 ) ( 448 576 -8 ) ( 192 576 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 608 80 ) ( 448 608 16 ) ( 448 576 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 448 576 -8 ) ( 448 608 -8 ) ( 192 608 56 ) gbs_japan/wood_trim_1_dark_plank 384 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 608 16 ) ( 448 608 -8 ) ( 448 576 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 608 80 ) ( 192 608 56 ) ( 448 608 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 576 56 ) ( 192 608 57 ) ( 192 576 58 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 94
+{
+( 448 416 16 ) ( 448 416 -8 ) ( 192 416 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 448 80 ) ( 448 448 16 ) ( 448 416 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 448 416 -8 ) ( 448 448 -8 ) ( 192 448 56 ) gbs_japan/wood_trim_1_dark_plank 384 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 448 16 ) ( 448 448 -8 ) ( 448 416 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 448 80 ) ( 192 448 56 ) ( 448 448 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 416 56 ) ( 192 448 57 ) ( 192 416 58 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 95
+{
+( 224 448 -192 ) ( 192 448 -192 ) ( 192 416 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 416 80 ) ( 224 416 80 ) ( 224 416 0 ) gbs_japan/wood_trim_dark 0 -18 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 448 80 ) ( 192 448 80 ) ( 192 448 0 ) gbs_japan/wood_trim_dark 0 18 -90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 448 80 ) ( 192 416 80 ) ( 192 416 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 200 416 -144 ) ( 200 448 -148 ) ( 200 416 -152 ) gbs_japan/wood_trim_dark 0 0 -90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 200 448 54 ) ( 208 416 52 ) ( 192 416 56 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 96
+ {
+  patchDef2
+  {
+   gbs_japan/wall_simple_light
+   ( 3 3 0 0 0 subdivisions 3.449304  )
+(
+( ( 480 -224 -64 0 1 ) ( 480 -224 8 0 -0.500000 ) ( 448 -224 16 0 -2 ) )
+( ( 464 -448 -64 1 1 ) ( 464 -448 80 1 -0.500000 ) ( 159.999985 -224 80 1 -2 ) )
+( ( 159.999985 -448 -64 2 1 ) ( 159.999985 -448 80 2 -0.500000 ) ( 159.999985 -224 80 2 -2 ) )
+)
+  }
+ }
+// brush 97
+ {
+  patchDef2
+  {
+   gbs_japan/wall_simple_light
+   ( 3 3 0 0 0 subdivisions 3.449304  )
+(
+( ( -128 -224 16 0 1 ) ( -160 -224 8 0 -0.500000 ) ( -160 -224 -64 0 -2 ) )
+( ( 160 -224 80 1 1 ) ( -144 -448 80 1 -0.500000 ) ( -144 -448 -64 1 -2 ) )
+( ( 160 -224 80 2 1 ) ( 160 -448 80 2 -0.500000 ) ( 160 -448 -64 2 -2 ) )
+)
+  }
+ }
+// brush 98
+{
+( -160 -544 0 ) ( -160 -32 0 ) ( -128 -32 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 -64 0 ) ( -128 -64 0 ) ( -128 -64 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 -32 0 ) ( -160 -32 0 ) ( -160 -32 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -160 -32 0 ) ( -160 -544 0 ) ( -160 -544 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -144 -32 -192 ) ( -144 -40 -192 ) ( -144 -36 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 -64 -112 ) ( -164 -32 -108 ) ( -168 -64 -104 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 99
+{
+( -160 -384 0 ) ( -160 128 0 ) ( -128 128 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 96 0 ) ( -128 96 0 ) ( -128 96 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 128 0 ) ( -160 128 0 ) ( -160 128 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -160 128 0 ) ( -160 -384 0 ) ( -160 -384 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -144 0 -192 ) ( -144 -16 -192 ) ( -144 -8 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 96 -112 ) ( -164 128 -108 ) ( -168 96 -104 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 100
+{
+( -128 -32 -192 ) ( -160 -32 -192 ) ( -160 -544 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 -544 0 ) ( -160 -32 0 ) ( -128 -32 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 -64 0 ) ( -128 -64 0 ) ( -128 -64 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 -544 0 ) ( -128 -32 0 ) ( -128 -32 -192 ) gbs_japan/wood_trim_1_dark_plank 0 1 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 -32 0 ) ( -160 -32 0 ) ( -160 -32 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -144 -40 -192 ) ( -144 -32 -192 ) ( -144 -36 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 101
+{
+( -128 128 -192 ) ( -160 128 -192 ) ( -160 -384 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 -384 0 ) ( -160 128 0 ) ( -128 128 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 96 0 ) ( -128 96 0 ) ( -128 96 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 -384 0 ) ( -128 128 0 ) ( -128 128 -192 ) gbs_japan/wood_trim_1_dark_plank 0 63 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 128 0 ) ( -160 128 0 ) ( -160 128 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -144 -16 -192 ) ( -144 0 -192 ) ( -144 -8 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 102
+{
+( -136 -192 -192 ) ( -168 -192 -192 ) ( -168 -224 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -176 -192 16 ) ( -144 -192 16 ) ( -144 -192 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -144 -192 16 ) ( -144 -160 16 ) ( -144 -160 -72 ) gbs_japan/wood_trim_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -136 256 16 ) ( -168 256 16 ) ( -168 256 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -176 -224 -96 ) ( -172 288 -100 ) ( -168 -224 -104 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -160 -224 -144 ) ( -160 288 -132 ) ( -160 -224 -120 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 103
+{
+( -106 -46 -192 ) ( -110 -46 -192 ) ( -110 -54 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 -54 -128 ) ( -106 -46 -128 ) ( -106 -46 -192 ) gbs_japan/wood_panel 12 0 0 -0.156319 0.1875 0 0 0 +surfaceparm detail 
+( -110 -46 -128 ) ( -110 -54 -128 ) ( -110 -54 -192 ) gbs_japan/wood_panel 100 0 0 -0.218811 0.1875 0 0 0 +surfaceparm detail 
+( -102 -58 -168 ) ( -96 -38 -168 ) ( -90 -58 -168 ) gbs_japan/wood_panel 64 100 0 -0.03125 0.218811 0 0 0 +surfaceparm detail 
+( -106 -58 -196 ) ( -110 -62 -196 ) ( -108 -60 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 -34 -192 ) ( -106 -38 -192 ) ( -108 -36 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 104
+{
+( -106 -30 -192 ) ( -110 -30 -192 ) ( -110 -38 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 -38 -136 ) ( -106 -38 -136 ) ( -106 -38 -200 ) gbs_japan/wood_panel 89 0 0 -0.156269 0.1875 0 0 0 +surfaceparm detail 
+( -102 -34 -128 ) ( -106 -34 -128 ) ( -106 -34 -192 ) gbs_japan/wood_panel 9 0 0 -0.21875 0.1875 0 0 0 +surfaceparm detail 
+( -102 -38 -168 ) ( -96 -34 -168 ) ( -90 -38 -168 ) gbs_japan/wood_panel 9 64 0 -0.218735 0.03125 0 0 0 +surfaceparm detail 
+( -82 -34 -196 ) ( -86 -38 -196 ) ( -84 -36 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 -38 -192 ) ( -110 -34 -192 ) ( -108 -36 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 105
+{
+( -102 -58 -168 ) ( -96 -38 -168 ) ( -90 -58 -168 ) gbs_japan/wood_panel 64 100 0 -0.03125 0.218731 0 0 0 +surfaceparm detail 
+( -86 -46 -128 ) ( -86 -54 -128 ) ( -86 -54 -192 ) gbs_japan/wood_panel 12 0 0 -0.156319 0.1875 0 0 0 +surfaceparm detail 
+( -82 -54 -128 ) ( -82 -46 -128 ) ( -82 -46 -192 ) gbs_japan/wood_panel 100 0 0 -0.218811 0.1875 0 0 0 +surfaceparm detail 
+( -82 -46 -192 ) ( -86 -46 -192 ) ( -86 -54 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -82 -62 -192 ) ( -86 -58 -192 ) ( -84 -60 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -86 -38 -196 ) ( -82 -34 -196 ) ( -84 -36 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 106
+{
+( -106 -54 -192 ) ( -110 -54 -192 ) ( -110 -62 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 -62 -128 ) ( -106 -62 -128 ) ( -106 -62 -192 ) gbs_japan/wood_panel 9 0 0 -0.21875 0.1875 0 0 0 +surfaceparm detail 
+( -102 -58 -136 ) ( -106 -58 -136 ) ( -106 -58 -200 ) gbs_japan/wood_panel 89 0 0 -0.156269 0.1875 0 0 0 +surfaceparm detail 
+( -102 -62 -168 ) ( -96 -58 -168 ) ( -90 -62 -168 ) gbs_japan/wood_panel 9 64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( -86 -58 -192 ) ( -82 -62 -192 ) ( -84 -60 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 -62 -196 ) ( -106 -58 -196 ) ( -108 -60 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 107
+{
+( -78 -50 -192 ) ( -82 -50 -192 ) ( -82 -58 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -90 -58 -128 ) ( -86 -58 -128 ) ( -86 -58 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -86 -54 -128 ) ( -86 -46 -128 ) ( -86 -46 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -78 -38 -128 ) ( -82 -38 -128 ) ( -82 -38 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 -42 -132 ) ( -106 -50 -132 ) ( -106 -50 -196 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 -62 -172 ) ( -96 -42 -172 ) ( -90 -62 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 108
+{
+( -122 -130 -192 ) ( -126 -130 -192 ) ( -126 -138 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 -138 -128 ) ( -122 -130 -128 ) ( -122 -130 -192 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -126 -130 -128 ) ( -126 -138 -128 ) ( -126 -138 -192 ) gbs_japan/wood_panel 100 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( -118 -142 -164 ) ( -112 -122 -164 ) ( -106 -142 -164 ) gbs_japan/wood_panel 64 100 0 -0.03125 0.218689 0 0 0 +surfaceparm detail 
+( -122 -142 -192 ) ( -126 -146 -192 ) ( -124 -144 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 -118 -192 ) ( -122 -122 -192 ) ( -124 -120 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 109
+{
+( -122 -114 -192 ) ( -126 -114 -192 ) ( -126 -122 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 -122 -132 ) ( -122 -122 -132 ) ( -122 -122 -196 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -118 -118 -128 ) ( -122 -118 -128 ) ( -122 -118 -192 ) gbs_japan/wood_panel 64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -118 -122 -164 ) ( -112 -118 -164 ) ( -106 -122 -164 ) gbs_japan/wood_panel 64 64 0 -0.218769 0.03125 0 0 0 +surfaceparm detail 
+( -98 -118 -192 ) ( -102 -122 -192 ) ( -100 -120 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 -122 -192 ) ( -126 -118 -192 ) ( -124 -120 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 110
+{
+( -118 -142 -164 ) ( -112 -122 -164 ) ( -106 -142 -164 ) gbs_japan/wood_panel 64 100 0 -0.03125 0.218749 0 0 0 +surfaceparm detail 
+( -102 -130 -128 ) ( -102 -138 -128 ) ( -102 -138 -192 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -98 -138 -128 ) ( -98 -130 -128 ) ( -98 -130 -192 ) gbs_japan/wood_panel 100 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( -98 -130 -192 ) ( -102 -130 -192 ) ( -102 -138 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -98 -146 -192 ) ( -102 -142 -192 ) ( -100 -144 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 -122 -192 ) ( -98 -118 -192 ) ( -100 -120 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 111
+{
+( -122 -138 -192 ) ( -126 -138 -192 ) ( -126 -146 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 -146 -128 ) ( -122 -146 -128 ) ( -122 -146 -192 ) gbs_japan/wood_panel 64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -118 -142 -132 ) ( -122 -142 -132 ) ( -122 -142 -196 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -118 -146 -164 ) ( -112 -142 -164 ) ( -106 -146 -164 ) gbs_japan/wood_panel 64 64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( -102 -142 -192 ) ( -98 -146 -192 ) ( -100 -144 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 -146 -192 ) ( -122 -142 -192 ) ( -124 -144 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 112
+{
+( -94 -134 -192 ) ( -98 -134 -192 ) ( -98 -142 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 -142 -128 ) ( -102 -142 -128 ) ( -102 -142 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 -138 -128 ) ( -102 -130 -128 ) ( -102 -130 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -94 -122 -128 ) ( -98 -122 -128 ) ( -98 -122 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 -126 -132 ) ( -122 -134 -132 ) ( -122 -134 -196 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -118 -146 -172 ) ( -112 -126 -172 ) ( -106 -146 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 113
+{
+( -94 26 -192 ) ( -98 26 -192 ) ( -98 18 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 18 -128 ) ( -102 18 -128 ) ( -102 18 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 22 -128 ) ( -102 30 -128 ) ( -102 30 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -94 38 -128 ) ( -98 38 -128 ) ( -98 38 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 34 -132 ) ( -122 26 -132 ) ( -122 26 -196 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -118 14 -172 ) ( -112 34 -172 ) ( -106 14 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 114
+{
+( -122 22 -192 ) ( -126 22 -192 ) ( -126 14 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 14 -128 ) ( -122 14 -128 ) ( -122 14 -192 ) gbs_japan/wood_panel 64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -118 18 -132 ) ( -122 18 -132 ) ( -122 18 -196 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -118 14 -164 ) ( -112 18 -164 ) ( -106 14 -164 ) gbs_japan/wood_panel 64 64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( -102 18 -192 ) ( -98 14 -192 ) ( -100 16 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 14 -192 ) ( -122 18 -192 ) ( -124 16 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 115
+{
+( -118 18 -164 ) ( -112 38 -164 ) ( -106 18 -164 ) gbs_japan/wood_panel 64 64 0 -0.03125 0.218727 0 0 0 +surfaceparm detail 
+( -102 30 -128 ) ( -102 22 -128 ) ( -102 22 -192 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -98 22 -128 ) ( -98 30 -128 ) ( -98 30 -192 ) gbs_japan/wood_panel 64 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( -98 30 -192 ) ( -102 30 -192 ) ( -102 22 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -98 14 -192 ) ( -102 18 -192 ) ( -100 16 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 38 -192 ) ( -98 42 -192 ) ( -100 40 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 116
+{
+( -122 46 -192 ) ( -126 46 -192 ) ( -126 38 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 38 -132 ) ( -122 38 -132 ) ( -122 38 -196 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -118 42 -128 ) ( -122 42 -128 ) ( -122 42 -192 ) gbs_japan/wood_panel 64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -118 38 -164 ) ( -112 42 -164 ) ( -106 38 -164 ) gbs_japan/wood_panel 64 64 0 -0.218769 0.03125 0 0 0 +surfaceparm detail 
+( -98 42 -192 ) ( -102 38 -192 ) ( -100 40 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 38 -192 ) ( -126 42 -192 ) ( -124 40 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 117
+{
+( -122 30 -192 ) ( -126 30 -192 ) ( -126 22 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 22 -128 ) ( -122 30 -128 ) ( -122 30 -192 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -126 30 -128 ) ( -126 22 -128 ) ( -126 22 -192 ) gbs_japan/wood_panel 64 18 0 -0.21875 0.21875 0 0 0 +surfaceparm detail 
+( -118 18 -164 ) ( -112 38 -164 ) ( -106 18 -164 ) gbs_japan/wood_panel 64 64 0 -0.03125 0.21875 0 0 0 +surfaceparm detail 
+( -122 18 -192 ) ( -126 14 -192 ) ( -124 16 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 42 -192 ) ( -122 38 -192 ) ( -124 40 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 118
+{
+( -78 110 -192 ) ( -82 110 -192 ) ( -82 102 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -90 102 -128 ) ( -86 102 -128 ) ( -86 102 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -86 106 -128 ) ( -86 114 -128 ) ( -86 114 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -78 122 -128 ) ( -82 122 -128 ) ( -82 122 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 118 -132 ) ( -106 110 -132 ) ( -106 110 -196 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 98 -172 ) ( -96 118 -172 ) ( -90 98 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 119
+{
+( -106 106 -192 ) ( -110 106 -192 ) ( -110 98 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 98 -128 ) ( -106 98 -128 ) ( -106 98 -192 ) gbs_japan/wood_panel 9 0 0 -0.21875 0.1875 0 0 0 +surfaceparm detail 
+( -102 102 -136 ) ( -106 102 -136 ) ( -106 102 -200 ) gbs_japan/wood_panel 89 0 0 -0.156269 0.1875 0 0 0 +surfaceparm detail 
+( -102 98 -168 ) ( -96 102 -168 ) ( -90 98 -168 ) gbs_japan/wood_panel 9 64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( -86 102 -192 ) ( -82 98 -192 ) ( -84 100 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 98 -196 ) ( -106 102 -196 ) ( -108 100 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 120
+{
+( -102 102 -168 ) ( -96 122 -168 ) ( -90 102 -168 ) gbs_japan/wood_panel 64 63 0 -0.03125 0.218769 0 0 0 +surfaceparm detail 
+( -86 114 -128 ) ( -86 106 -128 ) ( -86 106 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -82 106 -128 ) ( -82 114 -128 ) ( -82 114 -192 ) gbs_japan/wood_panel 63 0 0 -0.218769 0.1875 0 0 0 +surfaceparm detail 
+( -82 114 -192 ) ( -86 114 -192 ) ( -86 106 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -82 98 -192 ) ( -86 102 -192 ) ( -84 100 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -86 122 -196 ) ( -82 126 -196 ) ( -84 124 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 121
+{
+( -106 130 -192 ) ( -110 130 -192 ) ( -110 122 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 122 -136 ) ( -106 122 -136 ) ( -106 122 -200 ) gbs_japan/wood_panel 89 0 0 -0.156269 0.1875 0 0 0 +surfaceparm detail 
+( -102 126 -128 ) ( -106 126 -128 ) ( -106 126 -192 ) gbs_japan/wood_panel 9 0 0 -0.21875 0.1875 0 0 0 +surfaceparm detail 
+( -102 122 -168 ) ( -96 126 -168 ) ( -90 122 -168 ) gbs_japan/wood_panel 9 64 0 -0.218735 0.03125 0 0 0 +surfaceparm detail 
+( -82 126 -196 ) ( -86 122 -196 ) ( -84 124 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 122 -192 ) ( -110 126 -192 ) ( -108 124 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 122
+{
+( -106 114 -192 ) ( -110 114 -192 ) ( -110 106 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 106 -128 ) ( -106 114 -128 ) ( -106 114 -192 ) gbs_japan/wood_panel 12 0 0 -0.15625 0.1875 0 0 0 +surfaceparm detail 
+( -110 114 -128 ) ( -110 106 -128 ) ( -110 106 -192 ) gbs_japan/wood_panel 63 0 0 -0.218769 0.1875 0 0 0 +surfaceparm detail 
+( -102 102 -168 ) ( -96 122 -168 ) ( -90 102 -168 ) gbs_japan/wood_panel 64 64 0 -0.03125 0.21875 0 0 0 +surfaceparm detail 
+( -106 102 -196 ) ( -110 98 -196 ) ( -108 100 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -110 126 -192 ) ( -106 122 -192 ) ( -108 124 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 123
+{
+( -122 194 -192 ) ( -126 194 -192 ) ( -126 186 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 186 -128 ) ( -122 194 -128 ) ( -122 194 -192 ) gbs_japan/wood_panel 12 18 0 -0.156277 0.21875 0 0 0 +surfaceparm detail 
+( -126 194 -128 ) ( -126 186 -128 ) ( -126 186 -192 ) gbs_japan/wood_panel 45 18 0 -0.218758 0.21875 0 0 0 +surfaceparm detail 
+( -118 182 -164 ) ( -112 202 -164 ) ( -106 182 -164 ) gbs_japan/wood_panel 64 45 0 -0.03125 0.21875 0 0 0 +surfaceparm detail 
+( -122 182 -192 ) ( -126 178 -192 ) ( -124 180 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 206 -192 ) ( -122 202 -192 ) ( -124 204 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 124
+{
+( -122 210 -192 ) ( -126 210 -192 ) ( -126 202 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 202 -132 ) ( -122 202 -132 ) ( -122 202 -196 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -118 206 -128 ) ( -122 206 -128 ) ( -122 206 -192 ) gbs_japan/wood_panel 64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -118 202 -164 ) ( -112 206 -164 ) ( -106 202 -164 ) gbs_japan/wood_panel 64 64 0 -0.218769 0.03125 0 0 0 +surfaceparm detail 
+( -98 206 -192 ) ( -102 202 -192 ) ( -100 204 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 202 -192 ) ( -126 206 -192 ) ( -124 204 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 125
+{
+( -118 182 -164 ) ( -112 202 -164 ) ( -106 182 -164 ) gbs_japan/wood_panel 64 45 0 -0.03125 0.218758 0 0 0 +surfaceparm detail 
+( -102 194 -128 ) ( -102 186 -128 ) ( -102 186 -192 ) gbs_japan/wood_panel 12 18 0 -0.156277 0.21875 0 0 0 +surfaceparm detail 
+( -98 186 -128 ) ( -98 194 -128 ) ( -98 194 -192 ) gbs_japan/wood_panel 45 18 0 -0.218758 0.21875 0 0 0 +surfaceparm detail 
+( -98 194 -192 ) ( -102 194 -192 ) ( -102 186 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -98 178 -192 ) ( -102 182 -192 ) ( -100 180 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 202 -192 ) ( -98 206 -192 ) ( -100 204 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 126
+{
+( -122 186 -192 ) ( -126 186 -192 ) ( -126 178 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 178 -128 ) ( -122 178 -128 ) ( -122 178 -192 ) gbs_japan/wood_panel 64 18 0 -0.218769 0.21875 0 0 0 +surfaceparm detail 
+( -118 182 -132 ) ( -122 182 -132 ) ( -122 182 -196 ) gbs_japan/wood_panel 115 18 0 -0.15625 0.21875 0 0 0 +surfaceparm detail 
+( -118 178 -164 ) ( -112 182 -164 ) ( -106 178 -164 ) gbs_japan/wood_panel 64 64 0 -0.21875 0.03125 0 0 0 +surfaceparm detail 
+( -102 182 -192 ) ( -98 178 -192 ) ( -100 180 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -126 178 -192 ) ( -122 182 -192 ) ( -124 180 -164 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 127
+{
+( -94 190 -192 ) ( -98 190 -192 ) ( -98 182 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -106 182 -128 ) ( -102 182 -128 ) ( -102 182 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -102 186 -128 ) ( -102 194 -128 ) ( -102 194 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -94 202 -128 ) ( -98 202 -128 ) ( -98 202 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -122 198 -132 ) ( -122 190 -132 ) ( -122 190 -196 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -118 178 -172 ) ( -112 198 -172 ) ( -106 178 -172 ) gbs_japan/carpet_brown 0 0 45 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 128
+{
+( 32 281 -43 ) ( 32 283.001 -44 ) ( 32 281 -45 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 30 281 -87 ) ( 30 283.004 -69 ) ( 30 281 -51 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 31.9995 281 -87 ) ( 30 281 -87 ) ( 31 282 -49.0001 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 30 283.004 -87 ) ( 30 281 -87 ) ( 31.9997 281 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 31 281 -50 ) ( 31.5 283.001 -51 ) ( 32 281 -52 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 31 281 -50 ) ( 31.5 283.004 -49 ) ( 32 281 -48 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 30 282 -50 ) ( 30 283 -87 ) ( 32 282.5 -68.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 129
+{
+( 1 281 -35 ) ( 1 283.001 -36 ) ( 1 281 -37 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -1 281 -79 ) ( -1 283.004 -61 ) ( -1 281 -43 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 0.9995 281 -79 ) ( -1 281 -79 ) ( 0 282 -41.0001 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -1 283.004 -79 ) ( -1 281 -79 ) ( 0.999701 281 -79 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 0 281 -42 ) ( 0.5 283.001 -43 ) ( 1 281 -44 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 0 281 -42 ) ( 0.5 283.004 -41 ) ( 1 281 -40 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -1 282 -42 ) ( -1 283 -79 ) ( 1 282.5 -60.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 130
+{
+( -30 281 -43 ) ( -30 283.001 -44 ) ( -30 281 -45 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -32 281 -87 ) ( -32 283.004 -69 ) ( -32 281 -51 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -30.0005 281 -87 ) ( -32 281 -87 ) ( -31 282 -49.0001 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -32 283.004 -87 ) ( -32 281 -87 ) ( -30.0003 281 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -31 281 -50 ) ( -30.5 283.001 -51 ) ( -30 281 -52 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -31 281 -50 ) ( -30.5 283.004 -49 ) ( -30 281 -48 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -32 282 -50 ) ( -32 283 -87 ) ( -30 282.5 -68.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 131
+{
+( -29 284 -98 ) ( -41 284 -98 ) ( -41 276 -98 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -41 276 -96 ) ( -41 284 -96 ) ( -29 284 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -29 283 -96 ) ( -41 283 -96 ) ( -41 283 -104 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 280 -98 ) ( -33 281 -96 ) ( -29 280.5 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -29.5 283 -97 ) ( -29 280 -98 ) ( -30 280 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -32.5 283 -97 ) ( -32 279.994 -96 ) ( -33 279.994 -98 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 132
+{
+( -32 283 -90 ) ( -35 283 -90 ) ( -35 281 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -36 281 -88 ) ( -36 283 -88 ) ( -33 283 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 281 -88 ) ( -33 283 -88 ) ( -33 283 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 283 -88 ) ( -36 283 -88 ) ( -36 283 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -36 279.998 -91 ) ( -36 283 -90.5 ) ( -36 279.998 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 280 -90 ) ( -36 282 -90 ) ( -34.5 281 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 133
+{
+( -26 283 -90 ) ( -29 283 -90 ) ( -29 281 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -29 281 -88 ) ( -29 283 -88 ) ( -26 283 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -26 283 -88 ) ( -29 283 -88 ) ( -29 283 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -29 283 -88 ) ( -29 281 -88 ) ( -29 281 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -26 279.999 -88 ) ( -26 283 -88.5 ) ( -26 279.999 -89 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -26 282 -90 ) ( -29 280 -90 ) ( -27.5 281 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 134
+{
+( -29 284 -91 ) ( -41 284 -91 ) ( -41 276 -91 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -41 276 -87 ) ( -41 284 -87 ) ( -29 284 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -41 280 -87 ) ( -29 280 -87 ) ( -29 280 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -29 276 -87 ) ( -29 284 -87 ) ( -29 284 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -29 283 -87 ) ( -41 283 -87 ) ( -41 283 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 292 -87 ) ( -33 284 -87 ) ( -33 284 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -30 280 -87 ) ( -29.5 284 -87.5 ) ( -29 280 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 280 -88 ) ( -32.5 284 -87.5 ) ( -32 280 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -29.5 284 -90.5 ) ( -30 280 -91 ) ( -29 280 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -32 280 -91 ) ( -32.5 284 -90.5 ) ( -33 280 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 280 -88 ) ( -33 281 -87 ) ( -29 280.5 -87.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -33 281 -91 ) ( -33 280 -90 ) ( -29 280.5 -90.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 135
+{
+( -28 283 -96 ) ( -40 283 -96 ) ( -40 275 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -37 275 -91 ) ( -37 283 -91 ) ( -25 283 -91 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -41 281 -89 ) ( -29 281 -89 ) ( -29 281 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -30 275 -88 ) ( -30 283 -88 ) ( -30 283 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -28 283 -89 ) ( -40 283 -89 ) ( -40 283 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -32 291 -89 ) ( -32 283 -89 ) ( -32 283 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 136
+{
+( 3 283 -88 ) ( -9 283 -88 ) ( -9 275 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -6 275 -83 ) ( -6 283 -83 ) ( 6 283 -83 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -10 281 -81 ) ( 2 281 -81 ) ( 2 281 -89 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 1 275 -80 ) ( 1 283 -80 ) ( 1 283 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 3 283 -81 ) ( -9 283 -81 ) ( -9 283 -89 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -1 291 -81 ) ( -1 283 -81 ) ( -1 283 -89 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 137
+{
+( 2 284 -83 ) ( -10 284 -83 ) ( -10 276 -83 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -10 276 -79 ) ( -10 284 -79 ) ( 2 284 -79 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -10 280 -79 ) ( 2 280 -79 ) ( 2 280 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 2 276 -79 ) ( 2 284 -79 ) ( 2 284 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 2 283 -79 ) ( -10 283 -79 ) ( -10 283 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 292 -79 ) ( -2 284 -79 ) ( -2 284 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 1 280 -79 ) ( 1.5 284 -79.5 ) ( 2 280 -80 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 280 -80 ) ( -1.5 284 -79.5 ) ( -1 280 -79 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 1.5 284 -82.5 ) ( 1 280 -83 ) ( 2 280 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -1 280 -83 ) ( -1.5 284 -82.5 ) ( -2 280 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 280 -80 ) ( -2 281 -79 ) ( 2 280.5 -79.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 281 -83 ) ( -2 280 -82 ) ( 2 280.5 -82.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 138
+{
+( 5 283 -82 ) ( 2 283 -82 ) ( 2 281 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 2 281 -80 ) ( 2 283 -80 ) ( 5 283 -80 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 5 283 -80 ) ( 2 283 -80 ) ( 2 283 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 2 283 -80 ) ( 2 281 -80 ) ( 2 281 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 5 279.999 -80 ) ( 5 283 -80.5 ) ( 5 279.999 -81 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 5 282 -82 ) ( 2 280 -82 ) ( 3.5 281 -80 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 139
+{
+( -1 283 -82 ) ( -4 283 -82 ) ( -4 281 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -5 281 -80 ) ( -5 283 -80 ) ( -2 283 -80 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 281 -80 ) ( -2 283 -80 ) ( -2 283 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 283 -80 ) ( -5 283 -80 ) ( -5 283 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -5 279.998 -83 ) ( -5 283 -82.5 ) ( -5 279.998 -82 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 280 -82 ) ( -5 282 -82 ) ( -3.5 281 -80 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 140
+{
+( 2 284 -90 ) ( -10 284 -90 ) ( -10 276 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -10 276 -88 ) ( -10 284 -88 ) ( 2 284 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 2 283 -88 ) ( -10 283 -88 ) ( -10 283 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -2 280 -90 ) ( -2 281 -88 ) ( 2 280.5 -89 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 1.5 283 -89 ) ( 2 280 -90 ) ( 1 280 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -1.5 283 -89 ) ( -1 279.994 -88 ) ( -2 279.994 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 141
+{
+( 33 284 -98 ) ( 21 284 -98 ) ( 21 276 -98 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 21 276 -96 ) ( 21 284 -96 ) ( 33 284 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 33 283 -96 ) ( 21 283 -96 ) ( 21 283 -104 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 280 -98 ) ( 29 281 -96 ) ( 33 280.5 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 32.5 283 -97 ) ( 33 280 -98 ) ( 32 280 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29.5 283 -97 ) ( 30 279.994 -96 ) ( 29 279.994 -98 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 142
+{
+( 30 283 -90 ) ( 27 283 -90 ) ( 27 281 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 26 281 -88 ) ( 26 283 -88 ) ( 29 283 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 281 -88 ) ( 29 283 -88 ) ( 29 283 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 283 -88 ) ( 26 283 -88 ) ( 26 283 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 26 279.998 -91 ) ( 26 283 -90.5 ) ( 26 279.998 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 280 -90 ) ( 26 282 -90 ) ( 27.5 281 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 143
+{
+( 36 283 -90 ) ( 33 283 -90 ) ( 33 281 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 33 281 -88 ) ( 33 283 -88 ) ( 36 283 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 36 283 -88 ) ( 33 283 -88 ) ( 33 283 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 33 283 -88 ) ( 33 281 -88 ) ( 33 281 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 36 279.999 -88 ) ( 36 283 -88.5 ) ( 36 279.999 -89 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 36 282 -90 ) ( 33 280 -90 ) ( 34.5 281 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 144
+{
+( 33 284 -91 ) ( 21 284 -91 ) ( 21 276 -91 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 21 276 -87 ) ( 21 284 -87 ) ( 33 284 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 21 280 -87 ) ( 33 280 -87 ) ( 33 280 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 33 276 -87 ) ( 33 284 -87 ) ( 33 284 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 33 283 -87 ) ( 21 283 -87 ) ( 21 283 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 292 -87 ) ( 29 284 -87 ) ( 29 284 -95 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 32 280 -87 ) ( 32.5 284 -87.5 ) ( 33 280 -88 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 280 -88 ) ( 29.5 284 -87.5 ) ( 30 280 -87 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 32.5 284 -90.5 ) ( 32 280 -91 ) ( 33 280 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 30 280 -91 ) ( 29.5 284 -90.5 ) ( 29 280 -90 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 280 -88 ) ( 29 281 -87 ) ( 33 280.5 -87.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 29 281 -91 ) ( 29 280 -90 ) ( 33 280.5 -90.5 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 145
+{
+( 34 283 -96 ) ( 22 283 -96 ) ( 22 275 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 25 275 -91 ) ( 25 283 -91 ) ( 37 283 -91 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 21 281 -89 ) ( 33 281 -89 ) ( 33 281 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 32 275 -88 ) ( 32 283 -88 ) ( 32 283 -96 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 34 283 -89 ) ( 22 283 -89 ) ( 22 283 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 30 291 -89 ) ( 30 283 -89 ) ( 30 283 -97 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 146
+{
+( -104 280 -124 ) ( -104 288 -124 ) ( 56 288 -124 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( -104 280 -124 ) ( 56 280 -124 ) ( 56 280 -316 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 56 284 -124 ) ( -104 284 -124 ) ( -104 284 -316 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 64 280 -132 ) ( 52 288 -132 ) ( 40 280 -132 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( -56 280 -164 ) ( -56 288 -152 ) ( -56 280 -140 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 56 280 -124 ) ( 56 288 -128 ) ( 56 280 -132 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 147
+{
+( -104 280 -184 ) ( -104 288 -184 ) ( 56 288 -184 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( -104 280 -184 ) ( 56 280 -184 ) ( 56 280 -376 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 56 288 -184 ) ( -104 288 -184 ) ( -104 288 -376 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -64 280 -192 ) ( -60 288 -188 ) ( -56 280 -184 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 56 280 -184 ) ( 60 288 -188 ) ( 64 280 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 64 280 -192 ) ( 52 288 -192 ) ( 40 280 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 148
+{
+( 64 280 31.9995 ) ( 64 280 -192 ) ( 56 280 20 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 64 280 0 ) ( 64 288 0 ) ( 64 288 -192 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 56 288 20.0034 ) ( 56 288 -192 ) ( 64 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 56 280 -67.9966 ) ( 56 280 -280 ) ( 56 288 -68 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 64 280 0.00289154 ) ( 56 280 -11.9972 ) ( 56 288 -11.9972 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 56 280 -184 ) ( 52 288 -180 ) ( 48 280 -176 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 149
+{
+( -96 280 0 ) ( 64 280 0 ) ( 64 280 -192 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( -56 280 -152 ) ( -56 288 -152 ) ( -56 288 -344 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 64 288 0 ) ( -96 288 0 ) ( -96 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -64 288 0 ) ( -64 280 0 ) ( -64 280 -192 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( -64 280 -32 ) ( -60 288 -36 ) ( -56 280 -40 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 280 -184 ) ( -60 288 -188 ) ( -64 280 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 150
+{
+( 56 292 -184 ) ( -104 292 -184 ) ( -104 284 -184 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -96 284 0 ) ( 64 284 0 ) ( 64 284 -192 ) gbs_japan/carpet_brown 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 56 284 0 ) ( 56 292 0 ) ( 56 292 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 32 288 0 ) ( -128 288 0 ) ( -128 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 292 0 ) ( -56 284 0 ) ( -56 284 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 284 -40 ) ( 0 292 -24 ) ( 56 284 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -56 284 -40 ) ( 0 288 -26 ) ( 56 284 -12 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 151
+{
+( -56 280 -40 ) ( -64 280 -32 ) ( 52 280 -12 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 64 288 0 ) ( -64 288 -32 ) ( 52 288 -12 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 0 288 -16 ) ( 64 280 0 ) ( -64 280 -32 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( -60 288 -36 ) ( -64 280 -32 ) ( -56 280 -40 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 56 280 -12 ) ( 0 288 -26 ) ( -56 280 -40 ) gbs_japan/wood_trim_1_dark 0 0 14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 64 280 0 ) ( 60 288 -6 ) ( 56 280 -12 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 152
+{
+( 192 352 -192 ) ( 128 352 -192 ) ( 128 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 128 288 96 ) ( 128 352 96 ) ( 192 352 96 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 
+( 128 288 64 ) ( 192 288 64 ) ( 192 288 -192 ) gbs_japan/wood_trim_1_dark_plank -128 0 90 0.5 0.5 0 0 0 
+( 192 288 64 ) ( 192 352 64 ) ( 192 352 -192 ) gbs_japan/wood_trim_1_dark_plank 128 64 90 -0.5 -0.5 0 0 0 
+( 192 352 64 ) ( 128 352 64 ) ( 128 352 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 
+( 128 352 64 ) ( 128 288 64 ) ( 128 288 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 
+}
+// brush 153
+{
+( 192 768 -192 ) ( 160 768 -192 ) ( 160 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 160 288 96 ) ( 160 768 96 ) ( 192 768 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( 192 288 96 ) ( 192 768 96 ) ( 192 768 48 ) gbs_japan/wood_panel 96 0 0 0.5 0.5 0 0 0 
+( 160 768 -176 ) ( 160 288 -176 ) ( 160 288 -224 ) gbs_japan/wood_panel 224 0 0 0.5 0.5 0 0 0 
+( 152 528 -192 ) ( 184 528 -192 ) ( 168 528 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( 152 352 -192 ) ( 144 352 -192 ) ( 148 352 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 154
+{
+( 176 432 -192 ) ( -160 432 -192 ) ( -160 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 288 96 ) ( -160 432 96 ) ( 176 432 96 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 
+( -160 288 96 ) ( 176 288 96 ) ( 176 288 48 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( 304 320 96 ) ( -32 320 96 ) ( -32 320 48 ) gbs_japan/wood_panel -128 0 0 0.5 0.5 0 0 0 
+( -160 432 96 ) ( -160 288 96 ) ( -160 288 48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 128 320 -192 ) ( 128 304 -192 ) ( 128 312 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 155
+{
+( 296 832 -192 ) ( 192 832 -192 ) ( 192 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 184 808 64 ) ( 288 808 64 ) ( 288 808 -192 ) gbs_japan/wall_simple_light -16 0 0 0.25 0.25 0 0 0 
+( 288 832 64 ) ( 184 832 64 ) ( 184 832 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 824 -192 ) ( 192 840 -192 ) ( 192 832 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 288 832 -192 ) ( 288 816 -192 ) ( 288 824 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 800 56 ) ( 320 832 24 ) ( 448 800 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 156
+{
+( 448 832 -192 ) ( 344 832 -192 ) ( 344 800 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 344 808 64 ) ( 448 808 64 ) ( 448 808 -192 ) gbs_japan/wall_simple_light 16 0 0 0.25 0.25 0 0 0 
+( 448 832 64 ) ( 344 832 64 ) ( 344 832 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 352 816 -192 ) ( 352 832 -192 ) ( 352 824 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 448 824 -192 ) ( 448 808 -192 ) ( 448 816 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 800 56 ) ( 320 832 24 ) ( 448 800 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 157
+{
+( 160 800 -192 ) ( 128 800 -192 ) ( 128 320 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 120 320 96 ) ( 120 800 96 ) ( 152 800 96 ) gbs_japan/wood_trim 0 0 0 0.5 0.5 0 0 0 
+( 160 320 96 ) ( 160 800 96 ) ( 160 800 48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 160 832 96 ) ( 128 832 96 ) ( 128 832 48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -192 800 -144 ) ( -192 320 -144 ) ( -192 320 -192 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+( 208 768 -192 ) ( 176 768 -192 ) ( 192 768 64 ) gbs_japan/wood_panel 0 0 0 0.5 0.5 0 0 0 
+}
+// brush 158
+{
+( 320 -440 -192 ) ( 320 -472 -192 ) ( 352 -472 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 360 -480 96 ) ( 328 -480 96 ) ( 328 -448 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 -496 16 ) ( 480 -464 16 ) ( 480 -464 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 352 -448 -80 ) ( 320 -448 -80 ) ( 320 -448 -168 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -440 16 ) ( -160 -472 16 ) ( -160 -472 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 320 -480 16 ) ( 352 -480 16 ) ( 352 -480 -72 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 159
+{
+( 168 592 -192 ) ( 176 592 -192 ) ( 176 656 -192 ) gbs_japan/wood_trim 32 32.0002 90 -0.5 -0.125 0 0 0 
+( 168 656 -64 ) ( 168 592 -64 ) ( 160 592 -64 ) gbs_japan/wood_trim 32 32.0002 90 -0.5 -0.125 0 0 0 
+( 176 656 64 ) ( 168 656 64 ) ( 168 656 -192 ) gbs_japan/wood_trim 64 31.9973 90 -1 -0.125 0 0 0 
+( 172 656 64 ) ( 172 592 64 ) ( 172 592 -192 ) gbs_japan/door_light 64 256 0 -0.25 0.25 0 0 0 
+( 168 592 64 ) ( 176 592 64 ) ( 176 592 -192 ) gbs_japan/wood_trim 64 31.9973 90 -1 -0.125 0 0 0 
+( 180 592 64 ) ( 180 656 64 ) ( 180 656 -192 ) gbs_japan/door_light 64 256 0 -0.25 0.25 0 0 0 
+}
+// brush 160
+{
+( 192 768 -64 ) ( 160 768 -64 ) ( 160 288 -64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( 160 288 96 ) ( 160 768 96 ) ( 192 768 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( 192 288 96 ) ( 192 768 96 ) ( 192 768 48 ) gbs_japan/wood_panel 96 0 0 0.5 0.5 0 0 0 
+( 160 768 -176 ) ( 160 288 -176 ) ( 160 288 -224 ) gbs_japan/wood_panel 224 0 0 0.5 0.5 0 0 0 
+( 160 656 -192 ) ( 192 656 -192 ) ( 176 656 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 200 528 -192 ) ( 168 528 -192 ) ( 184 528 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 161
+{
+( 192 768 -192 ) ( 160 768 -192 ) ( 160 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 160 288 96 ) ( 160 768 96 ) ( 192 768 96 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+( 192 288 96 ) ( 192 768 96 ) ( 192 768 48 ) gbs_japan/wood_panel 96 0 0 0.5 0.5 0 0 0 
+( 192 832 96 ) ( 160 832 96 ) ( 160 832 48 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 160 768 -176 ) ( 160 288 -176 ) ( 160 288 -224 ) gbs_japan/wood_panel 224 0 0 0.5 0.5 0 0 0 
+( 176 656 -192 ) ( 144 656 -192 ) ( 160 656 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 
+}
+// brush 162
+{
+( 192 1248 64 ) ( 192 864 64 ) ( 192 864 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 864 32 ) ( 448 1248 0 ) ( 192 1248 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 1248 16 ) ( 320 864 48 ) ( 192 1248 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 376 0 ) ( 224 352 0 ) ( 224 364 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 608 56 ) ( 192 608 56 ) ( 208 608 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 200 736 56 ) ( 216 736 56 ) ( 208 736 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 163
+{
+( 192 1088 64 ) ( 192 704 64 ) ( 192 704 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 704 32 ) ( 448 1088 0 ) ( 192 1088 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 1088 16 ) ( 320 704 48 ) ( 192 1088 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 216 0 ) ( 224 192 0 ) ( 224 204 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 448 56 ) ( 192 448 56 ) ( 208 448 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 200 576 56 ) ( 216 576 56 ) ( 208 576 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 164
+{
+( 448 736 -192 ) ( 480 736 -192 ) ( 480 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 768 0 ) ( 480 736 0 ) ( 448 736 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 832 0 ) ( 448 832 0 ) ( 448 832 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 448 800 0 ) ( 448 768 0 ) ( 448 768 -192 ) gbs_japan/wood_trim_1_dark_plank 3 0 90 -0.375 -0.5 0 0 0 
+( 448 736 0 ) ( 480 736 0 ) ( 480 736 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 
+( 480 736 0 ) ( 480 768 0 ) ( 480 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 165
+{
+( 448 576 -192 ) ( 480 576 -192 ) ( 480 1088 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 1088 0 ) ( 480 576 0 ) ( 448 576 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 608 0 ) ( 448 608 0 ) ( 448 608 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 1088 0 ) ( 448 576 0 ) ( 448 576 -192 ) gbs_japan/wood_trim_1_dark_plank 0 1 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 576 0 ) ( 480 576 0 ) ( 480 576 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 480 576 0 ) ( 480 1088 0 ) ( 480 1088 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 166
+{
+( 448 416 -192 ) ( 480 416 -192 ) ( 480 928 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 928 0 ) ( 480 416 0 ) ( 448 416 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 448 0 ) ( 448 448 0 ) ( 448 448 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 928 0 ) ( 448 416 0 ) ( 448 416 -192 ) gbs_japan/wood_trim_1_dark_plank 0 63 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 416 0 ) ( 480 416 0 ) ( 480 416 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 480 416 0 ) ( 480 928 0 ) ( 480 928 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 167
+{
+( 448 256 -192 ) ( 480 256 -192 ) ( 480 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 768 0 ) ( 480 256 0 ) ( 448 256 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 288 0 ) ( 448 288 0 ) ( 448 288 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 800 0 ) ( 448 288 0 ) ( 448 288 -192 ) gbs_japan/wood_trim_1_dark_plank 3 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 256 0 ) ( 480 256 0 ) ( 480 256 -192 ) gbs_japan/wood_trim_1_dark_plank 512 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 480 256 0 ) ( 480 768 0 ) ( 480 768 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 168
+{
+( 448 544 64 ) ( 448 928 64 ) ( 448 928 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 544 32 ) ( 448 928 0 ) ( 192 928 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 928 16 ) ( 320 544 48 ) ( 192 928 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 72 0 ) ( 416 96 0 ) ( 416 84 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 416 576 0 ) ( 440 576 0 ) ( 428 576 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 432 448 0 ) ( 416 448 0 ) ( 424 448 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 169
+{
+( 448 544 64 ) ( 448 928 64 ) ( 448 928 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 544 32 ) ( 448 928 0 ) ( 192 928 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 928 16 ) ( 320 544 48 ) ( 192 928 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 328 288 0 ) ( 248 288 0 ) ( 288 288 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 72 0 ) ( 416 96 0 ) ( 416 84 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 416 416 0 ) ( 432 416 0 ) ( 424 416 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 170
+{
+( 448 544 64 ) ( 448 928 64 ) ( 448 928 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 544 32 ) ( 448 928 0 ) ( 192 928 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 928 16 ) ( 320 544 48 ) ( 192 928 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 296 736 0 ) ( 336 736 0 ) ( 316 736 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 72 0 ) ( 416 96 0 ) ( 416 84 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 432 608 0 ) ( 408 608 0 ) ( 420 608 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 171
+{
+( 192 928 64 ) ( 192 544 64 ) ( 192 544 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 544 32 ) ( 448 928 0 ) ( 192 928 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 928 16 ) ( 320 544 48 ) ( 192 928 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 56 0 ) ( 224 32 0 ) ( 224 44 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 288 56 ) ( 192 288 56 ) ( 208 288 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 200 416 56 ) ( 216 416 56 ) ( 208 416 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 172
+{
+( 448 256 0 ) ( 480 256 0 ) ( 480 400 0 ) gbs_japan/wood_trim_1_dark_plank 288 0 90 -1 -0.5 0 0 0 
+( 480 400 96 ) ( 480 256 96 ) ( 448 256 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 800 24 ) ( 448 800 24 ) ( 448 800 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 448 432 24 ) ( 448 288 24 ) ( 448 288 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 448 256 24 ) ( 480 256 24 ) ( 480 256 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 256 24 ) ( 480 400 24 ) ( 480 400 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 173
+{
+( 448 -224 0 ) ( 480 -224 0 ) ( 480 -80 0 ) gbs_japan/wood_trim_1_dark_plank 288 0 90 -1 -0.5 0 0 0 
+( 488 -80 96 ) ( 488 -224 96 ) ( 456 -224 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 288 24 ) ( 448 288 24 ) ( 448 288 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 448 -80 24 ) ( 448 -224 24 ) ( 448 -224 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 448 -192 28 ) ( 480 -192 28 ) ( 480 -192 4 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 -224 24 ) ( 480 -80 24 ) ( 480 -80 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 174
+{
+( 448 96 16 ) ( 448 96 -8 ) ( 192 96 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 128 80 ) ( 448 128 16 ) ( 448 96 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 448 96 -8 ) ( 448 128 -8 ) ( 192 128 56 ) gbs_japan/wood_trim_1_dark_plank 384 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 128 16 ) ( 448 128 -8 ) ( 448 96 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 96 56 ) ( 192 128 56 ) ( 192 128 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 128 80 ) ( 192 128 56 ) ( 448 128 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 175
+{
+( 192 448 64 ) ( 192 64 64 ) ( 192 64 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 64 32 ) ( 448 448 0 ) ( 192 448 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 448 16 ) ( 320 64 48 ) ( 192 448 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 -424 0 ) ( 224 -448 0 ) ( 224 -436 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 224 -192 56 ) ( 192 -192 56 ) ( 208 -192 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 200 -64 56 ) ( 216 -64 56 ) ( 208 -64 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 176
+{
+( 192 448 64 ) ( 192 64 64 ) ( 192 64 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 64 32 ) ( 448 448 0 ) ( 192 448 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 448 16 ) ( 320 64 48 ) ( 192 448 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 -424 0 ) ( 224 -448 0 ) ( 224 -436 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 216 -32 56 ) ( 200 -32 56 ) ( 208 -32 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 96 56 ) ( 216 96 56 ) ( 204 96 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 177
+{
+( 192 448 64 ) ( 192 64 64 ) ( 192 64 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 64 32 ) ( 448 448 0 ) ( 192 448 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 448 16 ) ( 320 64 48 ) ( 192 448 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 224 -424 0 ) ( 224 -448 0 ) ( 224 -436 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 184 256 56 ) ( 224 256 56 ) ( 204 256 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 240 128 56 ) ( 208 128 56 ) ( 224 128 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 178
+{
+( 448 64 64 ) ( 448 448 64 ) ( 448 448 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 64 32 ) ( 448 448 0 ) ( 192 448 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 448 16 ) ( 320 64 48 ) ( 192 448 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 296 256 0 ) ( 336 256 0 ) ( 316 256 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 -408 0 ) ( 416 -384 0 ) ( 416 -396 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 432 128 0 ) ( 408 128 0 ) ( 420 128 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 179
+{
+( 448 64 64 ) ( 448 448 64 ) ( 448 448 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 64 32 ) ( 448 448 0 ) ( 192 448 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 448 16 ) ( 320 64 48 ) ( 192 448 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 328 -192 0 ) ( 248 -192 0 ) ( 288 -192 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 -408 0 ) ( 416 -384 0 ) ( 416 -396 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 416 -64 0 ) ( 432 -64 0 ) ( 424 -64 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 180
+{
+( 448 64 64 ) ( 448 448 64 ) ( 448 448 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 320 64 32 ) ( 448 448 0 ) ( 192 448 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 448 16 ) ( 320 64 48 ) ( 192 448 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 416 -408 0 ) ( 416 -384 0 ) ( 416 -396 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 416 96 0 ) ( 440 96 0 ) ( 428 96 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 432 -32 0 ) ( 416 -32 0 ) ( 424 -32 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 181
+{
+( 448 -64 16 ) ( 448 -64 -8 ) ( 192 -64 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 -32 80 ) ( 448 -32 16 ) ( 448 -64 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 448 -64 -8 ) ( 448 -32 -8 ) ( 192 -32 56 ) gbs_japan/wood_trim_1_dark_plank 384 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 -32 16 ) ( 448 -32 -8 ) ( 448 -64 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 -64 56 ) ( 192 -32 56 ) ( 192 -32 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 -32 80 ) ( 192 -32 56 ) ( 448 -32 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 182
+{
+( 448 256 16 ) ( 448 256 -8 ) ( 192 256 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 288 80 ) ( 448 288 16 ) ( 448 256 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 448 256 -8 ) ( 448 288 -8 ) ( 192 288 56 ) gbs_japan/wood_trim_1_dark_plank 384 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 288 16 ) ( 448 288 -8 ) ( 448 256 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 256 56 ) ( 192 288 56 ) ( 192 288 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 288 80 ) ( 192 288 56 ) ( 448 288 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 183
+{
+( 448 -224 16 ) ( 448 -224 -8 ) ( 192 -224 56 ) gbs_japan/wood_trim_dark 0 -55 -14 0.5 0.5 0 0 0 +surfaceparm detail 
+( 192 -192 80 ) ( 448 -192 16 ) ( 448 -224 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 448 -224 -8 ) ( 448 -192 -8 ) ( 192 -192 56 ) gbs_japan/wood_trim_1_dark_plank 384 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( 448 -192 16 ) ( 448 -192 -8 ) ( 448 -224 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 -224 56 ) ( 192 -192 56 ) ( 192 -192 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 192 -192 80 ) ( 192 -192 56 ) ( 448 -192 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 184
+{
+( 448 -224 -192 ) ( 480 -224 -192 ) ( 480 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 488 292 96 ) ( 488 -220 96 ) ( 456 -220 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 -192 0 ) ( 448 -192 0 ) ( 448 -192 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 
+( 448 320 0 ) ( 448 -192 0 ) ( 448 -192 -192 ) gbs_japan/wood_trim_1_dark_plank 3 0 90 -0.375 -0.5 0 0 0 
+( 448 -224 0 ) ( 480 -224 0 ) ( 480 -224 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 
+( 480 -224 0 ) ( 480 288 0 ) ( 480 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 185
+{
+( 448 -64 -192 ) ( 480 -64 -192 ) ( 480 448 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 448 0 ) ( 480 -64 0 ) ( 448 -64 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 -32 0 ) ( 448 -32 0 ) ( 448 -32 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 448 0 ) ( 448 -64 0 ) ( 448 -64 -192 ) gbs_japan/wood_trim_1_dark_plank 0 63 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 -64 0 ) ( 480 -64 0 ) ( 480 -64 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 480 -64 0 ) ( 480 448 0 ) ( 480 448 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 186
+{
+( 448 96 -192 ) ( 480 96 -192 ) ( 480 608 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 608 0 ) ( 480 96 0 ) ( 448 96 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 480 128 0 ) ( 448 128 0 ) ( 448 128 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 608 0 ) ( 448 96 0 ) ( 448 96 -192 ) gbs_japan/wood_trim_1_dark_plank 0 1 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 448 96 0 ) ( 480 96 0 ) ( 480 96 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( 480 96 0 ) ( 480 608 0 ) ( 480 608 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 187
+{
+( 260 192 -192 ) ( 36 192 -192 ) ( 36 -128 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 36 -128 -188 ) ( 36 192 -188 ) ( 260 192 -188 ) gbs_japan/carpet_brown 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 32 -128 -176 ) ( 256 -128 -176 ) ( 256 -128 -208 ) gbs_japan/carpet_brown 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 320 -128 -176 ) ( 320 192 -176 ) ( 320 192 -208 ) gbs_japan/carpet_brown 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 256 192 -176 ) ( 32 192 -176 ) ( 32 192 -208 ) gbs_japan/carpet_brown 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 0 188 -176 ) ( 0 -132 -176 ) ( 0 -132 -208 ) gbs_japan/carpet_brown 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 188
+{
+( 200 288 -224 ) ( -152 288 -224 ) ( -152 -224 -224 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -224 -192 ) ( -160 288 -192 ) ( 192 288 -192 ) gbs_japan/wood 0 0 0 0.5 0.5 0 0 0 
+( -136 -448 -192 ) ( 216 -448 -192 ) ( 216 -448 -384 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 480 -216 -192 ) ( 480 296 -192 ) ( 480 296 -384 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 192 832 -192 ) ( -160 832 -192 ) ( -160 832 -384 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 288 -192 ) ( -160 -224 -192 ) ( -160 -224 -384 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 189
+{
+( -128 -192 -192 ) ( -160 -192 -192 ) ( -160 -224 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -176 -224 96 ) ( -176 -192 96 ) ( -144 -192 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -224 0 ) ( -128 -224 0 ) ( -128 -224 -192 ) gbs_japan/wood_trim_dark 0 0 90 0.5 0.5 0 0 0 
+( -128 -192 0 ) ( -128 -160 0 ) ( -128 -160 -192 ) gbs_japan/wood_trim_1_dark_plank 3 0 90 -0.375 -0.5 0 0 0 
+( -128 -192 0 ) ( -160 -192 0 ) ( -160 -192 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 
+( -160 -192 0 ) ( -160 -224 0 ) ( -160 -224 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 190
+{
+( -128 288 -192 ) ( -160 288 -192 ) ( -160 -224 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 -224 0 ) ( -160 288 0 ) ( -128 288 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 256 0 ) ( -128 256 0 ) ( -128 256 -192 ) gbs_japan/wood_trim_1_dark_plank 0 0 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 -224 0 ) ( -128 288 0 ) ( -128 288 -192 ) gbs_japan/wood_trim_1_dark_plank 512 63 90 -0.375 -0.5 0 0 0 +surfaceparm detail 
+( -128 288 0 ) ( -160 288 0 ) ( -160 288 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -160 288 0 ) ( -160 -224 0 ) ( -160 -224 -192 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 191
+{
+( -128 312 0 ) ( -160 312 0 ) ( -160 168 0 ) gbs_japan/wood_trim_1_dark_plank 288 0 90 -1 -0.5 0 0 0 
+( -152 144 96 ) ( -152 288 96 ) ( -120 288 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 -192 24 ) ( -128 -192 24 ) ( -128 -192 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -128 144 24 ) ( -128 288 24 ) ( -128 288 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -128 288 24 ) ( -160 288 24 ) ( -160 288 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( -160 288 24 ) ( -160 144 24 ) ( -160 144 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+}
+// brush 192
+{
+( -128 288 16 ) ( -128 288 -8 ) ( 128 288 56 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 256 80 ) ( -128 256 16 ) ( -128 288 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 288 -8 ) ( -128 256 -8 ) ( 128 256 56 ) gbs_japan/wood_trim_1_dark_plank 256 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 256 16 ) ( -128 256 -8 ) ( -128 288 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 256 56 ) ( 128 224 56 ) ( 128 224 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 256 80 ) ( 128 256 56 ) ( -128 256 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 193
+{
+( -128 -192 16 ) ( -128 -192 -8 ) ( 128 -192 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 -224 80 ) ( -128 -224 16 ) ( -128 -192 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 -192 -8 ) ( -128 -224 -8 ) ( 128 -224 56 ) gbs_japan/wood_trim_1_dark_plank 256 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -224 16 ) ( -128 -224 -8 ) ( -128 -192 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 -224 56 ) ( 128 -256 56 ) ( 128 -256 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 144 -224 80 ) ( 144 -224 56 ) ( -112 -224 -8 ) gbs_japan/wood_trim_dark 0 -18 14 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 194
+{
+( -128 128 16 ) ( -128 128 -8 ) ( 128 128 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 96 80 ) ( -128 96 16 ) ( -128 128 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 128 -8 ) ( -128 96 -8 ) ( 128 96 56 ) gbs_japan/wood_trim_1_dark_plank 256 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 96 16 ) ( -128 96 -8 ) ( -128 128 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 128 56 ) ( 128 96 56 ) ( 128 96 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 96 80 ) ( 128 96 56 ) ( -128 96 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+// brush 195
+{
+( -128 0 64 ) ( -128 -384 64 ) ( -128 -384 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 0 0 32 ) ( -128 -384 0 ) ( 128 -384 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -384 16 ) ( 0 0 48 ) ( 128 -384 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -96 472 -0.00195313 ) ( -96 448 -0.00195313 ) ( -96 460 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -96 -32 0 ) ( -120 -32 0 ) ( -108 -32 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -112 96 0 ) ( -96 96 0 ) ( -104 96 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 196
+{
+( -128 0 64 ) ( -128 -384 64 ) ( -128 -384 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 0 0 32 ) ( -128 -384 0 ) ( 128 -384 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -384 16 ) ( 0 0 48 ) ( 128 -384 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -8 256 -0.000979305 ) ( 72 256 -0.000979305 ) ( 32 256 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -96 472 -0.00195313 ) ( -96 448 -0.00195313 ) ( -96 460 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -96 128 0 ) ( -112 128 0 ) ( -104 128 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 197
+{
+( -128 0 64 ) ( -128 -384 64 ) ( -128 -384 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 0 0 32 ) ( -128 -384 0 ) ( 128 -384 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -384 16 ) ( 0 0 48 ) ( 128 -384 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 24 -192 -0.00195313 ) ( -16 -192 -0.00195313 ) ( 4 -192 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -96 472 -0.00195313 ) ( -96 448 -0.00195313 ) ( -96 460 72 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( -112 -64 0 ) ( -88 -64 0 ) ( -100 -64 24 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 198
+{
+( 128 -384 64 ) ( 128 0 64 ) ( 128 0 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 0 0 32 ) ( -128 -384 0 ) ( 128 -384 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -384 16 ) ( 0 0 48 ) ( 128 -384 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 96 488 -0.000280912 ) ( 96 512 -0.000280912 ) ( 96 500 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 136 -192 55.999 ) ( 96 -192 55.999 ) ( 116 -192 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 80 -64 55.999 ) ( 112 -64 55.999 ) ( 96 -64 80.0013 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 199
+{
+( 128 -384 64 ) ( 128 0 64 ) ( 128 0 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 0 0 32 ) ( -128 -384 0 ) ( 128 -384 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -384 16 ) ( 0 0 48 ) ( 128 -384 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 96 488 -0.000280912 ) ( 96 512 -0.000280912 ) ( 96 500 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 104 96 55.999 ) ( 120 96 55.999 ) ( 112 96 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 -32 55.999 ) ( 104 -32 55.999 ) ( 116 -32 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 200
+{
+( 128 -384 64 ) ( 128 0 64 ) ( 128 0 0 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 0 0 32 ) ( -128 -384 0 ) ( 128 -384 64 ) gbs_japan/wood_trim 0 0 90 0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -384 16 ) ( 0 0 48 ) ( 128 -384 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 96 488 -0.000280912 ) ( 96 512 -0.000280912 ) ( 96 500 80 ) gbs_japan/wood_trim_1 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 96 256 55.9994 ) ( 128 256 55.9994 ) ( 112 256 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 120 128 55.999 ) ( 104 128 55.999 ) ( 112 128 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+}
+// brush 201
+{
+( 192 -192 56 ) ( 128 -192 56 ) ( 128 -224 56 ) gbs_japan/wood_trim_1_dark_plank 288 63 90 -1 -1 0 0 0 
+( 128 -224 96 ) ( 128 -192 96 ) ( 192 -192 96 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 128 -224 96 ) ( 192 -224 96 ) ( 192 -224 64 ) gbs_japan/wood_trim_dark 0 -16 0 0.5 0.5 0 0 0 
+( 192 -224 96 ) ( 192 -192 96 ) ( 192 -192 64 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 
+( 176 288 96 ) ( 112 288 96 ) ( 112 288 64 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
+( 128 -32 96 ) ( 128 -64 96 ) ( 128 -64 64 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 
+}
+// brush 202
+{
+( -128 -32 16 ) ( -128 -32 -8 ) ( 128 -32 56 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+( 128 -64 80 ) ( -128 -64 16 ) ( -128 -32 16 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( -128 -32 -8 ) ( -128 -64 -8 ) ( 128 -64 56 ) gbs_japan/wood_trim_1_dark_plank 256 0 0 -0.5 0.5 0 0 0 +surfaceparm detail 
+( -128 -64 16 ) ( -128 -64 -8 ) ( -128 -32 -8 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 -32 56 ) ( 128 -64 56 ) ( 128 -64 80 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 +surfaceparm detail 
+( 128 -64 80 ) ( 128 -64 56 ) ( -128 -64 -8 ) gbs_japan/wood_trim_1_dark 0 0 0 0.5 0.5 0 0 0 +surfaceparm detail 
+}
+}
+// entity 1
+{
+"classname" "info_player_start"
+"origin" "160 32 -188"
+}
+// entity 2
+{
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "0"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "-136 192 -56"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 3
+{
+"classname" "func_group"
+"type" "patchThick"
+// brush 0
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( 464 -224 -96 0 1 ) ( 464 -224 -80 0 0.500000 ) ( 464 -224 -64 0 0 ) )
+( ( 464 -432 -96 2 1 ) ( 464 -432 -80 2 0.500000 ) ( 464 -432 -64 2 0 ) )
+( ( 160 -432 -96 4 1 ) ( 160 -432 -80 4 0.500000 ) ( 160 -432 -64 4 0 ) )
+)
+  }
+ }
+// brush 1
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( 464 -224 -64 0 1 ) ( 472 -224 -64 0 0.500000 ) ( 480 -224 -64 0 0 ) )
+( ( 464 -432 -64 0.500000 1 ) ( 469.656860 -437.656860 -64 0.500000 0.500000 ) ( 475.313721 -443.313721 -64 0.500000 0 ) )
+( ( 160 -432 -64 1 1 ) ( 160 -440 -64 1 0.500000 ) ( 160 -448 -64 1 0 ) )
+)
+  }
+ }
+// brush 2
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( 480 -224 -96 0 -1 ) ( 472 -224 -96 0 -0.500000 ) ( 464 -224 -96 0 0 ) )
+( ( 475.313721 -443.313721 -96 -0.500000 -1 ) ( 469.656860 -437.656860 -96 -0.500000 -0.500000 ) ( 464 -432 -96 -0.500000 0 ) )
+( ( 160 -448 -96 -1 -1 ) ( 160 -440 -96 -1 -0.500000 ) ( 160 -432 -96 -1 0 ) )
+)
+  }
+ }
+}
+// entity 4
+{
+"classname" "func_group"
+"type" "patchThick"
+// brush 0
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( -144 -224 -64 0 -1 ) ( -144 -224 -80 0 -0.500000 ) ( -144 -224 -96 0 0 ) )
+( ( -144 -432 -64 -2 -1 ) ( -144 -432 -80 -2 -0.500000 ) ( -144 -432 -96 -2 0 ) )
+( ( 160 -432 -64 -4 -1 ) ( 160 -432 -80 -4 -0.500000 ) ( 160 -432 -96 -4 0 ) )
+)
+  }
+ }
+// brush 1
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( -144 -224 -96 0 1 ) ( -152 -224 -96 0 0.500000 ) ( -160 -224 -96 0 0 ) )
+( ( -144 -432 -96 0.500000 1 ) ( -149.656860 -437.656860 -96 0.500000 0.500000 ) ( -155.313705 -443.313721 -96 0.500000 0 ) )
+( ( 160 -432 -96 1 1 ) ( 160 -440 -96 1 0.500000 ) ( 160 -448 -96 1 0 ) )
+)
+  }
+ }
+// brush 2
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( -160 -224 -64 0 1 ) ( -152 -224 -64 0 0.500000 ) ( -144 -224 -64 0 0 ) )
+( ( -155.313705 -443.313721 -64 0.500000 1 ) ( -149.656860 -437.656860 -64 0.500000 0.500000 ) ( -144 -432 -64 0.500000 0 ) )
+( ( 160 -448 -64 1 1 ) ( 160 -440 -64 1 0.500000 ) ( 160 -432 -64 1 0 ) )
+)
+  }
+ }
+}
+// entity 5
+{
+"classname" "func_group"
+"type" "patchThick"
+// brush 0
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( -144 -224 -160 0 1 ) ( -144 -224 -176 0 0.500000 ) ( -144 -224 -192 0 0 ) )
+( ( -144 -432 -160 2 1 ) ( -144 -432 -176 2 0.500000 ) ( -144 -432 -192 2 0 ) )
+( ( 160 -432 -160 4 1 ) ( 160 -432 -176 4 0.500000 ) ( 160 -432 -192 4 0 ) )
+)
+  }
+ }
+// brush 1
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( -160 -224 -160 0 -1 ) ( -152 -224 -160 0 -0.500000 ) ( -144 -224 -160 0 0 ) )
+( ( -155.313705 -443.313721 -160 -0.500000 -1 ) ( -149.656860 -437.656860 -160 -0.500000 -0.500000 ) ( -144 -432 -160 -0.500000 0 ) )
+( ( 160 -448 -160 -1 -1 ) ( 160 -440 -160 -1 -0.500000 ) ( 160 -432 -160 -1 0 ) )
+)
+  }
+ }
+}
+// entity 6
+{
+"classname" "func_group"
+"type" "patchThick"
+// brush 0
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( 464 -224 -192 0 -1 ) ( 464 -224 -176 0 -0.500000 ) ( 464 -224 -160 0 0 ) )
+( ( 464 -432 -192 -2 -1 ) ( 464 -432 -176 -2 -0.500000 ) ( 464 -432 -160 -2 0 ) )
+( ( 160 -432 -192 -4 -1 ) ( 160 -432 -176 -4 -0.500000 ) ( 160 -432 -160 -4 0 ) )
+)
+  }
+ }
+// brush 1
+ {
+  patchDef2
+  {
+   gbs_japan/wood_trim_dark
+   ( 3 3 0 536870912 0  )
+(
+( ( 464 -224 -160 0 1 ) ( 472 -224 -160 0 0.500000 ) ( 480 -224 -160 0 0 ) )
+( ( 464 -432 -160 0.500000 1 ) ( 469.656860 -437.656860 -160 0.500000 0.500000 ) ( 475.313721 -443.313721 -160 0.500000 0 ) )
+( ( 160 -432 -160 1 1 ) ( 160 -440 -160 1 0.500000 ) ( 160 -448 -160 1 0 ) )
+)
+  }
+ }
+}
+// entity 7
+{
+"origin" "-96.00 112.00 -172.00"
+"scale" "0.10"
+"model" "models/plant/sfa_chin_holly.tik"
+"classname" "enviro_sf-academy_plant_holly-chinese"
+}
+// entity 8
+{
+"origin" "-110.00 194.00 -192.00"
+"model" "models/plant/sf_academy_tree.tik"
+"classname" "enviro_sf-academy_plant_tree"
+}
+// entity 9
+{
+"classname" "enviro_sf-academy_plant_tree"
+"model" "models/plant/sf_academy_tree.tik"
+"origin" "-110.00 30.00 -192.00"
+}
+// entity 10
+{
+"origin" "-110.00 -130.00 -192.00"
+"model" "models/plant/sf_academy_tree.tik"
+"classname" "enviro_sf-academy_plant_tree"
+}
+// entity 11
+{
+"classname" "enviro_sf-academy_plant_holly-chinese"
+"model" "models/plant/sfa_chin_holly.tik"
+"scale" "0.10"
+"origin" "-96.00 -48.00 -172.00"
+}
+// entity 12
+{
+"origin" "318.00 -322.00 -192.00"
+"model" "models/plant/sf_academy_tree.tik"
+"classname" "enviro_sf-academy_plant_tree"
+}
+// entity 13
+{
+"classname" "enviro_sf-academy_plant_tree"
+"model" "models/plant/sf_academy_tree.tik"
+"origin" " 2.00 -318.00 -192.00"
+}
+// entity 14
+{
+"origin" "160.00 -384.00 -172.00"
+"scale" "0.10"
+"model" "models/plant/sfa_chin_holly.tik"
+"classname" "enviro_sf-academy_plant_holly-chinese"
+}
+// entity 15
+{
+"origin" "-136 32 -56"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "0"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 16
+{
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "0"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "-136 -128 -56"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 17
+{
+"_color" "1.000000 0.960784 0.843137"
+"origin" "32 192 16"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "0"
+"brightness" "1.0"
+"classname" "light"
+}
+// entity 18
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "0"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "32 32 16"
+}
+// entity 19
+{
+"_color" "1.000000 0.960784 0.843137"
+"origin" "32 -128 16"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "0"
+"brightness" "1.0"
+"classname" "light"
+}
+// entity 20
+{
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "320 192 16"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 21
+{
+"origin" "320 32 16"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 22
+{
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "320 -128 16"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 23
+{
+"_color" "1.000000 0.960784 0.843137"
+"origin" "320 672 16"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "128.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+}
+// entity 24
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "128.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "320 512 16"
+}
+// entity 25
+{
+"_color" "1.000000 0.960784 0.843137"
+"origin" "320 352 16"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "128.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+}
+// entity 26
+{
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "0"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "0 -320 40"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 27
+{
+"_color" "1.000000 0.960784 0.843137"
+"origin" "160 -352 40"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "0"
+"brightness" "1.0"
+"classname" "light"
+}
+// entity 28
+{
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "0"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "320 -320 40"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 29
+{
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "32.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "400 804 -94"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 30
+{
+"_color" "1.000000 0.960784 0.843137"
+"origin" "240 804 -74"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "32.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+}
+// entity 31
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "0 368 160"
+}
+// entity 32
+{
+"origin" "0 480 160"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 33
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "0 608 160"
+}
+// entity 34
+{
+"origin" "0 416 24"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 35
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "0 544 24"
+}
+// entity 36
+{
+"origin" "0 672 24"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 37
+{
+"origin" "0 720 160"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 38
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "-320 416 24"
+}
+// entity 39
+{
+"origin" "-320 544 24"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 40
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "-320 672 24"
+}
+// entity 41
+{
+"origin" "-576 416 128"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 42
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "-576 544 128"
+}
+// entity 43
+{
+"origin" "-576 672 128"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 44
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "-576 416 0"
+}
+// entity 45
+{
+"origin" "-576 544 0"
+"spherical_ambient" "0.0"
+"dot_product_weight" "0.5"
+"angle_penumbra" "60.0"
+"angle_hotspot" "15.0"
+"falloff_curvature" "0.5"
+"falloff_end_dist" "300.0"
+"falloff_start_dist" "64.0"
+"spawnflags" "2"
+"brightness" "1.0"
+"classname" "light"
+"_color" "1.000000 0.960784 0.843137"
+}
+// entity 46
+{
+"_color" "1.000000 0.960784 0.843137"
+"classname" "light"
+"brightness" "1.0"
+"spawnflags" "2"
+"falloff_start_dist" "64.0"
+"falloff_end_dist" "300.0"
+"falloff_curvature" "0.5"
+"angle_hotspot" "15.0"
+"angle_penumbra" "60.0"
+"dot_product_weight" "0.5"
+"spherical_ambient" "0.0"
+"origin" "-576 672 0"
+}
