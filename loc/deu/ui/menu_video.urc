@@ -1,0 +1,11 @@
+menu "video" 640 480 NONE 0
+bgcolor 0 0 0 0.4
+borderstyle NONE
+depth 0.2
+hideDuringLoad
+
+include "loc/Deu/ui/background.inc"
+include "coop_mod/ui/menu_video.inc"
+
+end.
+

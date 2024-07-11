@@ -1,3 +1,24 @@
+//Video Coop Mod
+c#034	"-> Currently active Resolution <-"
+c#131	"Field of View:"
+c#132	"Camera"
+c#133	"Changing Resolution timed out or failed.\n\nReverted back to a save Resolution.\n\nTry again with a different Resolution"
+c#134	"Keep selected Resolution ?\nReseting in:"
+c#107	"WARNING: Changes made do require a restart!"
+AspectRatio													"Aspect Raitio"
+c#145	"Required to adjust Sreen stretching to Widescreen Displays."
+c#146	"Tests the selected resolution, recovers on failure."
+c#147	"Disconnect from current game for this to work."
+c#148	"Please leave current game first."
+c#149	"Auto detects resolution. The Screen might flicker briefly."
+c#150	"Forces the selected Resolution now."
+c#151	"Can help resolve driver issues. (Triangles)"
+
+//menu_userfov
+c#094	"3rd Person Camera"
+c#095	"Camera and Field of View Settings"
+c#096	"Toggle 3rd Person view"
+
 //Shared global	strings
 Close													    "Close"
 Near                                                        "Near"
