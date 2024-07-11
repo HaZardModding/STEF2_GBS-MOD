@@ -599,7 +599,7 @@ void panel()
 
 	$jdoorpanel1.moveup(70);
 
-	$cargotubedoor.unlock();
+	//$cargotubedoor.unlock();
 	$jdoorpanel1.playsound("sound/ships/forever/for_floorhatch.wav");
 }
 
@@ -624,9 +624,9 @@ void secret()
 {
 	$bob.ai_off();
 	$phil.ai_off();
-	$bob.playdialog("localization/sound/dialog/map03/bob/secret.mp3",1,10000,0);
+	$bob.playdialog("localization/sound/dialog/gbs/bob/secret.mp3",1,10000,0);
 	waitfordialog($bob);
-	$phil.playdialog("localization/sound/dialog/map03/phil/secret.mp3",1,10000,0);
+	$phil.playdialog("localization/sound/dialog/gbs/phil/secret.mp3",1,10000,0);
     waitfordialog($phil);
 	wait(15);
 	$bob.walkto("$nav2");
@@ -644,10 +644,10 @@ void secret()
 
 void comp_found()
 {
-	$illia.playdialog("localization/sound/dialog/map03/Illia/maincomputer.mp3",1,10000,0);//Main Computer Control.
+	$illia.playdialog("localization/sound/dialog/gbs/Illia/maincomputer.mp3",1,10000,0);//Main Computer Control.
 	waitfordialog( $illia );
 	wait(1);
-	$illia.playdialog("localization/sound/dialog/map03/Illia/perfect.mp3",1,10000,0);//Perfect.
+	$illia.playdialog("localization/sound/dialog/gbs/Illia/perfect.mp3",1,10000,0);//Perfect.
 	waitfordialog( $illia );
 	wait(1);
 }
@@ -665,7 +665,7 @@ void gas1()
 	$jcomdoor.close();
 	$jcomdoor.lock();
 	$engconr.playsound( "sound/environment/computer/access_denied.wav");
-	$player.loopsound( "sound/redalert.mp3", .4, 512 );
+	$player.loopsound( "sound/redalert.wav",1, 512 );
 	$hurt1.triggerable();
 	$comroomdoor.close();
 	$comroomdoor.lock();
@@ -681,7 +681,7 @@ void redalert()
 	while( 1 ) {
 		$world.light_fade( "redalert3", .85, .4 );
 		wait( .7 );
-		$player.playsound("sound/redalert.mp3", 1, 1, 11111);
+		$player.playsound("sound/redalert.wav", 1, 1, 11111);
 		$world.light_fade( "redalert3", .2, .6 );
 		wait( 1.8 );
 	}
@@ -722,14 +722,14 @@ void eng_cin()
 	//---------------------------------------------------------------------------
 	//	The sequence stopping you from entering engineering
 	//---------------------------------------------------------------------------
-	freezeplayer();
 	cinematic();
 
 	wait(1);
 
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
 
-	wait(2);
+	wait(1);
+	freezeplayer();
 
 	letterbox ( .1 );
 
@@ -779,9 +779,9 @@ void eng_cin()
 
 	wait(0.5);
 
-	$moya.playdialog("localization/sound/dialog/map03/moya/sorry.mp3", 1, 10000, 0);// I'm Sorry Ms Ericsson.
+	$moya.playdialog("localization/sound/dialog/gbs/moya/sorry.mp3", 1, 10000, 0);// I'm Sorry Ms Ericsson.
 	waitfordialog( $moya );
-	$moya.playdialog("localization/sound/dialog/map03/moya/authorized.mp3", 1, 10000, 0);// Only Authorised Personnel May Enter Engineering.
+	$moya.playdialog("localization/sound/dialog/gbs/moya/authorized.mp3", 1, 10000, 0);// Only Authorised Personnel May Enter Engineering.
 	waitfordialog( $moya );
 
 	wait(1);
@@ -834,7 +834,7 @@ void skip_eng_cin()
 
 void com_cin()
 {
-
+	
 	//---------------------------------------------------------------------------
 	//	The sequence where you get caught messing with the engines.......Doh!
 	//---------------------------------------------------------------------------
@@ -849,124 +849,132 @@ void com_cin()
 	wait(2);
 
 	letterbox ( .1 );
-
+	
 	wait( .05 );
 
 	$cam3.follow($map3_cam3);
 	$cam3.cut();
 	wait( .5);
 	cuecamera($cam3);
-
-	skipthread("com_cin_end");
-
+	$illia_prisoner.show();
+	$illia_prisoner.solid();
+	$illia_prisoner.anim("cin-m8_situp");
+	$player.notsolid();
+	
+	$player.hide();
+	$illia2.show();
+	$illia2.solid();
+	$moya2.show();
+	$moya2.solid();
+	$comroomdoor.unlock();
 	$bud.notsolid();
 	$bud.hide();
 	$buds_case.hide();
 	$buds_case.notsolid();
 	$mac.notsolid();
 	$mac.hide();
-	$illia_prisoner.show();
-	$illia_prisoner.solid();
-	$illia_prisoner.anim("cin-m8_situp");
-	$comroomdoor.unlock();
+		
+		
+	skipthread("com_cin_end");
 
-	wait(1);
+	if(getCvarInt("dev_gbs") != 1){
 
-	cam_fadein( 1, 0, 0, 0, 1, 0 );
+		wait(1);
+		cam_fadein( 1, 0, 0, 0, 1, 0 );
 
-	wait(1);
+		wait(1);
 
-	$illia_prisoner.playdialog("localization/sound/dialog/map03/Illia/thesabotage.mp3",1,10000,0);// Sabotaging The Atlantic Was No Big Deal.
-	waitfordialog( $illia_prisoner );
+		$illia_prisoner.playdialog("localization/sound/dialog/gbs/Illia/thesabotage.mp3",1,10000,0);// Sabotaging The Atlantic Was No Big Deal.
+		waitfordialog( $illia_prisoner );
 
-	wait(0.1);
+		wait(0.1);
 
-	cam_fadeout( 1, 0, 0, 0, 1, 0 );
-	$player.notsolid();
-	$player.hide();
-	$illia2.show();
-	$illia2.solid();
-	$moya2.show();
-	$moya2.solid();
-	$jcomdoor.close();
-	$jcomdoor.lock();
+		cam_fadeout( 1, 0, 0, 0, 1, 0 );
+		
+		$jcomdoor.close();
+		$jcomdoor.lock();
 
-	$moya2.useactorweapon( "EnterpriseDatapad" );
-	$moya2.anim( "ent-datapad-use" );
+		$moya2.useactorweapon( "EnterpriseDatapad" );
+		$moya2.anim( "ent-datapad-use" );
 
-	$illia2.useactorweapon( "Tricorder" );
-	$illia2.anim( "tricorder_use_loop" );
+		$illia2.useactorweapon( "Tricorder" );
+		$illia2.anim( "tricorder_use_loop" );
 
-	$cam2.follow( $map3_cam2 );
-	$cam2.cut();
-	wait(0.5);
-	cuecamera ( $cam2 );
-	cam_fadein( 1, 0, 0, 0, 1, 0 );
+		$cam2.follow( $map3_cam2 );
+		$cam2.cut();
+		wait(0.5);
+		cuecamera ( $cam2 );
+		cam_fadein( 1, 0, 0, 0, 1, 0 );
 
-	wait(7);
+		wait(7);
 
-	$illia2.useactorweapon( "none" );
-	$illia2.anim( "idle" );
+		$illia2.useactorweapon( "none" );
+		$illia2.anim( "idle" );
 
-	$illia2.turntoangle( 125 );
-	$illia2.walkto("$illia2_com_nav1", "walk" );
-	waitfor( $illia2 );
-	$illia2.walkto("$illia2_com_nav2", "walk" );
-	waitfor( $illia2 );
-	$illia2.walkto("$illia2_com_nav3", "walk" );
-	waitfor( $illia2 );
+		$illia2.turntoangle( 125 );
+		$illia2.walkto("$illia2_com_nav1", "walk" );
+		waitfor( $illia2 );
+		$illia2.walkto("$illia2_com_nav2", "walk" );
+		waitfor( $illia2 );
+		$illia2.walkto("$illia2_com_nav3", "walk" );
+		waitfor( $illia2 );
 
-	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+		cam_fadeout( 1, 0, 0, 0, 1, 0 );
 
-	wait(2);
-	$cam3.follow($map3_cam3);
-	$cam3.cut();
-	wait(0.5);
-	cuecamera($cam3);
-	cam_fadein( 1, 0, 0, 0, 1, 0 );
+		wait(2);
+		$cam3.follow($map3_cam3);
+		$cam3.cut();
+		wait(0.5);
+		cuecamera($cam3);
+		cam_fadein( 1, 0, 0, 0, 1, 0 );
 
-	$illia_prisoner.playdialog("localization/sound/dialog/map03/Illia/virus.mp3",1,10000,0);//I Inserted a Virus Into The Main Compute That Was To Stop Every Attempt At Entering Warp For The Next Few Days.   
-	waitfordialog( $illia_prisoner );
+		$illia_prisoner.playdialog("localization/sound/dialog/gbs/Illia/virus.mp3",1,10000,0);//I Inserted a Virus Into The Main Compute That Was To Stop Every Attempt At Entering Warp For The Next Few Days.   
+		waitfordialog( $illia_prisoner );
 
-	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+		cam_fadeout( 1, 0, 0, 0, 1, 0 );
 
-	wait(2);
-	$illia2.warp( '-921 1440 -56' );
-	$cam4.follow( $map3_cam4 );
-	$cam4.cut();
-	wait(1.5);
-	cuecamera ( $cam4 );
+		wait(2);
+		$illia2.warp( '-921 1440 -56' );
+		$cam4.follow( $map3_cam4 );
+		$cam4.cut();
+		wait(1.5);
+		cuecamera ( $cam4 );
 
-	cam_fadein( 1, 0, 0, 0, 1, 0 );
+		cam_fadein( 1, 0, 0, 0, 1, 0 );
 
-	wait(2);
+		wait(1);
 
-	$illia2.turntoangle( 90 );
-	$illia2.walkto("$illia2_eng_nav1", "walk" );
-	waitfor( $illia2 );
-	$illia2.walkto("$illia2_eng_nav2", "walk" );
-	waitfor( $illia2 );
-	$illia2.walkto("$illia2_eng_nav3", "walk" );
-	waitfor( $illia2 );
-	$illia2.useactorweapon( "Tricorder" );
-	$illia2.anim( "tricorder_use_loop" );
+		$illia2.turntoangle( 90 );
+		$illia2.walkto("$illia2_eng_nav1", "walk" );
+		waitfor( $illia2 );
+		$illia2.walkto("$illia2_eng_nav2", "walk" );
+		waitfor( $illia2 );
+		$illia2.walkto("$illia2_eng_nav3", "walk" );
+		waitfor( $illia2 );
+		$illia2.useactorweapon( "Tricorder" );
+		$illia2.anim( "tricorder_use_loop" );
+		
+		wait(3);	
+
+		$illia2.useactorweapon( "none" );
+		$illia2.anim( "idle" );
+
+		$illia2.walkto("$illia2_eng_nav4", "walk" );
+		waitfor( $illia2 );
+		$illia2.walkto("$illia2_eng_nav5", "walk" );
+		waitfor( $illia2 );
+
+		$illia2.useactorweapon( "Tricorder" );
+		$illia2.anim( "tricorder_use_loop" );
 	
-	wait(3);	
-
-	$illia2.useactorweapon( "none" );
-	$illia2.anim( "idle" );
-
-	$illia2.walkto("$illia2_eng_nav4", "walk" );
-	waitfor( $illia2 );
-	$illia2.walkto("$illia2_eng_nav5", "walk" );
-	waitfor( $illia2 );
-
-	$illia2.useactorweapon( "Tricorder" );
-	$illia2.anim( "tricorder_use_loop" );
+	}else{
+		$illia2.warpto( "$illia2_eng_nav5" );
+		$illia2.walkto("$illia2_eng_nav5", "walk" );
+		waitfor( $illia2 );
+	}
 
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
-
-	wait(2);
+	wait(1);
 
 	$cam3.follow($map3_cam3);
 	$cam3.cut();
@@ -974,13 +982,12 @@ void com_cin()
 	cuecamera($cam3);
 	cam_fadein( 1, 0, 0, 0, 1, 0 );
 
-	$illia2.playdialog("localization/sound/dialog/map03/Illia/complete.mp3",1,10000,0);//When I Was Finished With My Small Manipulation Things Began To Take A Turn For The Worse.
-	waitfordialog($illia2);
-	wait(2);
+	$illia_prisoner.playdialog("localization/sound/dialog/gbs/Illia/complete.mp3",1,10000,0);//When I Was Finished With My Small Manipulation Things Began To Take A Turn For The Worse.
+	waitfordialog($illia_prisoner);
+	wait(1);
 
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
-
-	wait(2);
+	wait(1);
 
 	$cam3.follow($map3_cam5);
 	$cam3.cut();
@@ -1014,29 +1021,29 @@ void com_cin()
 	$moya2.walkto("$moya2_eng_nav1");
 	waitfor( $moya2 );
 
-	$moya2.headwatchtarget( "player" , 7 );
+	$moya2.headwatchtarget( "illia2" , 7 );
 
 	wait(1);
 
-	$moya2.playdialog("localization/sound/dialog/map03/Moya/msericsson.mp3",1,10000,0);// Ms Ericsson?
+	$moya2.playdialog("localization/sound/dialog/gbs/Moya/msericsson.mp3",1,10000,0);// Ms Ericsson?
 	waitfordialog( $moya2 );
-	wait(1);
-	$moya2.playdialog("localization/sound/dialog/map03/Moya/doing.mp3",1,10000,0);// What Are You Doing?
+	wait(0.5);
+	$moya2.playdialog("localization/sound/dialog/gbs/Moya/doing.mp3",1,10000,0);// What Are You Doing?
 	waitfordialog( $moya2 );
 	wait(1);
 	//--- Ensign Moya taps his comm badge and calls security
 	$moya2.anim( "tap_comm" );
 	waitforanimation( $moya2, "tap_comm" );
 	$moya2.anim ("idle");
-	$moya2.playdialog("localization/sound/dialog/map03/Moya/security.mp3",1,10000,0);// I Need A Security Team In Engineering.
+	$moya2.playdialog("localization/sound/dialog/gbs/Moya/security.mp3",1,10000,0);// I Need A Security Team In Engineering.
 	waitfordialog( $moya2 );
 
 	wait(0.5);
 	
-	$console1.loopsound( "sound/redalert.mp3" );
-	$console2.loopsound( "sound/redalert.mp3" );
-	$camnode_map3_cam4_9.loopsound( "sound/redalert.mp3" );
-	$camnode_map3_cam4_8.loopsound( "sound/redalert.mp3" );
+	//$console1.loopsound( "sound/redalert.wav" );
+	//$console2.loopsound( "sound/redalert.wav" );
+	//$camnode_map3_cam4_9.loopsound( "sound/redalert.wav" );
+	//$camnode_map3_cam4_8.loopsound( "sound/redalert.wav" );
 
 	$alert_green.hide();
 	$alert_red.show();
@@ -1053,7 +1060,7 @@ void com_cin()
 
 	$jcomdoor.unlock();
 
-	wait(2);
+	wait(1);
 
 	$eng_field.solid();
 	$eng_field.show();
@@ -1065,9 +1072,8 @@ void com_cin()
 	$engdoor1.moveUp( 176 );
 	eng_door=1;
 
-	$player.playsound("localization/sound/dialog/map03/Computer/shutdown_init.mp3", 1, 1, 11111); //System lockdown initialized.
+	$player.playsound("localization/sound/dialog/gbs/Computer/shutdown_init.mp3", 1.5, 1, 11111); //System lockdown initialized.
 	$eng_field.loopsound( "sound/ships/enterprise/ent_forcefield.wav", .7, 30 );
-	wait(2);
 	
 	com_cin_end();
 }
@@ -1080,7 +1086,7 @@ void com_cin_end()
 	$eng_field.solid();
 
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
-	wait(3);
+	wait(1.1);
 	$moya2.show();
 	$moya2.solid();
 	$moya2.useactorweapon( "none" );
@@ -1109,14 +1115,14 @@ void com_cin_end()
 	$illia2.hide();
 	$player.solid();
 	$player.show();
-	$eng_door3.lock();
-	$jack.solid();
-	$jack.show();
-	$jill.solid();
-	$jill.show();
+//$eng_door3.lock();
+//$jack.solid();
+//$jack.show();
+//$jill.solid();
+//$jill.show();
 
 
-	wait(2);
+	wait(0.25);
 
 	noncinematic();
 	clearletterbox( .1 );
@@ -1128,8 +1134,10 @@ void com_cin_end()
 	$player.setobjectivecomplete( "sabotageengines", 1 );
 	$player.setobjectiveshow("gettocargobay", 1);
 	$player.missionobjective(1);
-	$near_end.triggerable();
+//$near_end.triggerable();
+	
 	forcemusic( "action" );
+	
 	//-------------------------------------------------------------------------
 	// Activates Red Alert and locks and unlocks several doors
 	//-------------------------------------------------------------------------
@@ -1146,8 +1154,8 @@ void com_cin_end()
 	$jdoor1_locked.triggerable();
 	$jdoor2_locked.nottriggerable();
 	$secret_locked.triggerable();
-	$secrettrigger.nottriggerable();
-	$cargotubedoor.lock();
+//$secrettrigger.nottriggerable();
+//$cargotubedoor.lock();
 	$jdoorpanel1.movesouth(3);
 	$exitdoor.unlock();
 	$exitdoor_sound.nottriggerable();
@@ -1185,7 +1193,7 @@ void com_cin_end()
 
 void warning()
 {
-	$security2.playdialog("localization/sound/dialog/map03/lee/shoot.mp3",  1, 10000, 0);
+	$security2.playdialog("localization/sound/dialog/gbs/lee/shoot.mp3",  1, 10000, 0);
 	waitfordialog($security2);
 	$attack.triggerable();
 	globalCommon_Autosave();
