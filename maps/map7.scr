@@ -274,7 +274,7 @@ void moveWarbird()
 {   
 	triggerEntity( $warp );
 	$bird1_origin1.followpath($bird1_path1);
-	$cam1_origin1.playsound( "sound/ent_getoutof_warp.wav", 0, 4, 20000 );
+	$cam1_origin1.playsound( "sound/ent_getoutof_warp.wav", 0, 1, 20000 );
 }
 
 void intro()
@@ -290,7 +290,7 @@ void intro()
 	triggerEntity( $warp );
 	$warbird1_origin.followpath($warbird_path1);
 	//Modified on 07/03/04 by DrBob to add warpin sound.
-	$warbird1_origin.playsound( "sound/ent_getoutof_warp.wav", 0, 4, 20000 );
+	$warbird1_origin.playsound( "sound/ent_getoutof_warp.wav", 0, 1, 20000 );
 	$warbird1.renderEffects("minlight");
 	$warbird1.show();
 	wait( 4 );
@@ -324,11 +324,11 @@ void romulancommander()
 	wait(.1);
 	cuecamera($cam3);
 	$screen.show();
- 	$romulan.playdialog("localization/sound/dialog/map07/Tebok/approaching.mp3",1,10000,0);	 	
+ 	$romulan.playdialog("localization/sound/dialog/gbs/Tebok/approaching.mp3",1,10000,0);	 	
  	waitfordialog($romulan);	 	
- 	$romulan.playdialog("localization/sound/dialog/map07/Tebok/military.mp3",1,10000,0);	 	
+ 	$romulan.playdialog("localization/sound/dialog/gbs/Tebok/military.mp3",1,10000,0);	 	
  	waitfordialog($romulan);	 	
- 	$romulan.playdialog("localization/sound/dialog/map07/Tebok/turnyourship.mp3",1,10000,0);	 	
+ 	$romulan.playdialog("localization/sound/dialog/gbs/Tebok/turnyourship.mp3",1,10000,0);	 	
 	waitfordialog($romulan);
 	$screen.hide();
 	wait( 1.5 );
@@ -338,7 +338,7 @@ void romulancommander()
 	cuecamera($cam2);
 	wait( .4 );
 	$illia.morph( "exp_Surprise" );
-	$illia.playdialog("localization/sound/dialog/map07/illia/heisangry.mp3", 1, 10000, 0);
+	$illia.playdialog("localization/sound/dialog/gbs/illia/heisangry.mp3", 1, 10000, 0);
 	wait(1);
 	$illia.anim( "ent-frontchair-gesture1" );
 	wait( 1.5 );
@@ -356,7 +356,7 @@ void attack_bridge()
 	wait( .5 );
 	$player.earthquake( 2, 2 );
 	triggerentity( $exp_center );
-	$exp_center.playsound( "sound/impact/explosion/expl_distnode1.wav", 0, 4, 20000 );
+	$exp_center.playsound( "sound/impact/explosion/expl_distnode1.wav", 3, 0.5, 20000 );
 	$sparks.show();
 	triggerentity( $exp_behind );
 	wait( 1.5 );
@@ -377,9 +377,9 @@ void attack_bridge()
 	cam_fadein( 1, 0, 0, 0, 1, 0 );
 	triggerentity( $exp_screen_trans );
 	cuecamera($cam2);
-	$illia_prisoner3.playdialog("localization/sound/dialog/map07/illia/warbirdof.mp3", 1, 10000, 0);
+	$illia_prisoner3.playdialog("localization/sound/dialog/gbs/illia/warbirdof.mp3", 1, 10000, 0);
 	waitfordialog( $illia_prisoner3 );
-	$illia_prisoner3.playdialog("localization/sound/dialog/map07/illia/collision.mp3", 1, 1000, 0);
+	$illia_prisoner3.playdialog("localization/sound/dialog/gbs/illia/collision.mp3", 1, 1000, 0);
 	waitfordialog( $illia_prisoner3 );
 	
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
@@ -396,12 +396,14 @@ void decloak_warbird()
 	wait(.1);
 	cuecamera($cam2);
 	wait( 2.1 );
-	$illia_prisoner3.playdialog("localization/sound/dialog/map07/illia/itwascleartome.mp3", 1, 10000, 0);
+	$illia_prisoner3.playdialog("localization/sound/dialog/gbs/illia/itwascleartome.mp3", 1, 10000, 0);
 	waitfordialog( $illia_prisoner3 );
-	$illia_prisoner3.playdialog("localization/sound/dialog/map07/illia/minutesof.mp3", 1, 10000, 0);
+	wait( 3 );
+	
+	$illia_prisoner3.playdialog("localization/sound/dialog/gbs/illia/minutesof.mp3", 1, 10000, 0);
 	waitfordialog( $illia_prisoner3 );
-	wait( 1.3 );
-	$illia_prisoner3.playdialog("localization/sound/dialog/map07/illia/notgoingtoget.mp3", 1, 10000, 0);
+	wait( 1.7 );
+	$illia_prisoner3.playdialog("localization/sound/dialog/gbs/illia/notgoingtoget.mp3", 1, 10000, 0);
 	waitfordialog( $illia_prisoner3 );
 	$torp_1.hide();
 	$torp_2.hide();
@@ -417,7 +419,7 @@ void decloak_warbird()
 	
 	//Decloak the ship
 	$warbird_talshiar.renderEffects("minlight");
-	$warbird_talshiar.playsound( "sound/cloak.wav", 0, 4, 20000 );
+	$warbird_talshiar.playsound( "sound/cloak.wav", 0, 2, 20000 );
 	$warbird_talshiar.fadein( 2, 1 );
 	$warbird_talshiar.show();
 	wait(2.5);
@@ -437,7 +439,7 @@ void decloak_warbird()
 	cam_fadein( 1, 0, 0, 0, 1, 0 );
 	
     	cuecamera($cam2);
-	$illia_prisoner3.playdialog("localization/sound/dialog/map07/illia/shouldnot.mp3", 1, 10000, 0);
+	$illia_prisoner3.playdialog("localization/sound/dialog/gbs/illia/shouldnot.mp3", 1, 10000, 0);
 	waitfordialog( $illia_prisoner3 );
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
 	wait( 1.5 );
@@ -491,25 +493,25 @@ void bridge_endcinematic()
 void loop_explosions_bridge()
 {
 	triggerentity( $exp_center );
-	$exp_center.playsound( "sound/impact/explosion/expl_distnode1.wav", 0, 4, 20000 );
+//$exp_center.playsound( "sound/impact/explosion/expl_distnode1.wav", 3, 0.5, 20000 );
 	$player.earthquake( .5, 1 );
 	wait( 2 );
-	triggerentity( $exp_screen1 );
+triggerentity( $exp_screen1 );
 	wait( 2.5 );
-	triggerentity( $exp_Screen2 );
-	triggerentity( $exp_behind );
+//triggerentity( $exp_Screen2 );
+//triggerentity( $exp_behind );
 	wait( 2 );
 	$player.earthquake( .5, 1 );
-	triggerentity( $exp_screen1 );
+//triggerentity( $exp_screen1 );
 	wait( 2 );
-	triggerentity( $exp_behind );
+//triggerentity( $exp_behind );
 	wait( 1 );
-	triggerentity( $exp_screen2 );
-	triggerentity( $exp_center );
-	$exp_center.playsound( "sound/impact/explosion/expl_drullship.wav", 0, 4, 20000 );
+triggerentity( $exp_screen2 );
+//triggerentity( $exp_center );
+//$exp_center.playsound( "sound/impact/explosion/expl_drullship.wav", 3, 0.5, 20000 );
 	$player.earthquake( 1, 2 );
 	wait( 2 );
-	triggerentity( $exp_behind );
+//triggerentity( $exp_behind );
 	wait( 1 );
 	thread loop_explosions_bridge();
 }
@@ -520,7 +522,7 @@ void disrupter0()
 	wait(2);
 
 	trigger( "$bigBang11" );
-	$bigBang11.playsound( "sound/impact/explosion/explo_disruptor.wav", 0, 4, 20000 );
+	$bigBang11.playsound( "sound/impact/explosion/explo_disruptor.wav", 0, 0.5, 20000 );
 	wait(.1);
 	trigger( "$bigBang12" );
 	wait(.1);
@@ -534,7 +536,7 @@ void disrupter1()
 	wait(1.7);
 	$player.earthquake( 1, 0.3 );
 	trigger( "$bigBang1" );
-	$bigBang1.playsound( "sound/impact/explosion/expl_towerfall.wav", 0, 4, 20000 );
+	$bigBang1.playsound( "sound/impact/explosion/expl_towerfall.wav", 0, 0.5, 20000 );
 	wait(.1);
 	trigger( "$bigBang3" );
 	wait(.1);
@@ -553,7 +555,7 @@ void disrupter2()
 	wait(2);
 	$player.earthquake( 1, 0.5 );
 	trigger( "$bigBang2" );
-	$bigBang2.playsound( "sound/impact/explosion/explo_shuttleint.wav", 0, 4, 20000 );
+	$bigBang2.playsound( "sound/impact/explosion/explo_shuttleint.wav", 0, 0.5, 20000 );
 	wait(.1);
 	trigger( "$bigBang6" );
 	wait(.1);
@@ -569,7 +571,7 @@ void disrupter3()
 	$player.earthquake( 1, 1 );
 	
 	trigger( "$bigBang8" );
-	$bigBang8.playsound( "sound/impact/explosion/explo_wall1.wav", 0, 4, 20000 );
+	$bigBang8.playsound( "sound/impact/explosion/explo_wall1.wav", 0, 0.5, 20000 );
 	cam_fadeout( 1.5, 1, 1, 1, 1, 0 );
 	wait(.1);
 	trigger( "$bigBang9" );
@@ -638,6 +640,8 @@ void collision_counter()
 //Energieumleitung wird benutzt
 void energyrouting_Used()
 {
+	killthread( "loop_explosions_bridge" );
+
 	//print( "energyrouting_Used" );
 	entity puzzle;
 	puzzle = getcurrententity();
@@ -789,7 +793,7 @@ void hall_collapse()
  $hall_rotate.time (1);
  $hall_rotate.movedown (320);
  wait (1);
- $player.playsound ("sound/explo_large_06.wav" );
+ $player.playsound ("sound/explo_large_06.wav",0,0.5,128 );
 }
 
 void playergotKilled()
