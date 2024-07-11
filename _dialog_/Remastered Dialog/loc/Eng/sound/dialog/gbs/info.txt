@@ -1,0 +1,12 @@
+This contains language specific dialogs: ENGLISH
+
+The reason why this is seperate is that dialogs are always end in the language
+of the server. A German client on a English server will always have the English
+Dialog played and vice versa.
+
+To prevent this the only solution we have found this far is to only store the
+language desired to be played in the base folder. For this we had to split up
+the language specific files into seperate pk3.
+
+Updated for version 60021, GBS vlp files moved from map-folders to "gbs" folder
+Updated for version 60021, remastered audio dialogs
