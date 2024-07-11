@@ -26929,7 +26929,7 @@
 "noise" "sound/doors/door_locked.wav"
 "targetname" "t29"
 "origin" "2992 7584 96"
-"spawnflags" "1"
+"spawnflags" "0"
 "classname" "sound_speaker"
 }
 // entity 444
