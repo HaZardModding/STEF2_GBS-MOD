@@ -1,0 +1,83 @@
+//--------------------------------------------------------------------------------------
+//
+//  A Gate Two Birds And The Beautiful Sky Level Script File
+//	
+//  Level:		beta_ending
+//  Script By:		LTiefland
+//  Geometry By:	LTiefland
+//  Created on:		15.08.2005
+//
+//  Last Edited by:	LTiefland
+//  Last Edited on:	15.08.2005
+//
+//--------------------------------------------------------------------------------------
+
+void main();
+void ltiefland_cin();
+
+#include "maps/global_scripts/global_debugUtils.scr"
+#include "maps/global_scripts/global_common.scr"
+#include "maps/global_scripts/global_math.scr"
+#include "maps/global_scripts/global_acceleratedMovement.scr"
+#include "maps/global_scripts/global_cinematicFX.scr"
+#include "maps/global_scripts/global_tricorderBase.scr"
+#include "maps/global_scripts/global_tricorderRoute.scr"
+
+void main()
+{
+	$ltiefland.ai_off();
+	$ltiefland.anim("ent-seta_sit-idle");
+	$ltiefland.pushable(0);
+	ltiefland_cin();
+}
+
+void ltiefland_cin()
+{
+	spawn( "Camera", "targetname", "cam1" );
+	spawn( "Camera", "targetname", "cam2" );
+	spawn( "Camera", "targetname", "cam3" );
+	cinematic();
+	freezeplayer();
+	letterbox(.1);
+	$cam1.cut();
+	wait(.5);
+	$cam1.follow($cam_ltiefland_1,$ltiefland);
+	cuecamera($cam1);
+	wait(2);
+	$ltiefland.playdialog("localization/sound/dialog/beta_ending/v001.mp3", 1, 10000, 0);
+	wait(3);
+	$ltiefland.walkto("$door");
+	waitfordialog($ltiefland);
+	$ltiefland.playdialog("localization/sound/dialog/beta_ending/v002.mp3", 1, 10000, 0);
+	waitfordialog($ltiefland);
+	$ltiefland.walkto("$t6");
+	waitfor($ltiefland);
+	$ltiefland.playdialog("localization/sound/dialog/beta_ending/v003.mp3", 1, 10000, 0);
+        $ltiefland.walkto("$t10");
+	waitfordialog($ltiefland);
+        waitfor($ltiefland);
+	$cam2.follow($cam_ltiefland_2,$ltiefland);
+	$cam2.cut();
+	wait(.5);
+	cuecamera($cam2);
+	$ltiefland.walkto("$lift");
+	$ltiefland.playdialog("localization/sound/dialog/beta_ending/v004.mp3", 1, 10000, 0);
+	waitfordialog($ltiefland);
+	$ltiefland.playdialog("localization/sound/dialog/beta_ending/v005.mp3", 1, 10000, 0);
+//	$ltiefland.walkto("$t13");
+	waitfordialog($ltiefland);
+//	$ltiefland.walkto("$lift");
+//	waitfor($ltiefland);
+	wait(2);
+	$cam3.follow($cam_ltiefland_lift);
+	$cam3.cut();
+	wait(.5);
+	cuecamera($cam3);
+	$ltiefland.playdialog("localization/sound/dialog/beta_ending/v006.mp3", 1, 10000, 0);
+	waitfordialog($ltiefland);
+	wait(3);
+	clearletterbox(.1);
+	releaseplayer();
+	noncinematic();
+	stuffcmd("disconnect \n");
+}
