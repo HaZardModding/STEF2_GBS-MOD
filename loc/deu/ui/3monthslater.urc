@@ -21,7 +21,7 @@ resource
 Label
 {
 //ä mit ae ersetzt
-title "Drei Monate spaeter"
+title "Drei Monate danach"
 name "Default"
 rect 28 180 300 32
 fgcolor 1.00 1.00 1.00 1.00
