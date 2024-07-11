@@ -264,7 +264,7 @@ void first_shot()
 	$illia_shuttle.emotion("exp_Anger");
 	//$illia_shuttle.animateOnce("conv-shrug");
 	$illia_shuttle.animateOnce("conv-embarrassment");
-	$illia_shuttle.playdialog("localization/sound/dialog/map05/illia/damn.mp3", 1, 10000, 0);
+	$illia_shuttle.playdialog("localization/sound/dialog/gbs/illia/damn.mp3", 1, 10000, 0);
 	waitfordialog( $illia_shuttle );
 	cam_fadeout( 1.5, 0, 0, 0, 1, 0 );
 	wait( 2 );
@@ -278,15 +278,12 @@ void first_shot()
 	cam_fadein( 1.5, 0, 0, 0, 1, 0 );
 	
 	wait( 2 );
-	$illia_prisoner.playdialog("localization/sound/dialog/map05/illia/ihadto.mp3", 1, 10000, 0);
-	waitfordialog( $illia_prisoner );
-	wait( .5 );
-	$illia_prisoner.playdialog("localization/sound/dialog/map05/illia/maincontrol.mp3", 1, 10000, 0);
+	$illia_prisoner.playdialog("localization/sound/dialog/gbs/illia/ihadto.mp3", 1, 10000, 0);
 	waitfordialog( $illia_prisoner );
 //	wait( 1 );
-	cam_fadeout( 1.5, 0, 0, 0, 1, 0 );
-	wait( 2 );
-	cam_fadein( 1.5, 0, 0, 0, 1, 0 );
+	cam_fadeout( 1, 0, 0, 0, 1, 0 );
+	wait( 1.25 );
+	cam_fadein( 1, 0, 0, 0, 1, 0 );
 	
 //--camera is in shuttle, Illia exits
 	$cam2.fov( 60 );
@@ -453,7 +450,7 @@ void bay_sec_beamin()
 	wait( .1 );
 	cuecamera( $cam2 );
 		
-	$ceilling_illia.playdialog("localization/sound/dialog/map05/illia/goodbye.mp3", 1, 10000, 0);
+	$ceilling_illia.playdialog("localization/sound/dialog/gbs/illia/goodbye.mp3", 1, 10000, 0);
 	waitfordialog( $ceilling_illia );
 	
 	wait( 2 );
@@ -473,11 +470,11 @@ void bay_sec_beamin()
 	$sec_2.anim( "compressionrifle_aim" );
 	$sec_3.anim( "compressionrifle_aim" );
 	
-	$sec_2.playdialog( "localization/sound/dialog/map05/lee/donotmove.mp3", 1, 10000, 0);
+	$sec_2.playdialog( "localization/sound/dialog/gbs/lee/donotmove.mp3", 1, 10000, 0);
 	waitfordialog( $sec_2 );
 	$ceilling_illia.turntoangle( 270 );
 	wait( .5 );
-	$sec_2.playdialog( "localization/sound/dialog/map05/lee/gameover.mp3", 1, 10000, 0);
+	$sec_2.playdialog( "localization/sound/dialog/gbs/lee/gameover.mp3", 1, 10000, 0);
 	waitfordialog( $sec_2 );
 	wait( 1 );
 	$ceilling_illia.hide();
@@ -586,8 +583,8 @@ void shuttle_away()
 	cuecamera( $cam2 );
 	
 	$shuttle_origin.followpath($shuttle_path);
-	wait( 4.5 );
 	$shuttle_origin.playsound( "sound/vehicles/shuttlecraft/shuttle_takeoff.wav", 0, 4 );
+	wait( 4.5 );
 	wait( 16 );
 	$rechte_door.time( 5.2 );
 	$rechte_door.moveDown( 300 );
@@ -658,12 +655,12 @@ void shuttle_away()
 	waitforanimation( $moya, "tap_comm" );
 	$moya.anim( "idle" );
 	wait(1);
-	$moya.playdialog( "localization/sound/dialog/map05/moya/bridge.mp3", 1, 10000, 0);
+	$moya.playdialog( "localization/sound/dialog/gbs/moya/bridge.mp3", 1, 10000, 0);
 	waitfordialog( $moya );
-	$moya.playdialog( "localization/sound/dialog/map05/moya/warpcore.mp3", 1, 10000, 0);
+	$moya.playdialog( "localization/sound/dialog/gbs/moya/warpcore.mp3", 1, 10000, 0);
 	waitfordialog( $moya );
 	wait( .4 );
-	$moya.playdialog( "localization/sound/dialog/map05/moya/deadinspace.mp3", 1, 10000, 0);
+	$moya.playdialog( "localization/sound/dialog/gbs/moya/deadinspace.mp3", 1, 10000, 0);
 	waitfordialog( $moya );
 	wait( 2 );
 	triggerentity( $big_boom_engineering );
