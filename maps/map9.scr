@@ -131,6 +131,7 @@ void fire_ff_01 ()
 	$cable_ff.show();
 	wait( 3 );
 	
+	/* The issue with the player not being able to get out of the room has been fixed
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
 	wait(1);
 	$player.warp('2252 -1998 -60');
@@ -138,6 +139,7 @@ void fire_ff_01 ()
 	$player.playerviewangles('0 26 0');
 	wait(1);
 	$player.playerviewangles('0 26 0');
+	*/
 }
 
 
@@ -274,6 +276,16 @@ void setupWorld()
 	$illia_cockpit.removeactorweapon( "CompressionRifleEnhanced" );
 	$stammheim_cockpit.removeactorweapon( "CompressionRifle" );
 
+	//Remove NPCs AI 
+	$stammheim.ai_off();
+	$stammheim_cockpit2.ai_off();
+	$stammheim_cockpit2.hide();
+	$stammheim_cockpit.ai_off();
+	$illia_cockpit.ai_off();
+	$imdead.ai_off();
+	
+
+	wait(0.25);
 
 	//Spawn cameras 
 	spawn( "Camera", "targetname", "cam1" );
@@ -284,18 +296,6 @@ void setupWorld()
 	spawn( "Camera", "targetname", "cam6" );
 	spawn( "Camera", "targetname", "cam7" );
 	spawn( "Camera", "targetname", "cam8" );
-
-	//Remove NPCs AI 
-	$stammheim.ai_off();
-	$stammheim_cockpit2.ai_off();
-	$stammheim_cockpit2.hide();
-	$stammheim_cockpit.ai_off();
-	$illia_cockpit.ai_off();
-	$imdead.ai_off();
-	$arrest1.ai_off();
-	$arrest2.ai_off();
-	$arrest3.ai_off();
-	$arrest4.ai_off();
 
 	//Set NPCs sides 
 	$stammheim.actortype( "teammate" ); 
@@ -318,6 +318,9 @@ void setupWorld()
 
 	$entrance_trigger.nottriggerable();
 	$trigger_final.nottriggerable();
+	
+	//was notsolid so the paths could connect
+	$sec_door.solid();
 }
 
 
@@ -445,9 +448,6 @@ void unlock_cells()
 	$trigger_unlock_cells.playsound("sound/ships/romulan/rom_beep_yes.wav", 1, 1, 10 );
 	$trigger_cin_cells.triggerable();
 	$cell_door.unlock();
-	$romulan3.show();
-	$romulan3.solid();
-	$romulan3.ai_on();
 }
 //CINEMATIC FUNCTIONS 
 void cin_cells() 
@@ -456,31 +456,31 @@ void cin_cells()
 	$baydoor.unlock();
 	$cell_door.unlock();
 	
-	//Activate a nother soldier (he will patrol until player comes in viewrange)
-	$romulan4.show();
-	$romulan4.solid();
-	$romulan4.ai_on();
+	freezeplayer();
+	
 	cam_fadeout( 1, 0, 0, 0, 1, 0 ); 
 	wait(1);
-	freezeplayer();
-	$player.warp('1921 -164 -20');
-	$player.playerViewangles('0 180 0');
+	
 	$player.hide();
 	$player.notsolid();
+	
 	//Make Illia holster any weapon she might have acquired 
 	cinematic(); 
 	letterbox( 0.5 ); 
+	
 	//Bring up a fake player model 
-	spawn("actor","model","char/illia.tik","targetname","illiaCin","origin","1299 -169 53","ai_off","1");
+	//using different model now - the other model gets stuck - chrissstrahl
+	spawn("actor","model","models/char/hazardteam_jurot.tik","targetname","illiaCin","origin","1299 -169 53","ai_off","1");
 	wait(.1);
+	
 	//Make the fakeplayer use the same weapon as you 
-	globalCommon_AiActorUseWeapon($illiaCin, "current" ); 
-	//Initialize the fake player 
+	globalCommon_AiActorUseWeapon($illiaCin, "current" );
+	
 	$illiaCin.strictlyfollowpath( 1 ); 
 	$stammheim.strictlyfollowpath( 1 );
 	
 	$cell_door.open($world);
-	$cell_door.open($world);
+	$cell_door.wait(-1);
 
 	$cam1.follow( $cin_cells_cam1_pos1, $illiaCin ); 
 	$cam1.cut(); 
@@ -489,8 +489,6 @@ void cin_cells()
 	cam_fadein( 1, 0, 0, 0, 1, 0 );
 	wait( 1 );
 	
-	$chell_door.open($world);
-	$chell_door.open($world);
 	
 	skipthread( "cin_cells_skip" );	
 	//Make Illia walk up to the doors
@@ -499,14 +497,19 @@ void cin_cells()
 	//Make the camera pan down to look through the door 
 	$cam1.follow( $cin_cells_cam1_pos2, $illiaCin );
 	$cell_door.open($world);
-	$illiaCin.anim("walk");
+	//$illiaCin.anim("walk");
 	$cam1.cut(); 
 	cuecamera($cam1);
 	wait( 1 ); 
 	$illiaCin.walkto( "$cin_cells_illia_pos_inside" ); 
 	waitFor( $illiaCin ); 
+	
+	$cell_door.wait(3);
+	$cell_door.close();
+	
 	$illiaCin.headwatch( $stammheim ); 
 	$illiaCin.walkto( "$cin_cells_illia_pos_nearcell" ); 
+	
 	wait( 1 );
 	//Close the door again, just to be tidy 
 	//fire_door_01(); 
@@ -536,7 +539,7 @@ void cin_cells()
 
 	//Illia: Stammheim. 
 	$illiaCin.morph( "exp_Relief" ); 
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/stammheim.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/stammheim.mp3", 1, 10000, 0 );
 	waitForDialog( $illiaCin ); 
 	$illiaCin.unmorph( "exp_Relief" ); 
 
@@ -549,7 +552,7 @@ void cin_cells()
 	wait( 0.5 ); 
 
 	//Stammheim: Who...who are you? 
-	$stammheim.playdialog( "localization/sound/dialog/map09/Stammheim/whoareyou.mp3", 2, 10000, 0 );
+	$stammheim.playdialog( "localization/sound/dialog/gbs/Stammheim/whoareyou.mp3", 1, 10000, 0 );
 	waitForDialog( $stammheim ); 
 
 	wait( 1 ); 
@@ -561,7 +564,7 @@ void cin_cells()
 	//Illia: You know me Stammheim.
 	$illiaCin.anim( "conv-gesture1" ); 
 	$illiaCin.morph( "exp_Skeptical" ); 
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/youknowme.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/youknowme.mp3", 1, 10000, 0 );
 	waitForDialog( $illiaCin ); 
 	$illiaCin.anim( "idle" ); 
 	
@@ -569,7 +572,7 @@ void cin_cells()
 
 	//Illia: The mission on Cardassia Prime? 
 	$illiaCin.anim( "conv_shrug" ); 
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/cardassiaprime.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/cardassiaprime.mp3", 1, 10000, 0 );
 	waitForDialog( $illiaCin ); 
 	$illiaCin.anim( "idle" ); 
 
@@ -578,7 +581,7 @@ void cin_cells()
 	//Illia: Doesn't that ring a bell? 
 	$illiaCin.unmorph( "exp_Skeptical" ); 
 	$illiaCin.morph( "exp_Confused" ); 
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/ringabell.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/ringabell.mp3", 1, 10000, 0 );
 	waitForDialog( $illiaCin ); 
 
 	wait( 0.5 ); 
@@ -589,7 +592,7 @@ void cin_cells()
 
 	//Stammheim: No more questions...please...please... 
 	$stammheim.anim( "conv-shakehead" );
-	$stammheim.playdialog( "localization/sound/dialog/map09/Stammheim/noquestions.mp3", 2, 10000, 0 );
+	$stammheim.playdialog( "localization/sound/dialog/gbs/Stammheim/noquestions.mp3", 1, 10000, 0 );
 	waitForDialog( $stammheim ); 
 
 	wait( 1.5 ); 
@@ -597,7 +600,7 @@ void cin_cells()
 	//Stammheim: My head... 
 	$stammheim.anim( "cheer" ); 
 	$stammheim.morph( "exp_Pain" ); 
-	$stammheim.playdialog( "localization/sound/dialog/map09/Stammheim/myhead.mp3", 2, 10000, 0 );
+	$stammheim.playdialog( "localization/sound/dialog/gbs/Stammheim/myhead.mp3", 1, 10000, 0 );
 	waitForAnimation( $stammheim, "cheer" ); 
 	$stammheim.anim( "idle" ); 
 	waitForDialog( $stammheim ); 
@@ -606,17 +609,18 @@ void cin_cells()
 
 	//Stammheim: The Romulan said the pain would stop...but it hasn't. 
 	$stammheim.anim( "conv-shakehead" ); 
-	$stammheim.playdialog( "localization/sound/dialog/map09/Stammheim/painstop.mp3", 2, 10000, 0 );
+	$stammheim.playdialog( "localization/sound/dialog/gbs/Stammheim/painstop.mp3", 1, 10000, 0 );
 	waitForDialog( $stammheim ); 
 
 	wait( 1 ); 
 
 	//Looking at Illia 
-	$cam1.follow( $cin_cells_cam1_pos6, $illiaCin ); 
+	$cam1.follow( $cin_cells_cam1_pos6, $illiaCin );
+	//$cam1.follow( $cin_cells_cam1_pos6, $cin_cells_cam1_pos7 ); 
 	$cam1.cut(); 
 
 	//Illia: The Romulans didn't exactly handle him with kid gloves, it seems. 
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/romulans.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/romulans.mp3", 1, 10000, 0 );
 	waitForDialog( $illiaCin );
 	$illiaCin.unmorph( "exp_Confused" ); 
 	$illiaCin.morph( "exp_Serious" ); 
@@ -652,19 +656,19 @@ void cin_cells()
 	wait( 0.1 ); 
 
 	//Illia: Come on Alexander. I'll get you out of here.
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/comeonalexander.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/comeonalexander.mp3", 1, 10000, 0 );
 	waitForDialog( $illiaCin ); 
 	
 	wait( 1 ); 
 
 	//Illia: Try to follow me, ok? 
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/follow.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/follow.mp3", 1, 10000, 0 );
 	waitForDialog( $illiaCin ); 
 
 	wait( 1 ); 
 
 	//Illia: Do you understand? 
-	$illiaCin.playdialog( "localization/sound/dialog/map09/Illia/understood.mp3", 1, 10000, 0 );
+	$illiaCin.playdialog( "localization/sound/dialog/gbs/Illia/understood.mp3", 1, 10000, 0 );
 	$stammheim.anim( "idle_breathing" ); 
 	waitForDialog( $illiaCin ); 
 
@@ -674,14 +678,14 @@ void cin_cells()
 	$stammheim.anim( "conv-yes" ); 
 	$cam1.follow( $cin_cells_cam1_posstammheim, $stammheim ); 
 	//$cam1.cut(); 
-	$stammheim.playdialog( "localization/sound/dialog/map09/Stammheim/follow.mp3", 2, 10000, 0 );
+	$stammheim.playdialog( "localization/sound/dialog/gbs/Stammheim/follow.mp3", 1, 10000, 0 );
 	waitForDialog( $stammheim ); 
 	$stammheim.anim( "idle_breathing" ); 
 
 	wait( 1 ); 
 
 	//Stammheim: Follow... 
-	$stammheim.playdialog( "localization/sound/dialog/map09/Stammheim/follow2.mp3", 2, 10000, 0 );
+	$stammheim.playdialog( "localization/sound/dialog/gbs/Stammheim/follow2.mp3", 1, 10000, 0 );
 	wait( 1 ); 
 
 	cin_cells_skip(); 
@@ -691,7 +695,9 @@ void cin_cells_skip()
 { 
 	skipthread( "Null" ); 
 	killthread( "cin_cells" ); 
+	
 	$player.immobilize(0);
+	
 	cam_fadeout( 1, 0, 0, 0, 1, 0 ); 
 	wait( 1 ); 
 
@@ -713,7 +719,6 @@ void cin_cells_skip()
 	$player.show();
 	$player.solid();
 	//Unholster the crap
-	$player.holster(); 
 	$player.warp('1762 -371 -20');
 	$player.playerViewangles('0 0 0');
 
@@ -727,28 +732,39 @@ void cin_cells_skip()
 	$entrance_trigger.triggerable();
 	playerDeathThread("playergotKilled2");
 	globalCommon_Autosave();
+	
+	
+	//Activate a nother soldier (he will patrol until player comes in viewrange)
+	$romulan4.show();
+	$romulan4.solid();
+	$romulan4.ai_on();
+	$romulan3.show();
+	$romulan3.solid();
+	$romulan3.ai_on();
 }
 
 void shuttle_entrance()
 {
-	skipthread( "shuttle_entrance_skip" ); 
 	cam_fadeout( 0.1, 0, 0, 0, 1, 0 ); 
-
-	//Make Illia holster any weapon she might have acquired 
-	$player.holster();
+	freezeplayer();
 
 	//Bring up a fake player model 
-	fakeplayer(); 
+	//fakeplayer(); 
+	
+	//Bring up a fake player model 
+	//using different model now - the other model gets stuck - chrissstrahl
+	spawn("actor","model","models/char/hazardteam_jurot.tik","targetname","fakeplayer","origin","1299 -169 53","ai_off","1");
+	wait(.1);
+	
+	//Make the fakeplayer use the same weapon as you 
+	globalCommon_AiActorUseWeapon($illiaCin, "current" );
+	
+	$fakeplayer.killattach();
+	
 	$stammheim.ai_off();
 
 	$fakeplayer.warpto( "$shuttle_cin_illia" );
 	$stammheim.warpto( "$shuttle_cin_stammheim" ); 
-
-	//Remove Fake Player Weapon, no matter what he is using...
-	$fakeplayer.killattach();//removeactorweapon ( "BurstRifle" );//Patch 06.sep.2007 @ Chrissstrahl
-	//Make the fakeplayer use the same weapon as you 
-	
-	globalCommon_AiActorUseWeapon( $fakeplayer, "current" ); 
 
 	$cam3.follow( $cin_enter_shuttle, $fakeplayer ); 
 	$cam3.cut(); 
@@ -758,6 +774,11 @@ void shuttle_entrance()
 	letterbox( 0.5 ); 
 
 	wait( 0.5 ); 
+	
+	skipthread( "shuttle_entrance_skip" ); 
+	
+	$player.hide();
+	$player.notsolid();
 
 	cam_fadein( 1, 0, 0, 0, 1, 0 );
 	wait( 0.1 ); 
@@ -789,12 +810,12 @@ void shuttle_entrance()
 	$stammheim.notsolid();
 	$stammheim.hide();
 
-	$illia_cockpit.playdialog( "localization/sound/dialog/map09/Illia/sitdownalexander.mp3", 2, 10000, 0 );
+	$illia_cockpit.playdialog( "localization/sound/dialog/gbs/Illia/sitdownalexander.mp3", 1, 10000, 0 );
 	waitForDialog( $illia_cockpit );
-	$illia_cockpit.playdialog( "localization/sound/dialog/map09/Illia/doorsofshuttlebay.mp3", 2, 10000, 0 );
+	$illia_cockpit.playdialog( "localization/sound/dialog/gbs/Illia/doorsofshuttlebay.mp3", 1, 10000, 0 );
 	waitForDialog( $illia_cockpit );
 	wait(1.5);
-	$stammheim_cockpit.playdialog( "localization/sound/dialog/map09/Stammheim/myhead2.mp3", 2, 10000, 0 );
+	$stammheim_cockpit.playdialog( "localization/sound/dialog/gbs/Stammheim/myhead2.mp3", 1, 10000, 0 );
 	waitForDialog( $stammheim_cockpit ); 
 	cam_fadeout( 1, 0, 0, 0, 1, 0 );
 
@@ -806,7 +827,7 @@ void shuttle_entrance()
 	cam_fadein( 1, 0, 0, 0, 1, 0 );
 	$fakeplayer.walkto("$shuttle_exit2");
 	waitfor( $fakeplayer );
-	$fakeplayer.playdialog( "localization/sound/dialog/map09/Illia/deja-vu.mp3", 2, 10000, 0 ); 
+	$fakeplayer.playdialog( "localization/sound/dialog/gbs/Illia/deja-vu.mp3", 1, 10000, 0 ); 
 	waitfordialog( $fakeplayer );
 
 	shuttle_entrance_skip();
@@ -827,9 +848,13 @@ void shuttle_entrance_skip()
 	//Lock door for the shuttlebay
 	$baydoor.close();
 	$baydoor.lock();
-	$fakeplayer.warpto( "$shuttle_exit2" ); 
-	removefakeplayer();
-	$player.holster();
+	$fakeplayer.warpto( "$shuttle_exit2" );
+	$player.origin($fakeplayer.getOrigin());
+	$fakeplayer.remove();
+	
+	releaseplayer();
+	$player.show();
+	$player.solid();
 
 	//End the cinematic 
 	noncinematic(); 
@@ -869,21 +894,22 @@ void shuttle_entrance_skip()
 void cin_shuttle()
 {
 	skipthread( "cin_shuttle_skip" ); 
-
+	
+	//Imo Player, stuck there
+	$player.immobilize( 1 );
+	
+	
 	$stammheim_cockpit2.ai_off();
 	$stammheim_cockpit2.show();
 	$stammheim_cockpit2.solid();
 	$stammheim_cockpit2.anim( "bar_sitting_forward" );
-
-	//Imo Player, stuck there
-	$player.immobilize( 1 );
 
 	//Close Shuttle Doors
 	$drull_shuttle.anim( "closing" );
 	$drull_shuttle.playsound( "sound/doors/enterprise_door1.wav", 1 ,800 );	
 	waitforanimation( $drull_shuttle, "closing" );
 	$drull_shuttle.anim( "closed" );
-	
+
 	//Open Bay Sky Door
 	$bay_door_01.playsound ( "sound/environment/machine/lift4.wav");
 	$bay_door_01.time ( 5 );
@@ -896,75 +922,83 @@ void cin_shuttle()
 	//Remove the Shuttle Clip,( no reason given why)
 	$shuttle_clip.remove();
 	wait(1);
-	
+
 	//Shuttle Takeoff
 	$shuttle_bind.followpath($shuttle_path);
 	$shuttle_bind.playsound( "sound/vehicles/shuttlecraft/shuttle_takeoff.wav", 0, 4 );
 
-	
+
 	waitfor($shuttle_bind);
 	$shuttle_bind.hide();
-	
-	//Remove Fake Player Weapon, no matter what he is using...
-	$fakeplayer.killattach();//removeactorweapon ( "BurstRifle" ); //Patch 06.sep.2007 @ Chrissstrahl
-	//Make the fakeplayer use the same weapon as you 
-	globalCommon_AiActorUseWeapon( $fakeplayer, "current" ); 
-	
-	//Holster Player Weapon
-	$player.holster();
+
 	
 	//Fade Out Cam 
 	cam_fadeout( 0.1, 0, 0, 0, 1, 0 );
 	
 	//Bring up a fake player model 
-	fakeplayer(); 
+	//using different model now - the other model gets stuck - chrissstrahl
+	spawn("actor","model","models/char/hazardteam_jurot.tik","targetname","fakeplayer","origin","-1731 -3251 0","ai_off","1");
+	wait(.1);
+	
+	$player.hide();
+	$player.notsolid();
+	
+	//Remove Fake Player Weapon, no matter what he is using...
+	$fakeplayer.killattach();//removeactorweapon ( "BurstRifle" ); //Patch 06.sep.2007 @ Chrissstrahl	
 
 	//Make it a cinematic 
 	cinematic(); 
 	letterbox( 0.5 ); 
+	
+	if(!doesEntityExist($cam6)){
+		spawn( "Camera", "targetname", "cam6" );
+	}
+	
 	wait( 0.5 ); 
 
-	$cam6.follow( $cin_final_pos1, $fakeplayer ); 
+	$cam6.follow( $cin_final_pos1, $spkr_bay_door ); 
 	$cam6.cut();
 	cam_fadein( 1, 0, 0, 0, 1, 0 );
 	wait(.5);
 	cuecamera($cam6);
 
-	$fakeplayer.playdialog( "localization/sound/dialog/map09/Illia/no.mp3", 2, 10000, 0 );
+	$fakeplayer.playdialog( "localization/sound/dialog/gbs/Illia/no.mp3", 1, 10000, 0 );
 	waitfordialog($fakeplayer);
 
 	wait(1);
 
 	$screen_pattern.hide();
 	$screen_on.show();
-	$fakeplayer.lookat( $screen_pos ); 
 	wait(1);
+	$fakeplayer.angle(270);
+	$fakeplayer.lookat( $screen_pos );
 
 	//$cam7.follow( $cin_final_pos2 ); 
 	//$cam7.cut();
 	//wait(.5);
 	//cuecamera($cam7);
 	//wait(.2);
-	$stammheim_cockpit2.playdialog( "localization/sound/dialog/map09/Stammheim/Sorry.mp3", 2, 10000, 0 );
+		
+	$stammheim_cockpit2.playdialog( "localization/sound/dialog/gbs/Stammheim/Sorry.mp3", 1, 10000, 0 );
 	waitfordialog($stammheim_cockpit2);
-	$stammheim_cockpit2.playdialog( "localization/sound/dialog/map09/Stammheim/really.mp3", 2, 10000, 0 );
+	$stammheim_cockpit2.playdialog( "localization/sound/dialog/gbs/Stammheim/really.mp3", 1, 10000, 0 );
 	waitfordialog($stammheim_cockpit2);
-	$stammheim_cockpit2.playdialog( "localization/sound/dialog/map09/Stammheim/danger.mp3", 2, 10000, 0 );
+	$stammheim_cockpit2.playdialog( "localization/sound/dialog/gbs/Stammheim/danger.mp3", 1, 10000, 0 );
 	waitfordialog($stammheim_cockpit2);
-	$stammheim_cockpit2.playdialog( "localization/sound/dialog/map09/Stammheim/played.mp3", 2, 10000, 0 );
+	$stammheim_cockpit2.playdialog( "localization/sound/dialog/gbs/Stammheim/played.mp3", 1, 10000, 0 );
 	waitfordialog($stammheim_cockpit2);
-	$stammheim_cockpit2.playdialog( "localization/sound/dialog/map09/Stammheim/hetlek.mp3", 2, 10000, 0 );
+	$stammheim_cockpit2.playdialog( "localization/sound/dialog/gbs/Stammheim/hetlek.mp3", 1, 10000, 0 );
 	waitfordialog($stammheim_cockpit2);
-	$stammheim_cockpit2.playdialog( "localization/sound/dialog/map09/Stammheim/greet.mp3", 2, 10000, 0 );
+	$stammheim_cockpit2.playdialog( "localization/sound/dialog/gbs/Stammheim/greet.mp3", 1, 10000, 0 );
 	waitfordialog($stammheim_cockpit2);
-	$stammheim_cockpit2.playdialog( "localization/sound/dialog/map09/Stammheim/youwill.mp3", 2, 10000, 0 );
+	$stammheim_cockpit2.playdialog( "localization/sound/dialog/gbs/Stammheim/youwill.mp3", 1, 10000, 0 );
 	waitfordialog($stammheim_cockpit2);
 	$screen_on.hide();
 	$screen_pattern.show();
 
 	wait(.5);
 
-	$fakeplayer.playdialog( "localization/sound/dialog/map09/Illia/youbastard.mp3", 2, 10000, 0 );
+	$fakeplayer.playdialog( "localization/sound/dialog/gbs/Illia/youbastard.mp3", 1, 10000, 0 );
 	waitfordialog($fakeplayer);
 
 	$cam8.follow( $cin_final_pos3, $fakeplayer ); 
@@ -977,17 +1011,22 @@ void cin_shuttle()
 	$sec_door.moveup(192);
 	$sec_door.playsound("sound/doors/klingon_jtube.wav");
 	waitfor($sec_door);
+	
+	
 	$arrest1.walkto( "$arrest_dest1", "run" );
-	$arrest2.walkto( "$arrest_dest2", "run" );
 	$arrest3.walkto( "$arrest_dest3", "run" );
+	wait(0.25);
+	$arrest2.walkto( "$arrest_dest2", "run" );
+	wait(0.25);
 	$arrest4.walkto( "$arrest_dest4", "run" );
-	$arrest1.lookat($fakeplayer);
-	$arrest2.lookat($fakeplayer);
-	$arrest3.lookat($fakeplayer);
-	$arrest4.lookat($fakeplayer);
-	wait(8);
 
-
+	waitFor($arrest2);
+	
+	$arrest1.headwatch( $fakeplayer );
+	$arrest3.headwatch( $fakeplayer );
+	$arrest4.headwatch( $fakeplayer );
+	
+	wait(3);
 
 	//FAKE ILLIA TO "cin_shuttle_illia_01"
 	//STANHEIM WALK TO "cin_shuttle_stan_01"
