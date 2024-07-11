@@ -1,12 +1,8 @@
-menu "main" 640 480 NONE 0
+menu "gbsSkill" 640 480 NONE 0
 bgcolor 0 0 0 .75
 borderstyle NONE
 fullscreen 1
 showcommand "ui_showmouse\n"
-showcommand "set g_gametype 0; set bot_enable 0;set sv_maxclients 1;set sv_maxspeed 300\n"
-showcommand "unpause\n"
-
-
 
 
 resource 
@@ -35,12 +31,30 @@ RenderModel
 }
 
 resource
+Label
+{
+title "$$SkillLevel$$"
+name "Default"
+rect 80 60 600 32
+fgcolor 1.00 1.00 1.00 1.00
+bgcolor 0.00 0.00 0.00 0.00
+borderstyle "NONE"
+textshadowcolor 0 0 0 1
+hoverfgcolor 1.00 1.00 1.00 1.00
+hoverbgcolor 0.00 0.00 0.00 0.00
+hovertextshadowcolor 0 0 0 1
+font serpentinemedium-16
+horizontaljustify center
+verticaljustify top
+}
+
+resource
 Widget
 {
 ordernumber 3
-name "b1"
+name "gbsSkillb1"
 rect 245 130 272 39
-fgcolor                0.925        0.596        0.173        1.000
+fgcolor 0.925        0.596        0.173        1.000
 bgcolor 1.00 1.00 1.00 0.00
 borderstyle "none"
 shader menu/load/gbs_button
@@ -48,18 +62,17 @@ horizontaljustify center
 verticaljustify center
 }
 
-
-
 resource
 Widget
 {
 ordernumber 3
-name "b2"
+name "gbsSkillb2"
 rect 245 170 272 39
 fgcolor                0.925        0.596        0.173        1.000
 bgcolor 1.00 1.00 1.00 0.00
 borderstyle "none"
 shader menu/load/gbs_button
+shadercolor 0 1 0 1
 horizontaljustify center
 verticaljustify center
 }
@@ -68,12 +81,13 @@ resource
 Widget
 {
 ordernumber 3
-name "b3"
+name "gbsSkillb3"
 rect 245 210 272 39
 fgcolor                0.925        0.596        0.173        1.000
 bgcolor 1.00 1.00 1.00 0.00
 borderstyle "none"
 shader menu/load/gbs_button
+shadercolor 1 1 0 1
 horizontaljustify center
 verticaljustify center
 }
@@ -82,12 +96,13 @@ resource
 Widget
 {
 ordernumber 3
-name "b4"
+name "gbsSkillb4"
 rect 245 250 272 39
 fgcolor                0.925        0.596        0.173        1.000
 bgcolor 1.00 1.00 1.00 0.00
 borderstyle "none"
 shader menu/load/gbs_button
+shadercolor 1 0 0 1
 horizontaljustify center
 verticaljustify center
 }
@@ -95,30 +110,7 @@ verticaljustify center
 resource
 Button
 {
-title "$$Exit$$"
-name "Default"
-rect 295 252 138 32
-fgcolor 0.12 0.15 0.25 1.00
-bgcolor 1.00 1.00 1.00 0.00
-borderstyle "none"
-stuffcommand "showmenu quit"
-font serpentinemedium-12
-horizontaljustify center
-verticaljustify center
-hovershader menu/generic/button-hover
-pressedshader menu/generic/button-press
-//hovercommand "globalwidgetcommand tooltip_main title \"$$ExitTheGame$$\""
-hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
-ordernumber 12
-clicksound sound/misc/menu/back1.wav
-//hovercommand 		"globalwidgetcommand ModelView rendermodelanimation \"+attackleft\""
-}
-
-
-resource
-Button
-{
-title "$$NewGame$$"
+title "$$Easy$$"
 name "Default"
 rect 295 132 138 32
 fgcolor 0.12 0.15 0.25 1.00
@@ -131,89 +123,76 @@ hovershader menu/generic/button-hover
 pressedshader menu/generic/button-press
 hovercommand "globalwidgetcommand tooltip_main title \"$$StartANewGame$$\""
 hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
-stuffcommand "pushmenu gbsSkill"
+stuffcommand "set skill 0;map map1"
 ordernumber 12
-
-
 hoversound sound/misc/menu/hover.wav
 clicksound sound/misc/menu/click.wav
-
 }
 
 resource
 Button
 {
-title "$$LoadGame$$"
+title "$$Normal$$"
 name "Default"
 rect 295 172 138 32
 fgcolor 0.12 0.15 0.25 1.00
 bgcolor 1.00 1.00 1.00 0.00
 borderstyle "none"
-
 font serpentinemedium-12
 horizontaljustify center
 verticaljustify center
-
 hovershader menu/generic/button-hover
 pressedshader menu/generic/button-press
 hovercommand "globalwidgetcommand tooltip_main title \"$$LoadASaveGame$$\""
 hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
-stuffcommand "pushmenu loadgame"
-
+stuffcommand "set skill 1;map map1"
 ordernumber 12
-
 hoversound sound/misc/menu/hover.wav
 clicksound sound/misc/menu/click.wav
-
 }
 
 resource
 Button
 {
-title "$$Configure$$"
+title "$$Hard$$"
 name "Default"
 rect 295 212 138 32
 fgcolor 0.12 0.15 0.25 1.00
 bgcolor 1.00 1.00 1.00 0.00
 borderstyle "none"
-
 font serpentinemedium-12
 horizontaljustify center
 verticaljustify center
-
 hovershader menu/generic/button-hover
 pressedshader menu/generic/button-press
 hovercommand "globalwidgetcommand tooltip_main title \"$$SetGameOptions$$\""
 hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
-stuffcommand "pushmenu controls"
-
+stuffcommand "set skill 2;map map1"
 ordernumber 12
-
 hoversound sound/misc/menu/hover.wav
 clicksound sound/misc/menu/click.wav
-
 }
-
 
 resource
 Button
 {
-title "Set Settings to very high"
+title "$$VeryHard$$"
 name "Default"
-rect 225 400 278 32
-fgcolor 1 0 0 1.00
+rect 295 252 138 32
+fgcolor 1 1 1 1.00
 bgcolor 1.00 1.00 1.00 0.00
 borderstyle "none"
-stuffcommand "exec coop_mod/cfg/highsettings.cfg"
-font serpentinemedium-10
+stuffcommand "set skill 3;map map1"
+font serpentinemedium-12
 horizontaljustify center
 verticaljustify center
 hovershader menu/generic/button-hover
 pressedshader menu/generic/button-press
-hovercommand "globalwidgetcommand tooltip_main title \"Load modern Computers Preset\""
+//hovercommand "globalwidgetcommand tooltip_main title \"$$ExitTheGame$$\""
 hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
 ordernumber 12
 clicksound sound/misc/menu/back1.wav
+//hovercommand 		"globalwidgetcommand ModelView rendermodelanimation \"+attackleft\""
 }
 
 end.

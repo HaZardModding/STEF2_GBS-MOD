@@ -131,7 +131,7 @@ hovershader menu/generic/button-hover
 pressedshader menu/generic/button-press
 hovercommand "globalwidgetcommand tooltip_main title \"$$StartANewGame$$\""
 hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
-stuffcommand "map map1"
+stuffcommand "pushmenu gbsSkill"
 ordernumber 12
 
 
@@ -195,6 +195,25 @@ clicksound sound/misc/menu/click.wav
 }
 
 
-
+resource
+Button
+{
+title "Einstellung auf sehr hoch setzen"
+name "Default"
+rect 225 400 278 32
+fgcolor 1 0 0 1.00
+bgcolor 1.00 1.00 1.00 0.00
+borderstyle "none"
+stuffcommand "exec coop_mod/cfg/highsettings.cfg"
+font serpentinemedium-10
+horizontaljustify center
+verticaljustify center
+hovershader menu/generic/button-hover
+pressedshader menu/generic/button-press
+hovercommand "globalwidgetcommand tooltip_main title \"Voreinstellung für Moderne Computer laden\""
+hoverexitcommand "globalwidgetcommand tooltip_main title \"\""
+ordernumber 12
+clicksound sound/misc/menu/back1.wav
+}
 
 end.
