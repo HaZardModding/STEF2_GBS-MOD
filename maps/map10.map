@@ -4072,13 +4072,27 @@
 }
 // entity 1
 {
+"origin" "-11 28 36"
+"targetname" "illiaDeperessedLookAtMe"
+"classname" "script_origin"
+}
+// entity 2
+{
+"classname" "vehicle_drull_drull-shuttle-fighter-int"
+"model" "models/vehicle/drull-shuttle-fighter-int.tik"
+"scale" "0.5"
+"origin" "5138.00 -2450.00 86.00"
+"targetname" "shuttleDoors"
+}
+// entity 3
+{
 "origin" "4424 -232 136"
 "targetname" "exp_sound"
 "noise" "sound/big2a.wav"
 "volume" "4"
 "classname" "sound_speaker"
 }
-// entity 2
+// entity 4
 {
 "origin" "5240 3040 -112"
 "spherical_ambient" "0.0"
@@ -4092,7 +4106,7 @@
 "brightness" "1.0"
 "classname" "light"
 }
-// entity 3
+// entity 5
 {
 "target" "credits_cam_1"
 "origin" "-52 32 120"
@@ -4101,7 +4115,7 @@
 "targetname" "credits_cam"
 "classname" "info_splinepath"
 }
-// entity 4
+// entity 6
 {
 "classname" "char_hazardteam_jurot_standard-jurot"
 "model" "models/char/hazardteam_jurot-cinematic.tik"
@@ -4109,7 +4123,7 @@
 "targetname" "illia_prisoner"
 "origin" "434.00 -84.00 26.00"
 }
-// entity 5
+// entity 7
 {
 "classname" "char_romulan_m11_pistol_standard-male1"
 "model" "models/char/romulan-m11-rebel-pistol-m.tik"
@@ -4117,7 +4131,7 @@
 "origin" "496.00 -84.00 16.00"
 "angle" "180"
 }
-// entity 6
+// entity 8
 {
 "classname" "char_romulan_tng-female"
 "model" "models/char/romulan_tng-female.tik"
@@ -4125,12 +4139,12 @@
 "targetname" "guard1"
 "origin" "312.00 -84.00 24.00"
 }
-// entity 7
+// entity 9
 {
 "classname" "info_player_start"
 "origin" "-8 -108 16"
 }
-// entity 8
+// entity 10
 {
 "wait" "8"
 "targetname" "door"
@@ -4147,7 +4161,7 @@
 ( 246 -80 144 ) ( 246 -80 136 ) ( 262 -80 140 ) romulan_installation/romdoor4 102 73 0 -0.3125 0.21875 0 0 0 
 }
 }
-// entity 9
+// entity 11
 {
 "wait" "8"
 "targetname" "door"
@@ -4164,7 +4178,7 @@
 ( 246 -80 136 ) ( 246 -80 144 ) ( 262 -80 140 ) romulan_installation/romdoor4 128 73 0 -0.3125 0.21875 0 0 0 
 }
 }
-// entity 10
+// entity 12
 {
 "classname" "char_romulan_rebel-male2"
 "model" "models/char/romulan_rebel-male2.tik"
@@ -4172,7 +4186,7 @@
 "angle" "180"
 "targetname" "tebok"
 }
-// entity 11
+// entity 13
 {
 "origin" "424 -80 100"
 "spherical_ambient" "0.0"
@@ -4186,7 +4200,7 @@
 "brightness" "1.0"
 "classname" "light"
 }
-// entity 12
+// entity 14
 {
 "origin" "-64 176 136"
 "spherical_ambient" "0.0"
@@ -4201,7 +4215,7 @@
 "classname" "light"
 "light" "-500"
 }
-// entity 13
+// entity 15
 {
 "origin" "-160 80 136"
 "spherical_ambient" "0.0"
@@ -4216,7 +4230,7 @@
 "classname" "light"
 "light" "-500"
 }
-// entity 14
+// entity 16
 {
 "light" "-500"
 "classname" "light"
@@ -4231,7 +4245,7 @@
 "spherical_ambient" "0.0"
 "origin" "-168 -40 136"
 }
-// entity 15
+// entity 17
 {
 "light" "-500"
 "classname" "light"
@@ -4246,7 +4260,7 @@
 "spherical_ambient" "0.0"
 "origin" "-56 -128 136"
 }
-// entity 16
+// entity 18
 {
 "origin" "112 -88 136"
 "spherical_ambient" "0.0"
@@ -4261,7 +4275,7 @@
 "classname" "light"
 "light" "-500"
 }
-// entity 17
+// entity 19
 {
 "light" "-500"
 "classname" "light"
@@ -4276,7 +4290,7 @@
 "spherical_ambient" "0.0"
 "origin" "88 160 136"
 }
-// entity 18
+// entity 20
 {
 "classname" "light"
 "brightness" "1.0"
@@ -4290,7 +4304,7 @@
 "spherical_ambient" "0.0"
 "origin" "584 -80 96"
 }
-// entity 19
+// entity 21
 {
 "origin" "744 -80 92"
 "spherical_ambient" "0.0"
@@ -4304,101 +4318,87 @@
 "brightness" "1.0"
 "classname" "light"
 }
-// entity 20
+// entity 22
 {
 "origin" "168 -84 46"
 "classname" "info_pathnode"
 "spawnflags" "0"
 "angle" "180"
 }
-// entity 21
+// entity 23
 {
 "classname" "info_pathnode"
 "origin" "52 -84 46"
 "targetname" "mark1"
 "angle" "180"
 }
-// entity 22
+// entity 24
 {
 "classname" "info_pathnode"
 "origin" "-92 -208 46"
 }
-// entity 23
-{
-"origin" "-96 -84 46"
-"classname" "info_pathnode"
-}
-// entity 24
-{
-"classname" "info_pathnode"
-"origin" "-224 -84 46"
-}
 // entity 25
 {
-"origin" "-228 -196 46"
+"origin" "-96 -84 46"
 "classname" "info_pathnode"
 }
 // entity 26
 {
 "classname" "info_pathnode"
-"origin" "-224 60 46"
+"origin" "-224 -84 46"
 }
 // entity 27
 {
-"origin" "168 108 46"
+"origin" "-228 -196 46"
 "classname" "info_pathnode"
 }
 // entity 28
 {
 "classname" "info_pathnode"
-"origin" "160 184 46"
+"origin" "-224 60 46"
 }
 // entity 29
 {
-"origin" "28 188 46"
+"origin" "168 108 46"
 "classname" "info_pathnode"
 }
 // entity 30
 {
 "classname" "info_pathnode"
-"origin" "-104 192 46"
+"origin" "160 184 46"
 }
 // entity 31
+{
+"origin" "28 188 46"
+"classname" "info_pathnode"
+}
+// entity 32
+{
+"classname" "info_pathnode"
+"origin" "-104 192 46"
+}
+// entity 33
 {
 "origin" "-232 184 46"
 "classname" "info_pathnode"
 }
-// entity 32
+// entity 34
 {
 "angle" "180"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "546 -84 46"
 }
-// entity 33
+// entity 35
 {
 "angle" "180"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "232 -84 46"
 }
-// entity 34
-{
-"origin" "296 -84 46"
-"classname" "info_pathnode"
-"spawnflags" "0"
-"angle" "180"
-}
-// entity 35
-{
-"angle" "180"
-"spawnflags" "0"
-"classname" "info_pathnode"
-"origin" "360 -84 46"
-}
 // entity 36
 {
-"origin" "416 -84 46"
+"origin" "296 -84 46"
 "classname" "info_pathnode"
 "spawnflags" "0"
 "angle" "180"
@@ -4408,30 +4408,44 @@
 "angle" "180"
 "spawnflags" "0"
 "classname" "info_pathnode"
-"origin" "472 -84 46"
+"origin" "360 -84 46"
 }
 // entity 38
+{
+"origin" "416 -84 46"
+"classname" "info_pathnode"
+"spawnflags" "0"
+"angle" "180"
+}
+// entity 39
+{
+"angle" "180"
+"spawnflags" "0"
+"classname" "info_pathnode"
+"origin" "472 -84 46"
+}
+// entity 40
 {
 "angle" "180"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "112 -84 46"
 }
-// entity 39
+// entity 41
 {
 "targetname" "mark3"
 "origin" "180 20 46"
 "classname" "info_pathnode"
 "angle" "180"
 }
-// entity 40
+// entity 42
 {
 "angle" "180"
 "targetname" "mark4"
 "origin" "148 -148 46"
 "classname" "info_pathnode"
 }
-// entity 41
+// entity 43
 {
 "anim" "cin-m8_situp"
 "origin" "-2.00 28.00 22.00"
@@ -4440,7 +4454,7 @@
 "model" "models/char/hazardteam_jurot-cinematic.tik"
 "classname" "char_hazardteam_jurot_standard-jurot"
 }
-// entity 42
+// entity 44
 {
 "targetname" "tebok2"
 "angle" "315"
@@ -4448,7 +4462,7 @@
 "model" "models/char/romulan_rebel-male2.tik"
 "classname" "char_romulan_rebel-male2"
 }
-// entity 43
+// entity 45
 {
 "origin" "562.00 176.00 26.00"
 "targetname" "illia_prisoner3"
@@ -4456,7 +4470,7 @@
 "model" "models/char/hazardteam_jurot-cinematic.tik"
 "classname" "char_hazardteam_jurot_standard-jurot"
 }
-// entity 44
+// entity 46
 {
 "angle" "0"
 "origin" "624.00 176.00 16.00"
@@ -4464,7 +4478,7 @@
 "model" "models/char/romulan-m11-rebel-pistol-m.tik"
 "classname" "char_romulan_m11_pistol_standard-male1"
 }
-// entity 45
+// entity 47
 {
 "origin" "440.00 176.00 24.00"
 "targetname" "guard3"
@@ -4472,7 +4486,7 @@
 "model" "models/char/romulan_tng-female.tik"
 "classname" "char_romulan_tng-female"
 }
-// entity 46
+// entity 48
 {
 "spawnflags" "128"
 "angle" "270"
@@ -4489,7 +4503,7 @@
 ( 374 176 144 ) ( 374 176 136 ) ( 390 176 140 ) romulan_installation/romdoor4 255 73 0 -0.3125 0.21875 0 0 0 
 }
 }
-// entity 47
+// entity 49
 {
 "spawnflags" "128"
 "angle" "90"
@@ -4506,7 +4520,7 @@
 ( 374 176 136 ) ( 374 176 144 ) ( 390 176 140 ) romulan_installation/romdoor4 25 73 0 -0.3125 0.21875 0 0 0 
 }
 }
-// entity 48
+// entity 50
 {
 "light" "50"
 "classname" "light"
@@ -4521,7 +4535,7 @@
 "spherical_ambient" "0.0"
 "origin" "552 176 100"
 }
-// entity 49
+// entity 51
 {
 "light" "50"
 "origin" "712 176 96"
@@ -4536,7 +4550,7 @@
 "brightness" "1.0"
 "classname" "light"
 }
-// entity 50
+// entity 52
 {
 "light" "50"
 "classname" "light"
@@ -4551,23 +4565,9 @@
 "spherical_ambient" "0.0"
 "origin" "872 176 92"
 }
-// entity 51
-{
-"origin" "674 176 46"
-"classname" "info_pathnode"
-"spawnflags" "0"
-"angle" "0"
-}
-// entity 52
-{
-"angle" "0"
-"spawnflags" "0"
-"classname" "info_pathnode"
-"origin" "424 176 46"
-}
 // entity 53
 {
-"origin" "488 176 46"
+"origin" "674 176 46"
 "classname" "info_pathnode"
 "spawnflags" "0"
 "angle" "0"
@@ -4577,16 +4577,30 @@
 "angle" "0"
 "spawnflags" "0"
 "classname" "info_pathnode"
-"origin" "544 176 46"
+"origin" "424 176 46"
 }
 // entity 55
+{
+"origin" "488 176 46"
+"classname" "info_pathnode"
+"spawnflags" "0"
+"angle" "0"
+}
+// entity 56
+{
+"angle" "0"
+"spawnflags" "0"
+"classname" "info_pathnode"
+"origin" "544 176 46"
+}
+// entity 57
 {
 "origin" "600 176 46"
 "classname" "info_pathnode"
 "spawnflags" "0"
 "angle" "0"
 }
-// entity 56
+// entity 58
 {
 "light" "50"
 "origin" "1080 176 100"
@@ -4601,7 +4615,7 @@
 "brightness" "-0.700000"
 "classname" "light"
 }
-// entity 57
+// entity 59
 {
 "light" "50"
 "classname" "light"
@@ -4616,7 +4630,7 @@
 "spherical_ambient" "0.000000"
 "origin" "1240 176 96"
 }
-// entity 58
+// entity 60
 {
 "light" "50"
 "origin" "1400 176 92"
@@ -4631,30 +4645,16 @@
 "brightness" "-0.700000"
 "classname" "light"
 }
-// entity 59
+// entity 61
 {
 "angle" "0"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "1202 176 46"
 }
-// entity 60
-{
-"origin" "840 176 46"
-"classname" "info_pathnode"
-"spawnflags" "0"
-"angle" "0"
-}
-// entity 61
-{
-"angle" "0"
-"spawnflags" "0"
-"classname" "info_pathnode"
-"origin" "1264 176 46"
-}
 // entity 62
 {
-"origin" "1072 176 46"
+"origin" "840 176 46"
 "classname" "info_pathnode"
 "spawnflags" "0"
 "angle" "0"
@@ -4664,23 +4664,37 @@
 "angle" "0"
 "spawnflags" "0"
 "classname" "info_pathnode"
-"origin" "1128 176 46"
+"origin" "1264 176 46"
 }
 // entity 64
+{
+"origin" "1072 176 46"
+"classname" "info_pathnode"
+"spawnflags" "0"
+"angle" "0"
+}
+// entity 65
+{
+"angle" "0"
+"spawnflags" "0"
+"classname" "info_pathnode"
+"origin" "1128 176 46"
+}
+// entity 66
 {
 "angle" "0"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "956 176 46"
 }
-// entity 65
+// entity 67
 {
 "origin" "760 176 46"
 "classname" "info_pathnode"
 "spawnflags" "0"
 "angle" "0"
 }
-// entity 66
+// entity 68
 {
 "targetname" "final_mark0"
 "origin" "1012 176 46"
@@ -4688,14 +4702,14 @@
 "spawnflags" "0"
 "angle" "0"
 }
-// entity 67
+// entity 69
 {
 "angle" "0"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "1372 176 46"
 }
-// entity 68
+// entity 70
 {
 "wait" "8"
 "targetname" "door2"
@@ -4712,7 +4726,7 @@
 ( 904 232 144 ) ( 904 232 136 ) ( 920 232 140 ) common/caulk 0 0 0 0.5 0.5 0 1184 0 
 }
 }
-// entity 69
+// entity 71
 {
 "classname" "info_splinepath"
 "targetname" "cell_cam1"
@@ -4720,7 +4734,7 @@
 "angles" "359 1 0"
 "speed" "1.000"
 }
-// entity 70
+// entity 72
 {
 "classname" "info_splinepath"
 "targetname" "cell_cam2"
@@ -4728,7 +4742,7 @@
 "angles" "327 135 0"
 "speed" "1.000"
 }
-// entity 71
+// entity 73
 {
 "classname" "info_splinepath"
 "target" "camnode_cell_cam3_1"
@@ -4737,7 +4751,7 @@
 "angles" "29 43 0"
 "speed" "1.000"
 }
-// entity 72
+// entity 74
 {
 "classname" "info_splinepath"
 "target" "camnode_cell_cam3_2"
@@ -4746,7 +4760,7 @@
 "angles" "31 353 0"
 "speed" "1.000"
 }
-// entity 73
+// entity 75
 {
 "classname" "info_splinepath"
 "target" "camnode_cell_cam3_3"
@@ -4755,7 +4769,7 @@
 "angles" "13 316 0"
 "speed" "1.000"
 }
-// entity 74
+// entity 76
 {
 "classname" "info_splinepath"
 "target" "camnode_cell_cam3_4"
@@ -4764,7 +4778,7 @@
 "angles" "8 343 0"
 "speed" "1.000"
 }
-// entity 75
+// entity 77
 {
 "classname" "info_splinepath"
 "targetname" "camnode_cell_cam3_4"
@@ -4772,7 +4786,7 @@
 "angles" "22 289 0"
 "speed" "1.000"
 }
-// entity 76
+// entity 78
 {
 "classname" "info_splinepath"
 "targetname" "cell_cam4"
@@ -4780,7 +4794,7 @@
 "angles" "34 114 0"
 "speed" "1.000"
 }
-// entity 77
+// entity 79
 {
 "classname" "info_splinepath"
 "targetname" "cell_cam5"
@@ -4788,7 +4802,7 @@
 "angles" "358 211 0"
 "speed" "1.000"
 }
-// entity 78
+// entity 80
 {
 "classname" "info_splinepath"
 "targetname" "cell_cam6"
@@ -4796,21 +4810,21 @@
 "angles" "350 180 0"
 "speed" "1.000"
 }
-// entity 79
+// entity 81
 {
 "targetname" "beach_illia"
-"origin" "4144.97 -3443.03 32.00"
+"origin" "4147.97 -3446.03 32.00"
 "angle" "135"
 "model" "models/char/hazardteam_jurot-cinematic.tik"
 "classname" "char_hazardteam_jurot_standard-jurot"
 }
-// entity 80
+// entity 82
 {
 "origin" "5155 -2446 335"
 "targetname" "shuttle_origin"
 "classname" "script_origin"
 }
-// entity 81
+// entity 83
 {
 "scale" "1.8"
 "origin" "9433.60 1875.60 72.00"
@@ -4818,14 +4832,14 @@
 "model" "models/char/starfleet_crew-male3.tik"
 "classname" "char_starfleet_crew_crew-male3-stratton"
 }
-// entity 82
+// entity 84
 {
 "targetname" "screen"
 "origin" "9682 2050 176"
 "target" "t3"
 "classname" "portal_surface"
 }
-// entity 83
+// entity 85
 {
 "angles" "0 180 180"
 "roll" "90"
@@ -4833,7 +4847,7 @@
 "targetname" "t3"
 "classname" "portal_camera"
 }
-// entity 84
+// entity 86
 {
 "scale" "1.3"
 "origin" "9748.45 1959.48 72.00"
@@ -4841,7 +4855,7 @@
 "model" "models/enviro/klingon_chair.tik"
 "classname" "enviro_klingon_chair_chair"
 }
-// entity 85
+// entity 87
 {
 "light" "110"
 "classname" "light"
@@ -4856,14 +4870,14 @@
 "spherical_ambient" "0.0"
 "origin" "9684 2008 200"
 }
-// entity 86
+// entity 88
 {
 "classname" "info_pathnode"
 "targetname" "go_to_ship"
 "origin" "5136 -2140 64"
 "angle" "270"
 }
-// entity 87
+// entity 89
 {
 "classname" "char_merc_neutral_shotgun_human-male1"
 "model" "models/char/human-m9-merc-shotgun-m1-neutral.tik"
@@ -4871,7 +4885,7 @@
 "angle" "90"
 "origin" "4992.00 -1924.00 64.00"
 }
-// entity 88
+// entity 90
 {
 "targetname" "shuttle"
 "origin" "5136.00 -2452.00 72.00"
@@ -4879,14 +4893,14 @@
 "model" "models/vehicle/drull-shuttle-fighter.tik"
 "classname" "vehicle_drull_drull-shuttle-fighter"
 }
-// entity 89
+// entity 91
 {
 "angle" "315"
 "origin" "3928 116 28"
 "targetname" "cam1_origin"
 "classname" "script_origin"
 }
-// entity 90
+// entity 92
 {
 "targetname" "water"
 "classname" "script_object"
@@ -4900,32 +4914,32 @@
 ( 3920 124 -64 ) ( 3920 -516 -64 ) ( 3920 -516 -192 ) starfleet/sfwater1 40 0 0 0.5 0.5 536870944 17408 0 
 }
 }
-// entity 91
+// entity 93
 {
 "classname" "enviro_sf-academy_plant_yucca-plant"
 "model" "models/plant/sfa_yucca_plant.tik"
 "origin" "5272.00 -580.00  0.00"
 }
-// entity 92
+// entity 94
 {
 "origin" "5544 -564 96"
 "targetname" "tree_origin"
 "classname" "script_origin"
 }
-// entity 93
+// entity 95
 {
 "origin" "5580.00 -568.00 16.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 "targetname" "tree1"
 }
-// entity 94
+// entity 96
 {
 "origin" "5156 -120 68"
 "targetname" "t2"
 "classname" "info_notnull"
 }
-// entity 95
+// entity 97
 {
 "origin" "5152 -116 232"
 "target" "t2"
@@ -4941,7 +4955,7 @@
 "brightness" "1.0"
 "classname" "light"
 }
-// entity 96
+// entity 98
 {
 "origin" "4840 -76 424"
 "light" "5000"
@@ -4956,7 +4970,7 @@
 "brightness" "1.0"
 "classname" "light"
 }
-// entity 97
+// entity 99
 {
 "classname" "script_skyorigin"
 // brush 0
@@ -4969,57 +4983,43 @@
 ( 5240 3036 -104 ) ( 5240 2956 -104 ) ( 5240 2956 -120 ) common/nodraw -56 -16 0 0.5 0.5 536870912 16512 0 
 }
 }
-// entity 98
+// entity 100
 {
 "classname" "sky_starfleet_acadamy-sky"
 "model" "models/sky/sky_sf_acadamy.tik"
 "origin" "5239.00 3016.00 -144.00"
 }
-// entity 99
+// entity 101
 {
 "targetname" "tree2"
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
 "origin" "5644.00 -648.00 28.00"
 }
-// entity 100
+// entity 102
 {
 "targetname" "tree3"
 "origin" "5672.00 -760.00 28.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 }
-// entity 101
+// entity 103
 {
 "classname" "script_origin"
 "targetname" "tree1_target"
 "origin" "5208 -372 96"
 }
-// entity 102
+// entity 104
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
 "origin" "5768.00 -808.00 36.00"
 "targetname" "tree4"
 }
-// entity 103
+// entity 105
 {
 "targetname" "tree5"
 "origin" "5672.00 -1112.00 52.00"
-"model" "models/plant/sf_academy_tree.tik"
-"classname" "enviro_sf-academy_plant_tree"
-}
-// entity 104
-{
-"classname" "enviro_sf-academy_plant_tree"
-"model" "models/plant/sf_academy_tree.tik"
-"origin" "5640.00 -1272.00 60.00"
-"targetname" "tree6"
-}
-// entity 105
-{
-"targetname" "tree7"
-"origin" "5432.00 -1336.00 68.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 }
@@ -5027,13 +5027,13 @@
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
-"origin" "5368.00 -1272.00 36.00"
-"targetname" "tree8"
+"origin" "5640.00 -1272.00 60.00"
+"targetname" "tree6"
 }
 // entity 107
 {
-"targetname" "tree9"
-"origin" "5336.00 -1368.00 68.00"
+"targetname" "tree7"
+"origin" "5432.00 -1336.00 68.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 }
@@ -5041,13 +5041,13 @@
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
-"origin" "5016.00 -1288.00 -4.00"
-"targetname" "tree10"
+"origin" "5368.00 -1272.00 36.00"
+"targetname" "tree8"
 }
 // entity 109
 {
-"targetname" "tree11"
-"origin" "4584.00 -1176.00 68.00"
+"targetname" "tree9"
+"origin" "5336.00 -1368.00 68.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 }
@@ -5055,13 +5055,13 @@
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
-"origin" "4696.00 -1112.00 44.00"
-"targetname" "tree12"
+"origin" "5016.00 -1288.00 -4.00"
+"targetname" "tree10"
 }
 // entity 111
 {
-"targetname" "tree13"
-"origin" "4304.00 -920.00  4.00"
+"targetname" "tree11"
+"origin" "4584.00 -1176.00 68.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 }
@@ -5069,13 +5069,13 @@
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
-"origin" "4248.00 -584.00 -4.00"
-"targetname" "tree14"
+"origin" "4696.00 -1112.00 44.00"
+"targetname" "tree12"
 }
 // entity 113
 {
-"targetname" "tree15"
-"origin" "4168.00 -488.00 -4.00"
+"targetname" "tree13"
+"origin" "4304.00 -920.00  4.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 }
@@ -5083,36 +5083,50 @@
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
+"origin" "4248.00 -584.00 -4.00"
+"targetname" "tree14"
+}
+// entity 115
+{
+"targetname" "tree15"
+"origin" "4168.00 -488.00 -4.00"
+"model" "models/plant/sf_academy_tree.tik"
+"classname" "enviro_sf-academy_plant_tree"
+}
+// entity 116
+{
+"classname" "enviro_sf-academy_plant_tree"
+"model" "models/plant/sf_academy_tree.tik"
 "origin" "4248.00 -360.00 -20.00"
 "targetname" "tree16"
 }
-// entity 115
+// entity 117
 {
 "origin" "5016.00 -900.00  0.00"
 "model" "models/plant/sfa_yucca_plant.tik"
 "classname" "enviro_sf-academy_plant_yucca-plant"
 }
-// entity 116
+// entity 118
 {
 "classname" "enviro_sf-academy_plant_yucca-plant"
 "model" "models/plant/sfa_yucca_plant.tik"
 "origin" "4768.00 -564.00  0.00"
 }
-// entity 117
+// entity 119
 {
 "targetname" "tree17"
 "origin" "4856.00 -1432.00 12.00"
 "model" "models/plant/sf_academy_tree.tik"
 "classname" "enviro_sf-academy_plant_tree"
 }
-// entity 118
+// entity 120
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
 "origin" "4752.00 -1504.00  4.00"
 "targetname" "tree18"
 }
-// entity 119
+// entity 121
 {
 "scale" "1.3"
 "anim" "bar_sitting_left"
@@ -5122,7 +5136,7 @@
 "model" "models/char/human-m9-merc-shotgun-m1-neutral.tik"
 "classname" "char_merc_neutral_shotgun_human-male1"
 }
-// entity 120
+// entity 122
 {
 "light" "110"
 "origin" "9820 1936 192"
@@ -5137,7 +5151,7 @@
 "brightness" "1.0"
 "classname" "light"
 }
-// entity 121
+// entity 123
 {
 "_color" "0.949020 0.376471 0.184314"
 "classname" "light"
@@ -5153,55 +5167,55 @@
 "origin" "9712 2004 176"
 "light" "30"
 }
-// entity 122
+// entity 124
 {
 "target" "t6"
 "targetname" "shuttle_path"
 "classname" "info_splinepath"
 "origin" "5151 -2455 548"
 }
-// entity 123
+// entity 125
 {
 "target" "t7"
 "targetname" "t6"
 "origin" "7278 -2463 548"
 "classname" "info_splinepath"
 }
-// entity 124
+// entity 126
 {
 "target" "t8"
 "targetname" "t7"
 "classname" "info_splinepath"
 "origin" "7713 -1927 612"
 }
-// entity 125
+// entity 127
 {
 "target" "t9"
 "targetname" "t8"
 "origin" "7763 -1462 676"
 "classname" "info_splinepath"
 }
-// entity 126
+// entity 128
 {
 "target" "t10"
 "targetname" "t9"
 "classname" "info_splinepath"
 "origin" "7526 -1034 676"
 }
-// entity 127
+// entity 129
 {
 "target" "t11"
 "targetname" "t10"
 "origin" "6404 -796 708"
 "classname" "info_splinepath"
 }
-// entity 128
+// entity 130
 {
 "targetname" "t11"
 "classname" "info_splinepath"
 "origin" "4077 -748 740"
 }
-// entity 129
+// entity 131
 {
 "scale" "5"
 "doexplosion" "fx/fx-explosion-enterprise-huge.tik"
@@ -5220,7 +5234,7 @@
 ( 2548 -1024 536 ) ( 2868 -1024 536 ) ( 2868 -704 536 ) common/trigger 24 0 0 0.5 0.5 0 128 0 
 }
 }
-// entity 130
+// entity 132
 {
 "duration" ".5"
 "dmg" "150"
@@ -5239,7 +5253,7 @@
 ( 2144 -852 536 ) ( 2464 -852 536 ) ( 2464 -532 536 ) common/trigger 0 24 0 0.5 0.5 0 128 0 
 }
 }
-// entity 131
+// entity 133
 {
 "scale" "5"
 "doexplosion" "fx/fx-explosion-enterprise-huge.tik"
@@ -5258,52 +5272,52 @@
 ( 2144 -1156 536 ) ( 2464 -1156 536 ) ( 2464 -836 536 ) common/trigger 0 56 0 0.5 0.5 0 128 0 
 }
 }
-// entity 132
+// entity 134
 {
 "classname" "script_origin"
 "targetname" "cam1_origin1"
 "origin" "7000 116 28"
 "angle" "315"
 }
-// entity 133
+// entity 135
 {
 "classname" "enviro_sf-academy_plant_tree"
 "model" "models/plant/sf_academy_tree.tik"
 "origin" "7240.00 -488.00 -4.00"
 "targetname" "tree19"
 }
-// entity 134
+// entity 136
 {
 "origin" "7149 -748 740"
 "classname" "info_splinepath"
 "targetname" "t13"
 }
-// entity 135
+// entity 137
 {
 "classname" "info_splinepath"
 "target" "camnode_beach_cam2_1"
 "targetname" "beach_cam2"
-"origin" "4777 -1388 108"
+"origin" "4777 -1388 102"
 "angles" "1 299 0"
 "speed" "0.500"
 }
-// entity 136
+// entity 138
 {
 "classname" "info_splinepath"
 "targetname" "camnode_beach_cam2_1"
-"origin" "4721 -1422 103"
+"origin" "4721 -1422 97"
 "angles" "0 303 0"
 "speed" "1.000"
 }
-// entity 137
+// entity 139
 {
 "classname" "info_splinepath"
 "targetname" "beach_cam3"
-"origin" "4967 -1911 146"
+"origin" "4963 -1893 138"
 "angles" "348 319 0"
 "speed" "1.000"
 }
-// entity 138
+// entity 140
 {
 "classname" "info_splinepath"
 "targetname" "beach_cam4"
@@ -5311,7 +5325,7 @@
 "angles" "354 47 0"
 "speed" "1.000"
 }
-// entity 139
+// entity 141
 {
 "classname" "info_splinepath"
 "target" "camnode_beach_cam5_1"
@@ -5320,7 +5334,7 @@
 "angles" "359 315 0"
 "speed" "0.500"
 }
-// entity 140
+// entity 142
 {
 "classname" "info_splinepath"
 "targetname" "camnode_beach_cam5_1"
@@ -5328,15 +5342,15 @@
 "angles" "329 328 0"
 "speed" "0.500"
 }
-// entity 141
+// entity 143
 {
 "classname" "info_splinepath"
 "targetname" "beach_cam_illia"
-"origin" "4133 -3436 81"
+"origin" "4133 -3436 77"
 "angles" "338 346 0"
 "speed" "1.000"
 }
-// entity 142
+// entity 144
 {
 "classname" "info_splinepath"
 "targetname" "beach_cam_stammheim2"
@@ -5344,7 +5358,7 @@
 "angles" "12 22 0"
 "speed" "1.000"
 }
-// entity 143
+// entity 145
 {
 "classname" "info_splinepath"
 "targetname" "beach_cam_stevens"
@@ -5352,7 +5366,7 @@
 "angles" "1 94 0"
 "speed" "1.000"
 }
-// entity 144
+// entity 146
 {
 "classname" "func_door"
 "targetname" "cell_lift"
@@ -5371,7 +5385,7 @@
 ( 1440 256 16 ) ( 1440 96 16 ) ( 1440 96 0 ) romulan_installation/rom-metal2-grate 0 0 0 0.5 0.5 0 0 0 
 }
 }
-// entity 145
+// entity 147
 {
 "angle" "180"
 "spawnflags" "0"
@@ -5379,21 +5393,21 @@
 "origin" "1468 228 46"
 "targetname" "final_mark1A"
 }
-// entity 146
+// entity 148
 {
 "origin" "1440 196 46"
 "classname" "info_pathnode"
 "spawnflags" "0"
 "angle" "45"
 }
-// entity 147
+// entity 149
 {
 "angle" "315"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "1440 156 46"
 }
-// entity 148
+// entity 150
 {
 "targetname" "final_mark1C"
 "origin" "1468 124 46"
@@ -5401,7 +5415,7 @@
 "spawnflags" "0"
 "angle" "180"
 }
-// entity 149
+// entity 151
 {
 "angle" "180"
 "spawnflags" "0"
@@ -5409,14 +5423,14 @@
 "origin" "1532 176 46"
 "targetname" "final_mark1B"
 }
-// entity 150
+// entity 152
 {
 "angle" "0"
 "spawnflags" "0"
 "classname" "info_pathnode"
 "origin" "1476 176 46"
 }
-// entity 151
+// entity 153
 {
 "light" "50"
 "origin" "1500 176 92"
@@ -5431,7 +5445,7 @@
 "brightness" "1"
 "classname" "light"
 }
-// entity 152
+// entity 154
 {
 "target" "credits_cam_3"
 "angle" "180"
@@ -5441,7 +5455,7 @@
 "angles" "30 180 0"
 "origin" "116 32 120"
 }
-// entity 153
+// entity 155
 {
 "target" "credits_cam"
 "angle" "270"
@@ -5451,7 +5465,7 @@
 "angles" "30 270 0"
 "origin" "32 88 120"
 }
-// entity 154
+// entity 156
 {
 "target" "credits_cam_2"
 "origin" "32 -40 120"
@@ -5461,7 +5475,7 @@
 "classname" "info_splinepath"
 "angle" "90"
 }
-// entity 155
+// entity 157
 {
 "classname" "light"
 "brightness" "1.0"
@@ -5475,7 +5489,7 @@
 "spherical_ambient" "0.0"
 "origin" "9408 1824 144"
 }
-// entity 156
+// entity 158
 {
 "classname" "light"
 "brightness" ".7"
@@ -5490,14 +5504,14 @@
 "_color" "1.000000 0.000000 0.000000"
 "origin" "216 -80 160"
 }
-// entity 157
+// entity 159
 {
 "classname" "enviro_romulan_chair"
 "model" "models/enviro/romulan-chair.tik"
 "angle" "180"
 "origin" "29.00 28.00 16.00"
 }
-// entity 158
+// entity 160
 {
 "light" "500"
 "classname" "light"
@@ -5512,7 +5526,7 @@
 "spherical_ambient" "0.0"
 "origin" "-28 32 24"
 }
-// entity 159
+// entity 161
 {
 "origin" "-28 32 120"
 "spherical_ambient" "0.0"
@@ -5527,7 +5541,7 @@
 "classname" "light"
 "light" "500"
 }
-// entity 160
+// entity 162
 {
 "classname" "light"
 "brightness" "1.000000"
@@ -5542,7 +5556,7 @@
 "light" "5000"
 "origin" "4776 -204 424"
 }
-// entity 161
+// entity 163
 {
 "origin" "4840 -268 424"
 "light" "5000"
@@ -5557,7 +5571,7 @@
 "brightness" "1.000000"
 "classname" "light"
 }
-// entity 162
+// entity 164
 {
 "classname" "light"
 "brightness" "1.000000"
@@ -5572,7 +5586,7 @@
 "light" "5000"
 "origin" "4712 -268 424"
 }
-// entity 163
+// entity 165
 {
 "classname" "light"
 "brightness" "1.000000"
@@ -5587,39 +5601,9 @@
 "light" "5000"
 "origin" "5228 3004 -100"
 }
-// entity 164
-{
-"origin" "4756 -1540 424"
-"light" "5000"
-"spherical_ambient" "0.000000"
-"dot_product_weight" "0.480000"
-"angle_penumbra" "60"
-"angle_hotspot" "15"
-"falloff_curvature" "0.500000"
-"falloff_end_dist" "3752"
-"falloff_start_dist" "32"
-"spawnflags" "1"
-"brightness" "1.000000"
-"classname" "light"
-}
-// entity 165
-{
-"classname" "light"
-"brightness" "1.000000"
-"spawnflags" "1"
-"falloff_start_dist" "32"
-"falloff_end_dist" "3752"
-"falloff_curvature" "0.500000"
-"angle_hotspot" "15"
-"angle_penumbra" "60"
-"dot_product_weight" "0.480000"
-"spherical_ambient" "0.000000"
-"light" "5000"
-"origin" "4820 -1604 424"
-}
 // entity 166
 {
-"origin" "4692 -1604 424"
+"origin" "4756 -1540 424"
 "light" "5000"
 "spherical_ambient" "0.000000"
 "dot_product_weight" "0.480000"
@@ -5645,11 +5629,11 @@
 "dot_product_weight" "0.480000"
 "spherical_ambient" "0.000000"
 "light" "5000"
-"origin" "4752 -3512 424"
+"origin" "4820 -1604 424"
 }
 // entity 168
 {
-"origin" "4816 -3576 424"
+"origin" "4692 -1604 424"
 "light" "5000"
 "spherical_ambient" "0.000000"
 "dot_product_weight" "0.480000"
@@ -5675,11 +5659,11 @@
 "dot_product_weight" "0.480000"
 "spherical_ambient" "0.000000"
 "light" "5000"
-"origin" "4688 -3576 424"
+"origin" "4752 -3512 424"
 }
 // entity 170
 {
-"origin" "4768 -5148 424"
+"origin" "4816 -3576 424"
 "light" "5000"
 "spherical_ambient" "0.000000"
 "dot_product_weight" "0.480000"
@@ -5705,11 +5689,11 @@
 "dot_product_weight" "0.480000"
 "spherical_ambient" "0.000000"
 "light" "5000"
-"origin" "4832 -5212 424"
+"origin" "4688 -3576 424"
 }
 // entity 172
 {
-"origin" "4704 -5212 424"
+"origin" "4768 -5148 424"
 "light" "5000"
 "spherical_ambient" "0.000000"
 "dot_product_weight" "0.480000"
@@ -5724,13 +5708,43 @@
 }
 // entity 173
 {
+"classname" "light"
+"brightness" "1.000000"
+"spawnflags" "1"
+"falloff_start_dist" "32"
+"falloff_end_dist" "3752"
+"falloff_curvature" "0.500000"
+"angle_hotspot" "15"
+"angle_penumbra" "60"
+"dot_product_weight" "0.480000"
+"spherical_ambient" "0.000000"
+"light" "5000"
+"origin" "4832 -5212 424"
+}
+// entity 174
+{
+"origin" "4704 -5212 424"
+"light" "5000"
+"spherical_ambient" "0.000000"
+"dot_product_weight" "0.480000"
+"angle_penumbra" "60"
+"angle_hotspot" "15"
+"falloff_curvature" "0.500000"
+"falloff_end_dist" "3752"
+"falloff_start_dist" "32"
+"spawnflags" "1"
+"brightness" "1.000000"
+"classname" "light"
+}
+// entity 175
+{
 "classname" "sound_speaker"
 "volume" "4"
 "noise" "sound/big2a.wav"
 "targetname" "exp_sound0"
 "origin" "4424 -260 136"
 }
-// entity 174
+// entity 176
 {
 "origin" "4424 -200 136"
 "targetname" "exp_sound1"
@@ -5738,11 +5752,17 @@
 "volume" "4"
 "classname" "sound_speaker"
 }
-// entity 175
+// entity 177
 {
 "classname" "sound_speaker"
 "volume" "4"
 "noise" "sound/big2a.wav"
 "targetname" "exp_sound2"
 "origin" "4456 -232 136"
+}
+// entity 178
+{
+"classname" "script_origin"
+"targetname" "tebokLookAtIlliaSitting"
+"origin" "30 27 80"
 }
