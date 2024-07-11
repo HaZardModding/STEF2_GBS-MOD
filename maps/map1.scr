@@ -40,10 +40,7 @@ void switch_off_ai()
    $illia.removeactorweapon ( "CompressionRifle" );
    $illia.useactorweapon( "Batleth" );
    $illia2.ai_off();
-   $moya.ai_off();
    $moya.nodamage ();
-   $moya.notsolid ();
-   $moya2.ai_off();
    $death_klingon.ai_off();
    $klingon1.ai_off();
    $klingon3.ai_off();
@@ -76,6 +73,7 @@ void start_introcin()
    cinematic();
    letterbox(.1);
    cam_fadeout( .1, 0, 0, 0, 1, 0 );
+   freezeplayer();
    
    spawn ( "Camera" , "targetname" , "cam1" );
    spawn ( "Camera" , "targetname" , "cam2" );
@@ -85,9 +83,11 @@ void start_introcin()
    spawn ( "Camera" , "targetname" , "cam6" );
    spawn ( "Camera" , "targetname" , "cam7" );
    wait (1);
+   
+   stuffCmd("ui_savegamewithname \"^2GBS^5 Start^8 - map1\"");
+   
+   
    skipthread ( "finish_introcin" );
-   freezeplayer();
-
    switch_off_ai();
 
 
@@ -103,16 +103,18 @@ void start_introcin()
    wait(3);
    $illia_prisoner.headwatch( $illia_look_here);
    wait(1.5);
-   $illia_prisoner.playdialog("localization/sound/dialog/map01/Illia/everythingbegan.mp3", 1, 10000, 0);
+   $illia_prisoner.playdialog("localization/sound/dialog/gbs/Illia/everythingbegan.mp3", 1, 10000, 0);
    waitfordialog( $illia_prisoner );
    wait( 1 );
-   $illia_prisoner.playdialog("localization/sound/dialog/map01/Illia/itwasabout.mp3", 1, 10000, 0);
+   $illia_prisoner.playdialog("localization/sound/dialog/gbs/Illia/itwasabout.mp3", 1, 10000, 0);
    waitfordialog( $illia_prisoner );
    cam_fadeout( 3, 0, 0, 0, 1, 0 );
    wait(4);
    stuffcmd("showmenu gbs\n");
    wait(4);
    stuffcmd ( "popmenu 0\n" );
+   
+   cam_fadein( 2, 0, 0, 0, 1, 0 );
 
    show_camera($cam1, $holo2_gate_cam, 3);
    wait(.5);
@@ -129,12 +131,12 @@ void start_introcin()
    wait(.5);
 
    //Klingon talk
-   $klingon4.playdialog( "localization/sound/dialog/map01/Klingon/death.mp3", 1, 10000, 0);
+   $klingon4.playdialog( "localization/sound/dialog/gbs/Klingon/death.mp3", 1, 10000, 0);
    
    wait(3);
    thread show_camera($cam4, $holo2_illia_close_cam, 3);
    wait(.5);
-   $illia.playdialog("localization/sound/dialog/map01/Illia/youwillnotice.mp3", 1, 10000, 0);
+   $illia.playdialog("localization/sound/dialog/gbs/Illia/youwillnotice.mp3", 1, 10000, 0);
    waitfordialog( $illia );
    
    wait(.5);
@@ -151,6 +153,7 @@ void finish_introcin()
    cueplayer ();
    clearletterbox(.1);
    cam_fadein( 1, 0, 0, 0, 1, 0 );
+   $player.selfdetonate();
 
 	$illia.hide();
 	$illia.notsolid();
@@ -178,6 +181,9 @@ void start_holocin()
 
    cinematic();
    cam_fadeout( 1, 0, 0, 0, 1, 0 );
+   
+   $player.nodamage(); 
+   
    spawn ( "Camera" , "targetname" , "holo_cam1" );
    spawn ( "Camera" , "targetname" , "holo_cam2" );
    spawn ( "Camera" , "targetname" , "holo_cam3" );
@@ -185,13 +191,11 @@ void start_holocin()
    wait(1.5);
    letterbox(.1);
    $holodeck_terminal.origin($terminal_new_origin.getOrigin());
-
-   skipthread ( "finish_holocin" );
    freezeplayer();
    
    $moya.origin($moya_new_origin.getOrigin());
-   cam_fadeout( 1, 0, 0, 0, 1, 0 );
-   wait(2);
+   
+   skipthread ( "finish_holocin" ); 
    
    $holo_cam2.follow($holo2_illia2_cam);
    $death_klingon.show();
@@ -242,12 +246,12 @@ void finish_holocin()
    $illia2.notsolid();
    globalCommon_Autosave();
    cam_fadein( 1, 0, 0, 0, 1, 0 );
-
+   $player.takedamage();
 }
 
 void change_map()
 {
-   	$illia2.playdialog("localization/sound/dialog/map01/illia/endprogram.mp3",3,10000,0);
+   	$illia2.playdialog("localization/sound/dialog/gbs/illia/endprogram.mp3",1,10000,0);
    	waitfordialog($illia2);
    	cam_fadeout( 1, 0, 0, 0, 1, 0 );
    	wait( 1 );
