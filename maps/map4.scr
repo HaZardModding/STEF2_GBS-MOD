@@ -386,11 +386,11 @@ void kraftfeld()
 	$kraftfeld.playsound( "sound/ships/borg/borg_forcefield_on.wav", 1, 1, 11111 );
 	$kraftfeld.loopsound( "sound/ships/enterprise/ent_forcefield.wav", .7, 30 );
 	wait( 1 );
-	$player.simpleplaydialog( "localization/sound/dialog/map04/computer/intruder.mp3", 1, 20000 ); //Lieutenant Munro, you have a visitor waiting for you in the main entrance.
-	waitDialogLength( "localization/sound/dialog/map04/computer/intruder.mp3" );
+	$player.simpleplaydialog( "localization/sound/dialog/gbs/computer/intruder.mp3", 1, 20000 ); //Lieutenant Munro, you have a visitor waiting for you in the main entrance.
+	waitDialogLength( "localization/sound/dialog/gbs/computer/intruder.mp3" );
 	thread poison_gas();
-	$player.simpleplaydialog( "localization/sound/dialog/map04/computer/gas.mp3", 1, 20000 ); //Lieutenant Munro, you have a visitor waiting for you in the main entrance.
-	waitDialogLength( "localization/sound/dialog/map04/computer/gas.mp3" );
+	$player.simpleplaydialog( "localization/sound/dialog/gbs/computer/gas.mp3", 1, 20000 ); //Lieutenant Munro, you have a visitor waiting for you in the main entrance.
+	waitDialogLength( "localization/sound/dialog/gbs/computer/gas.mp3" );
 }
 
 void poison_gas()
@@ -439,8 +439,8 @@ void stop_poison_gas()
 
 void beamout_puzzle()
 {
-	$player.simpleplaydialog("localization/sound/dialog/map04/Computer/energy.mp3",1,10000);
-	waitdialoglength("localization/sound/dialog/map04/Computer/energy.mp3");
+	$player.simpleplaydialog("localization/sound/dialog/gbs/Computer/energy.mp3",1,10000);
+	waitdialoglength("localization/sound/dialog/gbs/Computer/energy.mp3");
 	$end_trigger.triggerable();
 }
 void beamout()
