@@ -254,6 +254,11 @@ void finish_holocin()
    globalCommon_Autosave();
    cam_fadein( 1, 0, 0, 0, 1, 0 );
    $player.takedamage();
+   
+	//fixed Klingon staying after the cinematic if cinematic is skipped - chrissstrahl - fixes issue #11
+	if(doesEntityExist($death_klingon)){
+		$death_klingon.remove();
+	}
 }
 
 void change_map()
@@ -290,19 +295,27 @@ void spawn_melee_klingon( entity entity_to_spawn)
 	if (random_number == 3) tiki_to_use = "char/klingon-m9-merc-knife-f3.tik";
 	if (random_number == 4) tiki_to_use = "char/klingon-m9-merc-batleth-m1.tik";
 	entity_to_spawn.modelname(tiki_to_use);
-	entity_to_spawn.spawneffectname( "TransportIn", "Idryll" );
-	
-	
+	entity_to_spawn.spawneffectname( "TransportIn", "Idryll" );	
 	entity_to_spawn.checkforspace();
 	e = entity_to_spawn.spawnnow();
+	
 	wait( 0.05 );
-	e.ai_off();
-
-	if (!doesEntityExist( e)) { inc_death_toll(); }
+	
+	if (!doesEntityExist( e )) {
+		inc_death_toll();
+		
+		//if actor does not exist exit here - chrissstrahl
+		return;
+	}
+	
 	e.killthread("inc_death_toll");
-
-	wait(1);
+	e.ai_off();
+	
+	//stop actors from running during transport sequence - chrissstrahl - fixes issue #9
+	e.anim("idle");
+	wait(1.8);
 	e.ai_on();
+	
 	e.attack( $player );
 }
 
@@ -322,20 +335,27 @@ void spawn_disrupter_klingon( entity entity_to_spawn)
 	if (random_number == 3) tiki_to_use = "char/klingon-m9-merc-disruptor-f2.tik";
 	if (random_number == 4) tiki_to_use = "char/klingon-m9-merc-disruptor-f3.tik";
 	entity_to_spawn.modelname(tiki_to_use);
-
-
 	entity_to_spawn.spawneffectname( "TransportIn", "Idryll" );
-	
-	
 	entity_to_spawn.checkforspace();
 	e = entity_to_spawn.spawnnow();
+	
 	wait( 0.05 );
-	e.ai_off();
+	
+	if (!doesEntityExist( e )) {
+		inc_death_toll();
+		
+		//if actor does not exist exit here - chrissstrahl
+		return;
+	}
+	
 	e.killthread("inc_death_toll");
-	if (!doesEntityExist( e)) { inc_death_toll(); }
-	//e.attackplayer();
-	wait(1);
+	e.ai_off();
+	
+	//stop actors from running during transport sequence - chrissstrahl - fixes issue #9
+	e.anim("idle");
+	wait(1.8);
 	e.ai_on();
+	
 	e.attack( $player );
 }
 
