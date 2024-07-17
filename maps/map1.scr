@@ -153,7 +153,6 @@ void finish_introcin()
    cueplayer ();
    clearletterbox(.1);
    cam_fadein( 1, 0, 0, 0, 1, 0 );
-   $player.selfdetonate();
 
 	$illia.hide();
 	$illia.notsolid();
