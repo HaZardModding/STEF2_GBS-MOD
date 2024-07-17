@@ -16756,7 +16756,7 @@
 {
 "classname" "script_origin"
 "targetname" "new_player_pos"
-"origin" "200 -1308 -560"
+"origin" "583 -1368 -575"
 "angle" "135"
 }
 // entity 15
