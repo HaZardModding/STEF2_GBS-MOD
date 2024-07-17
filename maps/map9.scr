@@ -838,12 +838,15 @@ void shuttle_entrance_skip()
 {
 	skipthread( "Null" );
 	killthread( "shuttle_entrance" );
+	cam_fadeout( 1, 0, 0, 0, 1, 0 ); 
+
+	//changed time the skipping of the scene will take - chrissstrahl - Some what related to - Issue #1
+	wait( 1.1 );  
+	
+	//moved removal of actors here so they don't dissapear during the scene - chrissstrahl - Issue #1
 	$stammheim.remove();
 	$illia_cockpit.remove();
 	$stammheim_cockpit.remove();
-	cam_fadeout( 1, 0, 0, 0, 1, 0 ); 
-
-	wait( 2 );  
 
 	//Lock door for the shuttlebay
 	$baydoor.close();
