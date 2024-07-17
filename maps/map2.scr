@@ -271,6 +271,10 @@ void main()
 	$player.take ( "models/weapons/worldmodel-phaser-STX.tik" );
 	$player.take ( "models/weapons/worldmodel-tricorder-STX.tik" );
 	
+	
+	//make moya look at player without delay - chrissstrahl - fixes issue #10
+	$moya.lookat( $player );
+	
 	//Anims
 	$repair_lady.anim("cin-m3_hunch");
 	$remote_guy.useactorweapon( "EnterpriseDatapad" );
