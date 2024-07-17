@@ -1,4 +1,4 @@
-# STEF2_GBS-MOD
+# STEF2_GBS-MOD - A Gate two Birds and the beautiful Sky
 The A Gate two Birds and the beautiful Sky modification is an open-source project developed by The Colonists. Made for Star Trek: Elite Force II by Ritual Entertainment.
 
 The GBS adds an all-new Singleplayer adventure to the game. The story centers around Illia Ericcson, a former agent of Section 31 the Federation's most secret intelligence agency.
