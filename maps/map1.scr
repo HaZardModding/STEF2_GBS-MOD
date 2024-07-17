@@ -40,6 +40,14 @@ void switch_off_ai()
    $illia.removeactorweapon ( "CompressionRifle" );
    $illia.useactorweapon( "Batleth" );
    $illia2.ai_off();
+   
+   //fix enemy actors looking at illia during combat sequences, instead at the player - chrissstrahl - fixes issue #8
+   $illia.notarget();
+   $illia2.notarget();  
+   $illia_prisoner.notarget();
+   $moya.notarget();
+   $moya2.notarget();
+   
    $moya.nodamage ();
    $death_klingon.ai_off();
    $klingon1.ai_off();
@@ -398,6 +406,11 @@ void main()
 
    thread_number = thread start_holocin();
    waitforthread(thread_number);
+   
+   //fix enemy actors looking at illia during combat sequences, instead at the player - chrissstrahl - fixes issue #8
+   //this also fixes that enemies spawn in to fast after cinematic
+   //needs to wait as least as long as the runtime of "finish_holocin"
+   wait(1.5);
 
    killed_klingons = 0;
    thread spawn_melee_klingon($newKlingon1);
