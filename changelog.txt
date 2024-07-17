@@ -1,0 +1,92 @@
+1.3.2 - enhanced by HaZardModding
+UPDATED: AI enhanced and manually remastered Audio Dialog (Adobe Podcast - Enhance Speech + Audacity)
+ADDED: Menu Video Settings, support for modern resolutions
+ADDED: Menu gbsSkill, to allow selection of game difficulty
+ADDED: map1, Klingon Energy Dispenser for extra plasma ammo
+ADDED: map1, Plasma Item for extra ammo
+ADDED: map1, Health Item for extra health
+ADDED: map1, Klingon Energy Dispenser for extra plasma ammo
+ADDED: map1, Automatic Save Game at level start
+ADDED: map2, Automatic Save Game at level start
+FIXED: map3, issues with Illia not playing animations right, getting cinematic stuck
+FIXED: map3, wrong illia actor playing dialog
+FIXED: map3, moya looking at wrong illia
+FIXED: map3, bad Redalert sound creating warning messages
+FIXED: map3, Redalert sound overlaping
+FIXED: map3, minor adjustments to cinemtics for testing and better gameflow
+Changed: map5, minor changes in Cinematic timings
+Changed: map7, removed several explosion sounds, explosions stop once Puzzle is used
+Changed: projectiledata.tik and weapondata.tik to adjust Romulan Disruptor damage
+FIXED: map9, issues with Illia not playing animations right, getting cinematic stuck
+FIXED: map9, issues with Arrest Cinematic, Illia not walking to node
+FIXED: map9, issues with Arrest Cinematic, Guards not walking to node
+ADDED: map9, extra Light for Arrest Cinematic, to make Illia better visible
+FIXED: map10, shuttle missing doors.
+FIXED: map10, Illia and Stammhein being to close to the camera, sometimes clipping trough
+FIXED: map10, skipping credits causing End cinematic to run twice
+ADDED: map10, Illia and Tebok are now looking at each other during the conversation
+FIXED: 3monthslater.urc, Three Months later - German version
+FIXED: credits-voice1-gbs.urc, Typo in (by MindCrusher Studios)
+FIXED: gbs_zoo, Flix Shader being upside down
+ADDED: gbs_zoo, Secret hidden behind the wall
+ADDED: gbs_zoo, level will be loaded after map9
+Changed: map1, ai_off and notsolid for $moya moved from script to map
+Changed: map1, ai_off for $moya2 moved from script to map
+Changed: map1, notsolid for $moya2 added to map
+Changed: map1, $moya2 Holodeck Sequence extended area to walk on
+Changed: map1, $moya2 Holodeck Sequence moved Path-node further out
+Changed: map1, $moya2 Holodeck Sequence removed angles from Path-node, fixing Actor turning towards the door-frame
+Changed: map1, $moya2 Holodeck Sequence removed some Geometry out of FoV
+Changed: map1, minor other script improvements
+FIXED: map3.map, impossible to load in Überradiant
+FIXED: map8, Door constantly repeating door locked sound when used
+FIXED: Duplicated language folder outside of loc directory
+FIXED: Weapon Icons in German, on the English Version (Reported by dantivirus in 2009)
+FIXED: Various Dialog and Explosion Sound playbacks being very loud
+
+
+1.3.1 - enhanced by HaZardModding
+ADDED: All source files
+FIXED: Extra size Weapons, mp_bigGunMode is now set to: setd mp_bigGunMode 0
+FIXED: Hundred small and large lags during the Missions
+FIXED: Romulan Soldiers base-files loading emotions set twice
+FIXED: Map1 player orientation after the cinematic
+FIXED: Map2 Illia Dialogs using the TED
+FIXED: Map3 Illia gliding over the floor like a Vorlon
+FIXED: Map3 Engineering cinematic starting with a delay
+FIXED: Map3 Engineering cinematic skip ending with a delay
+FIXED: Map3 After Engineering cinematic player is facing wrong direction
+FIXED: Map3 Sabotage Cinematic Dialog spoken by $illia2 instead of $illia_prisoner
+FIXED: Map3 Sabotage Cinematic using $cam3 instead of $cam4
+FIXED: Map3 NPC $shaun holding a Compression-riffle
+FIXED: Map3 NPC $secutity1 and $security2 appearance, Weapon animation and Head watch changed
+ADDED: Map3 Autosave when warned by the Security
+FIXED: Map3b No objectives initialized
+ADDED: Map3b Autosave before the player can get spotted
+FIXED: Map3b When detected player gets killed very slowly by the security, mission fails now proper
+FIXED: Map4 No objectives initialized
+ADDED: Map4 Autosave on level start
+ADDED: Map4 Autosave before Transport Out sequence
+FIXED: Map4 Illia gliding over the floor like a Vorlon
+FIXED: Map4 Shower-girl taking a shower with a Starfleet Uniform
+ADDED: Map5 Autosave on level start
+ADDED: Map5 Illia Exit Shuttle sequence Emotion Anger
+ADDED: Map5 Illia Exit Shuttle sequence Animation wtf
+FIXED: Map5 Illia Exit Shuttle sequence doors making abnormal much noise
+FIXED: Map6 No objectives initialized
+ADDED: Map6 Autosave on level start
+FIXED: Map6 Player can see the level from his own camera before the cinematic starts
+ADDED: Map6 Bat'leth on the level for the player to pick-up
+FIXED: Map6 changed brightness level on Stevens for cinematic
+FIXED: Map6 changed brightness level on Illia for cinematic
+FIXED: Map6 cinematic new transport vessel
+ADDED: Map7 Autosave on level start
+FIXED: Map7 Player visible during Intro cinematic
+FIXED: Map7 changed brightness level on both Warbirds
+FIXED: Map7 changed brightness level on Illia
+ADDED: Map8 Autosave on level start
+FIXED: Map8 Player visible during Intro cinematic
+ADDED: Map9 Autosave on level start
+FIXED: Map9 Player not facing the door on spawn
+ADDED: Map9 Autosave when unlocked door
+FIXED: Map9 Illia gliding over the floor like a Vorlon
