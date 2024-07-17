@@ -6,3 +6,5 @@ The GBS adds an all-new Singleplayer adventure to the game. The story centers ar
 Illia's final mission proves to be her most dangerous one yet, as she faces impossible opposition in Romulan space.
 
 Development of Gate-Birds-Sky is coordinated by Stefan "Argyle" Hudelmaier and Lars Tiefland, who brought you the award-winning mod Colony 7 for Star Trek: Voyager Elite Force.
+
+This version and repository is maintained in good faith by HaZardModding. - We have taken over this open-source project to ensure its continued development and support after the original team ceased maintenance.
