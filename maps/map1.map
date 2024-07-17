@@ -16289,7 +16289,7 @@
 "classname" "enviro_klingon_energy-console"
 "model" "models/enviro/klingon_energy_console.tik"
 "angle" "270"
-"origin" "-266.00 -133.00 -502.00"
+"origin" "-266.00 -127.00 -502.00"
 }
 // entity 7
 {
