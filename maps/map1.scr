@@ -255,6 +255,11 @@ void change_map()
    	waitfordialog($illia2);
    	cam_fadeout( 1, 0, 0, 0, 1, 0 );
    	wait( 1 );
+	
+	//added a additional autosave just in the unlikley event the game decides to crash before loading next map - chrissstrahl - also fixes issue #3
+	globalCommon_Autosave();
+   	wait( 1 );
+	
 	stuffcmd("map map2\n");
 }
 void inc_death_toll()

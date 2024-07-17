@@ -313,6 +313,10 @@ void main()
 
 	//Dynamic light setup in maintenance room
 	$world.light_lightstyle( "maintenanceLight", "ddgggggggggjjjhkkkkkkkzzzzzttmmmmmkkaaaaaaabbbfffffffff", 0);
+	
+	//added a additional autosave - chrissstrahl - also fixes issue #3
+	globalCommon_Autosave();
+	wait(0.15);
 
 	moya_cin();
 }
