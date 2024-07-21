@@ -1,3 +1,10 @@
+1.3.4 - enhanced by HaZardModding
+ADDED: map8, Patchmesh at level start to prevent player seeing a hole in the level (732 309 526)
+Fixed: map8, misaligned textures on six Storageboxes (1088 3692 416)
+FIXED: map8, broken sky texture common/sky instead of common/skyportal being used (-1626 11554 546)
+FIXED: map8, Nightvision showing different Terrain
+FIXED: map8, Warning in console: Vertex color specified for shader...
+
 1.3.3 - enhanced by HaZardModding
 FIXED: map1, Energy console floating off the wall
 FIXED: map1, Longdeath Klingon staying after cinematic on premature skip
