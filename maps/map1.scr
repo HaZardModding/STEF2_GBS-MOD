@@ -314,6 +314,9 @@ void spawn_melee_klingon( entity entity_to_spawn)
 	//stop actors from running during transport sequence - chrissstrahl - fixes issue #9
 	e.anim("idle");
 	wait(1.8);
+	
+	//added check to exit if actor already killed and removed - chrissstrahl
+	if(!doesEntityExist(e)){ return; }
 	e.ai_on();
 	
 	e.attack( $player );
@@ -354,6 +357,9 @@ void spawn_disrupter_klingon( entity entity_to_spawn)
 	//stop actors from running during transport sequence - chrissstrahl - fixes issue #9
 	e.anim("idle");
 	wait(1.8);
+	
+	//added check to exit if actor already killed and removed - chrissstrahl
+	if(!doesEntityExist(e)){ return; }
 	e.ai_on();
 	
 	e.attack( $player );
