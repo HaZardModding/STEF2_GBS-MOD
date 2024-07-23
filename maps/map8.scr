@@ -270,6 +270,10 @@ void intro_cin()
 	$cam3.cut();
 	waitForPlayer();
 	//Load the mission objectives
+	$player.loadobjectives( "GBS8" );
+	$player.setobjectiveshow( "findentrance", 1 );
+	
+	
 	stuffCmd("set mp_bigGunMode 0\n");
 	playerDeathThread("playergotKilled");
 
