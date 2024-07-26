@@ -3,6 +3,8 @@ ADDED: map4, message for player to a secret trigger: Found secret - a door has u
 ADDED: map8, Patchmesh at level start to prevent player seeing a hole in the level (732 309 526)
 ADDED: map9, Black-Yellow stripes Hazard Texture to highlight secret Lift edge
 ADDED: map9, Lights to the controlpanel of the secret Lift
+CHANGED: Game Logo and Loading Screen Banner
+UPDATED: Video Options Menu, added Ultra Settings button and Tooltips
 FIXED: German Dialog for Illia, needs manual volume amplification
 FIXED: Savegames are created but not auto loaded
 FIXED: Dialog Text - Subtitles not working
@@ -23,11 +25,10 @@ FIXED: map8, Warning in console: Vertex color specified for shader...
 FIXED: map8, Not showing any Objectives
 FIXED: map8, Explosive crate, archetype key showing with $$ instead of localstring
 FIXED: map8, Out of place Federation issue Wrist Gear in Romulan Base Office
-FIXED: map9, Player possibly falling out of the map when getting crushed under the Lift
+FIXED: map9, Player possibly falling out of the map when getting crushed under a Lift
 FIXED: map9, Player getting stuck under the Lift while getting crushed
 FIXED: map9, First Lift has slightly misaligned textures
 FIXED: map9, Secret Lift makes no noise when being used
-FIXED: map9, all Lifts possibly pushing player out of the map when under the Lift
 FIXED: map9, missing Texture on walkway near Secret Location at Cell unlock Trigger
 FIXED: map9, Stammheim Dialog volume to low in ENGLISH version
 FIXED: map9, Stammheim disapearing before cam blacks out when skipping cinematic
@@ -65,9 +66,9 @@ FIXED: map3, moya looking at wrong illia
 FIXED: map3, bad Redalert sound creating warning messages
 FIXED: map3, Redalert sound overlaping
 FIXED: map3, minor adjustments to cinemtics for testing and better gameflow
-Changed: map5, minor changes in Cinematic timings
-Changed: map7, removed several explosion sounds, explosions stop once Puzzle is used
-Changed: projectiledata.tik and weapondata.tik to adjust Romulan Disruptor damage
+CHANGED: map5, minor changes in Cinematic timings
+CHANGED: map7, removed several explosion sounds, explosions stop once Puzzle is used
+CHANGED: projectiledata.tik and weapondata.tik to adjust Romulan Disruptor damage
 FIXED: map9, issues with Illia not playing animations right, getting cinematic stuck
 FIXED: map9, issues with Arrest Cinematic, Illia not walking to node
 FIXED: map9, issues with Arrest Cinematic, Guards not walking to node
@@ -81,14 +82,14 @@ FIXED: credits-voice1-gbs.urc, Typo in (by MindCrusher Studios)
 FIXED: gbs_zoo, Flix Shader being upside down
 ADDED: gbs_zoo, Secret hidden behind the wall
 ADDED: gbs_zoo, level will be loaded after map9
-Changed: map1, ai_off and notsolid for $moya moved from script to map
-Changed: map1, ai_off for $moya2 moved from script to map
-Changed: map1, notsolid for $moya2 added to map
-Changed: map1, $moya2 Holodeck Sequence extended area to walk on
-Changed: map1, $moya2 Holodeck Sequence moved Path-node further out
-Changed: map1, $moya2 Holodeck Sequence removed angles from Path-node, fixing Actor turning towards the door-frame
-Changed: map1, $moya2 Holodeck Sequence removed some Geometry out of FoV
-Changed: map1, minor other script improvements
+CHANGED: map1, ai_off and notsolid for $moya moved from script to map
+CHANGED: map1, ai_off for $moya2 moved from script to map
+CHANGED: map1, notsolid for $moya2 added to map
+CHANGED: map1, $moya2 Holodeck Sequence extended area to walk on
+CHANGED: map1, $moya2 Holodeck Sequence moved Path-node further out
+CHANGED: map1, $moya2 Holodeck Sequence removed angles from Path-node, fixing Actor turning towards the door-frame
+CHANGED: map1, $moya2 Holodeck Sequence removed some Geometry out of FoV
+CHANGED: map1, minor other script improvements
 FIXED: map3.map, impossible to load in Überradiant
 FIXED: map8, Door constantly repeating door locked sound when used
 FIXED: Duplicated language folder outside of loc directory
