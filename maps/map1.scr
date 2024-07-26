@@ -116,15 +116,15 @@ void start_introcin()
    wait( 1 );
    $illia_prisoner.playdialog("localization/sound/dialog/gbs/Illia/itwasabout.mp3", 1, 10000, 0);
    waitfordialog( $illia_prisoner );
-   cam_fadeout( 3, 0, 0, 0, 1, 0 );
-   wait(4);
-   stuffcmd("showmenu gbs\n");
-   wait(4);
-   stuffcmd ( "popmenu 0\n" );
-   
-   cam_fadein( 2, 0, 0, 0, 1, 0 );
+   cam_fadeout( 1, 0, 0, 0, 1, 0 );
+   wait(1);
 
-   show_camera($cam1, $holo2_gate_cam, 3);
+   //1.3.4 chrissstrahl - show title during the filming of the gate
+   thread show_camera($cam1, $holo2_gate_cam, 4);
+   stuffcmd("showmenu gbs\n");
+   wait(4.1);
+   stuffcmd ( "popmenu 0\n" );   
+   
    wait(.5);
    $world.light_lightstyle( "lightning", "azaz", 1 );
    $player.playsound( "sound/environment/nature/thunder2.wav", 0, 3, 10000 );
